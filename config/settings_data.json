@@ -490,7 +490,9 @@
           "announcement_zap6Fr"
         ],
         "custom_css": [
-          ".announcement-bar {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}"
+          ".announcement-bar {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}",
+          ".announcement-bar__link {margin-left: 138px;}",
+          "@media only screen and (max-width: 750px) {.announcement-bar__link {margin-left: 0px;}}"
         ],
         "settings": {
         }
