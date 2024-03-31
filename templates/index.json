@@ -5,6 +5,7 @@
       "blocks": {
         "slide_XVWCFG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/fa3d82b8-aa64-43eb-94ba-931d936cd10f-ezgif.com-video-to-gif-converter.gif",
             "heading": "EASTER SPECIALS",
