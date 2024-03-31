@@ -475,6 +475,7 @@
         "blocks": {
           "announcement_zap6Fr": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "🐇 EASTER SPECIALS: Only until April 1st 🐣",
               "color_scheme": "accent-2",
