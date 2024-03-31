@@ -50,6 +50,7 @@
         },
         "text_R3HX7i": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><strong>Easter Egg hunt: <\/strong> If you order any of the Coffee Beans marked with an Easter egg, you will receive a special Coffee Sample.<\/p>"
           }
