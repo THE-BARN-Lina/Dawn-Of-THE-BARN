@@ -181,68 +181,13 @@
   }
 }
 
-
-
-#special-frame-container {
-    width: 100%;
-    height: 500px;
-    position: relative; /* This enables absolute positioning of the pseudo-elements relative to this container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #special-frame-container::before,
-  #special-frame-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 80px; /* Width of the stripes, adjust as needed */
-    height: 500px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  #special-frame-container::before {
-    left: 0;
-    background-image: url('{{ 'gift-left-egg-stripe-mobile.svg' | asset_url }}'); /* Your left stripe image */
-  }
-
-  #special-frame-container::after {
-    right: 0;
-    background-image: url('{{ 'gift-right-egg-stripe-mobile.svg' | asset_url }}'); /* Your right stripe image */
-  }
 /* Desktop version: Adjust the breakpoint as needed */
   @media (min-width: 1024px) {
 
     .title-gift{
       font-size:72px !important;
     }
-    .filter-buttons{
-      margin-top:-7rem;
-    }
-
-  #special-frame-container::before,
-  #special-frame-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 130px; /* Width of the stripes, adjust as needed */
-    height: 650px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-    #special-frame-container::before {
-      left: 0;
-      background-image: url('{{ 'gift-left-egg-stripe-desktop.svg' | asset_url }}'); /* Desktop left stripe image */
-    }
-
-    #special-frame-container::after {
-      right: 0;
-      background-image: url('{{ 'gift-right-egg-stripe-desktop.svg' | asset_url }}'); /* Desktop right stripe image */
-    }
+  
   }
 
 {%- endstyle -%}
