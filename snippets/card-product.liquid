@@ -152,6 +152,12 @@
                   {{- 'products.product.on_sale' | t -}}
                 </span>
               {%- endif -%}
+              {% if card_product.tags contains 'new-release' %}
+                <span class="new_release_label"
+                  >NEW<br>
+                  RELEASE</span
+                >
+              {% endif %}
             </div>
           </div>
         </div>

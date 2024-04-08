@@ -51,3 +51,34 @@
         width: 100%;
         margin-bottom: 5px !important;
     }
+
+
+   .new_release_label{
+    display: flex;
+    font-family: 'Chalet Comprime';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 1.3rem;
+    font-size: 1.7rem;
+    color: #1c1d1c;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    @media only screen and (max-width: 750px) {
+    .new_release_label {
+        font-size: 1.3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
