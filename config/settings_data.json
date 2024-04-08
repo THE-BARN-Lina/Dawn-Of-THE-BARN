@@ -550,6 +550,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "12526071353035850722": {
+        "type": "shopify:\/\/apps\/back-in-stock-customer-alerts\/blocks\/app-embed\/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
