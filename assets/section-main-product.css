@@ -1204,7 +1204,7 @@ a.product__text {
     display: flex;
     font-family: 'Chalet Comprime';
     position: absolute;
-    top: 14px;
+    top: 20px;
     right: 4px;
     z-index: 1;
     background-color: #ffffff;
