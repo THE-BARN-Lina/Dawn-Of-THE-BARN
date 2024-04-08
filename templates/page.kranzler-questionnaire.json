@@ -40,7 +40,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {text-align: center;}"
+        "h1 {display: none;}"
       ],
       "settings": {
         "padding_top": 20,
