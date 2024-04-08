@@ -33,6 +33,15 @@
         "padding_bottom": 48
       }
     },
+    "custom_liquid_Hgd3QC": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"powr-form-builder\" id=\"39125858_1712586589\"><\/div><script src=\"https:\/\/www.powr.io\/powr.js?platform=shopify\"><\/script>",
+        "color_scheme": "inverse",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner_fxRwbd": {
       "type": "image-banner",
       "settings": {
@@ -53,6 +62,7 @@
   },
   "order": [
     "rich_text_B9eN8y",
+    "custom_liquid_Hgd3QC",
     "image_banner_fxRwbd"
   ]
 }
