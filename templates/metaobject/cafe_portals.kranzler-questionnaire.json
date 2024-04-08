@@ -6,14 +6,14 @@
         "heading_A9yUii": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Welcome to THE BARN Berlin<\/p>",
+            "heading": "<p>Welcome to Café Kranzler<\/p>",
             "heading_size": "h1"
           }
         },
         "text_QrWiCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>We hope you are enjoying your cup of coffee at our {{ metaobject.cafe_location.value }} <\/p>"
+            "text": "<p>Please take a minute to give us a feel for our community here. <\/p>"
           }
         }
       },
@@ -30,11 +30,29 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 48
+      }
+    },
+    "image_banner_fxRwbd": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_1309.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "transparent_block": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
-    "rich_text_B9eN8y"
+    "rich_text_B9eN8y",
+    "image_banner_fxRwbd"
   ]
 }
