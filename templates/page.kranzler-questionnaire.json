@@ -1,16 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "custom_css": [
-        "h1 {text-align: center;}"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_84GP3A": {
       "type": "image-banner",
       "blocks": {
@@ -47,10 +36,20 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {text-align: center;}"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
-    "main",
-    "image_banner_84GP3A"
+    "image_banner_84GP3A",
+    "main"
   ]
 }
