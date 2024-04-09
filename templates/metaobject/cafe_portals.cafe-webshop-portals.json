@@ -86,19 +86,19 @@
         "featured_collection_ExfRyJ": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "coffee-beans"
           }
         },
         "featured_collection_XEPDrA": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "coffee-subscription"
           }
         },
         "featured_collection_qzUBMA": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "coffee-equipment"
           }
         }
       },
