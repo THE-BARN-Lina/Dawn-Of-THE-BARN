@@ -39,16 +39,9 @@
       ],
       "settings": {
       }
-    },
-    "1657896229556540f3": {
-      "type": "popup-main",
-      "disabled": true,
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "1657896229556540f3"
+    "main"
   ]
 }
