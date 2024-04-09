@@ -40,11 +40,6 @@
         "padding_bottom": 0
       }
     },
-    "popup_main_wz6Anw": {
-      "type": "popup-main",
-      "settings": {
-      }
-    },
     "collection_list_qDyhJq": {
       "type": "collection-list",
       "blocks": {
@@ -88,7 +83,6 @@
   },
   "order": [
     "rich_text_B9eN8y",
-    "popup_main_wz6Anw",
     "collection_list_qDyhJq"
   ]
 }
