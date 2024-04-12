@@ -19,6 +19,20 @@
     },
     "custom_subscription_intro_E6tF6d": {
       "type": "custom-subscription-intro",
+      "blocks": {
+        "collapsible_row_HjCHMR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wann verschicken wir deine Abo-Kaffees?",
+            "icon": "box",
+            "row_content": "<p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_HjCHMR"
+      ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
         "text_subtitle_primary": "<p>World Class Single Origin Coffee<br\/>Freshly roasted in Berlin<br\/>Delivered to your door - every month<\/p>",
