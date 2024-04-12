@@ -86,6 +86,15 @@
         "collapsible_row_Qqp7rX": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "How does the 10% discount function?",
+            "icon": "box",
+            "row_content": "<p>As a subscriber you enjoy a 10% discount on all our coffee beans (excluding rare coffee varieties). You can easily add on beans to your next delivery, if you want to top up and make use of your next box.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9UVLWL": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "How can I change my subscription?",
             "icon": "box",
             "row_content": "<p>If you are looking to make changes to your subscription that are not possible through your online portal, then please contact our team directly by email: subscriber@thebarn.de<\/p>",
@@ -101,7 +110,8 @@
         "collapsible_row_wfMYig",
         "collapsible_row_QtyTaM",
         "collapsible_row_NPYRXc",
-        "collapsible_row_Qqp7rX"
+        "collapsible_row_Qqp7rX",
+        "collapsible_row_9UVLWL"
       ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
