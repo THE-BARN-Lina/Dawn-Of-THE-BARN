@@ -22,6 +22,7 @@
   background: #804d15;
 
 }
+
 {%- endstyle -%}
 
 
@@ -32,7 +33,7 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-@media screen and (min-width: 750px) {
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -148,6 +149,7 @@
   .text-buttom-container h2{
     margin-top:1.6rem;
   }
+
 }
   
 {%- endstyle -%}
@@ -300,9 +302,10 @@
         width: 33.333%;
         flex: 0 0 auto; 
     }
-    .cta-container{
-      display:none;
-    }
+.cta-container{
+  display:none;
+}
+
 }
 /* Optional: cta styles mobile */
 
@@ -311,11 +314,12 @@
   .title-subtitle-sections{
     width:100%;
   }
-  .cta-container-desk{
+
+    .cta-container-desk{
       
       display:none;
     }
-  .cta-container-mobile{
+    .cta-container-mobile{
       display:block;
     }
 
@@ -338,6 +342,7 @@
     border:2px solid red;
 
   }
+
 }
 
 /* Optional: Basic styles to make the demo look a bit nicer */
@@ -429,6 +434,7 @@
     </video>
   
   </section>
+
   {% comment %} //////////////////////////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);">
 
@@ -819,6 +825,7 @@
     </div>
 
   </section> 
+
   {% comment %} ///////////////////Reviews///////////////////// {% endcomment %}
   <section  style=" border:20px solid var( --padding-sections);">
 
@@ -1091,6 +1098,7 @@
 
   </section>
   {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
+
   <section  class="cta-container-mobile" style="height:100%; border:20px solid var(--padding-sections); text-align:center;">
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
@@ -1098,6 +1106,7 @@
       </div>
     </div>
   </section>
+
   {% comment %} //////////////////////////////////////// {% endcomment %}
   <section style="height:100%; border:20px solid var( --padding-sections);">
 
@@ -1189,6 +1198,7 @@
     </div>
 
   </section>
+
   {% comment %} //////////////////Icons////////////////////// {% endcomment %}
   <section  style=" border:20px solid var( --padding-sections);">
 
@@ -1295,7 +1305,9 @@
 
 
   </section>
+
   {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
+
   <section  class="cta-container-mobile" style="height:100%; border:20px solid var(--padding-sections); text-align:center;">
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
@@ -1303,6 +1315,7 @@
       </div>
     </div>
   </section>
+
   {% comment %} //////////////////////////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);"  >
 
@@ -1341,6 +1354,7 @@
       </div>
     </div>
   </section>
+
   {% comment %} /////////////////////FAQ/////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);">
 
@@ -1639,8 +1653,10 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "t:sections.image-with-text.settings.layout.label",
       "info": "t:sections.image-with-text.settings.layout.info"
     },
-
-
+    {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
 
 
 
@@ -1713,6 +1729,10 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "t:sections.image-with-text.settings.layout.label",
       "info": "t:sections.image-with-text.settings.layout.info"
     },
+    {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
 
 
 
@@ -1784,7 +1804,10 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "t:sections.image-with-text.settings.layout.label",
       "info": "t:sections.image-with-text.settings.layout.info"
     },
-
+    {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
 
 
 
@@ -2048,7 +2071,42 @@ document.addEventListener('DOMContentLoaded', function() {
       "default": "no-overlap",
       "label": "t:sections.image-with-text.settings.content_layout.label"
     },
-
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
+    {
+      "type": "select",
+      "id": "image_behavior",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
+        },
+        {
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
+        },
+        {
+          "value": "zoom-in",
+          "label": "t:sections.all.animation.image_behavior.options__4.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
+    },
     {
       "type": "header",
       "content": "Mobile layout"
