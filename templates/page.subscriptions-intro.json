@@ -32,16 +32,26 @@
         "collapsible_row_pjNXYn": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wann verschicken wir deine Abo-Kaffees?",
+            "heading": "Which coffees will I be receiving?",
             "icon": "box",
-            "row_content": "<p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.<\/p>",
+            "row_content": "<p>Our roast team selects the subscriber coffees every month. They are typically our latest releases and often microlots. When you are starting your subscription you can chose between espresso and filter roasts.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gBxQTM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which coffees will I be receiving?",
+            "icon": "box",
+            "row_content": "<p>Our roast team selects the subscriber coffees every month. They are typically our latest releases and often microlots. When you are starting your subscription you can chose between espresso and filter roasts.<\/p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_HjCHMR",
-        "collapsible_row_pjNXYn"
+        "collapsible_row_pjNXYn",
+        "collapsible_row_gBxQTM"
       ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
