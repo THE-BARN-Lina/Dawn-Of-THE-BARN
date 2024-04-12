@@ -73,6 +73,15 @@
             "row_content": "<p>You can pause and resume your subscription at any point. Go to \"menu\" and \"login\" to enter your account details. Click on \"manage subscriptions\" on the left to edit your data. <\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_NPYRXc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I select subscription coffees by myself?",
+            "icon": "box",
+            "row_content": "<p>Our coffee subscription is curated by our roast team. The beauty is that our team selects coffees that are often not yet on our webshop. You receive different coffees in rotation to explore the vast range of Single Origin Coffees.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -81,7 +90,8 @@
         "collapsible_row_gBxQTM",
         "collapsible_row_yHnXNP",
         "collapsible_row_wfMYig",
-        "collapsible_row_QtyTaM"
+        "collapsible_row_QtyTaM",
+        "collapsible_row_NPYRXc"
       ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
