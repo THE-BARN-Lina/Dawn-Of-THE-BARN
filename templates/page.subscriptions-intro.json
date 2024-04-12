@@ -23,6 +23,15 @@
         "collapsible_row_HjCHMR": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "When are we sending out your subscription coffees?",
+            "icon": "box",
+            "row_content": "<p>We typically take 1 to 3 working days from your order date to ensure freshness before shipping it to you.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pjNXYn": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "Wann verschicken wir deine Abo-Kaffees?",
             "icon": "box",
             "row_content": "<p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.<\/p>",
@@ -31,7 +40,8 @@
         }
       },
       "block_order": [
-        "collapsible_row_HjCHMR"
+        "collapsible_row_HjCHMR",
+        "collapsible_row_pjNXYn"
       ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
