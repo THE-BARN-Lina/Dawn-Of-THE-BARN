@@ -43,27 +43,11 @@
 
 
 
-{%- liquid
-  assign video_id = section.settings.video.id | default: section.settings.video_url.id
-  assign video_alt = section.settings.video.alt | default: section.settings.description
-  assign alt = 'sections.video.load_video' | t: description: video_alt | escape
-  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
 
-  if section.settings.video != null
-    assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
-    if ratio_diff < 0.01 and ratio_diff > 0
-      assign fix_ratio = true
-    endif
-  endif-%}
 
-{%- capture sizes -%}
-  {% if section.settings.full_width_video -%}
-    100vw
-  {%- else -%}
-    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px)
-    calc(100vw - 10rem), 100vw
-  {%- endif %}
-{%- endcapture -%}
+
+
+
 
 .slider-text-custom-container{
  border:10px solid #121212;
@@ -1150,7 +1134,6 @@
             id="Slider-{{ section.id }}"
             class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}"
             role="list"
-            aria-label="{{ 'general.slider.name' | t }}"
             style="margin:0px;"
           >
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
