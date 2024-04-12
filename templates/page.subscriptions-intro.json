@@ -83,6 +83,15 @@
             "page": ""
           }
         },
+        "collapsible_row_9UVLWL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I change my subscription?",
+            "icon": "box",
+            "row_content": "<p>If you are looking to make changes to your subscription that are not possible through your online portal, then please contact our team directly by email: subscriber@thebarn.de<\/p>",
+            "page": ""
+          }
+        },
         "collapsible_row_Qqp7rX": {
           "type": "collapsible_row",
           "settings": {
@@ -92,12 +101,12 @@
             "page": ""
           }
         },
-        "collapsible_row_9UVLWL": {
+        "collapsible_row_RVUUhN": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How can I change my subscription?",
+            "heading": "How does the add-on function work?",
             "icon": "box",
-            "row_content": "<p>If you are looking to make changes to your subscription that are not possible through your online portal, then please contact our team directly by email: subscriber@thebarn.de<\/p>",
+            "row_content": "<p>You can add any product from our store and included in your subscription box.<\/p><p>Go to your subscription dashboard, scroll all the way down and you will see 'You might also like' title, there you will find all the products of our store.<\/p>",
             "page": ""
           }
         }
@@ -110,8 +119,9 @@
         "collapsible_row_wfMYig",
         "collapsible_row_QtyTaM",
         "collapsible_row_NPYRXc",
+        "collapsible_row_9UVLWL",
         "collapsible_row_Qqp7rX",
-        "collapsible_row_9UVLWL"
+        "collapsible_row_RVUUhN"
       ],
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
