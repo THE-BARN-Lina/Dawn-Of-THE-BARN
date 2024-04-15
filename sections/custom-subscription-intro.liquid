@@ -547,15 +547,15 @@
             <div  id="ImageWithText--{{ section.id }}" class="image-with-text__content " style=" height: 100%; align-text:center; display:flex; flex-direction:column; justify-content:center;">
               <section class="text-buttom-container">
             
-                {%- if section.settings.ROASTERY_HEADING_2 != blank -%}
+                {%- if section.settings.TITLE_003 != blank -%}
                   <h2>
-                    {{ section.settings.ROASTERY_HEADING_2 | escape }}
+                    {{ section.settings.TITLE_003 | escape }}
                   </h2>
                 {%- endif -%}
                   
-                {%- if section.settings.ROASTERY_OPENING_2 != blank -%}
+                {%- if section.settings.SUBTITLE_003 != blank -%}
                   <p class="rich-text__heading rte ">
-                    {{ section.settings.ROASTERY_OPENING_2 | replace: 'p>', 'span>' }}
+                    {{ section.settings.SUBTITLE_003 | replace: 'p>', 'span>' }}
                   </p>
                 {%- endif -%}
           
@@ -1137,13 +1137,13 @@
     },
     {
       "type": "text",
-      "id": "ROASTERY_HEADING",
+      "id": "TITLE_003",
       "default": "Image with text",
       "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
     },
     {
       "type": "richtext",
-      "id": "ROASTERY_OPENING",
+      "id": "SUBTITLE_003",
       "default": "<p>link your location</p>",
       "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
     },
