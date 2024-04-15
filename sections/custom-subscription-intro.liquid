@@ -372,7 +372,7 @@
     </div>
 
     <video muted autoplay playsinline loop>
-      <source src="https://cdn.shopify.com/videos/c/o/v/48cba9a971c14fbe91dc735c93e5e1aa.mov" type="video/mp4">
+      <source src="" type="video/mp4">
     </video>
   
   </section>
@@ -447,52 +447,7 @@
                   {%- else -%}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_7 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_7.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_7 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_7 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_7| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_7.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_8 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_8.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_8 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_8 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_8| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_8.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  <div class="slider-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                  </div>
+        
                 </section>
           
             
@@ -565,52 +520,7 @@
                   {%- else -%}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_4 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_4.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_4 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_4 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_4| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_4.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_5 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_5.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_5 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_5 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_5| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_5.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  <div class="slider-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                  </div>
+            
                 </section>
           
             
@@ -682,52 +592,7 @@
                   {%- else -%}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_1 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_1.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_1 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_1 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_1| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_1.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  {%- if section.settings.ROASTERY_IMAGE_2 != blank -%}
-                    <img
-                      srcset="
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 1070 }} 1070w,{%- endif -%}
-                        {%- if section.settings.ROASTERY_IMAGE_2.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_2 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {{ section.settings.ROASTERY_IMAGE_2 | image_url }} {{ section.settings.image.width }}
-                      "
-                      src="{{ section.settings.ROASTERY_IMAGE_2| image_url: width: 1500 }}"
-                      alt="{{ section.settings.ROASTERY_IMAGE_2.alt | escape }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                      class="image-main-slider slide"
-                    >
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                  <div class="slider-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                  </div>
+           
                 </section>
           
             
@@ -1280,42 +1145,7 @@
   </section>
 
 
-{% javascript %} 
 
-document.addEventListener('DOMContentLoaded', function() {
-  function initializeSlider(containerClass) {
-    const sliders = document.querySelectorAll(containerClass);
-
-    sliders.forEach(function(slider) {
-      let slideIndex = 0;
-      const slides = slider.querySelectorAll('.slide');
-
-      function showSlide(n) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slideIndex = (n + slides.length) % slides.length;
-        slides[slideIndex].classList.add('active');
-      }
-
-      function nextSlide() {
-        showSlide(slideIndex + 1);
-      }
-
-      function prevSlide() {
-        showSlide(slideIndex - 1);
-      }
-
-      slider.querySelector('.next').addEventListener('click', nextSlide);
-      slider.querySelector('.prev').addEventListener('click', prevSlide);
-    });
-  }
-
-  // Initialize sliders for different containers
-
-  initializeSlider('.section-ROASTERY-padding.slider-container');
-
-});
-
-{% endjavascript %}
 
 
 {% schema %}
@@ -1362,16 +1192,6 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       "type": "image_picker",
       "id": "ROASTERY_IMAGE",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_1",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_2",
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
@@ -1441,16 +1261,6 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_4",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_5",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
       "type": "text",
       "id": "ROASTERY_HEADING_1",
       "default": "Image with text",
@@ -1516,16 +1326,6 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       "type": "image_picker",
       "id": "ROASTERY_IMAGE_6",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_7",
-      "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_8",
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
@@ -1725,128 +1525,14 @@ document.addEventListener('DOMContentLoaded', function() {
       "default": "adapt",
       "label": "t:sections.image-with-text.settings.height.label"
     },
-    {
-      "type": "select",
-      "id": "desktop_image_width",
-      "options": [
-        {
-          "value": "small",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__1.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__2.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__3.label"
-        }
-      ],
-      "default": "medium",
-      "label": "t:sections.image-with-text.settings.desktop_image_width.label",
-      "info": "t:sections.image-with-text.settings.desktop_image_width.info"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.options__1.label"
-        },
-        {
-          "value": "text_first",
-          "label": "t:sections.image-with-text.settings.layout.options__2.label"
-        }
-      ],
-      "default": "image_first",
-      "label": "t:sections.image-with-text.settings.layout.label",
-      "info": "t:sections.image-with-text.settings.layout.info"
-    },
-    {
-      "type": "select",
-      "id": "desktop_content_position",
-      "options": [
-        {
-          "value": "top",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__1.label"
-        },
-        {
-          "value": "middle",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__2.label"
-        },
-        {
-          "value": "bottom",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__3.label"
-        }
-      ],
-      "default": "top",
-      "label": "t:sections.image-with-text.settings.desktop_content_position.label"
-    },
-    {
-      "type": "select",
-      "id": "desktop_content_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
-        }
-      ],
-      "default": "left",
-      "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
-    },
-    {
-      "type": "select",
-      "id": "content_layout",
-      "options": [
-        {
-          "value": "no-overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__1.label"
-        },
-        {
-          "value": "overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__2.label"
-        }
-      ],
-      "default": "no-overlap",
-      "label": "t:sections.image-with-text.settings.content_layout.label"
-    },
-    {
-      "type": "header",
-      "content": "Mobile layout"
-    },
-    {
-      "type": "select",
-      "id": "mobile_content_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__2.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__3.label"
-        }
-      ],
-      "default": "left",
-      "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
+
+
+
+   
+
+
+
+
     {
       "type": "range",
       "id": "padding_top",
