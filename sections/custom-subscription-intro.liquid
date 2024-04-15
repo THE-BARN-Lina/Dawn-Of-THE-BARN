@@ -142,6 +142,7 @@
   .title-subtitle-container h2{
     font-family:'Chalet Comprime';
     font-size:32px;
+    margin:0px;
   }
   .text-closer-container-sp{
     display:flex;
@@ -334,7 +335,7 @@
 
 
   {% comment %} ///////////////////Video Hero///////////////////// {% endcomment %}
-  <section style="border: 20px solid var(--padding-sections); height: 72vh; position: relative; border: 20px solid var(--padding-sections); position: relative; /*">
+  <section style="border: 20px solid var(--padding-sections); height: 72vh; position: relative; border: 20px solid var(--padding-sections); position: relative;">
 
     <div class=" title-subtitle-container-hero " style=" height:100%; display: flex;
       align-items: center;
@@ -379,7 +380,7 @@
   <section style=" border:20px solid var( --padding-sections);">
 
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.  section_color_scheme }} title-subtitle-container " style=" border:2px solid var( --padding-sections);">
+    <div class=" title-subtitle-container " style=" border:20px solid var( --padding-sections);">
       <div class="page-width">
           <div>
               {%- if section.settings.text_title_secondary != blank -%}
@@ -410,7 +411,7 @@
 
 
     <div class="" style=" border:20px solid var( --padding-sections); width:100%">
-      <div class="page-width" style=" display:flex;">
+      <div class="page-width" style=" display:flex; align-items:center;">
         
           <div style="width:50%; height:auto;" >
             {%- if section.settings.ROASTERY_IMAGE_6 != blank -%}
@@ -428,7 +429,7 @@
                 alt="{{ section.settings.ROASTERY_IMAGE_6.alt | escape }}"
                 loading="lazy"
                 width="100%"
-                height="auto"
+                height="100%"
             
               >
             {%- else -%}
@@ -463,7 +464,7 @@
     </div>
 
     <div class="" style=" border:20px solid var( --padding-sections); width:100%">
-      <div class="page-width" style=" display:flex;">
+      <div class="page-width" style=" display:flex;  align-items:center;">
 
           <div class="image-with-text__text-item grid__item ">
             <div  id="ImageWithText--{{ section.id }}" class="image-with-text__content " style=" height: 100%; align-text:center; display:flex; flex-direction:column; justify-content:center;">
@@ -516,7 +517,7 @@
     </div>
    
     <div class="" style=" border:20px solid var( --padding-sections); width:100%">
-      <div class="page-width" style=" display:flex;">
+      <div class="page-width" style=" display:flex;  align-items:center;">
         
           <div style="width:50%; height:auto; " >
             {%- if section.settings.ROASTERY_IMAGE_6 != blank -%}
