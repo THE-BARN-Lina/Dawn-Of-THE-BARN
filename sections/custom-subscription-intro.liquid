@@ -144,35 +144,6 @@
     font-family:'Chalet Comprime';
     font-size:32px;
   }
-  .first-container-sp{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-
-    height:33.33%;
-  }
-  .image-container-sp{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    height:100px;
-    width:100px !important;
-  }
-  .image-sp{
-    width: 100px;
-    height: 100px;
-    border-radius:500px !important;
-  }
-  .text-container-sp{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    height:100%;
-
-     
-  }
   .text-closer-container-sp{
     display:flex;
     flex-direction:row;
@@ -202,13 +173,6 @@
       max-width: 480px;
       margin-top: 0px;
       padding: 0rem;
-    }
-    .text-container-sp{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-     
     }
   }
 
@@ -844,230 +808,75 @@
     </div>
 
     <div class="color-{{ section.settings.section_color_scheme }}">
-    
       <div class="page-width" >
-        <div class=" container  ">
+        <div class="container">
         
-          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}  item" >
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item" >
             <div class="page-width">
-              <div class=" image-with-text  isolate{% if settings.text_boxes_border_thickness > 0 and settings.  text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                
-              <div class=" image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} ">
-                  <div class="image-with-text__text-item grid__item"  >
-                    <div class="image-with-text__content  text-container-sp" style="padding:2rem;">
-    
-                            <div class="  image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item image-container-sp">
-                                <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} image-sp"
-        
-                                        {% if section.settings.height == 'adapt' and section.settings.image != blank %}
-                                            style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
-                                        {% endif %}>
-                                        {%- if section.settings.image != blank -%}
-                                            {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
-                                            {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-                                            {%- capture sizes -%}
-                                            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-                                            (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-                                        {%- endcapture -%}
-                                            {%- else -%}
-                                            {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-                                            {%- capture sizes -%}
-                                            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                                            (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-                                        {%- endcapture -%}
-                                            {%- endif -%}
-                                            {{
-                                            section.settings.image
-                                            | image_url: width: 1500
-                                            | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                                            }}
-                                        {%- else -%}
-                                            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                                        {%- endif -%}
-                                </div>
-                            </div>
-        
-                      
-                              {%- if section.settings.text != blank -%}
-                              
-                                  <div class=" text-closer-container-sp">
-                                      {{ section.settings.text }}
-                                  </div>
-                                
-                              
-                              {%- endif -%}
-                              {%- if section.settings.name-sp != blank -%}
-                              
-                                <div style="margin-top:0px;">
-                                    {{ section.settings.name-sp }}
-                                </div>
-                              
-                            
-                            {%- endif -%}
-                      
-                          
-                
-        
-                    </div>
+  
+              {%- if section.settings.text != blank -%}
+              
+                  <div class=" text-closer-container-sp">
+                      {{ section.settings.text }}
                   </div>
+                
+              {%- endif -%}
+              {%- if section.settings.name-sp != blank -%}
+              
+                <div style="margin-top:0px;">
+                    {{ section.settings.name-sp }}
                 </div>
-              </div>
+              
+              {%- endif -%}
+
             </div>
           </div>
                 
-          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}  item">
-                  <div class="page-width">
-                    <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                      <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
-                
-                
-                  
-                
-                        
-                  <div class="image-with-text__text-item grid__item">
-                          <div
-                            id="ImageWithText--{{ section.id }}"
-                            class="image-with-text__content  text-container-sp"
-                            style="padding:2rem;"
-                          >
-              
-                              <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item image-container-sp">
-                                  <div
-                                    class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} image-sp"
-                                    {% if section.settings.height == 'adapt' and section.settings.image != blank %}
-                                      style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
-                                    {% endif %}
-                                  >
-                                    {%- if section.settings.image_1 != blank -%}
-                                      {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
-                                        {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-                                        {%- capture sizes -%}
-                                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-                                      (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-                                    {%- endcapture -%}
-                                      {%- else -%}
-                                        {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-                                        {%- capture sizes -%}
-                                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-                                    {%- endcapture -%}
-                                      {%- endif -%}
-                                      {{
-                                        section.settings.image_1
-                                        | image_url: width: 1500
-                                        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                                      }}
-                                    {%- else -%}
-                                      {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                                    {%- endif -%}
-                                  </div>
-                                </div>
-              
-                              {%- if section.settings.text_1 != blank -%}
-                          
-                          
-                                  <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
-                                      {{ section.settings.text_1 }}
-                                  </div>
-                              
-                              
-                            
-                              {%- endif -%}
-    
-                              {%- if section.settings.name-sp_2 != blank -%}
-                              
-                                <div style="margin-top:0px;">
-                                    {{ section.settings.name-sp_2 }}
-                                </div>
-                              
-                            
-                            {%- endif -%}
-    
-                              
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item">
+            <div class="page-width">
+             
+              {%- if section.settings.text_1 != blank -%}
+          
+                  <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                      {{ section.settings.text_1 }}
                   </div>
+              
+              {%- endif -%}
+
+              {%- if section.settings.name-sp_2 != blank -%}
+              
+                <div style="margin-top:0px;">
+                    {{ section.settings.name-sp_2 }}
+                </div>
+              
+              {%- endif -%}
+
+            </div>
           </div>
         
-          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}  item">
-                <div class="page-width">
-                  <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                    <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item">
+            <div class="page-width">
+              <div>
+                {%- if section.settings.text_2 != blank -%}
               
-              
-              
-                      
-                      <div class="image-with-text__text-item grid__item">
-                        <div
-                          id="ImageWithText--{{ section.id }}"
-                          class="image-with-text__content  text-container-sp"
-                          style="padding:2rem;"
-                        >
-            
-            
-                      <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item image-container-sp">
-                        <div
-                          class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} image-sp"
-                          {% if section.settings.height == 'adapt' and section.settings.image != blank %}
-                            style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
-                          {% endif %}
-              
-                        >
-                          {%- if section.settings.image_2 != blank -%}
-                            {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
-                              {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-                              {%- capture sizes -%}
-                            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-                            (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-                          {%- endcapture -%}
-                            {%- else -%}
-                              {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-                              {%- capture sizes -%}
-                            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                            (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-                          {%- endcapture -%}
-                            {%- endif -%}
-                            {{
-                              section.settings.image_2
-                              | image_url: width: 1500
-                              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                            }}
-                          {%- else -%}
-                            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                          {%- endif -%}
-                        </div>
-                      </div>
-                            {%- if section.settings.text_2 != blank -%}
-                          
-                          
-                                <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
-                                    {{ section.settings.text_2 }}
-                                </div>
-                              
-                            
-                            
-                            {%- endif -%}
-                            {%- if section.settings.name-sp_3 != blank -%}
-                              
-                              <div style="margin-top:0px;">
-                                  {{ section.settings.name-sp_3 }}
-                              </div>
-                            
-                          
-                          {%- endif -%}
-                        </div>
-                      </div>
+                    <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                        {{ section.settings.text_2 }}
                     </div>
+                  
+                {%- endif -%}
+                {%- if section.settings.name-sp_3 != blank -%}
+                  
+                  <div style="margin-top:0px;">
+                      {{ section.settings.name-sp_3 }}
+                  </div>
+                
+                {%- endif -%}
               </div>
-              </div>
+            </div>
           </div>
         
         </div>
-    
       </div>
-    
     </div>
 
   </section>
@@ -1782,31 +1591,16 @@ document.addEventListener('DOMContentLoaded', function() {
         "label": "text subtitle"
     },
     {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
         "type": "richtext",
         "id": "text",
         "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "label": "text social proof"
     },
     {
-        "type": "image_picker",
-        "id": "image_1",
-        "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
         "type": "richtext",
         "id": "text_1",
         "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "label": "text social proof"
-    },
-    {
-        "type": "image_picker",
-        "id": "image_2",
-        "label": "t:sections.image-with-text.settings.image.label"
     },
     {
         "type": "richtext",
