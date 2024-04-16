@@ -18,7 +18,7 @@
   --white: #ffffff;
   --black:#282828;
   --padding-sections:#282828;
-  --button-main:#282828;
+  --button-main:black;
   background: #804d15;
 
 }
@@ -312,13 +312,18 @@
     min-width:375px;
 
   }
+  
   .button-main-v12{
     height:50px;
     width:200px;
     background-color: var(--button-main);
-    border:2px solid white;
+    border:4px solid var(--padding-sections);
     border-radius:6px;
+  }
+  .button-main-v12 a{
+ 
     color:white;
+    text-decoration:none;
   }
   video {
     width: 100%;
@@ -742,9 +747,16 @@
           </div>
           <div class="cta-container-desk">
             <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
-              <div> 
-                  <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
-              </div>
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}
             </section>
         
           </div> 
