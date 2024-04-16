@@ -1065,6 +1065,13 @@
                             </div>
                         
                         {%- endif -%}
+                        {%- if section.settings.what_do_i_get_eight != blank -%}
+                            
+                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                                {{ section.settings.what_do_i_get_eight }}
+                            </div>
+                        
+                        {%- endif -%}
         
         </div>
       </div>
@@ -1425,6 +1432,13 @@
       "id": "what_do_i_get_seven",
       "default": "<p>link your location</p>",
       "label": "What do I get 7?"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_eight",
+      "default": "<p>link your location</p>",
+      "label": "What do I get 8?"
     },
 
 
