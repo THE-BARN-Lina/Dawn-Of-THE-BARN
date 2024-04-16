@@ -146,7 +146,7 @@
   }
   .text-closer-container-sp{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
     text-align:center;
@@ -285,8 +285,6 @@
   }
   .cta-container-desk{
     width:30%;
-    border:2px solid red;
-
   }
 
 }
@@ -379,8 +377,7 @@
   {% comment %} //////////////////////////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);">
 
-
-    <div class=" title-subtitle-container " style=" border:20px solid var( --padding-sections);">
+    <div class=" title-subtitle-container " style="padding:3rem; border-bottom: 20px solid var(--padding-sections);">
       <div class="page-width">
           <div>
               {%- if section.settings.text_title_secondary != blank -%}
@@ -409,11 +406,10 @@
       </div>
     </div>
 
-
-    <div class="" style=" border:20px solid var( --padding-sections); width:100%">
+    <div class="" style="  width:100%">
       <div class="page-width" style=" display:flex; align-items:center;">
         
-          <div style="width:50%; height:auto;" >
+          <div style="width:49%; height:auto;" >
             {%- if section.settings.ROASTERY_IMAGE_6 != blank -%}
               <img
                 srcset="
@@ -463,7 +459,7 @@
   
     </div>
 
-    <div class="" style=" border:20px solid var( --padding-sections); width:100%">
+    <div class="" style="  width:100%">
       <div class="page-width" style=" display:flex;  align-items:center;">
 
           <div class="image-with-text__text-item grid__item ">
@@ -516,10 +512,10 @@
   
     </div>
    
-    <div class="" style=" border:20px solid var( --padding-sections); width:100%">
+    <div class="" style=" width:100%">
       <div class="page-width" style=" display:flex;  align-items:center;">
         
-          <div style="width:50%; height:auto; " >
+          <div style="width:49%; height:auto; " >
             {%- if section.settings.IMAGE_003 != blank -%}
               <img
                 srcset="
@@ -569,8 +565,6 @@
   
     </div>
 
-
-
   </section> 
   {% comment %} ///////////////////Reviews///////////////////// {% endcomment %}
   <section  style=" border:20px solid var( --padding-sections);">
@@ -603,7 +597,7 @@
           
           </div>
           <div class="cta-container-desk">
-            <section  style="height:100%; border:20px solid var( --padding-sections); text-align:center;">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: center;justify-content: center;">
               <div> 
                   <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
               </div>
