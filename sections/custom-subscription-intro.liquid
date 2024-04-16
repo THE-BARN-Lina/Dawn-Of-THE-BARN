@@ -959,13 +959,20 @@
                 <div class="icons-subcontainer">  
                   <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/bezbg.gif?v=1664532097" class="small-icon-brew" alt="icon of person brewing coffee in a chemex coffee maker" height="" width="">
                 </div> 
-                {%- if section.settings.how_it_work_subtitle_three != blank -%}
+                {%- if section.settings.how_it_work_title_three != blank -%}
                      
                     <div class="how_it_work_text ">
-                        {{ section.settings.how_it_work_subtitle_three }}
+                        {{ section.settings.how_it_work_title_three }}
                     </div>
                
                 {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_three != blank -%}
+                     
+                     <div class="how_it_work_text ">
+                         {{ section.settings.how_it_work_subtitle_three }}
+                     </div>
+                
+                 {%- endif -%}
   
               </section>
             
@@ -1311,7 +1318,7 @@
     },
     {
       "type": "richtext",
-      "id": "how_it_work_title_subtitle_two",
+      "id": "how_it_work_subtitle_two",
       "default": "<p>link your location</p>",
       "label": "how it work subtitle 2"
     },
