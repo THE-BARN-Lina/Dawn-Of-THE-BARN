@@ -58,7 +58,7 @@
       .c-preloaderapp__image {
         opacity: 100%;
         
-        width: 5%;
+        width: 10%;
         height: auto;
         max-height: 100%;        
       
@@ -99,7 +99,7 @@
 {%- assign preloaderapp_image = 'preloaderapp.svg' | file_url -%}
 <img class="c-preloaderapp__image"
      src="{{ preloaderapp_image }}"
-     width="96" height="54" 
+     width="192" height="108" 
      tabindex="-1"
      
 >
@@ -140,6 +140,6 @@ function handlePreloaderFadeOut() {
     </aside>
 
     <script>
-      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713293759290,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
+      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713293867692,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
     </script>
   
