@@ -175,6 +175,7 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "collection": "coffee-beans",
+        "show_secondary_image": true,
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
