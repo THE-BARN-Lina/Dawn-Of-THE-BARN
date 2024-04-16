@@ -127,7 +127,7 @@
   .text-closer-container-sp{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
     text-align: justify;
 
@@ -595,11 +595,11 @@
             <div class="page-width">
   
               {%- if section.settings.text != blank -%}
-              
-                  <div class=" text-closer-container-sp">
-                      {{ section.settings.text }}
-                  </div>
-                
+          
+              <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                  {{ section.settings.text }}
+              </div>
+      
               {%- endif -%}
               <div style="display: flex; align-items: center;justify-content: start;">
                   <p> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
