@@ -126,6 +126,7 @@
       "settings": {
         "text_title_primary": "<h1>COFFEE SUBSCRIPTIONS<\/h1>",
         "text_subtitle_primary": "<p>World Class Single Origin Coffee<br\/>Freshly roasted in Berlin<br\/>Delivered to your door - every month<\/p>",
+        "cta-main": "<p><a href=\"\/collections\/coffee-subscription\" title=\"SUBSCRIPTIONS\">EXPLORE SUBSCRIPTIONS<\/a><\/p>",
         "text_title_secondary": "<h2>THE BARN COFFEE SUBSCRIPTION<\/h2>",
         "text_subtitle_secondary": "<p>From Crop to Cup we personally get involved with all the humans in the coffee chain. <\/p>",
         "text_subtitle_secondary_2": "<p>Our mission: to deliver world class single origin coffee to you!<\/p>",
