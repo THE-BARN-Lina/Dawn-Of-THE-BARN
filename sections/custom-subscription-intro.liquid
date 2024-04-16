@@ -78,26 +78,6 @@
 .slider-container img.active {
   display: block;
 }
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
-.prev {
-  left: 10px;
-}
-.next {
-  right: 10px;
-}
-.slide {
-  transition: opacity 0.5s ease-in-out; /* Change properties and duration as needed */
-}
 
 /* Mobile */
 @media screen and (max-width: 700px) {
@@ -149,9 +129,8 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    text-align:center;
+    text-align: justify;
 
-    height: 100px;
     max-width:480px;
  
 
@@ -169,7 +148,6 @@
       flex-direction:column;
     }
     .text-closer-container-sp {
-      height: 100px;
       max-width: 480px;
       margin-top: 0px;
       padding: 0rem;
@@ -292,7 +270,7 @@
 /* Optional: Basic styles to make the demo look a bit nicer */
 .item {
     box-sizing: border-box; 
-    border: 1px solid #ccc;
+    border: 1px solid var(--padding-sections);
     text-align: center;
 }
 {% endstyle %}
@@ -569,7 +547,7 @@
   {% comment %} ///////////////////Reviews///////////////////// {% endcomment %}
   <section  style=" border:20px solid var( --padding-sections);">
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container  "  style=" border:2px solid var( --padding-sections);">
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container  "  style=" border-bottom:20px solid var( --padding-sections);">
       <div class="page-width">
 
         <div  style="display:flex; flex-direction:row; " >
@@ -623,15 +601,15 @@
                   </div>
                 
               {%- endif -%}
-              {%- if section.settings.name-sp != blank -%}
-              
-                <div style="margin-top:0px;">
-                    {{ section.settings.name-sp }}
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+              </div>
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Dennis</p>
+              </div>
+                
                 </div>
-              
-              {%- endif -%}
-
-            </div>
+        
           </div>
                 
           <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item">
@@ -644,14 +622,14 @@
                   </div>
               
               {%- endif -%}
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+              </div>
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Batin</p>
+              </div>
 
-              {%- if section.settings.name-sp_2 != blank -%}
-              
-                <div style="margin-top:0px;">
-                    {{ section.settings.name-sp_2 }}
-                </div>
-              
-              {%- endif -%}
+           
 
             </div>
           </div>
@@ -666,13 +644,12 @@
                     </div>
                   
                 {%- endif -%}
-                {%- if section.settings.name-sp_3 != blank -%}
-                  
-                  <div style="margin-top:0px;">
-                      {{ section.settings.name-sp_3 }}
-                  </div>
-                
-                {%- endif -%}
+                <div style="display: flex; align-items: center;justify-content: start;">
+                  <p> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+                </div>
+                <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Daniel</p>
+              </div>
               </div>
             </div>
           </div>
