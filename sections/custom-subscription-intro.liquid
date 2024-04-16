@@ -492,18 +492,26 @@
 
           
 
-              <button class="button-main-v12">Explore Subscriptions</button>
-
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}
           
           </div>
       </div>
     </div>
-    {% comment %} ////////////////////
+   
     
     <video muted autoplay playsinline loop>
       <source src="https://cdn.shopify.com/videos/c/o/v/48cba9a971c14fbe91dc735c93e5e1aa.mov" type="video/mp4">
     </video>
-    //////////////////// {% endcomment %}
+
 
   
   </section>
@@ -928,8 +936,16 @@
             <div class="cta-container-desk">
             <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
               <div> 
-                  <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
-              </div>
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}              </div>
             </section>
         
           </div> 
@@ -1023,8 +1039,16 @@
   <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
-          <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
-      </div>
+      {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}      </div>
     </div>
   </section>
   {% comment %} /////////////////////What Do I Get/////////////////// {% endcomment %}
@@ -1141,8 +1165,16 @@
           <div class="cta-container-desk">
             <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
               <div> 
-                  <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
-              </div>
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}              </div>
             </section>
         
           </div> 
@@ -1248,7 +1280,18 @@
   <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
-          <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
+     
+
+          {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}
       </div>
     </div>
   </section>
@@ -1278,6 +1321,13 @@
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Hero Subtitle"
 },
+
+{
+      "type": "richtext",
+      "id": "cta-main",
+      "default": "<p>EXPLORE SUBSCRIPTIONS</p>",
+      "label": "Call to Action"
+    },
 
     {
       "type": "richtext",
