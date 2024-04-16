@@ -472,7 +472,7 @@
 
 
   {% comment %} ///////////////////Video Hero///////////////////// {% endcomment %}
-  <section style="height: 72vh; position: relative;  position: relative; border:20px solid var( --padding-sections);">
+  <section style="height: 72vh; position: relative;  position: relative; border-bottom:20px solid var( --padding-sections);">
 
     <div class=" title-subtitle-container-hero " style=" height:100%; display: flex;
       align-items: center;
@@ -845,14 +845,23 @@
   <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
-          <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
-      </div>
+
+      {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}      </div>
     </div>
   </section>
   {% comment %} /////////////////Pass Coffees/////////////////////// {% endcomment %}
-  <section style="height:100%; border:20px solid var( --padding-sections);">
+  <section style="height:100%; border:20px solid var( --padding-sections); border-top:40px solid var( --padding-sections);">
 
-    <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" style="height:100%; border:2px solid var( --padding-sections);">
+    <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" style="height:100%;">
       <div class="page-width">
         <div class="title-subtitle-container "  >
               {%- if section.settings.text_title_2 != blank -%}
@@ -1067,7 +1076,7 @@
     </div>
   </section>
   {% comment %} /////////////////////What Do I Get/////////////////// {% endcomment %}
-  <section style=" border:20px solid var( --padding-sections);"  >
+  <section style=" border:20px solid var( --padding-sections);  border-top:40px solid var( --padding-sections);"  >
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" height:100%;">
       <div class="page-width">
         <div class="title-subtitle-container ">
