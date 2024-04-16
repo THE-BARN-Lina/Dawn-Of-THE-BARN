@@ -144,20 +144,6 @@
     padding-bottom:24px;
   }
 
-  @media screen and (max-width:900px){
-    .how-it-work-logo-container{
-      display:flex;
-      flex-direction:column;
-    }
-    .text-closer-container-sp {
-      max-width: 480px;
-      margin-top: 0px;
-      padding: 0rem;
-    }
-    .title-subtitle-container{
-      text-align:center;
-    }
-  }
 
 {%- endstyle -%}
 
@@ -193,6 +179,31 @@
       border:2px;
       object-fit: contain;
   }
+
+  @media screen and (max-width:900px){
+    .how-it-work-logo-container{
+      display:flex;
+      flex-direction:column;
+    }
+    .how-it-work-block{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      height:200px;
+      width:100% ;
+      text-align:center;
+    }
+    .text-closer-container-sp {
+      max-width: 480px;
+      margin-top: 0px;
+      padding: 0rem;
+    }
+    .title-subtitle-container{
+      text-align:center;
+    }
+  }
+
 
 {% endstyle %}
 
@@ -352,6 +363,7 @@
   font-size:16px;
   margin:0px;
     }
+  }
 /* new styles mobile */
 
 @media (max-width: 1000px) {
@@ -381,7 +393,10 @@
       font-size:16px;
       margin:0px;
     }
-  
+    .how_it_work_text{
+      width:50%;
+    }
+
 }
 {% endstyle %}
 
@@ -847,28 +862,28 @@
   <section  style=" border:20px solid var( --padding-sections);">
 
 
-      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" border:2px solid var( --padding-sections);">
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
         <div class="page-width">
     
 
        
           <div  style="display:flex; flex-direction:row; " >
             <div class="title-subtitle-sections">
-                {%- if section.settings.text_title_4 != blank -%}
+                {%- if section.settings.how_it_work_title != blank -%}
                         
                         
                     <div class="image-with-text__text rte {{ settings.text_style }} ">
-                        {{ section.settings.text_title_4 }}
+                        {{ section.settings.how_it_work_title }}
                     </div>
                 
                 
                 
                 {%- endif -%}
-                {%- if section.settings.text_subtitle_4 != blank -%}
+                {%- if section.settings.how_it_work_subtitle != blank -%}
                         
                         
                     <div class="image-with-text__text rte {{ settings.text_style }} ">
-                        {{ section.settings.text_subtitle_4 }}
+                        {{ section.settings.how_it_work_subtitle}}
                     </div>
                 
                 
@@ -889,35 +904,37 @@
         </div>
       </div>
 
+
+
       <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
         <div class="page-width">
           <div class="title-subtitle-container ">
 
-            <section class="how-it-work-logo-container container">
+            <section class="how-it-work-logo-container ">
             
-              <section class="how-it-work-block item">
+              <section class="how-it-work-block">
   
                 <div class="icons-subcontainer">
                   <img class=" small-icon "src="https://cdn.shopify.com/s/files/1/0831/4141/files/Style_2_d5791f83-e531-4af3-8919-a7ca5442425c.gif?v=1667308038" alt="icon switching between aeropress and chemex coffee maker" height="" width="">
                 </div>
-                {%- if section.settings.text_subtitle_4 != blank -%}       
-                  <div class="image-with-text__text rte {{ settings.text_style }} ">
-                      {{ section.settings.text_subtitle_4 }}
+                {%- if section.settings.how_it_work_one  != blank -%}       
+                  <div class="how_it_work_text ">
+                      {{ section.settings.how_it_work_one  }}
                   </div>
                 {%- endif -%}
               
               </section>
   
   
-              <section class="how-it-work-block item">
+              <section class="how-it-work-block ">
               
                 <div class="icons-subcontainer">
                   <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Receive_Fresh_2.gif?v=1667214440" class="small-icon" alt="icon of delivery box THE BARN Specialty coffee roasters being opened" height="" width="">
                 </div>
-                {%- if section.settings.text_subtitle_5 != blank -%}
+                {%- if section.settings.how_it_work_two != blank -%}
                   
-                  <div class="image-with-text__text rte {{ settings.text_style }} ">
-                      {{ section.settings.text_subtitle_5 }}
+                  <div class="how_it_work_text">
+                      {{ section.settings.how_it_work_two }}
                   </div>
     
                 {%- endif -%}
@@ -925,15 +942,15 @@
               </section>
   
   
-              <section class="how-it-work-block item">
+              <section class="how-it-work-block">
   
                 <div class="icons-subcontainer">  
                   <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/bezbg.gif?v=1664532097" class="small-icon-brew" alt="icon of person brewing coffee in a chemex coffee maker" height="" width="">
                 </div> 
-                {%- if section.settings.text_subtitle_6 != blank -%}
+                {%- if section.settings.how_it_work_three != blank -%}
                      
-                    <div class="image-with-text__text rte {{ settings.text_style }} ">
-                        {{ section.settings.text_subtitle_6 }}
+                    <div class="how_it_work_text ">
+                        {{ section.settings.how_it_work_three }}
                     </div>
                
                 {%- endif -%}
@@ -1190,7 +1207,7 @@
     {
       "type": "image_picker",
       "id": "IMAGE_003",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "benefits image"
     },
     {
       "type": "text",
@@ -1209,19 +1226,19 @@
     {
       "type": "image_picker",
       "id": "ROASTERY_IMAGE_3",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "benefits image"
     },
     {
       "type": "text",
       "id": "ROASTERY_HEADING_1",
       "default": "Image with text",
-      "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+      "label": "benefits title"
     },
     {
       "type": "richtext",
       "id": "ROASTERY_OPENING_1",
       "default": "<p>link your location</p>",
-      "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+      "label": "benefits subtitle"
     },
  
  
@@ -1229,21 +1246,70 @@
     {
       "type": "image_picker",
       "id": "ROASTERY_IMAGE_6",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "benefits image"
     },
     {
       "type": "text",
       "id": "ROASTERY_HEADING_2",
       "default": "Image with text",
-      "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+      "label": "benefits title"
     },
     {
       "type": "richtext",
       "id": "ROASTERY_OPENING_2",
       "default": "<p>link your location</p>",
-      "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+      "label": "benefits subtitle"
     },
  
+
+
+
+
+
+
+    {
+      "type": "richtext",
+      "id": "how_it_work_title",
+      "default": "<p>link your location</p>",
+      "label": "how it work title"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle",
+      "default": "<p>link your location</p>",
+      "label": "how it work subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_one",
+      "default": "<p>link your location</p>",
+      "label": "how it work 1"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_two",
+      "default": "<p>link your location</p>",
+      "label": "how it work 2"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_three",
+      "default": "<p>link your location</p>",
+      "label": "how it work 3"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
