@@ -363,6 +363,21 @@
   font-size:16px;
   margin:0px;
     }
+    .what_do_i_get_container{
+
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+  .what_do_i_get_container-labels{
+    background-color: var(--padding-sections);
+    width:fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
   }
 /* new styles mobile */
 
@@ -393,6 +408,23 @@
       font-size:16px;
       margin:0px;
     }
+
+    .what_do_i_get_container{
+
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+  .what_do_i_get_container-labels{
+    background-color: var(--padding-sections);
+    width:100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    text-align:center;
+  }
 
 
 }
@@ -1012,62 +1044,62 @@
       </div>
     </div>
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container ">
+    <div class=" color-{{ section.settings.section_color_scheme }}  ">
       <div class="page-width">
-        <div class="title-subtitle-container ">
+        <div class="what_do_i_get_container">
      
                         {%- if section.settings.what_do_i_get_one != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_one }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_two != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_two }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_three != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_three }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_four != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_four }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_five != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_five }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_six != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_six }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_seven != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_seven }}
                             </div>
                         
                         {%- endif -%}
                         {%- if section.settings.what_do_i_get_eight != blank -%}
                             
-                            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                            <div class="what_do_i_get_container-labels">
                                 {{ section.settings.what_do_i_get_eight }}
                             </div>
                         
