@@ -759,7 +759,7 @@
 
   </section>
   {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
-  <section  class="cta-container-mobile" style="height:100%; border:20px solid var(--padding-sections); text-align:center;">
+  <section  class="cta-container-mobile" style="height:100%; text-align:center;">
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
           <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
@@ -984,18 +984,35 @@
 
   </section>
   {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
-  <section  class="cta-container-mobile" style="height:100%; border:20px solid var(--padding-sections); text-align:center;">
+  <section  class="cta-container-mobile" style="height:100%; text-align:center;">
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
           <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
       </div>
     </div>
   </section>
-  {% comment %} //////////////////////////////////////// {% endcomment %}
+  {% comment %} /////////////////////What Do I Get/////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);"  >
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" height:100%;">
+      <div class="page-width">
+        <div class="title-subtitle-container ">
 
+          {%- if section.settings.what_do_i_get_title != blank -%}
+                    
+                    
+            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                {{ section.settings.what_do_i_get_title }}
+            </div>
+        
+        
+        
+          {%- endif -%}
+          
+        </div>
+      </div>
+    </div>
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" border:2px solid var( --padding-sections);">
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container ">
       <div class="page-width">
         <div class="title-subtitle-container ">
               {%- if section.settings.text_title_5 != blank -%}
@@ -1010,24 +1027,7 @@
       </div>
     </div>
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" height:100%;">
-      <div class="page-width">
-        <div class="title-subtitle-container ">
 
-          {%- if section.settings.text_subtitle_8 != blank -%}
-                    
-                    
-            <div class="image-with-text__text rte {{ settings.text_style }} ">
-                {{ section.settings.text_subtitle_8 }}
-            </div>
-        
-        
-        
-          {%- endif -%}
-          
-        </div>
-      </div>
-    </div>
   </section>
   {% comment %} /////////////////////FAQ/////////////////// {% endcomment %}
   <section style=" border:20px solid var( --padding-sections);">
@@ -1159,7 +1159,7 @@
     </div>
   </section>
   {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
-  <section  class="cta-container-mobile" style="height:100%; border:20px solid var(--padding-sections); text-align:center;">
+  <section  class="cta-container-mobile" style="height:100%;  text-align:center;">
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <div class="page-width"> 
           <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
@@ -1328,7 +1328,12 @@
 
 
 
-
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_title",
+      "default": "<p>link your location</p>",
+      "label": "What do I get?"
+    },
 
 
 
