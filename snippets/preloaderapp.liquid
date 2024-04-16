@@ -36,8 +36,8 @@
         opacity: 1;
         visibility: visible;
         will-change: opacity, visibility;
-        animation: fadeOutPreloaderApp 0.7s forwards;
-        animation-delay: 1.5s;
+        false
+        animation-delay: until page loads;
         pointer-events: none;
       }
       .c-preloaderapp--fadeOut {
@@ -123,6 +123,16 @@
   
   
   
+
+function handlePreloaderFadeOut() {
+  const preloaderHtml = document.getElementsByClassName('c-preloaderapp')[0];
+    if(preloaderHtml) {
+      preloaderHtml.classList.add('c-preloaderapp--fadeOut');
+    }
+}
+    
+    window.addEventListener('load', handlePreloaderFadeOut)
+    
       
   })();
   </script>
@@ -130,6 +140,6 @@
     </aside>
 
     <script>
-      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713293583695,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
+      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713293759290,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
     </script>
   
