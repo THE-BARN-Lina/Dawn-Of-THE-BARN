@@ -674,7 +674,7 @@
           
           </div>
           <div class="cta-container-desk">
-            <section  style="height:100%; display: flex;flex-direction: column;align-items: center;justify-content: center;">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
               <div> 
                   <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
               </div>
@@ -890,7 +890,7 @@
             
             </div>
             <div class="cta-container-desk">
-            <section  style="height:100%; display: flex;flex-direction: column;align-items: center;justify-content: center;">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
               <div> 
                   <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
               </div>
@@ -1033,11 +1033,11 @@
   <section style=" border:20px solid var( --padding-sections);">
 
 
-    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" border:2px solid var( --padding-sections);">
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
       <div class="page-width">
        
     
-        <div  style="display:flex; flex-direction:row; " >
+        <div  style="display:flex; flex-direction:row; align-items:center; " >
           <div class="title-subtitle-sections">
               {%- if section.settings.text_title_6 != blank -%}
                       
@@ -1053,7 +1053,7 @@
           
           </div>
           <div class="cta-container-desk">
-            <section  style="height:100%; border:20px solid var( --padding-sections); text-align:center;">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
               <div> 
                   <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">Explore Subscriptions</button>
               </div>
