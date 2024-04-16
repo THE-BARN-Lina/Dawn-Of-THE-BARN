@@ -917,9 +917,14 @@
                 <div class="icons-subcontainer">
                   <img class=" small-icon "src="https://cdn.shopify.com/s/files/1/0831/4141/files/Style_2_d5791f83-e531-4af3-8919-a7ca5442425c.gif?v=1667308038" alt="icon switching between aeropress and chemex coffee maker" height="" width="">
                 </div>
-                {%- if section.settings.how_it_work_one  != blank -%}       
+                {%- if section.settings.how_it_work_title_one  != blank -%}       
                   <div class="how_it_work_text ">
-                      {{ section.settings.how_it_work_one  }}
+                      {{ section.settings.how_it_work_title_one  }}
+                  </div>
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_one  != blank -%}       
+                  <div class="how_it_work_text ">
+                      {{ section.settings.how_it_work_subtitle_one  }}
                   </div>
                 {%- endif -%}
               
@@ -931,10 +936,17 @@
                 <div class="icons-subcontainer">
                   <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Receive_Fresh_2.gif?v=1667214440" class="small-icon" alt="icon of delivery box THE BARN Specialty coffee roasters being opened" height="" width="">
                 </div>
-                {%- if section.settings.how_it_work_two != blank -%}
+                {%- if section.settings.how_it_work_title_two != blank -%}
                   
                   <div class="how_it_work_text">
-                      {{ section.settings.how_it_work_two }}
+                      {{ section.settings.how_it_work_title_two }}
+                  </div>
+    
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_two != blank -%}
+                  
+                  <div class="how_it_work_text">
+                      {{ section.settings.how_it_work_subtitle_two }}
                   </div>
     
                 {%- endif -%}
@@ -947,10 +959,10 @@
                 <div class="icons-subcontainer">  
                   <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/bezbg.gif?v=1664532097" class="small-icon-brew" alt="icon of person brewing coffee in a chemex coffee maker" height="" width="">
                 </div> 
-                {%- if section.settings.how_it_work_three != blank -%}
+                {%- if section.settings.how_it_work_subtitle_three != blank -%}
                      
                     <div class="how_it_work_text ">
-                        {{ section.settings.how_it_work_three }}
+                        {{ section.settings.how_it_work_subtitle_three }}
                     </div>
                
                 {%- endif -%}
@@ -1281,21 +1293,39 @@
     },
     {
       "type": "richtext",
-      "id": "how_it_work_one",
+      "id": "how_it_work_title_one",
       "default": "<p>link your location</p>",
-      "label": "how it work 1"
+      "label": "how it work title 1"
     },
     {
       "type": "richtext",
-      "id": "how_it_work_two",
+      "id": "how_it_work_subtitle_one",
       "default": "<p>link your location</p>",
-      "label": "how it work 2"
+      "label": "how it work subtitle 1"
     },
     {
       "type": "richtext",
-      "id": "how_it_work_three",
+      "id": "how_it_work_title_two",
       "default": "<p>link your location</p>",
-      "label": "how it work 3"
+      "label": "how it work title 2"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_title_subtitle_two",
+      "default": "<p>link your location</p>",
+      "label": "how it work subtitle 2"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_title_three",
+      "default": "<p>link your location</p>",
+      "label": "how it work title 3"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle_three",
+      "default": "<p>link your location</p>",
+      "label": "how it work subtitle 3"
     },
 
 
