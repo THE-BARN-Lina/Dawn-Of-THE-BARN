@@ -30,18 +30,18 @@
         z-index: 2147483647;
         top: 0;
         left: 0;
-        background-color: transparent;
+        background-color: rgba(255,255,255,1);
         width: 100vw;
         height: 100vh;
         opacity: 1;
         visibility: visible;
         will-change: opacity, visibility;
-        animation: fadeOutPreloaderApp 0s forwards;
-        animation-delay: 0s;
+        animation: fadeOutPreloaderApp 0.7s forwards;
+        animation-delay: 1.5s;
         pointer-events: none;
       }
       .c-preloaderapp--fadeOut {
-        animation: fadeOutPreloaderApp 0s forwards;
+        animation: fadeOutPreloaderApp 0.7s forwards;
       }
       .c-preloaderapp--fadeIn {
         animation: fadeInPreloaderApp 0s forwards;
@@ -58,9 +58,9 @@
       .c-preloaderapp__image {
         opacity: 100%;
         
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+        width: 18%;
+        height: auto;
+        max-height: 100%;        
       
       }
       
@@ -96,6 +96,14 @@
     <div class="c-preloaderapp">
       <div class="c-preloaderapp__inner">
         
+{%- assign preloaderapp_image = 'preloaderapp.svg' | file_url -%}
+<img class="c-preloaderapp__image"
+     src="{{ preloaderapp_image }}"
+     width="345.6" height="194.4" 
+     tabindex="-1"
+     
+>
+
       </div>
     </div>
   
@@ -122,6 +130,6 @@
     </aside>
 
     <script>
-      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713291578417,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
+      try{async function prdrly_checkAndRemoveElement(e,r){try{const t=1713291642198,o="prdrly_check_"+Shopify.shop;let c=!0;const n=localStorage.getItem(o);if(n){const{result:r,timestamp:o}=JSON.parse(n),l=Date.now()-3e5;t<o&&o>l&&(c=!1,r||prdrly_removeElementById(e))}if(c){const t=await fetch(r);if(!t.ok)throw new Error("Network error.");const c=await t.json();localStorage.setItem(o,JSON.stringify({result:c,timestamp:Date.now()})),c||prdrly_removeElementById(e)}}catch(e){console.error("Error:",e)}}function prdrly_removeElementById(e){const r=document.getElementById(e);r&&r.parentNode.removeChild(r)}prdrly_checkAndRemoveElement("c-preloaderapp","https://prdrlycheck.azurewebsites.net/api/prdrly_check?id="+Shopify.shop)}catch(e){console.error(e)}
     </script>
   
