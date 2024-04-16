@@ -331,7 +331,15 @@
 {% style %}
 /* new for desktop view */
 @media (min-width: 1000px) {
-
+  .full-unstyled-link{
+    pointer-events:none;
+  }
+  .card__inner:hover{
+    border:2px solid red;
+  }
+  .card__information .price{
+    display:none; 
+  }
     .image-text-container-section-02{
       display:flex;
       flex-direction:row;
@@ -364,12 +372,11 @@
   margin:0px;
     }
     .what_do_i_get_container{
-
-display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
 
 .what_do_i_get_container-labels p{
   margin:0px;
@@ -806,7 +813,7 @@ display: flex;
       </div>
     </div>
   </section>
-  {% comment %} //////////////////////////////////////// {% endcomment %}
+  {% comment %} /////////////////Pass Coffees/////////////////////// {% endcomment %}
   <section style="height:100%; border:20px solid var( --padding-sections);">
 
     <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" style="height:100%; border:2px solid var( --padding-sections);">
@@ -862,31 +869,11 @@ display: flex;
               >
                 {% render 'card-product',
                   card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  image_shape: section.settings.image_shape,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  show_quick_add: section.settings.enable_quick_add,
-                  section_id: section.id
+               
                 %}
               </li>
             {%- else -%}
-              {%- for i in (1..4) -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {%- assign placeholder_image = 'product-apparel-' | append: forloop.rindex -%}
-                  {% render 'card-product',
-                    show_vendor: section.settings.show_vendor,
-                    placeholder_image: placeholder_image
-                  %}
-                </li>
-              {%- endfor -%}
+   
             {%- endfor -%}
           </ul>
         
