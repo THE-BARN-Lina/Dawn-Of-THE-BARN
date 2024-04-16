@@ -331,15 +331,7 @@
 {% style %}
 /* new for desktop view */
 @media (min-width: 1000px) {
-  .full-unstyled-link{
-    pointer-events:none;
-  }
-  .card__inner:hover{
-    border:2px solid var(--brown);
-  }
-  .card__information .price{
-    display:none; 
-  }
+
     .image-text-container-section-02{
       display:flex;
       flex-direction:row;
@@ -443,6 +435,21 @@
 
 
 }
+
+.full-unstyled-link{
+    pointer-events:none;
+  }
+  .card__inner:hover{
+    border:2px solid var(--brown);
+  }
+  .card__information {
+  text-align:center;
+    
+  }
+  .card__information .price{
+    display:none; 
+    
+  }
 {% endstyle %}
 
 
