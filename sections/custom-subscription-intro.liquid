@@ -51,21 +51,23 @@
 .text-container-main{
   background-color:transparent ;
 }
-.text-buttom-container{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
-.text-buttom-container h2{
-  font-size:32px;
-  margin:0px;
-  font-family:'Chalet Comprime'
-}
-.text-buttom-container p{
-  font-size:16px;
-  margin:0px;
-}
+    .text-buttom-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+    }
+    .text-buttom-container h2{
+      font-size:32px;
+      margin:0px;
+      font-family:'Chalet Comprime'
+    }
+    .text-buttom-container p{
+      font-size:16px;
+      margin:0px;
+    }
+
 .image-container-main{
   display:flex;
   justify-content:center;
@@ -232,6 +234,10 @@
     .cta-container{
       display:none;
     }
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:row;
+    }
 
 }
 /* Optional: cta styles mobile */
@@ -307,6 +313,73 @@
     margin: 0 auto;
   }
 {% endstyle %}
+
+{% style %}
+/* new for desktop view */
+@media (min-width: 1000px) {
+
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:row;
+    }
+    .image-text-container-section-02-middle{
+      display:flex;
+      flex-direction: row-reverse;
+    }
+    
+    .image-container-section-02{
+      width:49%;
+    }
+    .text-buttom-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+      width:50%;
+      padding:3rem;
+    }
+    .text-buttom-container h2{
+      font-size:32px;
+      margin:0px;
+      font-family:'Chalet Comprime'
+    }
+    .text-buttom-container p{
+  font-size:16px;
+  margin:0px;
+    }
+/* new styles mobile */
+
+@media (max-width: 1000px) {
+
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:column;
+    }
+    .image-container-section-02{
+      width:100%;
+    }
+    .text-buttom-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+      width:100%;
+    }
+    .text-buttom-container h2{
+      font-size:32px;
+      margin:0px;
+      font-family:'Chalet Comprime'
+    }
+    .text-buttom-container p{
+      font-size:16px;
+      margin:0px;
+    }
+  
+}
+{% endstyle %}
+
 
 
 
@@ -392,9 +465,9 @@
     </div>
 
     <div class="" style="  width:100%">
-      <div class="page-width" style=" display:flex; align-items:center;">
+      <div class="page-width image-text-container-section-02">
         
-          <div style="width:49%; height:auto;" >
+          <div class="image-container-section-02">
             {%- if section.settings.ROASTERY_IMAGE_6 != blank -%}
               <img
                 srcset="
@@ -418,8 +491,8 @@
             {%- endif -%}
           </div>
       
-          <div class="image-with-text__text-item grid__item ">
-            <div  id="ImageWithText--{{ section.id }}" class="image-with-text__content " style=" height: 100%; align-text:center; display:flex; flex-direction:column; justify-content:center;">
+      
+   
               <section class="text-buttom-container">
             
                 {%- if section.settings.ROASTERY_HEADING_2 != blank -%}
@@ -437,39 +510,18 @@
           
               </section>
       
-            </div>
-          </div>
+
+    
       
       </div>
   
     </div>
 
-    <div class="" style="  width:100%">
-      <div class="page-width" style=" display:flex;  align-items:center;">
 
-          <div class="image-with-text__text-item grid__item ">
-            <div  id="ImageWithText--{{ section.id }}" class="image-with-text__content " style=" height: 100%; align-text:center; display:flex; flex-direction:column; justify-content:center;">
-              <section class="text-buttom-container">
-            
-                {%- if section.settings.ROASTERY_HEADING_2 != blank -%}
-                  <h2>
-                    {{ section.settings.ROASTERY_HEADING_2 | escape }}
-                  </h2>
-                {%- endif -%}
-                  
-                {%- if section.settings.ROASTERY_OPENING_2 != blank -%}
-                  <p class="rich-text__heading rte ">
-                    {{ section.settings.ROASTERY_OPENING_2 | replace: 'p>', 'span>' }}
-                  </p>
-                {%- endif -%}
-          
-          
-              </section>
-      
-            </div>
-          </div>
+    <div class="" style="  width:100%">
+      <div class="page-width image-text-container-section-02-middle">
         
-          <div style="width:50%; height:auto; " >
+          <div class="image-container-section-02">
             {%- if section.settings.ROASTERY_IMAGE_3 != blank -%}
               <img
                 srcset="
@@ -485,7 +537,7 @@
                 alt="{{ section.settings.ROASTERY_IMAGE_3.alt | escape }}"
                 loading="lazy"
                 width="100%"
-                height="auto"
+                height="100%"
             
               >
             {%- else -%}
@@ -493,14 +545,35 @@
             {%- endif -%}
           </div>
       
+
+          <section class="text-buttom-container">
+        
+            {%- if section.settings.ROASTERY_HEADING_2 != blank -%}
+              <h2>
+                {{ section.settings.ROASTERY_HEADING_2 | escape }}
+              </h2>
+            {%- endif -%}
+              
+            {%- if section.settings.ROASTERY_OPENING_2 != blank -%}
+              <p class="rich-text__heading rte ">
+                {{ section.settings.ROASTERY_OPENING_2 | replace: 'p>', 'span>' }}
+              </p>
+            {%- endif -%}
+      
+      
+          </section>
+      
       </div>
   
     </div>
+
+
    
-    <div class="" style=" width:100%">
-      <div class="page-width" style=" display:flex;  align-items:center;">
+
+    <div class="" style="  width:100%">
+      <div class="page-width image-text-container-section-02">
         
-          <div style="width:49%; height:auto; " >
+          <div class="image-container-section-02">
             {%- if section.settings.IMAGE_003 != blank -%}
               <img
                 srcset="
@@ -516,7 +589,7 @@
                 alt="{{ section.settings.IMAGE_003.alt | escape }}"
                 loading="lazy"
                 width="100%"
-                height="auto"
+                height="100%"
             
               >
             {%- else -%}
@@ -524,8 +597,8 @@
             {%- endif -%}
           </div>
       
-          <div class="image-with-text__text-item grid__item ">
-            <div  id="ImageWithText--{{ section.id }}" class="image-with-text__content " style=" height: 100%; align-text:center; display:flex; flex-direction:column; justify-content:center;">
+      
+   
               <section class="text-buttom-container">
             
                 {%- if section.settings.TITLE_003 != blank -%}
@@ -543,12 +616,16 @@
           
               </section>
       
-            </div>
-          </div>
+
+    
       
       </div>
   
     </div>
+
+
+
+   
 
   </section> 
   {% comment %} ///////////////////Reviews///////////////////// {% endcomment %}
