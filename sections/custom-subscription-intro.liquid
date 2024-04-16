@@ -273,6 +273,13 @@
     border: 1px solid var(--padding-sections);
     text-align: center;
 }
+
+@media (max-width: 1000px) {
+
+    .item {
+    padding:2rem;
+  }
+}
 {% endstyle %}
 
 {% style %}
@@ -588,7 +595,7 @@
     </div>
 
     <div class="color-{{ section.settings.section_color_scheme }}">
-      <div class="page-width" >
+      <div class="page-width" style="font-size:14px;" >
         <div class="container">
         
           <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item" >
