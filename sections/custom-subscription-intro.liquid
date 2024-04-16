@@ -316,9 +316,12 @@
   .button-main-v12{
     height:50px;
     width:200px;
-    background-color: var(--button-main);
-    border:4px solid var(--padding-sections);
+    background-color: var(--brown);
     border-radius:6px;
+    border:none;
+  }
+  .button-main-v12:hover{
+  border:2px solid white;
   }
   .button-main-v12 a{
  
@@ -868,13 +871,7 @@
              
             {%- endif -%}
      
-            {%- if section.settings.text_title_3 != blank -%}
-                           
-              <div class="image-with-text__text rte {{ settings.text_style }} ">
-                  {{ section.settings.text_title_3 }}
-              </div>
-          
-          {%- endif -%}
+        
         </div>
       </div>
     </div>
