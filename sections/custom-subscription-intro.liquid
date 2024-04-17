@@ -502,7 +502,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
     scroll-snap-type: x mandatory; 
-    height:66vh;
+    height:600px;
 
   }
   .item-past-coffees {
@@ -514,9 +514,9 @@
 
       flex: 0 0 80vw;
       scroll-snap-align: start; 
-      height:60vh;
-      border:2px solid var(--brown);
-  }
+      height:550px;
+      border-right:2px solid var(--padding-sections);
+      border-left:2px solid var(--padding-sections);  }
   .container-past-coffees .item-past-coffees:last-child {
       margin-right: 0;
   }
@@ -530,8 +530,9 @@
   }
 
   /* Media query for desktop view */
-  @media (min-width: 1000px) {
-  
+  @media (min-width: 1200px) {
+
+
       .container-past-coffees {
           justify-content: center; 
           overflow-x: visible; 
@@ -544,11 +545,11 @@
           align-items:center;
 
           width: 25%;
-          height:500px;
+          height:550px;
           flex: 0 0 auto; 
-          border:2px solid red; 
-          height:60vh;
-          border:2px solid var(--brown);
+  
+          border-right:2px solid var(--padding-sections);
+          border-left:2px solid var(--padding-sections);
       }
       .past-coffee-card-container{
         display:flex; 
@@ -956,7 +957,7 @@
   {% comment %} /////////////////Past Months Abo Coffees/////////////////////// {% endcomment %}
   <section style="height:100%; border:20px solid var( --padding-sections); border-top:40px solid var( --padding-sections);">
 
-    <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" style="height:100%;">
+    <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" >
       <div class="page-width">
         <div class="title-subtitle-container "  >
               {%- if section.settings.text_title_2 != blank -%}
