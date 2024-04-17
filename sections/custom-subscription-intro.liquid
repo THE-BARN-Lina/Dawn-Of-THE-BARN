@@ -247,16 +247,6 @@
         width: 33.333%;
         flex: 0 0 auto; 
     }
-    .container-past-coffees {
-        justify-content: center; 
-        overflow-x: visible; 
-    }
-    .item-past-coffees {
-        width: 25%;
-        height:500px;
-        flex: 0 0 auto; 
-        border:2px solid red; 
-    }
     .cta-container{
       display:none;
     }
@@ -511,12 +501,12 @@
       justify-content: flex-start;
       align-items:center;
       width:165px;
-
       flex: 0 0 80vw;
       scroll-snap-align: start; 
       height:500px;
       border-right:2px solid var(--padding-sections);
-      border-left:2px solid var(--padding-sections);  }
+      border-left:2px solid var(--padding-sections);  
+  }
   .container-past-coffees .item-past-coffees:last-child {
       margin-right: 0;
   }
@@ -532,10 +522,10 @@
   /* Media query for desktop view */
   @media (min-width: 1200px) {
 
-
       .container-past-coffees {
           justify-content: center; 
           overflow-x: visible; 
+          height:600px;
       }
       .item-past-coffees {
 
