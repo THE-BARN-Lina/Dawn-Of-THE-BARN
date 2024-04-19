@@ -454,7 +454,7 @@
   }
  
   .buttons_container_hero{
-    width:100%;
+    width:440px;
     display:flex;
     flex-direction:column;
     justify-content:center;
