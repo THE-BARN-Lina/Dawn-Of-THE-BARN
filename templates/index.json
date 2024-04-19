@@ -338,7 +338,7 @@
           "settings": {
             "heading": "NORDBAHNHOF",
             "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 09:00 – 17:00<br\/>Saturday-Sunday 10:00 – 17:00<strong><br\/><\/strong><br\/><strong>Invalidenstraße 112, 10115 Berlin, Germany<\/strong><br\/><br\/><a href=\"https:\/\/goo.gl\/maps\/pJdsm1YhzUAQmnUy6\" target=\"_blank\">View on Map<br\/><\/a>-<\/p>",
+            "row_content": "<p>Monday-Friday 09:00 – 17:00<br\/>Saturday-Sunday 10:00 – 17:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/pJdsm1YhzUAQmnUy6\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/pJdsm1YhzUAQmnUy6\">Invalidenstraße 112, 10115 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/nordbahnhof\" title=\"NORDBAHNHOF\">Explore Location<\/a><\/p>",
             "page": "cafe-nordbahnhof"
           }
         },
