@@ -409,7 +409,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "PALMA DE MALLORCA",
-            "icon": "map_pin",
+            "icon": "globe",
             "row_content": "<p>Monday - Saturday: 10:00 - 16:00<br\/>Sunday: Closed<\/p>",
             "page": ""
           }
