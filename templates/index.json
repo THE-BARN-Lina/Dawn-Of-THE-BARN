@@ -417,6 +417,15 @@
         "collapsible_row_yrF9WB": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "SEONGSU, SEOUL",
+            "icon": "globe",
+            "row_content": "<p>Monday - Friday: 10:30 – 19:00<br\/>Saturday: 10:00 – 21:00<br\/>Sunday: 10:30 – 21:00<\/p><p><a href=\"https:\/\/www.google.com\/maps\/place\/The+Barn+Coffee+Roasters+Berlin\/@37.5407258,127.0601947,17z\/data=!3m1!4b1!4m6!3m5!1s0x357ca59fb383bbe3:0xe3a1ade86f6333e5!8m2!3d37.5407258!4d127.0601947!16s%2Fg%2F11tkbp8ls7?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/The+Barn+Coffee+Roasters+Berlin\/@37.5407258,127.0601947,17z\/data=!3m1!4b1!4m6!3m5!1s0x357ca59fb383bbe3:0xe3a1ade86f6333e5!8m2!3d37.5407258!4d127.0601947!16s%2Fg%2F11tkbp8ls7?entry=ttu\">Seongdong-gu, Ttukseom-ro 17-gil, 31-22더반 베를린 코리아 성수점‎<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-seoul\" title=\"SEONGSU\">Explore Location<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6zXjWa": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "PALMA DE MALLORCA",
             "icon": "globe",
             "row_content": "<p>Monday - Saturday: 10:00 - 16:00<br\/>Sunday: Closed<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\">Costa D´en Brossa 5 - Palma, Balears<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-palma-de-mallorca\" title=\"PALMA DE MALLORCA\">Explore Location<\/a><br\/><br\/><\/p>",
@@ -438,7 +447,8 @@
         "30b7b181-b377-49d2-96f2-c85f5ef67768",
         "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d",
         "collapsible_row_R4hezg",
-        "collapsible_row_yrF9WB"
+        "collapsible_row_yrF9WB",
+        "collapsible_row_6zXjWa"
       ],
       "custom_css": [
         "img {}",
