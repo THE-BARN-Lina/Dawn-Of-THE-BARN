@@ -408,6 +408,15 @@
         "collapsible_row_R4hezg": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "DUBAI",
+            "icon": "globe",
+            "row_content": "<p>Monday - Sunday 08:00 – 22:00<\/p><p><a href=\"https:\/\/www.google.com\/maps\/place\/THE+BARN+Coffee+Roasters+Dubai\/@25.1917359,55.2023754,13.1z\/data=!4m6!3m5!1s0x3e5f43cfe2fa60d7:0x7ed5818aff5d5249!8m2!3d25.2090679!4d55.2647334!16s%2Fg%2F11rd7xvg6q?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/THE+BARN+Coffee+Roasters+Dubai\/@25.1917359,55.2023754,13.1z\/data=!4m6!3m5!1s0x3e5f43cfe2fa60d7:0x7ed5818aff5d5249!8m2!3d25.2090679!4d55.2647334!16s%2Fg%2F11rd7xvg6q?entry=ttu\">Al Khazzan Park - Dubai, UAE<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-dubai\" title=\"DUBAI, Al Khazzan Park\">Explore Location<\/a><br\/><br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yrF9WB": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "PALMA DE MALLORCA",
             "icon": "globe",
             "row_content": "<p>Monday - Saturday: 10:00 - 16:00<br\/>Sunday: Closed<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\">Costa D´en Brossa 5 - Palma, Balears<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-palma-de-mallorca\" title=\"PALMA DE MALLORCA\">Explore Location<\/a><br\/><br\/><\/p>",
@@ -428,7 +437,8 @@
         "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-1",
         "30b7b181-b377-49d2-96f2-c85f5ef67768",
         "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d",
-        "collapsible_row_R4hezg"
+        "collapsible_row_R4hezg",
+        "collapsible_row_yrF9WB"
       ],
       "custom_css": [
         "img {}",
