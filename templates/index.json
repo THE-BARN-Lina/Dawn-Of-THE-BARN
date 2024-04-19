@@ -51,48 +51,23 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_XVWCFG": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fa3d82b8-aa64-43eb-94ba-931d936cd10f-ezgif.com-video-to-gif-converter.gif",
-            "heading": "EASTER SPECIALS",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "Only until April 1st",
-            "subheading_2": "Easter bundles, enhanced coffee subscriptions, chocolates and easter egg hunt",
-            "button_label": "Find out more",
-            "link": "shopify:\/\/collections\/coffee-gifts",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_8zqfV9": {
+        "slide_EzzWQy": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/brewing_jungle_volacano.jpg",
             "heading": "VOLCAN AZUL",
-            "heading_1": "",
+            "heading_1": "COSTA RICA",
             "heading_2": "",
             "heading_size": "h1",
-            "subheading": "COSTA RICA",
-            "subheading_2": "Dried figs. Blueberry. Apricot.",
-            "button_label": "ORDER NOW!",
+            "subheading": "Dried figs. Blueberry. Apricot.",
+            "subheading_2": "",
+            "button_label": "ORDER HERE!",
             "link": "shopify:\/\/products\/volcan-azul",
             "button_style_secondary": false,
             "button_label_2": "ALL BEANS",
             "link_2": "shopify:\/\/collections\/coffee-beans",
             "button_style_secondary_2": true,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
@@ -128,8 +103,7 @@
       "block_order": [
         "slide_aeXKVP",
         "slide_DHdCXn",
-        "slide_XVWCFG",
-        "slide_8zqfV9",
+        "slide_EzzWQy",
         "slide_nk7yHf"
       ],
       "custom_css": [
