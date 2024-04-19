@@ -404,6 +404,15 @@
             "row_content": "<p><\/p><p><strong>Wattstraße 10-13<br\/>Berlin, Germany<\/strong><a href=\"https:\/\/goo.gl\/maps\/pW4vMh6fPr5cEkAE9\" target=\"_blank\"><br\/><br\/>View on Map<\/a><br\/>-<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_R4hezg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PALMA DE MALLORCA",
+            "icon": "map_pin",
+            "row_content": "<p>Monday - Saturday: 10:00 - 16:00<br\/>Sunday: Closed<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -418,7 +427,8 @@
         "5903806a-eb63-4b0c-bd6f-27e5064c5b98",
         "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-1",
         "30b7b181-b377-49d2-96f2-c85f5ef67768",
-        "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d"
+        "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d",
+        "collapsible_row_R4hezg"
       ],
       "custom_css": [
         "img {}",
