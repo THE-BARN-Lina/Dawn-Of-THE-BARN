@@ -426,6 +426,15 @@
         "collapsible_row_yrF9WB": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "DAEGU",
+            "icon": "globe",
+            "row_content": "<p>Mon-Thu 10:30 ~ 20:00 \/ Fri-Sun 10:30 ~ 20:30<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/ezCXGzRk8kdFFU3X8\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/ezCXGzRk8kdFFU3X8\">B1F, Hyundai Department Store, 2077 Dalgubeol-daero, \u2028Jung-gu, Daegu<\/a><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9p4qyg": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "BUSAN",
             "icon": "globe",
             "row_content": "<p>Daily 11:00 ~ 19:00<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/ggjvszYHNjY5Ggdk7\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/ggjvszYHNjY5Ggdk7\">5th floor, 167, Dalmaji-gil 65beon-gil, Haeundae-gu, Busan<\/a><\/p><p><\/p>",
@@ -458,6 +467,7 @@
         "collapsible_row_6zXjWa",
         "collapsible_row_R4hezg",
         "collapsible_row_yrF9WB",
+        "collapsible_row_9p4qyg",
         "collapsible_row_3hzcQw"
       ],
       "custom_css": [
