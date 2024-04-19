@@ -320,7 +320,7 @@
           "settings": {
             "heading": "HACKESCHER MARKT",
             "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 10:00 – 18:00<br\/>Saturday-Sunday 11:00 – 18:00<strong><br\/><\/strong><br\/><strong>Neue Schönhauser Str. 12, 10178 Berlin, Germany<\/strong><br\/><br\/><a href=\"https:\/\/goo.gl\/maps\/sbcqQZ64gBfY7AfLA\" target=\"_blank\">View on Map<br\/><\/a>-<\/p>",
+            "row_content": "<p>Monday-Friday 10:00 – 18:00<br\/>Saturday-Sunday 11:00 – 18:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/sbcqQZ64gBfY7AfLA\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/sbcqQZ64gBfY7AfLA\">Neue Schönhauser Str. 12, 10178 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/the-barn-hackescher-markt\" title=\"HACKESCHER MARKT\">Explore Location<\/a><\/p>",
             "page": "hackescher-markt"
           }
         },
