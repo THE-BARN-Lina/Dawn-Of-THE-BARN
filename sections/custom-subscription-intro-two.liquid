@@ -21,7 +21,7 @@
 ::-webkit-scrollbar-track {
   background: #5b360e; 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: white; 
@@ -65,6 +65,9 @@ p{
   padding:1.6rem;
   border-radius:5px;
   color: var(--white);
+  min-width:20rem; 
+  font-size: 16px;
+  border:none;
 }
 
 {% comment %} ///////////////////HERO SECTION///////////////////// {% endcomment %}
@@ -148,7 +151,7 @@ p{
 }
 @media (max-width: 1100px) {
   .master-content-container{
-    background-color:blue;
+    background-color:var(--padding-sections);
 }
   .content-box-triple{
     height:100%;
