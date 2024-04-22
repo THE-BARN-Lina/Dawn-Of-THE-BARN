@@ -11,6 +11,27 @@
   --font-size-big:6vh;
   --font-size-medium:4vh;
 }
+@media (max-width: 1100px) {
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5b360e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+}
 
 h1{
   font-family: var(--font-main);
@@ -76,6 +97,13 @@ p{
   width:50%;
 }
 .master-content-container{
+
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
+  scroll-snap-type: x mandatory; 
+
+
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -87,7 +115,8 @@ p{
 }
 .content-box-triple{
   height:100%;
-  width:33.33%;
+  max-width:400px;
+  min-width:400px;
   border:2px solid white;
 
 
@@ -96,6 +125,7 @@ p{
   justify-content:space-between;
   text-align:center;
   align-items:center;
+  scroll-snap-align: start; 
 }
 .master-image{
   width:100%;
@@ -111,6 +141,41 @@ p{
   justify-content:center;
   text-align:center;
   align-items:center;
+}
+@media (max-width: 1100px) {
+  .master-content-container{
+    background-color:blue;
+}
+  .content-box-triple{
+    height:100%;
+    min-width:calc(100vw - 40px);
+    border:2px solid gray;
+
+  }
+  .button-desktop{
+    display:none;
+  }
+  .master-title-subtitle-container{
+    text-align:center;
+    width:100%;
+}
+.master-container-button-mobile{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  height:10vh;
+  border:20px solid var(--padding-sections);
+
+}
+}
+@media (min-width: 1100px) {
+
+  .button-mobile{
+    display:none;
+  }
+
 }
 {%- endstyle -%}
 
@@ -131,7 +196,7 @@ p{
       <p>Unsere Abos helfen, die Wertschöpfungskette des Kaffees zu verändern.
       Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.</p>
     </div>
-    <button class="button-main hide-unhide-button"> ABOS ERKUNDEN </button>
+    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
 
   <div class="master-content-container">
@@ -145,7 +210,12 @@ p{
     <div class="content-box-triple"> 2 </div>
     <div class="content-box-triple"> 3 </div>
   </div>
+  
 </section>
+
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  </div>
 
 
 
