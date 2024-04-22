@@ -220,9 +220,7 @@ p{
 }
 {% comment %} ///////////////////REVIEWS SECTION///////////////////// {% endcomment %}
 .text-content-container-reviews h3{
-
   color:black;
-
 }
 .text-content-container-reviews{
   height:100%;
@@ -238,11 +236,8 @@ p{
   padding-top:30%;
 }
 .arrow-right-container-reviews h4{
-
   color:black;
 
-
-  
 }
 .arrow-right-container-reviews{
   background-color:white;
@@ -274,6 +269,85 @@ p{
   }
   
 }
+{% comment %} ///////////////////PAST SECTION///////////////////// {% endcomment %}
+.img-past-coffees{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
+.text-content-container-past h3{
+  color:white;
+}
+.text-content-container-past{
+  height:100%;
+  background-color:black;
+  padding:20px;
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  text-align:center;
+  align-items:center;
+}
+.arrow-right-container-past h4{
+  color:white;
+
+}
+.arrow-right-container-past{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+
+  padding-right:1rem; 
+  padding-bottom:1rem;
+  color:white;
+
+}
+.content-box-triple-past{
+  height:100%;
+  max-width:25%;
+  min-width:400px;
+  border:2px solid var(--padding-sections);
+
+  padding:0px;
+
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  align-items:center;
+  scroll-snap-align: start; 
+}
+@media (max-width: 1100px) {
+
+  .text-content-container-past{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    text-align:center;
+    height:91%;
+
+
+  }
+  .content-box-triple-past{
+    height:100%;
+    min-width:calc(100vw - 60px);
+    padding:0px;
+    justify-content:flex-start;
+
+  }
+  
+}
+
+
 
 {%- endstyle -%}
 
@@ -415,6 +489,84 @@ p{
       <div class="arrow-right-container-reviews" ><h4>5/5</h4></div>
 
     </div>
+  </div>
+  
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  </div>
+  
+</section>
+
+<section class="master-section-container">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>UNSERE KAFFEEGEMEINSCHAFT</h2>
+      <p>Jeden Monat trinken unsere Abonnenten einen wirklich unvergesslichen Kaffee. 
+      Unser Kaffee-Abo ist eine Reise und wir möchten, dass du daran teilhast!</p>
+    </div>
+    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple-past"> 
+      <div class="text-content-container-past">
+        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
+        <br>
+
+        <h3>VOLCAN AZUL CATURRA</h3>
+        <br>
+        <p>“Wahnsinn! Bis jetzt habe ich noch keinen so guten Kaffee entdeckt. Ein wunderbarer Geruch und Geschmack.”</p>
+        <br>
+        <p> -- Silvio</p>
+      </div>
+      <div class="arrow-right-container-past" ><h4>1/4</h4></div>
+    </div>
+
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
+        <br>
+
+        <h3>CABALLERO</h3>
+        <br>
+        <p>"Der köstlichste Kaffee, den wir je hatten... </p>
+        <p>Tarantino like..." </p>
+
+        <br>
+        <p> -- Carsten</p>
+      </div>
+      <div class="arrow-right-container-past" ><h4>2/4</h4></div>    
+    </div>
+    
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+        <br>
+
+        <h3>CERRO AZUL GEISHA</h3>
+        <br>
+        <p>"Cerro Azul Gesha vom Februar war ein umwerfender Kaffee, der beste, den wir bisher probiert haben"</p>
+        <br>
+        <p> -- Oleg</p>
+      </div>
+      <div class="arrow-right-container-past" ><h4>3/4</h4></div>
+
+    </div>
+
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+        <br>
+        <h3>VOLCAN AZUL GEISHA </h3>
+        <br>
+        <p>“Einer der besten Naturkaffees, die ich je getrunken habe. Erstaunlicher Kaffee insgesamt!”</p>
+        <br>
+        <p> -- Charlie</p>
+      </div>
+      <div class="arrow-right-container-past" ><h4>4/4</h4></div>
+
+    </div>
+
   </div>
   
   <div class="master-container-button-mobile">
