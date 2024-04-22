@@ -149,9 +149,44 @@ p{
   text-align:center;
   align-items:center;
 }
+.arrow-right-container{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  font-size:12px;
+  
+}
+.arrow-left-right-container{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  font-size:12px;
+  
+}
+.arrow-left-container{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  font-size:12px;
+  
+}
 @media (max-width: 1100px) {
   .master-content-container{
     background-color:var(--padding-sections);
+  }
+  .text-content-container{
+
+  text-align:start;
+
 }
   .content-box-triple{
     height:100%;
@@ -202,7 +237,8 @@ p{
     <div class="master-title-subtitle-container">
       <h2>THE BARN COFFEE SUBSCRIPTIONS</h2>
       <p>Unsere Abos helfen, die Wertschöpfungskette des Kaffees zu verändern.
-      Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.</p>
+      Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.   </p>
+  
     </div>
     <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
@@ -215,6 +251,7 @@ p{
         <br>
         <p>Wir arbeiten direkt mit den Erzeugern vor Ort zusammen und präsentieren die besten Kaffeearomen aus verschieden Ländern. Entdecke jeden Monat neue Kaffeeerlebnisse.</p>
       </div>
+      <div class="arrow-right-container" ><h3>&rarr;</h3></div>
     </div>
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
@@ -223,7 +260,10 @@ p{
         <br>
         <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
       </div>
+      <div class="arrow-left-right-container"><h3>&larr;</h3><h3>&rarr;</h3></div>
+
     </div>
+    
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
@@ -231,6 +271,8 @@ p{
         <br>
         <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
       </div>
+      <div class="arrow-left-container"><h3>&larr;</h3></div>
+
     </div>
   </div>
   
