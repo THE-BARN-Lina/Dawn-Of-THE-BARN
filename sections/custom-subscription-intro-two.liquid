@@ -26,6 +26,13 @@ h2{
   padding:0px;
   line-height: normal;
 }
+h3{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+}
 p{
   font-family:var(--font-secondary);
   margin:0px;
@@ -57,15 +64,54 @@ p{
   border:20px solid var(--padding-sections);
 }
 .master-title-subtitle-button-container{
+  height:20vh;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
+  border-bottom:20px solid var(--padding-sections);
+
 }
 .master-title-subtitle-container{
   width:50%;
 }
+.master-content-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
 
+  background-color:red;
+  width:100%;
+  height: calc(100vh - 20vh - 40px );
+}
+.content-box-triple{
+  height:100%;
+  width:33.33%;
+  border:2px solid white;
+
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  align-items:center;
+}
+.master-image{
+  width:100%;
+  height:50%;
+  object-fit:cover;
+}
+.text-content-container{
+  height:50%;
+  background-color:black;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+}
 {%- endstyle -%}
 
 
@@ -86,6 +132,18 @@ p{
       Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.</p>
     </div>
     <button class="button-main hide-unhide-button"> ABOS ERKUNDEN </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple"> 
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Image19.04.24at13.03_1.jpg?v=1713525829" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>EIN EINZIGARTIGES GESCHMACKSERLEBNIS</h3>
+        <p>Wir arbeiten direkt mit den Erzeugern vor Ort zusammen und präsentieren die besten Kaffeearomen aus verschieden Ländern. Entdecke jeden Monat neue Kaffeeerlebnisse.</p>
+      </div>
+    </div>
+    <div class="content-box-triple"> 2 </div>
+    <div class="content-box-triple"> 3 </div>
   </div>
 </section>
 
