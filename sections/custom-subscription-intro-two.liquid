@@ -152,6 +152,7 @@ p{
 .arrow-right-container{
   background-color:black;
   width:100%;
+  min-height:20px;
 
   display:flex;
   flex-direction:row;
@@ -159,26 +160,8 @@ p{
   font-size:12px;
   
 }
-.arrow-left-right-container{
-  background-color:black;
-  width:100%;
 
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  font-size:12px;
-  
-}
-.arrow-left-container{
-  background-color:black;
-  width:100%;
 
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-start;
-  font-size:12px;
-  
-}
 @media (max-width: 1100px) {
   .master-content-container{
     background-color:var(--padding-sections);
@@ -187,7 +170,7 @@ p{
 
   text-align:start;
 
-}
+  }
   .content-box-triple{
     height:100%;
     min-width:calc(100vw - 40px);
@@ -200,7 +183,7 @@ p{
   .master-title-subtitle-container{
     text-align:center;
     width:100%;
-}
+  }
   .master-container-button-mobile{
     display:flex;
     flex-direction:column;
@@ -212,12 +195,17 @@ p{
     background-color:black;
 
   }
+
 }
 @media (min-width: 1100px) {
 
   .button-mobile{
     display:none;
   }
+  .arrow-right-container{
+display:none;
+  
+}
 
 }
 {%- endstyle -%}
@@ -260,8 +248,7 @@ p{
         <br>
         <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
       </div>
-      <div class="arrow-left-right-container"><h3>&larr;</h3><h3>&rarr;</h3></div>
-
+      <div class="arrow-right-container" >.</div>
     </div>
     
     <div class="content-box-triple">
@@ -271,7 +258,7 @@ p{
         <br>
         <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
       </div>
-      <div class="arrow-left-container"><h3>&larr;</h3></div>
+      <div class="arrow-right-container" ></div>
 
     </div>
   </div>
