@@ -9,29 +9,11 @@
   --font-main: "Chalet Comprime";
   --font-secondary:"Raleway";
   --font-size-big:6vh;
-  --font-size-medium:4vh;
-}
-@media (max-width: 1100px) {
-  /* width */
-::-webkit-scrollbar {
-  width: 10px;
+  --font-size-medium:4.2vh;
+  --font-size-medium-small:3.5vh;
+
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #5b360e; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: black 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-}
 
 h1{
   font-family: var(--font-main);
@@ -49,7 +31,7 @@ h2{
 }
 h3{
   font-family: var(--font-main);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-medium-small);
   margin:0px;
   padding:0px;
   line-height: normal;
@@ -93,13 +75,11 @@ p{
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
-  border-bottom:20px solid var(--padding-sections);
   padding:20px;
 
 }
 .master-title-subtitle-container{
   width:50%;
-
 }
 .master-content-container{
 
@@ -122,8 +102,9 @@ p{
   height:100%;
   max-width:33.33%;
   min-width:400px;
-  border:2px solid black;
-  padding:20px;
+  border:2px solid var(--padding-sections);
+
+  padding:0px;
 
 
   display:flex;
@@ -152,11 +133,13 @@ p{
 .arrow-right-container{
   background-color:black;
   width:100%;
-  min-height:20px;
+  min-height:10%;
 
   display:flex;
   flex-direction:row;
   justify-content:flex-end;
+
+  padding-right:1rem; 
   
 }
 
@@ -164,16 +147,35 @@ p{
 @media (max-width: 1100px) {
   .master-content-container{
     background-color:var(--padding-sections);
-  }
-  .text-content-container{
+    height: calc(100vh - 30vh - 40px );
 
+  }
+  .master-title-subtitle-button-container{
+  height:20vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:0px;
+  background-color:black;
+
+}
+
+  .master-image{
+    height:50%; 
+  }
+
+  .text-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   text-align:start;
 
   }
   .content-box-triple{
     height:100%;
     min-width:calc(100vw - 40px);
-    border:2px solid black;
+    padding:0px;
 
   }
   .button-desktop{
@@ -238,7 +240,7 @@ display:none;
         <br>
         <p>Wir arbeiten direkt mit den Erzeugern vor Ort zusammen und präsentieren die besten Kaffeearomen aus verschieden Ländern. Entdecke jeden Monat neue Kaffeeerlebnisse.</p>
       </div>
-      <div class="arrow-right-container" ><h3>&rarr;</h3></div>
+      <div class="arrow-right-container" ><h4>1/3</h4></div>
     </div>
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
@@ -247,7 +249,7 @@ display:none;
         <br>
         <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
       </div>
-      <div class="arrow-right-container" ><h3>&rarr;</h3></div>    </div>
+      <div class="arrow-right-container" ><h4>2/3</h4></div>    </div>
     
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
@@ -256,16 +258,16 @@ display:none;
         <br>
         <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
       </div>
-      <div class="arrow-right-container" ><h3>&larr;</h3></div>
+      <div class="arrow-right-container" ><h4>3/3</h4></div>
 
     </div>
   </div>
   
-</section>
-
   <div class="master-container-button-mobile">
     <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
   </div>
+</section>
+
 
 
 
