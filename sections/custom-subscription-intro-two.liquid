@@ -91,10 +91,12 @@ p{
   justify-content:space-between;
   align-items:center;
   border-bottom:20px solid var(--padding-sections);
+  padding:20px;
 
 }
 .master-title-subtitle-container{
   width:50%;
+
 }
 .master-content-container{
 
@@ -109,15 +111,16 @@ p{
   justify-content:space-between;
   align-items:center;
 
-  background-color:red;
+  background-color:var(--padding-sections);
   width:100%;
   height: calc(100vh - 20vh - 40px );
 }
 .content-box-triple{
   height:100%;
-  max-width:400px;
+  max-width:33.33%;
   min-width:400px;
-  border:2px solid white;
+  border:2px solid black;
+  padding:20px;
 
 
   display:flex;
@@ -129,12 +132,13 @@ p{
 }
 .master-image{
   width:100%;
-  height:50%;
+  height:60%;
   object-fit:cover;
 }
 .text-content-container{
-  height:50%;
+  height:40%;
   background-color:black;
+  padding:20px;
 
   display:flex;
   flex-direction:column;
@@ -159,16 +163,16 @@ p{
     text-align:center;
     width:100%;
 }
-.master-container-button-mobile{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  text-align:center;
-  align-items:center;
-  height:10vh;
-  border:20px solid var(--padding-sections);
+  .master-container-button-mobile{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    height:10vh;
+    border:20px solid var(--padding-sections);
 
-}
+  }
 }
 @media (min-width: 1100px) {
 
@@ -201,14 +205,29 @@ p{
 
   <div class="master-content-container">
     <div class="content-box-triple"> 
-      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Image19.04.24at13.03_1.jpg?v=1713525829" class="master-image" width=""; height=""; alt="">
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Ralf-coffee_1.jpg?v=1713252187" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
         <h3>EIN EINZIGARTIGES GESCHMACKSERLEBNIS</h3>
+        <br>
         <p>Wir arbeiten direkt mit den Erzeugern vor Ort zusammen und präsentieren die besten Kaffeearomen aus verschieden Ländern. Entdecke jeden Monat neue Kaffeeerlebnisse.</p>
       </div>
     </div>
-    <div class="content-box-triple"> 2 </div>
-    <div class="content-box-triple"> 3 </div>
+    <div class="content-box-triple">
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>UNSER CHARAKTERISTISCHES RÖSTPROFIL</h3>
+        <br>
+        <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
+      </div>
+    </div>
+    <div class="content-box-triple">
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>MONATLICH ZU DEINER HAUSTÜR GELIEFERT</h3>
+        <br>
+        <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
+      </div>
+    </div>
   </div>
   
 </section>
