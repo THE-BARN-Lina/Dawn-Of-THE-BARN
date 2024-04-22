@@ -12,7 +12,6 @@
   --font-size-medium:4vh;
   --font-size-medium-small:3.5vh;
   --font-size-small:14px;
-
 }
 
 
@@ -38,7 +37,6 @@ h3{
   line-height: normal;
 }
 h4{
-
   margin:0px;
   padding:0px;
   line-height: normal;
@@ -162,20 +160,18 @@ p{
 
   }
   .master-title-subtitle-button-container{
-  height:20vh;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  padding:20shpx;
-  background-color:black;
+    height:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:20shpx;
+    background-color:black;
 
-}
-
+  }
   .master-image{
     height:50%; 
   }
-
   .text-content-container{
     display: flex;
     flex-direction: column;
@@ -211,7 +207,6 @@ p{
     background-color:black;
 
   }
-
 }
 @media (min-width: 1100px) {
 
@@ -219,11 +214,43 @@ p{
     display:none;
   }
   .arrow-right-container{
-display:none;
+    display:none;
+  }
+
+}
+{% comment %} ///////////////////REVIEWS SECTION///////////////////// {% endcomment %}
+.text-content-container-reviews h3{
+
+  color:black;
+
+}
+.text-content-container-reviews{
+  height:100%;
+  background-color:white;
+  padding:20px;
+  color:black;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:start;
+  align-items:start;
+}
+@media (max-width: 1100px) {
+
+  .text-content-container-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    text-align:start;
+    height:91%;
+
+
+  }
   
 }
 
-}
 {%- endstyle -%}
 
 
@@ -241,8 +268,7 @@ display:none;
     <div class="master-title-subtitle-container">
       <h2>THE BARN COFFEE SUBSCRIPTIONS</h2>
       <p>Unsere Abos helfen, die Wertschöpfungskette des Kaffees zu verändern.
-      Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.   </p>
-  
+      Unser Kaffee wird von Qualität und Nachhaltigkeit angetrieben und schmeckt nicht ohne Grund besser.</p>
     </div>
     <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
@@ -257,6 +283,7 @@ display:none;
       </div>
       <div class="arrow-right-container" ><h4>1/3</h4></div>
     </div>
+
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
@@ -264,7 +291,8 @@ display:none;
         <br>
         <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
       </div>
-      <div class="arrow-right-container" ><h4>2/3</h4></div>    </div>
+      <div class="arrow-right-container" ><h4>2/3</h4></div>    
+    </div>
     
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
@@ -276,7 +304,95 @@ display:none;
       <div class="arrow-right-container" ><h4>3/3</h4></div>
 
     </div>
+    
   </div>
+
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  </div>
+  
+</section>
+
+<section class="master-section-container">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>UNSERE KAFFEEGEMEINSCHAFT</h2>
+      <p>Jeden Monat trinken unsere Abonnenten einen wirklich unvergesslichen Kaffee. 
+      Unser Kaffee-Abo ist eine Reise und wir möchten, dass du daran teilhast!</p>
+    </div>
+    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple"> 
+      <div class="text-content-container-reviews">
+        <h3>Grossartiger Speciality Coffee</h3>
+        <br>
+        <p>“Die Säure ist perfekt mit der Fülle frischer Aromen kombiniert, es fühlt sich einfach richtig an. Jetzt möchte ich auch die anderen Sorten probieren. Daumen hoch!”</p>
+        <br>
+        <p> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Denis</p>
+      </div>
+      <div class="arrow-right-container" ><h4>1/3</h4></div>
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>Super zufriedenstellend </h3>
+        <br>
+        <p>"Ich hatte vorher das Abo zum Ausprobieren und bin dann auf das Curated Abo umgestiegen. Ich probiere gerne jeden Monat neue Bohnen aus und wähle dementsprechend."</p>
+        <br>
+        <p> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Betis</p>
+      </div>
+      <div class="arrow-right-container" ><h4>2/3</h4></div>    
+    </div>
+    
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>Kaffee, von dem ich nie genug bekomme</h3>
+        <br>
+        <p>"Schon die erste Tasse zauberte ein Lächeln auf mein Gesicht. Er hat alles, was ich mir von einem Kaffee wünsche. Fruchtig und süß. Was mir besonders auffällt, ist die Vielfalt des Geschmacks."</p>
+        <br>
+        <p> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Daniel</p>
+      </div>
+      <div class="arrow-right-container" ><h4>3/3</h4></div>
+
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>Ich liebe es </h3>
+        <br>
+        <p>“Jeden Monat eine Überraschung die jedes Mal mich umgehauen hat.”</p>
+        <br>
+        <p> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Jan</p>
+      </div>
+      <div class="arrow-right-container" ><h4>3/3</h4></div>
+
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>Super zufrieden</h3>
+        <br>
+        <p>“Ich hatte das Abo schon mal und nach einer kurzen Pause habe ich es wieder abonniert. Ich probiere gerne monatlich neue Bohnen und wähle entsprechend aus.”</p>
+        <br>
+        <p> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Batin</p>
+      </div>
+      <div class="arrow-right-container" ><h4>3/3</h4></div>
+
+    </div>
+  </div>
+  
   <div class="master-container-button-mobile">
     <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
   </div>
