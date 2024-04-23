@@ -1026,46 +1026,82 @@ p{
 
 {% javascript %}
 
+
 document.addEventListener('DOMContentLoaded', function () {
+    // Select all accordion buttons
     var accButtons = document.querySelectorAll('.accordion-button');
     accButtons.forEach(function(btn) {
+        // Add click event listener to each button
         btn.addEventListener('click', function() {
-            toggleAccordion(this);
-        });
-    });
+            var panel = this.nextElementSibling;
+            var arrow = this.querySelector('.arrow');
 
-    const items = document.querySelectorAll('.text-item-perks');
-    const iconDisplay = document.querySelector('.icon-display-perks');
+            // Check if the panel is already open
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                arrow.innerHTML = '&#9660;'; // Change arrow direction
+            } else {
+                // Close all open panels before opening the new one
+                var allPanels = document.querySelectorAll('.panel');
+                var allArrows = document.querySelectorAll('.accordion-button .arrow');
+                allPanels.forEach(function(otherPanel) {
+                    otherPanel.style.maxHeight = null;
+                });
+                allArrows.forEach(function(otherArrow) {
+                    otherArrow.innerHTML = '&#9660;';
+                });
 
-    items.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            iconDisplay.innerHTML = '';
-            const icon = document.createElement('lord-icon');
-            icon.setAttribute('src', this.getAttribute('data-icon-perks'));
-            icon.setAttribute('trigger', 'loop');
-            icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-            icon.setAttribute('style', 'width:250px;height:250px');
-            icon.setAttribute('delay', '2000');
-
-            const text = document.createElement('div');
-            text.textContent = this.getAttribute('data-text-perks');
-            text.style.color = '#fff';
-            text.style.fontSize = '20px';
-            text.style.textAlign = 'center';
-            text.style.marginTop = '20px';
-
-            iconDisplay.appendChild(icon);
-            iconDisplay.appendChild(text);
-            iconDisplay.style.visibility = 'visible';
-        });
-        item.addEventListener('mouseleave', function() {
-            iconDisplay.innerHTML = '';
-            iconDisplay.style.visibility = 'hidden';
+                // Open the selected panel and change arrow direction
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                arrow.innerHTML = '&#9650;'; // Arrow points up
+            }
         });
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const items = document.querySelectorAll('.text-item-perks');
+  const iconDisplay = document.querySelector('.icon-display-perks');
+
+  items.forEach(item => {
+      item.addEventListener('mouseenter', function() {
+          // Clear any existing content
+          iconDisplay.innerHTML = '';
+
+          // Create lord-icon element
+          const icon = document.createElement('lord-icon');
+          icon.setAttribute('src', this.getAttribute('data-icon-perks'));
+          icon.setAttribute('trigger', 'loop');
+          icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+          icon.setAttribute('style', 'width:250px;height:250px');
+          icon.setAttribute('delay', '2000');
+
+          // Create text element for description
+          const text = document.createElement('div');
+          text.textContent = this.getAttribute('data-text-perks'); // Use the custom descriptive text
+          text.style.color = '#fff'; // Styling the text, adjust as necessary
+          text.style.fontSize = '20px'; // Font size, adjust as necessary
+          text.style.textAlign = 'center'; // Center align the text
+          text.style.marginTop = '20px'; // Space between the icon and text
+
+          // Append elements to the icon display container
+          iconDisplay.appendChild(icon);
+          iconDisplay.appendChild(text);
+          iconDisplay.style.visibility = 'visible';
+      });
+      item.addEventListener('mouseleave', function() {
+          iconDisplay.innerHTML = ''; // Clear the content
+          iconDisplay.style.visibility = 'hidden';
+      });
+  });
+});
+
+
+
+
 {% endjavascript %}
+
 
 
 
