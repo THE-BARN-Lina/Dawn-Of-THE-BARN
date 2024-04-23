@@ -954,9 +954,6 @@ p{
           data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
           Zugang zu The Barn Events
         </div>
-
-
-        <!-- Add more items as needed -->
     </div>
     <div class="icon-display-perks"></div>
   </div>
@@ -1033,46 +1030,20 @@ p{
 
 {% javascript %}
 
-  document.addEventListener('DOMContentLoaded', function () {
-      var accButtons = document.querySelectorAll('.accordion-button');
-      accButtons.forEach(function(btn) {
-          btn.addEventListener('click', function() {
-              toggleAccordion(this);
-          });
-      });
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    var accButtons = document.querySelectorAll('.accordion-button');
+    accButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            toggleAccordion(this);
+        });
+    });
 
-  function toggleAccordion(element) {
-      var panel = element.nextElementSibling;
-      var arrow = element.querySelector('.arrow');
-
-      if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          arrow.classList.remove('up');
-      } else {
-          var allPanels = document.querySelectorAll('.panel');
-          var allArrows = document.querySelectorAll('.accordion-button .arrow');
-          allPanels.forEach(function(otherPanel) {
-              otherPanel.style.maxHeight = null;
-          });
-          allArrows.forEach(function(otherArrow) {
-              otherArrow.classList.remove('up');
-          });
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          arrow.classList.add('up');
-      }
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
     const items = document.querySelectorAll('.text-item-perks');
     const iconDisplay = document.querySelector('.icon-display-perks');
 
     items.forEach(item => {
         item.addEventListener('mouseenter', function() {
-            // Clear any existing content
             iconDisplay.innerHTML = '';
-
-            // Create lord-icon element
             const icon = document.createElement('lord-icon');
             icon.setAttribute('src', this.getAttribute('data-icon-perks'));
             icon.setAttribute('trigger', 'loop');
@@ -1080,21 +1051,19 @@ p{
             icon.setAttribute('style', 'width:250px;height:250px');
             icon.setAttribute('delay', '2000');
 
-            // Create text element for description
             const text = document.createElement('div');
-            text.textContent = this.getAttribute('data-text-perks'); // Use the custom descriptive text
-            text.style.color = '#fff'; // Styling the text, adjust as necessary
-            text.style.fontSize = '20px'; // Font size, adjust as necessary
-            text.style.textAlign = 'center'; // Center align the text
-            text.style.marginTop = '20px'; // Space between the icon and text
+            text.textContent = this.getAttribute('data-text-perks');
+            text.style.color = '#fff';
+            text.style.fontSize = '20px';
+            text.style.textAlign = 'center';
+            text.style.marginTop = '20px';
 
-            // Append elements to the icon display container
             iconDisplay.appendChild(icon);
             iconDisplay.appendChild(text);
             iconDisplay.style.visibility = 'visible';
         });
         item.addEventListener('mouseleave', function() {
-            iconDisplay.innerHTML = ''; // Clear the content
+            iconDisplay.innerHTML = '';
             iconDisplay.style.visibility = 'hidden';
         });
     });
