@@ -1,3 +1,4 @@
+
 {%- style -%}
 :root {
   --brown: #804d15;
@@ -489,18 +490,27 @@ p{
     width:100vw;
     border:20px solid var(--padding-sections);
 }
+.master-title-subtitle-button-container-perks{
+  height:20vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
 
+}
 .container-perks {
     display: flex;
     flex-direction: row; /* Ensures side-by-side layout */
-    height: calc(80vh + 40px ); /* Full viewport height */
+    height: calc(100vh - 20vh - 40px);
     width: 100%; /* Full viewport width */
     justify-content: stretch; /* Ensures that each child expands as needed */
     align-items: stretch; /* Aligns children to stretch to fill the container height */
-}
+    background-color:black;
 
+}
 .text-list-perks {
-    height:80vh;
+    height:100%;
     width: 50%; /* Half of the container */
     display: flex;
     flex-direction: column;
@@ -508,6 +518,7 @@ p{
     align-items: flex-start; /* Align items to the start (left side) of the column */
     border-right: 20px solid var(--padding-sections); /* Adds a border between the columns */
     box-sizing: border-box; /* Includes padding and border in the element's width */
+
 }
 .icon-display-perks {
     width: 50%; /* Half of the container */
@@ -518,6 +529,7 @@ p{
     visibility: visible; /* Always visible */
     box-sizing: border-box; /* Includes padding and border in the element's width */
     padding: 20px; /* Optional padding for aesthetics */
+
 }
 .text-item-perks{
     display: flex;
@@ -528,9 +540,20 @@ p{
     width: 100%;
     padding-left:20px;
     border-bottom:4px solid var(--padding-sections);
+
 }
 .text-item-perks:hover {
   background-color:var(--padding-sections); 
+}
+.icon-display-perks {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    visibility: hidden; /* Initially hidden, will be made visible on hover */
+    box-sizing: border-box;
 }
 
 @media (max-width: 1100px) {
@@ -885,7 +908,7 @@ p{
 </div>
 <section class="master-section-container-perks">
 
-  <div class="master-title-subtitle-button-container">
+  <div class="master-title-subtitle-button-container-perks">
     <div class="master-title-subtitle-container">
       <h2>WHAT DO I GET?</h2>
     </div>
@@ -893,14 +916,14 @@ p{
   </div>
   <div class="container-perks">
     <div class="text-list-perks">
-        <div class="text-item-perks" data-icon-perks="&#128512;">Monatliche Kaffeelieferung zu dir nach Hause</div>
-        <div class="text-item-perks" data-icon-perks="&#128513;">Kuratierte Auswahl an Single Origin Kaffee</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">Kostenloser Versand für Abo-Bestellungen</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">Frühzeitiger Zugang zu speziellen Coffee Drops</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
-        <div class="text-item-perks" data-icon-perks="&#128514;">Zugang zu The Barn Events</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/hffrpcip.json">Monatliche Kaffeelieferung zu dir nach Hause</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json">Kuratierte Auswahl an Single Origin Kaffee</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json">Kostenloser Versand für Abo-Bestellungen</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/dndbceuc.json">Frühzeitiger Zugang zu speziellen Coffee Drops</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json">10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/pchraidq.json">Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json">Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
+        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json">Zugang zu The Barn Events</div>
 
 
         <!-- Add more items as needed -->
@@ -975,7 +998,14 @@ p{
   </div>
 </section>
 
-
+<lord-icon
+  src="https://cdn.lordicon.com/lfxfmfjq.json"
+  trigger="in"
+  delay="2000"
+  stroke="light"
+  colors="primary:#ffffff,secondary:#ffffff"
+  style="width:250px;height:250px">
+</lord-icon>
 
 
 
@@ -1011,20 +1041,36 @@ p{
       }
   }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const items = document.querySelectorAll('.text-item-perks');
-  const iconDisplay = document.querySelector('.icon-display-perks');
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.text-item-perks');
+    const iconDisplay = document.querySelector('.icon-display-perks');
 
-  items.forEach(item => {
-      item.addEventListener('mouseenter', function() {
-          iconDisplay.textContent = this.getAttribute('data-icon-perks');
-          iconDisplay.style.visibility = 'visible';
-      });
-      item.addEventListener('mouseleave', function() {
-          iconDisplay.style.visibility = 'hidden';
-      });
-  });
+    items.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            // Clear any existing content
+            iconDisplay.innerHTML = '';
+            
+            // Create lord-icon element
+            const icon = document.createElement('lord-icon');
+            icon.setAttribute('src', this.getAttribute('data-icon-perks'));
+            icon.setAttribute('trigger', 'loop');
+            icon.setAttribute('delay', '2000');
+            icon.setAttribute('stroke', 'light');
+            icon.setAttribute('colors', 'primary:#ffffff,secondary:#ffffff');
+            icon.setAttribute('style', 'width:250px;height:250px');
+
+            // Append the new lord-icon to the display container
+            iconDisplay.appendChild(icon);
+            iconDisplay.style.visibility = 'visible';
+        });
+        item.addEventListener('mouseleave', function() {
+            iconDisplay.innerHTML = ''; // Clear the content
+            iconDisplay.style.visibility = 'hidden';
+        });
+    });
 });
+
+
 {% endjavascript %}
 
 
