@@ -871,8 +871,8 @@ p{
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">1</h3>
         <div class="works-without-number-container-right"> 
-          <h3>WÄHLE DEIN PERFEKTS ABO</h3>
-          <p>Saisonal kuratiert, unsere seltenen Masterpieces oder der sanfte Geschmack von Low-Caf... Finde noch heute dein passendes Abo.</p>
+          <h3>{{ section.settings.how_it_work_title_one}}</h3>
+          <p>{{ section.settings.how_it_work_subtitle_one}}</p>
         </div>
 
     </div>
@@ -880,8 +880,8 @@ p{
       <div class="text-content-container-works border-middle-works">
         <h3 class="number-how-it-works hide-in-mobile-works">2</h3>
         <div class="works-without-number-container-left">
-          <h3>MONATLICHE LIEFERUNGEN</h3>
-          <p>Melde dich noch heute an: Wir kümmern uns um den Rest. Nach deiner ersten Bestellung wird der Kaffee jeden Monat zur gleichen Zeit geliefert..</p>
+          <h3>{{ section.settings.how_it_work_title_two}}</h3>
+          <p>{{ section.settings.how_it_work_subtitle_two}}</p>
         </div>
         <h3 class="number-how-it-works hide-in-desktop-works">2</h3>
     </div>
@@ -889,8 +889,8 @@ p{
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">3</h3>
         <div class="works-without-number-container-right">
-          <h3>MONATLICH ZU DEINER HAUSTÜR GELIEFERT</h3>
-          <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
+          <h3>{{ section.settings.how_it_work_title_three}}</h3>
+          <p>{{ section.settings.how_it_work_subtitle_three}}</p>
         </div>
     </div>
     
@@ -1269,7 +1269,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "How It Work Subtitle"
     },
-    
+
     {
       "type": "richtext",
       "id": "how_it_work_title_one",
@@ -1306,6 +1306,10 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "How It Work Subtitle 3"
     },
+
+
+
+    
     {
       "type": "richtext",
       "id": "what_do_i_get_title",
