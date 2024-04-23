@@ -547,14 +547,14 @@ p{
 }
 .icon-display-perks {
     width: 50%;
-    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    visibility: hidden; /* Initially hidden, will be made visible on hover */
-    box-sizing: border-box;
+    flex-direction: column; // To stack icon and text vertically
+    align-items: center; // Center-align the content horizontally
+    justify-content: center; // Center-align the content vertically
+    visibility: hidden; // Initially hidden, shown on hover
+    transition: visibility 0.3s ease-in-out; // Smooth visibility transition
 }
+
 
 @media (max-width: 1100px) {
     .container-perks {
@@ -916,14 +916,44 @@ p{
   </div>
   <div class="container-perks">
     <div class="text-list-perks">
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/hffrpcip.json">Monatliche Kaffeelieferung zu dir nach Hause</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json">Kuratierte Auswahl an Single Origin Kaffee</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json">Kostenloser Versand für Abo-Bestellungen</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/dndbceuc.json">Frühzeitiger Zugang zu speziellen Coffee Drops</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json">10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/pchraidq.json">Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json">Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
-        <div class="text-item-perks" data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json">Zugang zu The Barn Events</div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
+          data-text-perks="Wir arbeiten mit zuverlässigen Lieferpartnern zusammen, um dir deine monatliche Kaffeelieferung so schnell wie möglich zukommen zu lassen.">
+          Monatliche Kaffeelieferung zu dir nach Hause 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
+          data-text-perks="Der Kaffee in unserem Portfolio wird sorgfältig ausgewählt, getestet und geröstet. Wir möchten dir jeden Monat ein außergewöhnliches Geschmackserlebnis bieten.">
+          Kuratierte Auswahl an Single Origin Kaffee
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
+          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          Kostenloser Versand für Abo-Bestellungen
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
+          data-text-perks="Jeden Monat bringen wir eine begrenzte Anzahl von ganz besonderen Kaffees auf den Markt. Und unsere Abonnenten bekommen zuerst, vor allen anderen, die Chance ihn zu ergattern.">
+          Frühzeitiger Zugang zu speziellen Coffee Drops
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
+          data-text-perks="Als Abonnent bekommst du einfach mehr... Mehr vom Besten. Wenn dein Kaffeevorrat zur Neige geht, kannst du jederzeit weitere Bohnen mit einem schönen Rabatt bestellen.">
+          10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
+          data-text-perks="Unsere charakteristische helle Röstung sorgt dafür, dass jeder Kaffee mit all seinen Geschmacksnuancen zur Geltung kommt. Jede Tasse, die du aufbrühst, wird dich mit klaren, aber deutlich ausgeprägten Geschmachsnoten überraschen.">
+          Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
+          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
+          data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
+          Zugang zu The Barn Events
+        </div>
 
 
         <!-- Add more items as needed -->
@@ -998,14 +1028,6 @@ p{
   </div>
 </section>
 
-<lord-icon
-  src="https://cdn.lordicon.com/lfxfmfjq.json"
-  trigger="in"
-  delay="2000"
-  stroke="light"
-  colors="primary:#ffffff,secondary:#ffffff"
-  style="width:250px;height:250px">
-</lord-icon>
 
 
 
@@ -1049,18 +1071,26 @@ p{
         item.addEventListener('mouseenter', function() {
             // Clear any existing content
             iconDisplay.innerHTML = '';
-            
+
             // Create lord-icon element
             const icon = document.createElement('lord-icon');
             icon.setAttribute('src', this.getAttribute('data-icon-perks'));
             icon.setAttribute('trigger', 'loop');
-            icon.setAttribute('delay', '2000');
-            icon.setAttribute('stroke', 'light');
-            icon.setAttribute('colors', 'primary:#ffffff,secondary:#ffffff');
+            icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
             icon.setAttribute('style', 'width:250px;height:250px');
+            icon.setAttribute('delay', '2000');
 
-            // Append the new lord-icon to the display container
+            // Create text element for description
+            const text = document.createElement('div');
+            text.textContent = this.getAttribute('data-text-perks'); // Use the custom descriptive text
+            text.style.color = '#fff'; // Styling the text, adjust as necessary
+            text.style.fontSize = '20px'; // Font size, adjust as necessary
+            text.style.textAlign = 'center'; // Center align the text
+            text.style.marginTop = '20px'; // Space between the icon and text
+
+            // Append elements to the icon display container
             iconDisplay.appendChild(icon);
+            iconDisplay.appendChild(text);
             iconDisplay.style.visibility = 'visible';
         });
         item.addEventListener('mouseleave', function() {
@@ -1069,6 +1099,8 @@ p{
         });
     });
 });
+
+
 
 
 {% endjavascript %}
