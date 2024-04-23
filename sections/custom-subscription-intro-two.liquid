@@ -479,13 +479,18 @@ p{
     border-top:0px;
   }
 }
-{% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
+{% comment %} //////////////////ACCORDION FAQ SECTION///////////////////// {% endcomment %}
 
-
-
-/* styles.css */
+.master-section-container-accordion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100vh;
+  width:100vw;
+  border:20px solid var(--padding-sections);
+}
 .accordion-button {
-    background-color: #f78f20;
+    background-color: black;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -496,11 +501,9 @@ p{
     font-size: 15px;
     transition: 0.4s;
 }
-
 .accordion-button:hover, .accordion-button:active {
-    background-color: #d6771f;
+    background-color: grey;
 }
-
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -509,9 +512,26 @@ p{
     transition: max-height 0.2s ease-out;
     color:black;
 }
+.panel p {
+  padding:5rem;
+}
+@media (max-width: 1100px) {
 
 
-
+  .master-container-button-mobile-accordion{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+      align-items:center;
+      height:10%;
+      border-top:20px solid var(--padding-sections);
+      border-bottom:20px solid var(--padding-sections);
+      padding:40px;
+      background-color:black;
+  
+    }
+}
 {%- endstyle -%}
 
 
@@ -783,48 +803,94 @@ p{
   <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
 </div>
 
-<div class="accordion">
-  <button class="accordion-button">Section 1</button>
-  <div class="panel">
-      <p>Content for Section 1...</p>
+<section class="master-section-container-accordion">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>NOCH FRAGEN OFFEN?</h2>
+    </div>
+    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
-  <button class="accordion-button">Section 2</button>
-  <div class="panel">
-      <p>Content for Section 2...</p>
+  <div class="accordion">
+    <button class="accordion-button">Wann verschicken wir deine Abo-Kaffees?</button>
+    <div class="panel">
+        <p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.</p>
+    </div>
+    <button class="accordion-button">Welche Kaffeesorten werde ich erhalten?</button>
+    <div class="panel">
+        <p>Unser Röstteam wählt jeden Monat die Abo-Kaffees aus. In der Regel handelt es sich um unsere neuesten Kaffees und oft um Microlots. Wenn du dein Abo startest, kannst du zwischen Espresso- und Filterröstungen wählen.</p>
+    </div>
+    <button class="accordion-button">Wie vergleicht sich der Abo-Preis mit Einzelbestellungen im Webshop?</button>
+    <div class="panel">
+        <p>Die Preisvorteile unserer Abos variieren, da wir jeden Monat andere Kaffees auswählen und diese haben unterschiedliche Preise. Der durchschnittliche Preisvorteil kann bis zu 25% im Vergleich zum Kauf einzelner Kaffees auf unserer Website betragen. Die besten Preise erhaltet Ihr, wenn Ihr ein Abo mit Vorauszahlung bucht.</p>
+    </div>
+    <button class="accordion-button">Ich habe gerade ein Abo gestartet. Wann bekomme es den Kaffee?</button>
+    <div class="panel">
+        <p>Dein erster Abo-Kaffee wird am Werktag nach Beginn des Abos versendet. Die einzige Ausnahme ist unser Masterpiece-Abo.
+  
+        Dieses verschicken wir am ersten Mittwoch eines jeden Monats. Alle anderen Abonnements sind völlig flexibel und Du kannst Dein Versanddatum über Dein Online-Portal ändern.
+        
+        Das Abo kann auch jederzeit pausieren oder aussetzen. Wie lange es dauert, bis Dein frisch gerösteter Kaffee bei Dir eintrifft, hängt von Deiner Versandadresse und von dem gewählten Versandservice ab. Die genauen Laufzeiten findest Du auf unserer Webseite unter den Versandrichtlinien.</p>
+    </div>
+    <button class="accordion-button">Wie kann ich mein Abo anpassen?</button>
+    <div class="panel">
+        <p>Gehe zum "Menü" und dann auf "Login", um auf deine Kontodaten zuzugreifen. Wähle "Abo Manager", um hier Anpassungen vorzunehmen. Wenn du nicht auf Deinen Kaffee warten willst, kannst du das Feature "Gleich verschicken" wählen. Du kannst auch Lieferungen flexibel verschieben oder aussetzen, wenn Du magst.</p>
+    </div>
+    <button class="accordion-button">Kann ich mein Abo pausieren?</button>
+    <div class="panel">
+        <p>Die Preisvorteile unserer Abos variieren, da wir jeden Monat andere Kaffees auswählen und diese haben unterschiedliche Preise. Der durchschnittliche Preisvorteil kann bis zu 25% im Vergleich zum Kauf einzelner Kaffees auf unserer Website betragen. Die besten Preise erhaltet Ihr, wenn Ihr ein Abo mit Vorauszahlung bucht.</p>
+    </div>
+    <button class="accordion-button">Kann ich meine Abo-Kaffees selbst auswählen?</button>
+    <div class="panel">
+        <p>Unser Kaffee-Abo wird von unserem Röstteam kuratiert. Das Schöne daran ist, dass unser Team Kaffees auswählt, die oft noch nicht in unserem Webshop erhältlich sind. Du erhälst jeden Monat wechselnde Kaffees, und Du kannst so die große Range an Single Origin Kaffees entdecken..</p>
+    </div>
+    <button class="accordion-button">Wie kann ich mein Abo ändern?</button>
+    <div class="panel">
+        <p>Wenn Du Änderungen an Ihrem Abo vornehmen möchtest, die nicht über das Online-Portal möglich sind, wende Dich bitte direkt an unser Team per E-Mail: subscriber@thebarn.de
+      </p>
+    </div>
+    <button class="accordion-button">Wie funktioniert der 10% Rabatt?</button>
+    <div class="panel">
+        <p>Als Abonnent erhalst Du 10% Rabatt auf alle unsere Kaffeebohnen (ausgenommen seltene Kaffeesorten). Du kannst ganz einfach Bohnen zu Deiner nächsten Lieferung hinzufügen. So kannst Du Deine nächste Box ganz einfach aufstocken.</p>
+    </div>
+    <button class="accordion-button">Wie funktioniert das "Add-on"?</button>
+    <div class="panel">
+        <p>Du kannst jedes Produkt aus unserem Shop in deine Abo-Box packen.
+  
+        Geh einfach auf dein Abonnement-Dashboard, scrolle ganz nach unten, und du wirst den Titel "Vielleicht gefällt dir auch" sehen, wo du alle Produkte aus unserem Shop findest.</p>
+    </div>
   </div>
-  <button class="accordion-button">Section 3</button>
-  <div class="panel">
-      <p>Content for Section 3...</p>
+
+  <div class="master-container-button-mobile-accordion">
+    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
   </div>
-</div>
+</section>
+
 
 
 {% javascript %}
-document.addEventListener('DOMContentLoaded', function () {
-    var accButtons = document.querySelectorAll('.accordion-button');
-    accButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            toggleAccordion(this);
-        });
-    });
-});
+  document.addEventListener('DOMContentLoaded', function () {
+      var accButtons = document.querySelectorAll('.accordion-button');
+      accButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+              toggleAccordion(this);
+          });
+      });
+  });
 
-function toggleAccordion(element) {
-    var panel = element.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-        var allPanels = document.querySelectorAll('.panel');
-        allPanels.forEach(function(otherPanel) {
-            if (otherPanel !== panel) {
-                otherPanel.style.maxHeight = null;
-            }
-        });
-        panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-}
-
-
+  function toggleAccordion(element) {
+      var panel = element.nextElementSibling;
+      if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+      } else {
+          var allPanels = document.querySelectorAll('.panel');
+          allPanels.forEach(function(otherPanel) {
+              if (otherPanel !== panel) {
+                  otherPanel.style.maxHeight = null;
+              }
+          });
+          panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+  }
 {% endjavascript %}
 
 
