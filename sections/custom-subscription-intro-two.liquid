@@ -347,6 +347,9 @@ p{
   }
 }
 {% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
+.master-section-container-works{
+  border:20px solid var(--padding-sections)
+}
   .master-content-container-works{
 
     display:flex;
@@ -362,16 +365,20 @@ p{
     font-size:112px;
   }
   .text-content-container-works{
-    height:70vh;
+
     background-color:black;
     padding:20px;
     color:white;
-
+    height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     text-align:center;
     align-items:center;
+  }
+  .border-middle-works{
+    margin-left:4px;
+    margin-right:4px;
   }
   .hide-in-desktop-works{
     display:none;
@@ -389,7 +396,7 @@ p{
 
     background-color:black;
     width:100%;
-    height: calc(100vh - 20vh - 40px );
+    height: calc(100vh - 30vh - 80px );
 }
   .text-content-container-works{
     display: flex;
@@ -397,14 +404,16 @@ p{
     align-items: center;
     justify-content:space-around;
     text-align:center;
-    height:75%;
-    width:104%;
+    width:100%;
     padding:0px;
-    border:none;
-
+    height:33.33%;
+  }
+  .border-middle-works{
+    border-top:4px solid var(--padding-sections);
+    border-bottom:4px solid var(--padding-sections);
   }
   .content-box-triple-works{
-    height:100%;
+    height:0;
     max-width:33.33%;
     min-width:400px;
 
@@ -418,9 +427,11 @@ p{
     text-align:center;
     align-items:center;
     scroll-snap-align: start; 
+    background-color:white;
+    height:50%;
   }
   .content-box-triple-works{
-    height:100%;
+    height:100px;
     min-width:calc(100vw - 65px);
     padding:0px;
     justify-content:flex-start;
@@ -450,9 +461,20 @@ p{
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    padding:20shpx;
+    padding:20px;
     background-color:black;
 
+  }
+  .master-container-button-mobile-works{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    height:10%;
+    padding:40px;
+    background-color:black;
+    border:20px solid var(--padding-sections);
   }
 }
 
@@ -692,44 +714,40 @@ p{
   </div>
 
   <div class="master-content-container-works">
-    <div class="content-box-triple-works"> 
+   
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">1</h3>
         <div class="works-without-number-container-right"> 
           <h3>WÄHLE DEIN PERFEKTS ABO</h3>
           <p>Saisonal kuratiert, unsere seltenen Masterpieces oder der sanfte Geschmack von Low-Caf... Finde noch heute dein passendes Abo.</p>
         </div>
-      </div>
+
     </div>
 
-    <div class="content-box-triple-works">
-      <div class="text-content-container-works">
+      <div class="text-content-container-works border-middle-works">
         <h3 class="number-how-it-works hide-in-mobile-works">2</h3>
         <div class="works-without-number-container-left">
           <h3>MONATLICHE LIEFERUNGEN</h3>
           <p>Melde dich noch heute an: Wir kümmern uns um den Rest. Nach deiner ersten Bestellung wird der Kaffee jeden Monat zur gleichen Zeit geliefert..</p>
         </div>
         <h3 class="number-how-it-works hide-in-desktop-works">2</h3>
-      </div>
     </div>
     
-    <div class="content-box-triple-works">
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">3</h3>
         <div class="works-without-number-container-right">
           <h3>MONATLICH ZU DEINER HAUSTÜR GELIEFERT</h3>
           <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
         </div>
-      </div>
     </div>
     
   </div>
 
-  <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
-  </div>
   
 </section>
+<div class="master-container-button-mobile-works">
+  <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+</div>
 
 
 
