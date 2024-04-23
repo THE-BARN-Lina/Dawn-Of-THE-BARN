@@ -913,40 +913,40 @@ p{
     <div class="text-list-perks">
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
-          data-text-perks="Wir arbeiten mit zuverlässigen Lieferpartnern zusammen, um dir deine monatliche Kaffeelieferung so schnell wie möglich zukommen zu lassen.">
+          data-text-perks={{ section.settings.what_do_i_get_one_description}} >
           {{ section.settings.what_do_i_get_one}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
-          data-text-perks="Der Kaffee in unserem Portfolio wird sorgfältig ausgewählt, getestet und geröstet. Wir möchten dir jeden Monat ein außergewöhnliches Geschmackserlebnis bieten.">
+          data-text-perks={{ section.settings.what_do_i_get_two_description}} >
           {{ section.settings.what_do_i_get_two}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
-          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          data-text-perks={{ section.settings.what_do_i_get_three_description}} >
           {{ section.settings.what_do_i_get_three}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
-          data-text-perks="Jeden Monat bringen wir eine begrenzte Anzahl von ganz besonderen Kaffees auf den Markt. Und unsere Abonnenten bekommen zuerst, vor allen anderen, die Chance ihn zu ergattern.">
+          data-text-perks={{ section.settings.what_do_i_get_four_description}} >
           {{ section.settings.what_do_i_get_four}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
-          data-text-perks="Als Abonnent bekommst du einfach mehr... Mehr vom Besten. Wenn dein Kaffeevorrat zur Neige geht, kannst du jederzeit weitere Bohnen mit einem schönen Rabatt bestellen.">
+          data-text-perks={{ section.settings.what_do_i_get_five_description}} >
           {{ section.settings.what_do_i_get_five}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
-          data-text-perks="Unsere charakteristische helle Röstung sorgt dafür, dass jeder Kaffee mit all seinen Geschmacksnuancen zur Geltung kommt. Jede Tasse, die du aufbrühst, wird dich mit klaren, aber deutlich ausgeprägten Geschmachsnoten überraschen.">
+          data-text-perks={{ section.settings.what_do_i_get_six_description}}>
           {{ section.settings.what_do_i_get_six}} </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
-          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          data-text-perks={{ section.settings.what_do_i_get_seven_description}}>
           {{ section.settings.what_do_i_get_seven}} </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
-          data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
+          data-text-perks={{ section.settings.what_do_i_get_eight_description}}>
           {{ section.settings.what_do_i_get_eight}} 
         </div>
     </div>
@@ -1323,12 +1323,24 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "What Do I Get 1?"
     },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_one_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 1 description"
+    },
 
     {
       "type": "richtext",
       "id": "what_do_i_get_two",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 2?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_two_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 2 description"
     },
 
     {
@@ -1337,6 +1349,12 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "What Do I Get 3?"
     },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_three_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 3 description"
+    },
 
     {
       "type": "richtext",
@@ -1344,19 +1362,35 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "What Do I Get 4?"
     },
-
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_four_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 4 description"
+    },
     {
       "type": "richtext",
       "id": "what_do_i_get_five",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 5?"
     },
-
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_five_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 5 description"
+    },
     {
       "type": "richtext",
       "id": "what_do_i_get_six",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 6?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_six_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 6 description"
     },
 
     {
@@ -1365,12 +1399,24 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "What Do I Get 7?"
     },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_seven_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 7 description"
+    },
 
     {
       "type": "richtext",
       "id": "what_do_i_get_eight",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 8?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_eight_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 8 description"
     },
     {
         "type": "richtext",
