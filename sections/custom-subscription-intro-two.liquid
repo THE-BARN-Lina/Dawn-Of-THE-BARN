@@ -489,26 +489,36 @@ p{
   width:100vw;
   border:20px solid var(--padding-sections);
 }
-.accordion-button {
 
-    background-color: black;
-    color: white;
-    cursor: pointer;
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
+    background-color: black;
+    color: white;
     font-size: 15px;
+    border: none;
+    outline: none;
     transition: 0.4s;
+    cursor: pointer;
     border-bottom: 2px solid var(--padding-sections);
-    height: calc(80vh / 10);
-    display: flex; /* Use flexbox to manage children alignment */
-    justify-content: space-between; /* Aligns children to the edges */
-    align-items: center; /* Aligns children vertically in the middle */
-
-
 }
+
+.button-text {
+    flex-grow: 1; /* Ensures text takes up available space, pushing the arrow to the right */
+}
+
+.arrow {
+    transition: transform 0.3s ease; /* Ensures smooth rotation */
+    display: inline-block; /* Helps manage transformations better */
+}
+
+.arrow.up {
+    transform: rotate(-180deg); /* Ensures the arrow points up */
+}
+
 .accordion-button:hover, .accordion-button:active {
     background-color: var(--padding-sections);
 }
@@ -550,7 +560,6 @@ p{
   <br>
   <button class="button-main"> ABOS ERKUNDEN </button>
 </section>
-
 
 <section class="master-section-container">
   <div class="master-title-subtitle-button-container">
@@ -891,18 +900,21 @@ function toggleAccordion(element) {
 
     if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
-        arrow.innerHTML = '&#9660;'; // Change to down arrow when the panel is closed
+        arrow.classList.remove('up');
     } else {
         var allPanels = document.querySelectorAll('.panel');
         var allArrows = document.querySelectorAll('.accordion-button .arrow');
-        allPanels.forEach(function(otherPanel, index) {
+        allPanels.forEach(function(otherPanel) {
             otherPanel.style.maxHeight = null;
-            allArrows[index].innerHTML = '&#9660;'; // Reset all arrows to down
+        });
+        allArrows.forEach(function(otherArrow) {
+            otherArrow.classList.remove('up');
         });
         panel.style.maxHeight = panel.scrollHeight + "px";
-        arrow.innerHTML = '&#9650;'; // Change to up arrow when the panel is open
+        arrow.classList.add('up');
     }
 }
+
 
 {% endjavascript %}
 
