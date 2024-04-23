@@ -709,9 +709,9 @@ p{
   <div class="master-content-container">
     <div class="content-box-triple"> 
       <div class="text-content-container-reviews">
-        <h3>Grossartiger Speciality Coffee</h3>
+        <h3>{{ section.settings.text }}</h3>
         <br>
-        <p>“Die Säure ist perfekt mit der Fülle frischer Aromen kombiniert, es fühlt sich einfach richtig an. Jetzt möchte ich auch die anderen Sorten probieren. Daumen hoch!”</p>
+        <p>{{ section.settings.text_1 }}</p>
         <br>
         <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
@@ -722,9 +722,9 @@ p{
 
     <div class="content-box-triple">
       <div class="text-content-container-reviews">
-        <h3>Super zufriedenstellend </h3>
+        <h3>{{ section.settings.text_2 }}</h3>
         <br>
-        <p>"Ich hatte vorher das Abo zum Ausprobieren und bin dann auf das Curated Abo umgestiegen. Ich probiere gerne jeden Monat neue Bohnen aus und wähle dementsprechend."</p>
+        <p>{{ section.settings.text_3 }}</p>
         <br>
         <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
@@ -735,9 +735,9 @@ p{
     
     <div class="content-box-triple">
       <div class="text-content-container-reviews">
-        <h3>Kaffee, von dem ich nie genug bekomme</h3>
+        <h3>{{ section.settings.text_4 }}</h3>
         <br>
-        <p>"Schon die erste Tasse zauberte ein Lächeln auf mein Gesicht. Er hat alles, was ich mir von einem Kaffee wünsche. Fruchtig und süß. Was mir besonders auffällt, ist die Vielfalt des Geschmacks."</p>
+        <p>{{ section.settings.text_5 }}</p>
         <br>
         <p style="color:var(--golden-star )"> ★ ★ ★ ★ ★ </p>
         <br>
@@ -749,9 +749,9 @@ p{
 
     <div class="content-box-triple">
       <div class="text-content-container-reviews">
-        <h3>Ich liebe es </h3>
+        <h3>{{ section.settings.text_6 }}</h3>
         <br>
-        <p>“Jeden Monat eine Überraschung die jedes Mal mich umgehauen hat.”</p>
+        <p>{{ section.settings.text_7 }}</p>
         <br>
         <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
@@ -763,9 +763,9 @@ p{
 
     <div class="content-box-triple">
       <div class="text-content-container-reviews">
-        <h3>Super zufrieden</h3>
+        <h3>{{ section.settings.text_8 }}</h3>
         <br>
-        <p>“Ich hatte das Abo schon mal und nach einer kurzen Pause habe ich es wieder abonniert. Ich probiere gerne monatlich neue Bohnen und wähle entsprechend aus.”</p>
+        <p>{{ section.settings.text_9 }}</p>
         <br>
         <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
@@ -1179,10 +1179,50 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       "type": "richtext",
-      "id": "text_title_2",
+      "id": "text_3",
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Past Coffees Title"
     },
+    {
+      "type": "richtext",
+      "id": "text_4",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_5",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_6",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_7",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_8",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_9",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+
+
+
+
     {
       "type": "richtext",
       "id": "text_subtitle_2_1",
