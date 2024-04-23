@@ -479,78 +479,141 @@ p{
     border-top:0px;
   }
 }
-{% comment %} //////////////////ACCORDION FAQ SECTION///////////////////// {% endcomment %}
 
-.master-section-container-accordion{
+{% comment %} //////////////////PERKS SECTION///////////////////// {% endcomment %}
+.master-section-container-perks{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height:100vh;
-  width:100vw;
-  border:20px solid var(--padding-sections);
-}
-
-.accordion-button {
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    min-height:100vh;
+    width:100vw;
+    border:20px solid var(--padding-sections);
+}
+
+.container-perks {
+    display: flex;
+    flex-direction: row; /* Ensures side-by-side layout */
+    height: calc(80vh + 40px ); /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    justify-content: stretch; /* Ensures that each child expands as needed */
+    align-items: stretch; /* Aligns children to stretch to fill the container height */
+}
+
+.text-list-perks {
+    height:80vh;
+    width: 50%; /* Half of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content in this column */
+    align-items: flex-start; /* Align items to the start (left side) of the column */
+    border-right: 20px solid var(--padding-sections); /* Adds a border between the columns */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+}
+.icon-display-perks {
+    width: 50%; /* Half of the container */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-size: 48px;
+    visibility: visible; /* Always visible */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+    padding: 20px; /* Optional padding for aesthetics */
+}
+.text-item-perks{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 18px;
-    width: 100%;
     background-color: black;
-    color: white;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    cursor: pointer;
-    border-bottom: 2px solid var(--padding-sections);
-    text-align:left;
+    height: calc(80vh / 8);
+    width: 100%;
+    padding-left:20px;
+    border-bottom:4px solid var(--padding-sections);
+}
+.text-item-perks:hover {
+  background-color:var(--padding-sections); 
 }
 
-.button-text {
-    flex-grow: 1; /* Ensures text takes up available space, pushing the arrow to the right */
-}
-
-.arrow {
-    transition: transform 0.3s ease; /* Ensures smooth rotation */
-    display: inline-block; /* Helps manage transformations better */
-}
-
-.arrow.up {
-    transform: rotate(-180deg); /* Ensures the arrow points up */
-}
-
-.accordion-button:hover, .accordion-button:active {
-    background-color: var(--padding-sections);
-}
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    color:black;
-}
-.panel p {
-  padding:5rem;
-}
 @media (max-width: 1100px) {
-
-
-  .master-container-button-mobile-accordion{
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      text-align:center;
-      align-items:center;
-      height:10%;
-      border-top:20px solid var(--padding-sections);
-      border-bottom:20px solid var(--padding-sections);
-      padding:40px;
-      background-color:black;
-  
+    .container-perks {
+        flex-direction: column; /* Stacks the containers vertically on smaller screens */
+    }
+    .text-list-perks, .icon-display-perks {
+        width: 100%; /* Full width of the container */
+        border-right: none; /* Removes the border-right in stacked layout */
+        border-bottom: 2px solid #000; /* Adds a border below the text list */
+    }
+    .icon-display-perks {
+        display: none; /* Optionally hide the icon display on smaller screens */
     }
 }
+
+{% comment %} //////////////////ACCORDION FAQ SECTION///////////////////// {% endcomment %}
+
+  .master-section-container-accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:100vh;
+    width:100vw;
+    border:20px solid var(--padding-sections);
+  }
+  .accordion-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      cursor: pointer;
+      border-bottom: 2px solid var(--padding-sections);
+      text-align:left;
+  }
+  .button-text {
+      flex-grow: 1; /* Ensures text takes up available space, pushing the arrow to the right */
+  }
+  .arrow {
+      transition: transform 0.3s ease; /* Ensures smooth rotation */
+      display: inline-block; /* Helps manage transformations better */
+  }
+  .arrow.up {
+      transform: rotate(-180deg); /* Ensures the arrow points up */
+  }
+  .accordion-button:hover, .accordion-button:active {
+      background-color: var(--padding-sections);
+  }
+  .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      color:black;
+  }
+  .panel p {
+    padding:5rem;
+  }
+  @media (max-width: 1100px) {
+
+
+    .master-container-button-mobile-accordion{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        align-items:center;
+        height:10%;
+        border-top:20px solid var(--padding-sections);
+        border-bottom:20px solid var(--padding-sections);
+        padding:40px;
+        background-color:black;
+    
+      }
+  }
 {%- endstyle -%}
 
 
@@ -820,6 +883,35 @@ p{
 <div class="master-container-button-mobile-works">
   <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
 </div>
+<section class="master-section-container-perks">
+
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>WHAT DO I GET?</h2>
+    </div>
+    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+  </div>
+  <div class="container-perks">
+    <div class="text-list-perks">
+        <div class="text-item-perks" data-icon-perks="&#128512;">Monatliche Kaffeelieferung zu dir nach Hause</div>
+        <div class="text-item-perks" data-icon-perks="&#128513;">Kuratierte Auswahl an Single Origin Kaffee</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">Kostenloser Versand für Abo-Bestellungen</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">Frühzeitiger Zugang zu speziellen Coffee Drops</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
+        <div class="text-item-perks" data-icon-perks="&#128514;">Zugang zu The Barn Events</div>
+
+
+        <!-- Add more items as needed -->
+    </div>
+    <div class="icon-display-perks"></div>
+  </div>
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  </div>
+</section>
+
 
 <section class="master-section-container-accordion">
   <div class="master-title-subtitle-button-container">
@@ -885,39 +977,56 @@ p{
 
 
 
+
+
 {% javascript %}
+
+  document.addEventListener('DOMContentLoaded', function () {
+      var accButtons = document.querySelectorAll('.accordion-button');
+      accButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+              toggleAccordion(this);
+          });
+      });
+  });
+
+  function toggleAccordion(element) {
+      var panel = element.nextElementSibling;
+      var arrow = element.querySelector('.arrow');
+
+      if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          arrow.classList.remove('up');
+      } else {
+          var allPanels = document.querySelectorAll('.panel');
+          var allArrows = document.querySelectorAll('.accordion-button .arrow');
+          allPanels.forEach(function(otherPanel) {
+              otherPanel.style.maxHeight = null;
+          });
+          allArrows.forEach(function(otherArrow) {
+              otherArrow.classList.remove('up');
+          });
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          arrow.classList.add('up');
+      }
+  }
+
 document.addEventListener('DOMContentLoaded', function () {
-    var accButtons = document.querySelectorAll('.accordion-button');
-    accButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            toggleAccordion(this);
-        });
-    });
+  const items = document.querySelectorAll('.text-item-perks');
+  const iconDisplay = document.querySelector('.icon-display-perks');
+
+  items.forEach(item => {
+      item.addEventListener('mouseenter', function() {
+          iconDisplay.textContent = this.getAttribute('data-icon-perks');
+          iconDisplay.style.visibility = 'visible';
+      });
+      item.addEventListener('mouseleave', function() {
+          iconDisplay.style.visibility = 'hidden';
+      });
+  });
 });
-
-function toggleAccordion(element) {
-    var panel = element.nextElementSibling;
-    var arrow = element.querySelector('.arrow');
-
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        arrow.classList.remove('up');
-    } else {
-        var allPanels = document.querySelectorAll('.panel');
-        var allArrows = document.querySelectorAll('.accordion-button .arrow');
-        allPanels.forEach(function(otherPanel) {
-            otherPanel.style.maxHeight = null;
-        });
-        allArrows.forEach(function(otherArrow) {
-            otherArrow.classList.remove('up');
-        });
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        arrow.classList.add('up');
-    }
-}
-
-
 {% endjavascript %}
+
 
 
 
