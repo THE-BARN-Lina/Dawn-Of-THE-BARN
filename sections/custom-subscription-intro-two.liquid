@@ -860,10 +860,10 @@ p{
 <section class="master-section-container-works">
   <div class="master-title-subtitle-button-container">
     <div class="master-title-subtitle-container">
-      <h2>WIE FUNKTIONIERT EIN KAFEE-ABO?</h2>
-      <p>Es ist ganz einfach. Folge drei einfachen Schritten, die dir eine ganz neue Geschmackswelt eröffnen: Du wirst nie wieder zurückblicken.</p>
+      <h2>{{ section.settings.how_it_work_title}}</h2>
+      <p>{{ section.settings.how_it_work_subtitle}}</p>
     </div>
-    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
   </div>
 
   <div class="master-content-container-works">
@@ -1269,6 +1269,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>link your location</p>",
       "label": "How It Work Subtitle"
     },
+    
     {
       "type": "richtext",
       "id": "how_it_work_title_one",
