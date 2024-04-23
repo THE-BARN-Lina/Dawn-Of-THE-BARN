@@ -661,9 +661,9 @@ p{
     <div class="content-box-triple"> 
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Ralf-coffee_1.jpg?v=1713252187" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
-        <h3>EIN EINZIGARTIGES GESCHMACKSERLEBNIS</h3>
+        <h3>{{ section.settings.ROASTERY_HEADING_2 }}</h3>
         <br>
-        <p>Wir arbeiten direkt mit den Erzeugern vor Ort zusammen und präsentieren die besten Kaffeearomen aus verschieden Ländern. Entdecke jeden Monat neue Kaffeeerlebnisse.</p>
+        <p>{{ section.settings.ROASTERY_OPENING_2 }}</p>
       </div>
       <div class="arrow-right-container" ><h4>1/3</h4></div>
     </div>
@@ -671,9 +671,9 @@ p{
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
-        <h3>UNSER CHARAKTERISTISCHES RÖSTPROFIL</h3>
+        <h3>{{ section.settings.ROASTERY_HEADING_2 }}</h3>
         <br>
-        <p>Unsere helle Röstung lässt das einzigartige Aroma deines Kaffees zur Geltung kommen. Wir liefern frisch auf Bestellung, mit reinem Geschmack in jeder Tasse.</p>
+        <p>{{ section.settings.ROASTERY_OPENING_2 }}</p>
       </div>
       <div class="arrow-right-container" ><h4>2/3</h4></div>    
     </div>
@@ -681,9 +681,9 @@ p{
     <div class="content-box-triple">
       <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
       <div class="text-content-container">
-        <h3>MONATLICH ZU DEINER HAUSTÜR GELIEFERT</h3>
+        <h3>{{ section.settings.TITLE_003 }}</h3>
         <br>
-        <p>Wir liefern in mehr als 50 Länder weltweit und arbeiten mit unseren Partnern zusammen, um sicherzustellen, dass dich dein Kaffee in bester Qualität erreicht.</p>
+        <p>{{ section.settings.SUBTITLE_003 }}</p>
       </div>
       <div class="arrow-right-container" ><h4>3/3</h4></div>
 
@@ -1113,17 +1113,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "label": "Benefits Subtitle 1"
     },
     {
-      "type": "richtext",
-      "id": "text_subtitle_secondary_2",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Benefits Subtitle 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_6",
-      "label": "Benefits Image 1"
-    },
-    {
       "type": "text",
       "id": "ROASTERY_HEADING_2",
       "default": "Image with text",
@@ -1136,11 +1125,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "label": "Benefits Image Subtitle 1"
     },
     {
-      "type": "image_picker",
-      "id": "ROASTERY_IMAGE_3",
-      "label": "Benefits Image 2"
-    },
-    {
       "type": "text",
       "id": "ROASTERY_HEADING_1",
       "default": "Image with text",
@@ -1151,11 +1135,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "id": "ROASTERY_OPENING_1",
       "default": "<p>link your location</p>",
       "label": "Benefits Image Subtitle 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "IMAGE_003",
-      "label": "Benefits Image 3"
     },
     {
       "type": "text",
