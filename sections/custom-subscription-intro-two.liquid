@@ -490,6 +490,7 @@ p{
   border:20px solid var(--padding-sections);
 }
 .accordion-button {
+
     background-color: black;
     color: white;
     cursor: pointer;
@@ -500,8 +501,12 @@ p{
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    border-bottom:2px solid var(--padding-sections);
+    border-bottom: 2px solid var(--padding-sections);
     height: calc(80vh / 10);
+    display: flex; /* Use flexbox to manage children alignment */
+    justify-content: space-between; /* Aligns children to the edges */
+    align-items: center; /* Aligns children vertically in the middle */
+
 
 }
 .accordion-button:hover, .accordion-button:active {
@@ -814,19 +819,19 @@ p{
     <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
   <div class="accordion">
-    <button class="accordion-button">Wann verschicken wir deine Abo-Kaffees?</button>
+    <button class="accordion-button">Wann verschicken wir deine Abo-Kaffees? <span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.</p>
     </div>
-    <button class="accordion-button">Welche Kaffeesorten werde ich erhalten?</button>
+    <button class="accordion-button">Welche Kaffeesorten werde ich erhalten?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Unser Röstteam wählt jeden Monat die Abo-Kaffees aus. In der Regel handelt es sich um unsere neuesten Kaffees und oft um Microlots. Wenn du dein Abo startest, kannst du zwischen Espresso- und Filterröstungen wählen.</p>
     </div>
-    <button class="accordion-button">Wie vergleicht sich der Abo-Preis mit Einzelbestellungen im Webshop?</button>
+    <button class="accordion-button">Wie vergleicht sich der Abo-Preis mit Einzelbestellungen im Webshop?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Die Preisvorteile unserer Abos variieren, da wir jeden Monat andere Kaffees auswählen und diese haben unterschiedliche Preise. Der durchschnittliche Preisvorteil kann bis zu 25% im Vergleich zum Kauf einzelner Kaffees auf unserer Website betragen. Die besten Preise erhaltet Ihr, wenn Ihr ein Abo mit Vorauszahlung bucht.</p>
     </div>
-    <button class="accordion-button">Ich habe gerade ein Abo gestartet. Wann bekomme es den Kaffee?</button>
+    <button class="accordion-button">Ich habe gerade ein Abo gestartet. Wann bekomme es den Kaffee?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Dein erster Abo-Kaffee wird am Werktag nach Beginn des Abos versendet. Die einzige Ausnahme ist unser Masterpiece-Abo.
   
@@ -834,28 +839,28 @@ p{
         
         Das Abo kann auch jederzeit pausieren oder aussetzen. Wie lange es dauert, bis Dein frisch gerösteter Kaffee bei Dir eintrifft, hängt von Deiner Versandadresse und von dem gewählten Versandservice ab. Die genauen Laufzeiten findest Du auf unserer Webseite unter den Versandrichtlinien.</p>
     </div>
-    <button class="accordion-button">Wie kann ich mein Abo anpassen?</button>
+    <button class="accordion-button">Wie kann ich mein Abo anpassen?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Gehe zum "Menü" und dann auf "Login", um auf deine Kontodaten zuzugreifen. Wähle "Abo Manager", um hier Anpassungen vorzunehmen. Wenn du nicht auf Deinen Kaffee warten willst, kannst du das Feature "Gleich verschicken" wählen. Du kannst auch Lieferungen flexibel verschieben oder aussetzen, wenn Du magst.</p>
     </div>
-    <button class="accordion-button">Kann ich mein Abo pausieren?</button>
+    <button class="accordion-button">Kann ich mein Abo pausieren<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Die Preisvorteile unserer Abos variieren, da wir jeden Monat andere Kaffees auswählen und diese haben unterschiedliche Preise. Der durchschnittliche Preisvorteil kann bis zu 25% im Vergleich zum Kauf einzelner Kaffees auf unserer Website betragen. Die besten Preise erhaltet Ihr, wenn Ihr ein Abo mit Vorauszahlung bucht.</p>
     </div>
-    <button class="accordion-button">Kann ich meine Abo-Kaffees selbst auswählen?</button>
+    <button class="accordion-button">Kann ich meine Abo-Kaffees selbst auswählen?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Unser Kaffee-Abo wird von unserem Röstteam kuratiert. Das Schöne daran ist, dass unser Team Kaffees auswählt, die oft noch nicht in unserem Webshop erhältlich sind. Du erhälst jeden Monat wechselnde Kaffees, und Du kannst so die große Range an Single Origin Kaffees entdecken..</p>
     </div>
-    <button class="accordion-button">Wie kann ich mein Abo ändern?</button>
+    <button class="accordion-button">Wie kann ich mein Abo ändern?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Wenn Du Änderungen an Ihrem Abo vornehmen möchtest, die nicht über das Online-Portal möglich sind, wende Dich bitte direkt an unser Team per E-Mail: subscriber@thebarn.de
       </p>
     </div>
-    <button class="accordion-button">Wie funktioniert der 10% Rabatt?</button>
+    <button class="accordion-button">Wie funktioniert der 10% Rabatt?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Als Abonnent erhalst Du 10% Rabatt auf alle unsere Kaffeebohnen (ausgenommen seltene Kaffeesorten). Du kannst ganz einfach Bohnen zu Deiner nächsten Lieferung hinzufügen. So kannst Du Deine nächste Box ganz einfach aufstocken.</p>
     </div>
-    <button class="accordion-button">Wie funktioniert das "Add-on"?</button>
+    <button class="accordion-button">Wie funktioniert das "Add-on"?<span class="arrow">&#9660;</span></button>
     <div class="panel">
         <p>Du kannst jedes Produkt aus unserem Shop in deine Abo-Box packen.
   
@@ -871,29 +876,34 @@ p{
 
 
 {% javascript %}
-  document.addEventListener('DOMContentLoaded', function () {
-      var accButtons = document.querySelectorAll('.accordion-button');
-      accButtons.forEach(function(btn) {
-          btn.addEventListener('click', function() {
-              toggleAccordion(this);
-          });
-      });
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    var accButtons = document.querySelectorAll('.accordion-button');
+    accButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            toggleAccordion(this);
+        });
+    });
+});
 
-  function toggleAccordion(element) {
-      var panel = element.nextElementSibling;
-      if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-      } else {
-          var allPanels = document.querySelectorAll('.panel');
-          allPanels.forEach(function(otherPanel) {
-              if (otherPanel !== panel) {
-                  otherPanel.style.maxHeight = null;
-              }
-          });
-          panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-  }
+function toggleAccordion(element) {
+    var panel = element.nextElementSibling;
+    var arrow = element.querySelector('.arrow');
+
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        arrow.innerHTML = '&#9660;'; // Change to down arrow when the panel is closed
+    } else {
+        var allPanels = document.querySelectorAll('.panel');
+        var allArrows = document.querySelectorAll('.accordion-button .arrow');
+        allPanels.forEach(function(otherPanel, index) {
+            otherPanel.style.maxHeight = null;
+            allArrows[index].innerHTML = '&#9660;'; // Reset all arrows to down
+        });
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        arrow.innerHTML = '&#9650;'; // Change to up arrow when the panel is open
+    }
+}
+
 {% endjavascript %}
 
 
