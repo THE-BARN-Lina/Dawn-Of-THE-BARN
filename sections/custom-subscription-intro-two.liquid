@@ -913,27 +913,27 @@ p{
     <div class="text-list-perks">
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
-          data-text-perks= " <p>{{ section.settings.what_do_i_get_one_description}}</p>" >
+          data-text-perks="Wir arbeiten mit zuverlässigen Lieferpartnern zusammen, um dir deine monatliche Kaffeelieferung so schnell wie möglich zukommen zu lassen.">
           {{ section.settings.what_do_i_get_one}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
-          data-text-perks={{ section.settings.what_do_i_get_two_description}} >
+          data-text-perks="Der Kaffee in unserem Portfolio wird sorgfältig ausgewählt, getestet und geröstet. Wir möchten dir jeden Monat ein außergewöhnliches Geschmackserlebnis bieten.">
           {{ section.settings.what_do_i_get_two}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
-          data-text-perks={{ section.settings.what_do_i_get_three_description}} >
+          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
           {{ section.settings.what_do_i_get_three}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
-          data-text-perks={{ section.settings.what_do_i_get_four_description}} >
+          data-text-perks="Jeden Monat bringen wir eine begrenzte Anzahl von ganz besonderen Kaffees auf den Markt. Und unsere Abonnenten bekommen zuerst, vor allen anderen, die Chance ihn zu ergattern.">
           {{ section.settings.what_do_i_get_four}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
-          data-text-perks={{ section.settings.what_do_i_get_five_description}} >
+          data-text-perks="Als Abonnent bekommst du einfach mehr... Mehr vom Besten. Wenn dein Kaffeevorrat zur Neige geht, kannst du jederzeit weitere Bohnen mit einem schönen Rabatt bestellen.">
           {{ section.settings.what_do_i_get_five}} 
         </div>
         <div class="text-item-perks" 
@@ -946,7 +946,7 @@ p{
           {{ section.settings.what_do_i_get_seven}} </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
-          data-text-perks={{ section.settings.what_do_i_get_eight_description}}>
+          data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
           {{ section.settings.what_do_i_get_eight}} 
         </div>
     </div>
@@ -1045,7 +1045,7 @@ document.addEventListener('DOMContentLoaded', function () {
             icon.setAttribute('style', 'width:250px;height:250px');
             icon.setAttribute('delay', '2000');
 
-            const text = document.createElement('p');
+            const text = document.createElement('div');
             text.textContent = this.getAttribute('data-text-perks');
             text.style.color = '#fff';
             text.style.fontSize = '20px';
