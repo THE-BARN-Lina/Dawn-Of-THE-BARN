@@ -799,7 +799,7 @@ p{
 
         <h3>VOLCAN AZUL CATURRA</h3>
         <br>
-        <p>“Wahnsinn! Bis jetzt habe ich noch keinen so guten Kaffee entdeckt. Ein wunderbarer Geruch und Geschmack.”</p>
+        <p>{{ section.settings.past_coffee_1 }}</p>
         <br>
         <p> -- Silvio</p>
       </div>
@@ -813,9 +813,7 @@ p{
 
         <h3>CABALLERO</h3>
         <br>
-        <p>"Der köstlichste Kaffee, den wir je hatten... </p>
-        <p>Tarantino like..." </p>
-
+        <p>{{ section.settings.past_coffee_2 }}</p>
         <br>
         <p> -- Carsten</p>
       </div>
@@ -829,7 +827,7 @@ p{
 
         <h3>CERRO AZUL GEISHA</h3>
         <br>
-        <p>"Cerro Azul Gesha vom Februar war ein umwerfender Kaffee, der beste, den wir bisher probiert haben"</p>
+        <p>{{ section.settings.past_coffee_3 }}</p>
         <br>
         <p> -- Oleg</p>
       </div>
@@ -843,7 +841,7 @@ p{
         <br>
         <h3>VOLCAN AZUL GEISHA </h3>
         <br>
-        <p>“Einer der besten Naturkaffees, die ich je getrunken habe. Erstaunlicher Kaffee insgesamt!”</p>
+        <p>{{ section.settings.past_coffee_4 }}</p>
         <br>
         <p> -- Charlie</p>
       </div>
@@ -854,7 +852,7 @@ p{
   </div>
   
   <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+    <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
   </div>
   
 </section>
@@ -901,7 +899,7 @@ p{
   
 </section>
 <div class="master-container-button-mobile-works">
-  <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
 </div>
 <section class="master-section-container-perks">
 
@@ -1218,23 +1216,47 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Review 10"
     },
-
-
-
-
     {
       "type": "richtext",
       "id": "past_title",
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Past Coffees Title"
     },
-
     {
       "type": "richtext",
       "id": "past_subtitle",
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Past Coffees Subtitle"
     },
+    {
+      "type": "richtext",
+      "id": "past_coffee_1",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 1"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_2",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 2"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_3",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 3"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_4",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 4"
+    },
+
+
+
+
+
     {
       "type": "richtext",
       "id": "how_it_work_title",
