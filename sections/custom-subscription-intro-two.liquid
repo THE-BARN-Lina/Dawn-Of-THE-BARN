@@ -962,14 +962,14 @@ p{
 <section class="master-section-container-accordion">
   <div class="master-title-subtitle-button-container">
     <div class="master-title-subtitle-container">
-      <h2>NOCH FRAGEN OFFEN?</h2>
+      <h2>{{ section.settings.text_title_faq }}</h2>
     </div>
-    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+    <button class="button-main button-desktop">{{ section.settings.cta-main }} </button>
   </div>
   <div class="accordion">
-    <button class="accordion-button">Wann verschicken wir deine Abo-Kaffees? <span class="arrow">&#9660;</span></button>
+    <button class="accordion-button">{{ section.settings.faq_question_1}} <span class="arrow">&#9660;</span></button>
     <div class="panel">
-        <p>In der Regel brauchen wir 1 bis 3 Werktage ab deiner Bestellung, um Frische sicherzustellen.</p>
+        <p>{{ section.settings.faq_answer_1}}</p>
     </div>
     <button class="accordion-button">Welche Kaffeesorten werde ich erhalten?<span class="arrow">&#9660;</span></button>
     <div class="panel">
