@@ -4,6 +4,7 @@
   --white: #ffffff;
   --black:#282828;
   --padding-sections:#282828;
+  --golden-star:#ffe234;
   --text-shadow:#bcbcbc;
   --button-main:black;
   --font-main: "Chalet Comprime";
@@ -347,9 +348,9 @@ p{
   }
 }
 {% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
-.master-section-container-works{
-  border:20px solid var(--padding-sections)
-}
+  .master-section-container-works{
+    border:20px solid var(--padding-sections)
+  }
   .master-content-container-works{
 
     display:flex;
@@ -397,7 +398,7 @@ p{
     background-color:black;
     width:100%;
     height: calc(100vh - 30vh - 80px );
-}
+  }
   .text-content-container-works{
     display: flex;
     flex-direction: row;
@@ -478,6 +479,38 @@ p{
     border-top:0px;
   }
 }
+{% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
+
+
+
+/* styles.css */
+.accordion-button {
+    background-color: #f78f20;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion-button:hover, .accordion-button:active {
+    background-color: #d6771f;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color:black;
+}
+
+
 
 {%- endstyle -%}
 
@@ -558,7 +591,7 @@ p{
         <br>
         <p>“Die Säure ist perfekt mit der Fülle frischer Aromen kombiniert, es fühlt sich einfach richtig an. Jetzt möchte ich auch die anderen Sorten probieren. Daumen hoch!”</p>
         <br>
-        <p style="color:var(--brown)"> ★ ★ ★ ★ ★ </p>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
         <p> -- Denis</p>
       </div>
@@ -571,7 +604,7 @@ p{
         <br>
         <p>"Ich hatte vorher das Abo zum Ausprobieren und bin dann auf das Curated Abo umgestiegen. Ich probiere gerne jeden Monat neue Bohnen aus und wähle dementsprechend."</p>
         <br>
-        <p style="color:var(--brown)"> ★ ★ ★ ★ ★ </p>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
         <p> -- Betis</p>
       </div>
@@ -584,7 +617,7 @@ p{
         <br>
         <p>"Schon die erste Tasse zauberte ein Lächeln auf mein Gesicht. Er hat alles, was ich mir von einem Kaffee wünsche. Fruchtig und süß. Was mir besonders auffällt, ist die Vielfalt des Geschmacks."</p>
         <br>
-        <p style="color:var(--brown)"> ★ ★ ★ ★ ★ </p>
+        <p style="color:var(--golden-star )"> ★ ★ ★ ★ ★ </p>
         <br>
         <p> -- Daniel</p>
       </div>
@@ -598,7 +631,7 @@ p{
         <br>
         <p>“Jeden Monat eine Überraschung die jedes Mal mich umgehauen hat.”</p>
         <br>
-        <p style="color:var(--brown)"> ★ ★ ★ ★ ★ </p>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
         <p> -- Jan</p>
       </div>
@@ -612,7 +645,7 @@ p{
         <br>
         <p>“Ich hatte das Abo schon mal und nach einer kurzen Pause habe ich es wieder abonniert. Ich probiere gerne monatlich neue Bohnen und wähle entsprechend aus.”</p>
         <br>
-        <p style="color:var(--brown)"> ★ ★ ★ ★ ★ </p>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
         <br>
         <p> -- Batin</p>
       </div>
@@ -750,6 +783,48 @@ p{
   <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
 </div>
 
+<div class="accordion">
+  <button class="accordion-button" onclick="toggleAccordion(this)">Section 1</button>
+  <div class="panel">
+      <p>Content for Section 1...</p>
+  </div>
+  <button class="accordion-button" onclick="toggleAccordion(this)">Section 2</button>
+  <div class="panel">
+      <p>Content for Section 2...</p>
+  </div>
+  <button class="accordion-button" onclick="toggleAccordion(this)">Section 3</button>
+  <div class="panel">
+      <p>Content for Section 3...</p>
+  </div>
+</div>
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+    var accButtons = document.querySelectorAll('.accordion-button');
+    accButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            toggleAccordion(this);
+        });
+    });
+});
+
+function toggleAccordion(element) {
+    var panel = element.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        var allPanels = document.querySelectorAll('.panel');
+        allPanels.forEach(function(otherPanel) {
+            if (otherPanel !== panel) {
+                otherPanel.style.maxHeight = null;
+            }
+        });
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+}
+
+
+{% endjavascript %}
 
 
 
