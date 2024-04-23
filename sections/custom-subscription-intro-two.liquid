@@ -905,7 +905,7 @@ p{
 
   <div class="master-title-subtitle-button-container-perks">
     <div class="master-title-subtitle-container">
-      <h2>WHAT DO I GET?</h2>
+      <h2>{{ section.settings.what_do_i_get_title}}</h2>
     </div>
     <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
   </div>
@@ -914,40 +914,40 @@ p{
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
           data-text-perks="Wir arbeiten mit zuverlässigen Lieferpartnern zusammen, um dir deine monatliche Kaffeelieferung so schnell wie möglich zukommen zu lassen.">
-          Monatliche Kaffeelieferung zu dir nach Hause 
+          {{ section.settings.what_do_i_get_one}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
           data-text-perks="Der Kaffee in unserem Portfolio wird sorgfältig ausgewählt, getestet und geröstet. Wir möchten dir jeden Monat ein außergewöhnliches Geschmackserlebnis bieten.">
-          Kuratierte Auswahl an Single Origin Kaffee
+          {{ section.settings.what_do_i_get_two}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
           data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
-          Kostenloser Versand für Abo-Bestellungen
+          {{ section.settings.what_do_i_get_three}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
           data-text-perks="Jeden Monat bringen wir eine begrenzte Anzahl von ganz besonderen Kaffees auf den Markt. Und unsere Abonnenten bekommen zuerst, vor allen anderen, die Chance ihn zu ergattern.">
-          Frühzeitiger Zugang zu speziellen Coffee Drops
+          {{ section.settings.what_do_i_get_four}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
           data-text-perks="Als Abonnent bekommst du einfach mehr... Mehr vom Besten. Wenn dein Kaffeevorrat zur Neige geht, kannst du jederzeit weitere Bohnen mit einem schönen Rabatt bestellen.">
-          10% Rabatt auf alle weiteren Bestellungen von Bohnenkaffee
+          {{ section.settings.what_do_i_get_five}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
           data-text-perks="Unsere charakteristische helle Röstung sorgt dafür, dass jeder Kaffee mit all seinen Geschmacksnuancen zur Geltung kommt. Jede Tasse, die du aufbrühst, wird dich mit klaren, aber deutlich ausgeprägten Geschmachsnoten überraschen.">
-          Frisch geröstet mit unserer charakteristischen hellen Röstung</div>
+          {{ section.settings.what_do_i_get_six}} </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
           data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
-          Kostenloser Versand für alle Ad-Ons zu Abo-Bestellungen</div>
+          {{ section.settings.what_do_i_get_seven}} </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
           data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
-          Zugang zu The Barn Events
+          {{ section.settings.what_do_i_get_eight}} 
         </div>
     </div>
     <div class="icon-display-perks"></div>
@@ -1309,7 +1309,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    
+
     {
       "type": "richtext",
       "id": "what_do_i_get_title",
