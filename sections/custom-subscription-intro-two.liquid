@@ -1052,12 +1052,13 @@ p{
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', function () {
+    // Define the function to strip HTML tags from strings
+    function stripHtml(html) {
+        var tempDiv = document.createElement("div");
+        tempDiv.innerHTML = html;
+        return tempDiv.textContent || tempDiv.innerText || "";
+    }
 
-  function stripHtml(html) {
-    var tempDiv = document.createElement("div");
-    tempDiv.innerHTML = html;
-    return tempDiv.textContent || tempDiv.innerText || "";
-}
     var accButtons = document.querySelectorAll('.accordion-button');
     accButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -1087,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', function () {
         icon.setAttribute('style', 'width:250px;height:250px');
         icon.setAttribute('delay', '2000');
         const text = document.createElement('div');
-        text.textContent = item.getAttribute('data-text-perks');
+        text.textContent = stripHtml(item.getAttribute('data-text-perks')); // Strip HTML tags
         text.style.color = '#fff';
         text.style.fontSize = '20px';
         text.style.textAlign = 'center';
@@ -1111,6 +1112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 
 
