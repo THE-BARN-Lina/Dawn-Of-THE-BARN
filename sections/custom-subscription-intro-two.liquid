@@ -1052,6 +1052,12 @@ p{
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', function () {
+
+  function stripHtml(html) {
+    var tempDiv = document.createElement("div");
+    tempDiv.innerHTML = html;
+    return tempDiv.textContent || tempDiv.innerText || "";
+}
     var accButtons = document.querySelectorAll('.accordion-button');
     accButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -1105,6 +1111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 
 
