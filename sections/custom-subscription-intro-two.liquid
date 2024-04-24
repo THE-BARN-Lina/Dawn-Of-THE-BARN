@@ -312,7 +312,7 @@ p{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .hover-image {
   display: block;
@@ -880,7 +880,7 @@ p{
 
           <img class="img-past-coffees default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
           <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Bildschirmfoto2021-08-09um12.16.50_73771fc9-bce4-4dca-b7db-e66db8fc2e4c.png?v=1703750951" width="" height="">
-          
+
         </div>
         <br>
         <div class="text-content-container-past_noimage">
@@ -897,7 +897,8 @@ p{
     <div class="content-box-triple-past">
       <div class="text-content-container-past">
         <div class="text-content-container-past_image" >
-          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+          <img class="img-past-coffees default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Image20.04.23at09.32.jpg?v=1708603380" width="" height="">
         </div>
         <br>
         <div class="text-content-container-past_noimage">
@@ -915,7 +916,8 @@ p{
     <div class="content-box-triple-past">
       <div class="text-content-container-past">
         <div class="text-content-container-past_image" >
-          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+          <img class="img-past-coffees default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/products/IMG_9674_7454d410-e238-45b8-bfc3-dff0079dddfe.jpg?v=1674207882" width="" height="">
         </div>
         <br>
         <div class="text-content-container-past_noimage">
@@ -1105,27 +1107,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Image hover functionality
-    const container = document.querySelector('.text-content-container-past_image');
-    if (!container) {
-        console.error('Image container not found');
-    } else {
+  const containers = document.querySelectorAll('.text-content-container-past_image');
+    
+    containers.forEach(container => {
         const defaultImage = container.querySelector('.default-image');
         const hoverImage = container.querySelector('.hover-image');
 
         if (!defaultImage || !hoverImage) {
-            console.error('One or both images not found');
-        } else {
-            container.addEventListener('mouseenter', function() {
-                defaultImage.style.opacity = 0;
-                hoverImage.style.opacity = 1;
-            });
-
-            container.addEventListener('mouseleave', function() {
-                defaultImage.style.opacity = 1;
-                hoverImage.style.opacity = 0;
-            });
+            console.error('One or both images not found in a container');
+            return;
         }
-    }
+
+        container.addEventListener('mouseenter', function() {
+            defaultImage.style.opacity = 0;
+            hoverImage.style.opacity = 1;
+        });
+
+        container.addEventListener('mouseleave', function() {
+            defaultImage.style.opacity = 1;
+            hoverImage.style.opacity = 0;
+        });
+    });
 
     // Accordion functionality
     var accButtons = document.querySelectorAll('.accordion-button');
