@@ -305,13 +305,18 @@ p{
   
 }
 {% comment %} ///////////////////PAST SECTION///////////////////// {% endcomment %}
-.img-past-coffees{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.img-past-coffees {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+.hover-image {
+  display: block;
+  opacity: 0;
 }
 .text-content-container-past h3{
   color:white;
@@ -329,7 +334,7 @@ p{
   align-items:center;
 }
 .text-content-container-past_image {
-  position: relative; /* Make relative so images will absolutely position inside this container */
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -852,7 +857,7 @@ p{
       <div class="text-content-container-past">
         <div class="text-content-container-past_image">
         
-          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
+          <img class="img-past-coffees default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
           <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
 
         </div>
@@ -1167,17 +1172,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    const imageContainer = document.querySelector('.text-content-container-past_image');
-  const images = imageContainer.querySelectorAll('.img-past-coffees');
+    const container = document.querySelector('.text-content-container-past_image');
+  const defaultImage = container.querySelector('.default-image');
+  const hoverImage = container.querySelector('.hover-image');
 
-  imageContainer.addEventListener('mouseenter', function() {
-    images[0].style.display = 'none';
-    images[1].style.display = 'block';
+  container.addEventListener('mouseenter', function() {
+    defaultImage.style.opacity = 0;
+    hoverImage.style.opacity = 1;
   });
 
-  imageContainer.addEventListener('mouseleave', function() {
-    images[0].style.display = 'block';
-    images[1].style.display = 'none';
+  container.addEventListener('mouseleave', function() {
+    defaultImage.style.opacity = 1;
+    hoverImage.style.opacity = 0;
   });
 
 });
