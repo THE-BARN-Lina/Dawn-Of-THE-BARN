@@ -681,7 +681,6 @@ p{
   </video>
 </section>
 
-
 <section class="master-section-container">
   <div class="master-title-subtitle-button-container">
     <div class="master-title-subtitle-container">
@@ -947,42 +946,42 @@ p{
     <div class="text-list-perks">
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
-          data-text-perks="Wir arbeiten mit zuverlässigen Lieferpartnern zusammen, um dir deine monatliche Kaffeelieferung so schnell wie möglich zukommen zu lassen.">
+          data-text-perks="{{ section.settings.what_do_i_get_one_description}}">
           {{ section.settings.what_do_i_get_one}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
-          data-text-perks="Der Kaffee in unserem Portfolio wird sorgfältig ausgewählt, getestet und geröstet. Wir möchten dir jeden Monat ein außergewöhnliches Geschmackserlebnis bieten.">
+          data-text-perks="{{ section.settings.what_do_i_get_two_description}}">
           {{ section.settings.what_do_i_get_two}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
-          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          data-text-perks="{{ section.settings.what_do_i_get_three_description}}">
           {{ section.settings.what_do_i_get_three}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
-          data-text-perks="Jeden Monat bringen wir eine begrenzte Anzahl von ganz besonderen Kaffees auf den Markt. Und unsere Abonnenten bekommen zuerst, vor allen anderen, die Chance ihn zu ergattern.">
+          data-text-perks="{{ section.settings.what_do_i_get_four_description}}">
           {{ section.settings.what_do_i_get_four}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
-          data-text-perks="Als Abonnent bekommst du einfach mehr... Mehr vom Besten. Wenn dein Kaffeevorrat zur Neige geht, kannst du jederzeit weitere Bohnen mit einem schönen Rabatt bestellen.">
+          data-text-perks="{{ section.settings.what_do_i_get_five_description}}">
           {{ section.settings.what_do_i_get_five}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
-          data-text-perks="Unsere charakteristische helle Röstung sorgt dafür, dass jeder Kaffee mit all seinen Geschmacksnuancen zur Geltung kommt. Jede Tasse, die du aufbrühst, wird dich mit klaren, aber deutlich ausgeprägten Geschmachsnoten überraschen.">
+          data-text-perks="{{ section.settings.what_do_i_get_six_description}}">
           {{ section.settings.what_do_i_get_six}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
-          data-text-perks="Alle Abo-Bestellungen werden ohne zusätzliche Versandkosten verschickt. Lehn dich einfach zurück, entspanne und warte darauf, dass es an der Tür klingelt.">
+          data-text-perks="{{ section.settings.what_do_i_get_seven_description}}">
           {{ section.settings.what_do_i_get_seven}} 
         </div>
         <div class="text-item-perks" 
           data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
-          data-text-perks="Im Laufe des Jahres organisieren wir Veranstaltungen online oder in unseren Cafés. Unsere Abonnenten sind Teil der Familie und stehen oft ganz oben auf der Gästeliste.">
+          data-text-perks="{{ section.settings.what_do_i_get_eight_description}}">
           {{ section.settings.what_do_i_get_eight}} 
         </div>
     </div>
@@ -1087,42 +1086,49 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function stripHtml(html) {
+  var tempDiv = document.createElement("div");
+  tempDiv.innerHTML = html;
+  return tempDiv.textContent || tempDiv.innerText || "";
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.text-item-perks');
   const iconDisplay = document.querySelector('.icon-display-perks');
 
   items.forEach(item => {
-      item.addEventListener('mouseenter', function() {
-          // Clear any existing content
-          iconDisplay.innerHTML = '';
+    item.addEventListener('mouseenter', function() {
+      // Clear any existing content
+      iconDisplay.innerHTML = '';
 
-          // Create lord-icon element
-          const icon = document.createElement('lord-icon');
-          icon.setAttribute('src', this.getAttribute('data-icon-perks'));
-          icon.setAttribute('trigger', 'loop');
-          icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-          icon.setAttribute('style', 'width:250px;height:250px');
-          icon.setAttribute('delay', '2000');
+      // Create lord-icon element
+      const icon = document.createElement('lord-icon');
+      icon.setAttribute('src', this.getAttribute('data-icon-perks'));
+      icon.setAttribute('trigger', 'loop');
+      icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+      icon.setAttribute('style', 'width:250px;height:250px');
+      icon.setAttribute('delay', '2000');
 
-          // Create text element for description
-          const text = document.createElement('div');
-          text.textContent = this.getAttribute('data-text-perks'); // Use the custom descriptive text
-          text.style.color = '#fff'; // Styling the text, adjust as necessary
-          text.style.fontSize = '20px'; // Font size, adjust as necessary
-          text.style.textAlign = 'center'; // Center align the text
-          text.style.marginTop = '20px'; // Space between the icon and text
+      // Create text element for description, stripping HTML
+      const text = document.createElement('div');
+      text.textContent = stripHtml(this.getAttribute('data-text-perks')); // Use stripped text
+      text.style.color = '#fff';
+      text.style.fontSize = '20px';
+      text.style.textAlign = 'center';
+      text.style.marginTop = '20px';
 
-          // Append elements to the icon display container
-          iconDisplay.appendChild(icon);
-          iconDisplay.appendChild(text);
-          iconDisplay.style.visibility = 'visible';
-      });
-      item.addEventListener('mouseleave', function() {
-          iconDisplay.innerHTML = ''; // Clear the content
-          iconDisplay.style.visibility = 'hidden';
-      });
+      // Append elements to the icon display container
+      iconDisplay.appendChild(icon);
+      iconDisplay.appendChild(text);
+      iconDisplay.style.visibility = 'visible';
+    });
+    item.addEventListener('mouseleave', function() {
+      iconDisplay.innerHTML = ''; // Clear the content
+      iconDisplay.style.visibility = 'hidden';
+    });
   });
 });
+
 
 
 
