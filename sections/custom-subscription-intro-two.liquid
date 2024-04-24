@@ -23,7 +23,7 @@ h1{
   margin:0px;
   padding:0px;
   line-height: normal;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 h2{
   font-family: var(--font-main);
@@ -31,7 +31,7 @@ h2{
   margin:0px;
   padding:0px;
   line-height: normal;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 h3{
   font-family: var(--font-main);
@@ -39,7 +39,7 @@ h3{
   margin:0px;
   padding:0px;
   line-height: normal;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 
 }
 h4{
@@ -159,13 +159,13 @@ p{
   object-fit:cover;
 }
 .text-content-container{
-  height:40%;
+  height:200px;
   background-color:black;
   padding:20px;
 
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:start;
   text-align:center;
   align-items:center;
 }
@@ -306,10 +306,12 @@ p{
 }
 {% comment %} ///////////////////PAST SECTION///////////////////// {% endcomment %}
 .img-past-coffees{
-  width:90%;
-  height:90%;
-  object-fit:cover;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .text-content-container-past h3{
   color:white;
@@ -322,9 +324,24 @@ p{
 
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
+  justify-content:center;
   text-align:center;
   align-items:center;
+}
+.text-content-container-past_image {
+  position: relative; /* Make relative so images will absolutely position inside this container */
+  width: 100%;
+  height: 100%;
+}
+.text-content-container-past_noimage{
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  text-align:center;
+  align-items:center;
+  min-height:200px;
+  width:100%;
 }
 .arrow-right-container-past h4{
   color:white;
@@ -369,7 +386,8 @@ p{
     align-items: center;
     justify-content:flex-end;
     text-align:center;
-    height:91%;
+    height:100%;
+    width:100%;
 
 
   }
@@ -832,58 +850,74 @@ p{
   <div class="master-content-container">
     <div class="content-box-triple-past"> 
       <div class="text-content-container-past">
-        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
-        <br>
+        <div class="text-content-container-past_image">
+        
+          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
+          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
 
-        <h3>VOLCAN AZUL CATURRA</h3>
+        </div>
         <br>
-        <p>{{ section.settings.past_coffee_1 }}</p>
-        <br>
-        <p> -- Silvio</p>
+        <div class="text-content-container-past_noimage">
+          <h2>VOLCAN AZUL CATURRA</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_1 }}</p>
+          <br>
+          <p> -- Silvio</p>
+          <div class="arrow-right-container-past" ><h4>1/4</h4></div>
+        </div>
       </div>
-      <div class="arrow-right-container-past" ><h4>1/4</h4></div>
     </div>
 
     <div class="content-box-triple-past">
       <div class="text-content-container-past">
-        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
+        <div class="text-content-container-past_image">
+          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
+        </div>
         <br>
-
-        <h3>CABALLERO</h3>
-        <br>
-        <p>{{ section.settings.past_coffee_2 }}</p>
-        <br>
-        <p> -- Carsten</p>
+        <div class="text-content-container-past_noimage">
+          <h2>CABALLERO</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_2 }}</p>
+          <br>
+          <p> -- Carsten</p>
+          <div class="arrow-right-container-past" ><h4>2/4</h4></div>    
+        </div>
       </div>
-      <div class="arrow-right-container-past" ><h4>2/4</h4></div>    
     </div>
     
     <div class="content-box-triple-past">
       <div class="text-content-container-past">
-        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+        <div class="text-content-container-past_image" >
+          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+        </div>
         <br>
-
-        <h3>CERRO AZUL GEISHA</h3>
-        <br>
-        <p>{{ section.settings.past_coffee_3 }}</p>
-        <br>
-        <p> -- Oleg</p>
+        <div class="text-content-container-past_noimage">
+          <h2>CERRO AZUL GEISHA</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_3 }}</p>
+          <br>
+          <p> -- Oleg</p>
+          <div class="arrow-right-container-past" ><h4>3/4</h4></div>
+        </div>
       </div>
-      <div class="arrow-right-container-past" ><h4>3/4</h4></div>
 
     </div>
 
     <div class="content-box-triple-past">
       <div class="text-content-container-past">
-        <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+        <div class="text-content-container-past_image" >
+          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+        </div>
         <br>
-        <h3>VOLCAN AZUL GEISHA </h3>
-        <br>
-        <p>{{ section.settings.past_coffee_4 }}</p>
-        <br>
-        <p> -- Charlie</p>
+        <div class="text-content-container-past_noimage">
+          <h2>VOLCAN AZUL GEISHA </h2>
+          <br>
+          <p>{{ section.settings.past_coffee_4 }}</p>
+          <br>
+          <p> -- Charlie</p>
+          <div class="arrow-right-container-past" ><h4>4/4</h4></div>
+        </div>
       </div>
-      <div class="arrow-right-container-past" ><h4>4/4</h4></div>
 
     </div>
 
@@ -1132,6 +1166,20 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const imageContainer = document.querySelector('.text-content-container-past_image');
+  const images = imageContainer.querySelectorAll('.img-past-coffees');
+
+  imageContainer.addEventListener('mouseenter', function() {
+    images[0].style.display = 'none';
+    images[1].style.display = 'block';
+  });
+
+  imageContainer.addEventListener('mouseleave', function() {
+    images[0].style.display = 'block';
+    images[1].style.display = 'none';
+  });
+
 });
 
 
