@@ -467,6 +467,9 @@ p{
   .hide-in-mobile-works{
     display:block;
   }
+  .number-how-it-works{
+    margin-bottom:5rem;
+  }
 @media (max-width: 1100px) {
   .master-content-container-works{
 
@@ -535,6 +538,9 @@ p{
   }
   .hide-in-desktop-works{
     display:block;
+  }
+  .number-how-it-works{
+    margin-bottom:0rem;
   }
  .master-title-subtitle-button-container-works{
     height:20vh;
@@ -621,8 +627,11 @@ p{
     padding-left:20px;
     border-bottom:4px solid var(--padding-sections);
     color:white;
+    font-size:16px;
 
 }
+
+
 .text-item-perks:hover {
   background-color:var(--padding-sections); 
 }
@@ -661,7 +670,7 @@ p{
   .master-section-container-accordion{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     min-height:100vh;
     width:100vw;
     border:20px solid var(--padding-sections);
@@ -672,9 +681,10 @@ p{
       align-items: center;
       padding: 18px;
       width: 100%;
+      height:calc(70vh / 9);
       background-color: black;
+      font-size:20px !important;
       color: white;
-      font-size: 15px;
       border: none;
       outline: none;
       transition: 0.4s;
@@ -735,7 +745,7 @@ p{
     <a href="{{ section.settings.cta_link }}" class="button-link">
       <button class="button-main">{{ section.settings.cta-main }}</button>
     </a>  
-</div>
+  </div>
   <video class="background-video" muted autoplay playsinline loop>
     <source src="https://cdn.shopify.com/videos/c/o/v/257e62f96dd5423db8586c5569c42431.mp4" type="video/mp4">
   </video>
@@ -982,7 +992,7 @@ p{
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">1</h3>
         <div class="works-without-number-container-right"> 
-          <h3>{{ section.settings.how_it_work_title_one}}</h3>
+          <h1>{{ section.settings.how_it_work_title_one}}</h1>
           <p>{{ section.settings.how_it_work_subtitle_one}}</p>
         </div>
 
@@ -991,7 +1001,7 @@ p{
       <div class="text-content-container-works border-middle-works">
         <h3 class="number-how-it-works hide-in-mobile-works">2</h3>
         <div class="works-without-number-container-left">
-          <h3>{{ section.settings.how_it_work_title_two}}</h3>
+          <h1>{{ section.settings.how_it_work_title_two}}</h1>
           <p>{{ section.settings.how_it_work_subtitle_two}}</p>
         </div>
         <h3 class="number-how-it-works hide-in-desktop-works">2</h3>
@@ -1000,7 +1010,7 @@ p{
       <div class="text-content-container-works">
         <h3 class="number-how-it-works">3</h3>
         <div class="works-without-number-container-right">
-          <h3>{{ section.settings.how_it_work_title_three}}</h3>
+          <h1>{{ section.settings.how_it_work_title_three}}</h1>
           <p>{{ section.settings.how_it_work_subtitle_three}}</p>
         </div>
     </div>
@@ -1077,43 +1087,43 @@ p{
     <button class="button-main button-desktop">{{ section.settings.cta-main }} </button>
   </div>
   <div class="accordion">
-    <button class="accordion-button">{{ section.settings.faq_question_1}} <span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_1}} <span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_1}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_2}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_2}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_2}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_3}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_3}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_3}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_4}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_4}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_4}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_5}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_5}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_5}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_6}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_6}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_6}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_7}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_7}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_7}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_8}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_8}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_8}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_9}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_9}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_9}}</p>
     </div>
-    <button class="accordion-button">{{ section.settings.faq_question_10}}<span class="arrow">&#9660;</span></button>
+    <div class="accordion-button">{{ section.settings.faq_question_10}}<span class="arrow">&#9660;</span></div>
     <div class="panel">
         <p>{{ section.settings.faq_answer_10}}</p>
     </div>
