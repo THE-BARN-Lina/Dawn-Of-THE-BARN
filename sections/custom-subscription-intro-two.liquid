@@ -10,6 +10,7 @@
   --button-main:black;
   --font-main: "Chalet Comprime";
   --font-secondary:"Raleway";
+  --font-size-big-biggie:8vh;
   --font-size-big:6vh;
   --font-size-medium:4vh;
   --font-size-medium-small:3.5vh;
@@ -17,15 +18,23 @@
 }
 
 
-h1{
+.content-overlay h1{
   font-family: var(--font-main);
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-big-biggie);
   margin:0px;
   padding:0px;
   line-height: normal;
   letter-spacing: 2px;
 }
-h2{
+.master-title-subtitle-container  h2{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.text-content-container-past_noimage h2{
   font-family: var(--font-main);
   font-size: var(--font-size-medium);
   margin:0px;
@@ -91,8 +100,8 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px; }
-
+  padding: 20px; 
+}
 .background-video {
   position: absolute; 
   top: 0;
@@ -296,7 +305,7 @@ p{
     align-items: flex-start;
     justify-content:start;
     text-align:start;
-    height:70%;
+    height:73%;
     width:100%;
     margin-top:20%;
 
@@ -554,6 +563,7 @@ p{
   justify-content:space-between;
   align-items:center;
   padding:20px;
+  background-color:black;
 
 }
 .container-perks {
@@ -597,6 +607,7 @@ p{
     width: 100%;
     padding-left:20px;
     border-bottom:4px solid var(--padding-sections);
+    color:white;
 
 }
 .text-item-perks:hover {
@@ -1037,10 +1048,10 @@ p{
     </div>
     <div class="icon-display-perks"></div>
   </div>
-  <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
-  </div>
 </section>
+<div class="master-container-button-mobile">
+  <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+</div>
 
 <section class="master-section-container-accordion">
   <div class="master-title-subtitle-button-container">
@@ -1098,107 +1109,102 @@ p{
 </section>
 
 {% javascript %}
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to strip HTML tags from strings
-    function stripHtml(html) {
-        var tempDiv = document.createElement("div");
-        tempDiv.innerHTML = html;
-        return tempDiv.textContent || tempDiv.innerText || "";
-    }
+  document.addEventListener('DOMContentLoaded', function() {
+      // Function to strip HTML tags from strings
+      function stripHtml(html) {
+          var tempDiv = document.createElement("div");
+          tempDiv.innerHTML = html;
+          return tempDiv.textContent || tempDiv.innerText || "";
+      }
 
-    // Image hover functionality
-  const containers = document.querySelectorAll('.text-content-container-past_image');
-    
-    containers.forEach(container => {
-        const defaultImage = container.querySelector('.default-image');
-        const hoverImage = container.querySelector('.hover-image');
+      // Image hover functionality
+    const containers = document.querySelectorAll('.text-content-container-past_image');
+      
+      containers.forEach(container => {
+          const defaultImage = container.querySelector('.default-image');
+          const hoverImage = container.querySelector('.hover-image');
 
-        if (!defaultImage || !hoverImage) {
-            console.error('One or both images not found in a container');
-            return;
-        }
+          if (!defaultImage || !hoverImage) {
+              console.error('One or both images not found in a container');
+              return;
+          }
 
-        container.addEventListener('mouseenter', function() {
-            defaultImage.style.opacity = 0;
-            hoverImage.style.opacity = 1;
-        });
+          container.addEventListener('mouseenter', function() {
+              defaultImage.style.opacity = 0;
+              hoverImage.style.opacity = 1;
+          });
 
-        container.addEventListener('mouseleave', function() {
-            defaultImage.style.opacity = 1;
-            hoverImage.style.opacity = 0;
-        });
-    });
+          container.addEventListener('mouseleave', function() {
+              defaultImage.style.opacity = 1;
+              hoverImage.style.opacity = 0;
+          });
+      });
 
-    // Accordion functionality
-    var accButtons = document.querySelectorAll('.accordion-button');
-    accButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            var panel = this.nextElementSibling;
-            var arrow = this.querySelector('.arrow');
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                arrow.innerHTML = '&#9660;';
-            } else {
-                document.querySelectorAll('.panel').forEach(p => p.style.maxHeight = null);
-                document.querySelectorAll('.accordion-button .arrow').forEach(a => a.innerHTML = '&#9660;');
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                arrow.innerHTML = '&#9650;';
-            }
-        });
-    });
+      // Accordion functionality
+      var accButtons = document.querySelectorAll('.accordion-button');
+      accButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+              var panel = this.nextElementSibling;
+              var arrow = this.querySelector('.arrow');
+              if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                  arrow.innerHTML = '&#9660;';
+              } else {
+                  document.querySelectorAll('.panel').forEach(p => p.style.maxHeight = null);
+                  document.querySelectorAll('.accordion-button .arrow').forEach(a => a.innerHTML = '&#9660;');
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                  arrow.innerHTML = '&#9650;';
+              }
+          });
+      });
 
-    // Icon and text update functionality
-    const items = document.querySelectorAll('.text-item-perks');
-    const iconDisplay = document.querySelector('.icon-display-perks');
-    let lastHoveredItem = null;
+      // Icon and text update functionality
+      const items = document.querySelectorAll('.text-item-perks');
+      const iconDisplay = document.querySelector('.icon-display-perks');
+      let lastHoveredItem = null;
 
-    function setIconAndText(item) {
-        iconDisplay.innerHTML = '';
+      function setIconAndText(item) {
+          iconDisplay.innerHTML = '';
 
-        const icon = document.createElement('lord-icon');
-        icon.setAttribute('src', item.getAttribute('data-icon-perks'));
-        icon.setAttribute('trigger', 'loop');
-        icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-        icon.setAttribute('style', 'width:250px;height:250px');
-        icon.setAttribute('delay', '2000');
+          const icon = document.createElement('lord-icon');
+          icon.setAttribute('src', item.getAttribute('data-icon-perks'));
+          icon.setAttribute('trigger', 'loop');
+          icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+          icon.setAttribute('style', 'width:250px;height:250px');
+          icon.setAttribute('delay', '2000');
 
-        const text = document.createElement('div');
-        text.textContent = stripHtml(item.getAttribute('data-text-perks'));
-        text.style.color = '#fff';
-        text.style.fontSize = '20px';
-        text.style.textAlign = 'center';
-        text.style.marginTop = '20px';
+          const text = document.createElement('div');
+          text.textContent = stripHtml(item.getAttribute('data-text-perks'));
+          text.style.color = '#fff';
+          text.style.fontSize = '20px';
+          text.style.textAlign = 'center';
+          text.style.marginTop = '20px';
 
-        iconDisplay.appendChild(icon);
-        iconDisplay.appendChild(text);
-        iconDisplay.style.visibility = 'visible';
-        
-        lastHoveredItem = item;
-    }
+          iconDisplay.appendChild(icon);
+          iconDisplay.appendChild(text);
+          iconDisplay.style.visibility = 'visible';
+          
+          lastHoveredItem = item;
+      }
 
-    if (items.length > 0) {
-        setIconAndText(items[0]);
-        lastHoveredItem = items[0];
-    }
+      if (items.length > 0) {
+          setIconAndText(items[0]);
+          lastHoveredItem = items[0];
+      }
 
-    items.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            setIconAndText(this);
-        });
-        item.addEventListener('mouseleave', function() {
-            if (lastHoveredItem) {
-                setIconAndText(lastHoveredItem);
-            }
-        });
-    });
+      items.forEach(item => {
+          item.addEventListener('mouseenter', function() {
+              setIconAndText(this);
+          });
+          item.addEventListener('mouseleave', function() {
+              if (lastHoveredItem) {
+                  setIconAndText(lastHoveredItem);
+              }
+          });
+      });
 
-});
+  });
 {% endjavascript %}
-
-
-
-
-
 
 {% schema %}
 {
