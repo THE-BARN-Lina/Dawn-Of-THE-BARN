@@ -1080,23 +1080,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const iconDisplay = document.querySelector('.icon-display-perks');
 
     function setIconAndText(item) {
-        iconDisplay.innerHTML = '';
-        const icon = document.createElement('lord-icon');
-        icon.setAttribute('src', item.getAttribute('data-icon-perks'));
-        icon.setAttribute('trigger', 'loop');
-        icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-        icon.setAttribute('style', 'width:250px;height:250px');
-        icon.setAttribute('delay', '2000');
-        const text = document.createElement('div');
-        text.textContent = stripHtml(item.getAttribute('data-text-perks')); // Strip HTML tags
-        text.style.color = '#fff';
-        text.style.fontSize = '20px';
-        text.style.textAlign = 'center';
-        text.style.marginTop = '20px';
-        iconDisplay.appendChild(icon);
-        iconDisplay.appendChild(text);
-        iconDisplay.style.visibility = 'visible';
-    }
+    iconDisplay.innerHTML = '';
+    const icon = document.createElement('lord-icon');
+    icon.setAttribute('src', item.getAttribute('data-icon-perks'));
+    icon.setAttribute('trigger', 'loop');
+    icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+    icon.setAttribute('style', 'width:250px;height:250px');
+    icon.setAttribute('delay', '2000');
+    const text = document.createElement('div');
+    text.innerText = item.getAttribute('data-text-perks'); // Use innerText to possibly preserve formatted display without tags
+    text.style.color = '#fff';
+    text.style.fontSize = '20px';
+    text.style.textAlign = 'center';
+    text.style.marginTop = '20px';
+    iconDisplay.appendChild(icon);
+    iconDisplay.appendChild(text);
+    iconDisplay.style.visibility = 'visible';
+}
+
 
     if (items.length > 0) {
         setIconAndText(items[0]);
