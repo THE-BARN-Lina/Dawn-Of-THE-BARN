@@ -183,6 +183,25 @@
         "padding_bottom": 0
       }
     },
+    "custom_hero_video_QEyzVe": {
+      "type": "custom-hero-video",
+      "settings": {
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d1cc424ecc4141ee94b5f7ba85cf20de.mp4",
+        "height": "adapt",
+        "heading": "<strong>FROM THE ORIGIN<\/strong>",
+        "text_1": "",
+        "text": "<p>Explore the wonderful Flavours from our latest trip to Central America.<\/p>",
+        "button_label": "Learn More",
+        "button_link": "https:\/\/thebarn.de\/collections\/coffee-beans?filter.p.m.custom.region=El+Salvador&filter.p.m.custom.region=Guatemala&filter.p.m.custom.region=Costa+Rica&filter.p.m.custom.region=Honduras",
+        "button_label_2": "All Beans",
+        "button_link_2": "shopify:\/\/collections\/coffee-beans",
+        "layout": "text_first",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "23138f82-deb5-4edd-bcdc-8062abfac1eb": {
       "type": "custom-triple-image-with-text",
       "settings": {
@@ -457,6 +476,7 @@
     "custom_hero_from_v12_4pxXPe",
     "ee9cdb15-2020-44dc-8a5a-27e5e1f51744",
     "ede73460-01d6-4be0-bf2c-e2f489f5fb40",
+    "custom_hero_video_QEyzVe",
     "23138f82-deb5-4edd-bcdc-8062abfac1eb",
     "ab5deab8-d68c-47d8-9ea8-9a8f781fe6db",
     "8c6b0def-3ad0-4049-ba71-a895f22aa6a2",
