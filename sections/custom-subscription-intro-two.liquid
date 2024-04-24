@@ -1078,6 +1078,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const items = document.querySelectorAll('.text-item-perks');
     const iconDisplay = document.querySelector('.icon-display-perks');
+    
+    // Keep track of the last hovered item
+    let lastHoveredItem = null;
 
     function setIconAndText(item) {
     iconDisplay.innerHTML = '';
@@ -1087,31 +1090,40 @@ document.addEventListener('DOMContentLoaded', function () {
     icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
     icon.setAttribute('style', 'width:250px;height:250px');
     icon.setAttribute('delay', '2000');
+
     const text = document.createElement('div');
-    text.innerText = item.getAttribute('data-text-perks'); // Use innerText to possibly preserve formatted display without tags
+    text.textContent = stripHtml(item.getAttribute('data-text-perks'));  // Applying stripHtml to ensure no HTML tags
     text.style.color = '#fff';
     text.style.fontSize = '20px';
     text.style.textAlign = 'center';
     text.style.marginTop = '20px';
+
     iconDisplay.appendChild(icon);
     iconDisplay.appendChild(text);
     iconDisplay.style.visibility = 'visible';
+    
+    lastHoveredItem = item;  // Update lastHoveredItem each time an item is hovered
 }
 
 
+    // Initialize with the first item if present
     if (items.length > 0) {
         setIconAndText(items[0]);
+        lastHoveredItem = items[0];  // Ensure the first item is set as the last hovered
     }
 
     items.forEach(item => {
-        item.addEventListener('mouseenter', () => setIconAndText(item));
-        item.addEventListener('mouseleave', () => {
-            if (item !== items[0]) {
-                iconDisplay.innerHTML = '';
-                iconDisplay.style.visibility = 'hidden';
+        item.addEventListener('mouseenter', function() {
+            setIconAndText(this);
+        });
+        item.addEventListener('mouseleave', function() {
+            // Instead of hiding, reset to the last hovered item
+            if (lastHoveredItem) {
+                setIconAndText(lastHoveredItem);
             }
         });
     });
+
 });
 
 
