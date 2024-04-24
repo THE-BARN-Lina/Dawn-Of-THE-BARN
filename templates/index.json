@@ -162,6 +162,9 @@
     },
     "custom_hero_video_QEyzVe": {
       "type": "custom-hero-video",
+      "custom_css": [
+        "p{font-size:14px;}"
+      ],
       "settings": {
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d1cc424ecc4141ee94b5f7ba85cf20de.mp4",
         "height": "adapt",
