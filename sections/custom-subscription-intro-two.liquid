@@ -1085,49 +1085,55 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-function stripHtml(html) {
-  var tempDiv = document.createElement("div");
-  tempDiv.innerHTML = html;
-  return tempDiv.textContent || tempDiv.innerText || "";
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.text-item-perks');
   const iconDisplay = document.querySelector('.icon-display-perks');
 
+  // Function to set the icon and text
+  function setIconAndText(item) {
+    iconDisplay.innerHTML = ''; // Clear any existing content
+
+    // Create lord-icon element
+    const icon = document.createElement('lord-icon');
+    icon.setAttribute('src', item.getAttribute('data-icon-perks'));
+    icon.setAttribute('trigger', 'loop');
+    icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+    icon.setAttribute('style', 'width:250px;height:250px');
+    icon.setAttribute('delay', '2000');
+
+    // Create text element for description
+    const text = document.createElement('div');
+    text.textContent = item.getAttribute('data-text-perks'); // Use the custom descriptive text
+    text.style.color = '#fff'; // Styling the text, adjust as necessary
+    text.style.fontSize = '20px'; // Font size, adjust as necessary
+    text.style.textAlign = 'center'; // Center align the text
+    text.style.marginTop = '20px'; // Space between the icon and text
+
+    // Append elements to the icon display container
+    iconDisplay.appendChild(icon);
+    iconDisplay.appendChild(text);
+    iconDisplay.style.visibility = 'visible';
+  }
+
+  // Initialize the first item as active
+  if (items.length > 0) {
+    setIconAndText(items[0]); // Activate the first item
+  }
+
+  // Event listeners for all items
   items.forEach(item => {
     item.addEventListener('mouseenter', function() {
-      // Clear any existing content
-      iconDisplay.innerHTML = '';
-
-      // Create lord-icon element
-      const icon = document.createElement('lord-icon');
-      icon.setAttribute('src', this.getAttribute('data-icon-perks'));
-      icon.setAttribute('trigger', 'loop');
-      icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-      icon.setAttribute('style', 'width:250px;height:250px');
-      icon.setAttribute('delay', '2000');
-
-      // Create text element for description, stripping HTML
-      const text = document.createElement('div');
-      text.textContent = stripHtml(this.getAttribute('data-text-perks')); // Use stripped text
-      text.style.color = '#fff';
-      text.style.fontSize = '20px';
-      text.style.textAlign = 'center';
-      text.style.marginTop = '20px';
-
-      // Append elements to the icon display container
-      iconDisplay.appendChild(icon);
-      iconDisplay.appendChild(text);
-      iconDisplay.style.visibility = 'visible';
+      setIconAndText(this);
     });
     item.addEventListener('mouseleave', function() {
-      iconDisplay.innerHTML = ''; // Clear the content
-      iconDisplay.style.visibility = 'hidden';
+      if (this !== items[0]) { // Only hide if it's not the first item
+        iconDisplay.innerHTML = '';
+        iconDisplay.style.visibility = 'hidden';
+      }
     });
   });
 });
+
 
 
 
