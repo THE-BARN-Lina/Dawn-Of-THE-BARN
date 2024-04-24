@@ -61,16 +61,41 @@ p{
 }
 
 {% comment %} ///////////////////HERO SECTION///////////////////// {% endcomment %}
-.master-section-container-hero{
-  height:calc(100vh - 168.688px);
-  width:100vw;
-  border:20px solid var(--padding-sections);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  justify-content:center;
+.master-section-container-hero {
+  position: relative; 
+  height: calc(100vh - 168.688px); 
+  width: 100vw; 
+  border: 20px solid var(--padding-sections); 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  justify-content: center; 
+  overflow: hidden; 
 }
+.content-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 2; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.background-video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1; 
+}
+
 {% comment %} ///////////////////SECOND SECTION///////////////////// {% endcomment %}
 .master-section-container{
   height:100vh;
@@ -642,11 +667,17 @@ p{
 
 
 <section class="master-section-container-hero">
-  <h1>{{ section.settings.text_title_primary }}</h1>
-  <p>{{ section.settings.text_subtitle_primary }}</p>
-  <br>
-  <button class="button-main">{{ section.settings.cta-main }}</button>
+  <div class="content-overlay">
+    <h1>{{ section.settings.text_title_primary }}</h1>
+    <p>{{ section.settings.text_subtitle_primary }}</p>
+    <br>
+    <button class="button-main">{{ section.settings.cta-main }}</button>
+  </div>
+  <video class="background-video" muted autoplay playsinline loop>
+    <source src="https://cdn.shopify.com/videos/c/o/v/257e62f96dd5423db8586c5569c42431.mp4" type="video/mp4">
+  </video>
 </section>
+
 
 <section class="master-section-container">
   <div class="master-title-subtitle-button-container">
