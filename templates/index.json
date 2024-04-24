@@ -94,29 +94,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "custom_hero_from_v12_4pxXPe": {
-      "type": "custom-hero-from-v12",
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/myanmar_sorting_cherries.jpg",
-        "height": "adapt",
-        "heading": "<strong>PA-O, COFFEE FUELED BY FEMALE POWER<\/strong>",
-        "text_1": "<p><strong>In The Spotlight<\/strong><\/p>",
-        "text": "<p>This special coffee is changing womens lives in Myanmar<\/p>",
-        "button_label": "Learn More",
-        "button_link": "shopify:\/\/products\/pa-o",
-        "button_label_2": "All Beans",
-        "button_link_2": "shopify:\/\/collections\/coffee-beans",
-        "layout": "text_first",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 24
-      }
-    },
     "ee9cdb15-2020-44dc-8a5a-27e5e1f51744": {
       "type": "feature-collection-custom",
       "custom_css": [
@@ -473,7 +450,6 @@
   },
   "order": [
     "custom_slideshow_hero_a4ArM7",
-    "custom_hero_from_v12_4pxXPe",
     "ee9cdb15-2020-44dc-8a5a-27e5e1f51744",
     "ede73460-01d6-4be0-bf2c-e2f489f5fb40",
     "custom_hero_video_QEyzVe",
