@@ -858,7 +858,7 @@ p{
         <div class="text-content-container-past_image">
         
           <img class="img-past-coffees default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
-          <img class="img-past-coffees" src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
+          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
 
         </div>
         <br>
@@ -1091,18 +1091,39 @@ p{
   </div>
 </section>
 
-
-
-
 {% javascript %}
-document.addEventListener('DOMContentLoaded', function () {
-    // Define the function to strip HTML tags from strings
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to strip HTML tags from strings
     function stripHtml(html) {
         var tempDiv = document.createElement("div");
         tempDiv.innerHTML = html;
         return tempDiv.textContent || tempDiv.innerText || "";
     }
 
+    // Image hover functionality
+    const container = document.querySelector('.text-content-container-past_image');
+    if (!container) {
+        console.error('Image container not found');
+    } else {
+        const defaultImage = container.querySelector('.default-image');
+        const hoverImage = container.querySelector('.hover-image');
+
+        if (!defaultImage || !hoverImage) {
+            console.error('One or both images not found');
+        } else {
+            container.addEventListener('mouseenter', function() {
+                defaultImage.style.opacity = 0;
+                hoverImage.style.opacity = 1;
+            });
+
+            container.addEventListener('mouseleave', function() {
+                defaultImage.style.opacity = 1;
+                hoverImage.style.opacity = 0;
+            });
+        }
+    }
+
+    // Accordion functionality
     var accButtons = document.querySelectorAll('.accordion-button');
     accButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -1120,16 +1141,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Icon and text update functionality
     const items = document.querySelectorAll('.text-item-perks');
     const iconDisplay = document.querySelector('.icon-display-perks');
-    
-    // Keep track of the last hovered item
     let lastHoveredItem = null;
 
     function setIconAndText(item) {
-        iconDisplay.innerHTML = ''; // Clear any existing content
+        iconDisplay.innerHTML = '';
 
-        // Create the icon element
         const icon = document.createElement('lord-icon');
         icon.setAttribute('src', item.getAttribute('data-icon-perks'));
         icon.setAttribute('trigger', 'loop');
@@ -1137,7 +1156,6 @@ document.addEventListener('DOMContentLoaded', function () {
         icon.setAttribute('style', 'width:250px;height:250px');
         icon.setAttribute('delay', '2000');
 
-        // Create the text element and apply the stripHtml function to clean any HTML tags
         const text = document.createElement('div');
         text.textContent = stripHtml(item.getAttribute('data-text-perks'));
         text.style.color = '#fff';
@@ -1145,19 +1163,16 @@ document.addEventListener('DOMContentLoaded', function () {
         text.style.textAlign = 'center';
         text.style.marginTop = '20px';
 
-        // Append elements to the display container
         iconDisplay.appendChild(icon);
         iconDisplay.appendChild(text);
         iconDisplay.style.visibility = 'visible';
         
-        // Update lastHoveredItem each time an item is hovered
         lastHoveredItem = item;
     }
 
-    // Initialize with the first item if present
     if (items.length > 0) {
         setIconAndText(items[0]);
-        lastHoveredItem = items[0];  // Ensure the first item is set as the last hovered
+        lastHoveredItem = items[0];
     }
 
     items.forEach(item => {
@@ -1165,36 +1180,13 @@ document.addEventListener('DOMContentLoaded', function () {
             setIconAndText(this);
         });
         item.addEventListener('mouseleave', function() {
-            // Instead of hiding, reset to the last hovered item
             if (lastHoveredItem) {
                 setIconAndText(lastHoveredItem);
             }
         });
     });
 
- const container = document.querySelector('.text-content-container-past_image');
-  const defaultImage = container.querySelector('.default-image');
-  const hoverImage = container.querySelector('.hover-image');
-
-  container.addEventListener('mouseenter', function() {
-    defaultImage.style.opacity = 0;
-    hoverImage.style.opacity = 1;
-  });
-
-  container.addEventListener('mouseleave', function() {
-    defaultImage.style.opacity = 1;
-    hoverImage.style.opacity = 0;
-  });
-
 });
-
-
-
-
-
-
-
-
 {% endjavascript %}
 
 
