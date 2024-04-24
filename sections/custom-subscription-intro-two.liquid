@@ -63,15 +63,28 @@ p{
   padding:0px;
   line-height: normal;
 }
-.button-main{
-  background-color:var(--brown);
-  padding:1.6rem;
-  border-radius:5px;
-  color: var(--white);
-  min-width:20rem; 
-  font-size: 16px;
-  border:none;  
+.button-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures text color inherits from parent elements */
 }
+
+.button-main {
+  background-color: var(--brown);
+  padding: 1.6rem;
+  border-radius: 5px;
+  color: var(--white);
+  min-width: 20rem; 
+  font-size: 16px;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+  cursor: pointer; /* Ensures the cursor changes to a pointer when hovered */
+}
+
+.button-main:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
 
 {% comment %} ///////////////////HERO SECTION///////////////////// {% endcomment %}
 .master-section-container-hero {
@@ -719,8 +732,10 @@ p{
     <h1>{{ section.settings.text_title_primary }}</h1>
     <p>{{ section.settings.text_subtitle_primary }}</p>
     <br>
-    <button class="button-main">{{ section.settings.cta-main }}</button>
-  </div>
+    <a href="{{ section.settings.cta_link }}" class="button-link">
+      <button class="button-main">{{ section.settings.cta-main }}</button>
+    </a>  
+</div>
   <video class="background-video" muted autoplay playsinline loop>
     <source src="https://cdn.shopify.com/videos/c/o/v/257e62f96dd5423db8586c5569c42431.mp4" type="video/mp4">
   </video>
@@ -950,10 +965,7 @@ p{
 
   </div>
   
-  <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
-  </div>
-  
+
 </section>
 
 <section class="master-section-container-works">
@@ -996,10 +1008,9 @@ p{
   </div>
 
   
+  
 </section>
-<div class="master-container-button-mobile-works">
-  <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
-</div>
+
 <section class="master-section-container-perks">
 
   <div class="master-title-subtitle-button-container-perks">
