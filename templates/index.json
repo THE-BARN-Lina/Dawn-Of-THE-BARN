@@ -27,6 +27,30 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_gf4HqH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Subscriptions.jpg",
+            "heading": "OUR SUBSCRIPTIONS",
+            "heading_1": "",
+            "heading_2": "",
+            "heading_size": "h1",
+            "subheading": "A unique flavour experience, every month.",
+            "subheading_2": "",
+            "button_label": "EXPLORE SUBSCRIPTIONS",
+            "link": "shopify:\/\/pages\/subscriptions-intro",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_hq7aQC": {
           "type": "slide",
           "settings": {
@@ -98,38 +122,14 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_gf4HqH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Subscriptions.jpg",
-            "heading": "OUR SUBSCRIPTIONS",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "A unique flavour experience, every month.",
-            "subheading_2": "",
-            "button_label": "EXPLORE SUBSCRIPTIONS",
-            "link": "shopify:\/\/pages\/subscriptions-intro",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_DHdCXn",
+        "slide_gf4HqH",
         "slide_hq7aQC",
         "slide_EzzWQy",
-        "slide_nk7yHf",
-        "slide_gf4HqH"
+        "slide_nk7yHf"
       ],
       "custom_css": [
         ".button--secondary {border: 2px solid white;}"
