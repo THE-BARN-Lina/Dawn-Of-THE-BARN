@@ -1,6 +1,33 @@
 {
   "wrapper": "div#div_id.page-width",
   "sections": {
+    "rich_text_gbGfVD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_hPPJrz": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><a href=\"\/pages\/subscriptions-intro\" title=\"The Barn Coffee Roasters - Subscriptions Intro\">Subscription Intro<\/a> - Coffee Subscriptions<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "text_hPPJrz"
+      ],
+      "custom_css": [
+        ".rich-text {padding-top: 0; padding-left: 0;}",
+        ".rich-text__blocks > * {font-weight: 100;}",
+        ".rich-text__wrapper {padding-left: 0;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "61526f59-c5c6-4ec0-b13e-f55767a96db1": {
       "type": "subscription-image",
       "disabled": true,
@@ -244,6 +271,7 @@
     }
   },
   "order": [
+    "rich_text_gbGfVD",
     "61526f59-c5c6-4ec0-b13e-f55767a96db1",
     "636edd10-9556-4424-add9-ef1faa9ebb3f",
     "e4099e65-993d-4695-a83c-ea76dc7804f4",
