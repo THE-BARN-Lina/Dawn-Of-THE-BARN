@@ -13,6 +13,7 @@
       content: '';
       display: block;
     }
+ 
   }
 
   @media screen and (min-width: 750px) {
@@ -23,10 +24,36 @@
       display: block;
     }
   }
+
+
   {%- endstyle -%}
 {%- endif -%}
+{%- style -%}
+@media screen and (min-width: 1100px) {
 
-<slideshow-component class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
+  .slider-container{
+   
+    height: calc(100vh - 167px);
+  }
+
+}
+@media screen and (max-width: 1100px) {
+
+.slider-container{
+
+  height: calc(100vh - 126px);
+}
+.slider-text-container {
+  padding:1rem !important;
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+}
+{%- endstyle -%}
+
+<slideshow-component class="slider-container slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
     <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
@@ -93,8 +120,8 @@
         tabindex="-1"
       >
     
-        <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} {% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-          <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
+        <div class=" slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} {% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+          <div class=" slider-text-container slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
            
             
             {%- if block.settings.heading != blank -%}
