@@ -688,11 +688,11 @@ p{
 
 
 @media (max-width: 1100px) {
-  .master-title-subtitle-button-container-perks{
- background-color:black;
+    .master-title-subtitle-button-container-perks{
+        background-color:black;
 
 
-}
+    }
     .container-perks {
         flex-direction: column; /* Stacks the containers vertically on smaller screens */
     }
@@ -773,6 +773,14 @@ p{
         background-color:black;
     
       }
+  }
+
+  .cta-bottom-container-desktop{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:3rem;
   }
 {%- endstyle -%}
 
@@ -1068,7 +1076,7 @@ p{
     <div class="master-title-subtitle-container">
       <h2>{{ section.settings.what_do_i_get_title}}</h2>
     </div>
-    <button class="button-main button-desktop"> ABOS ERKUNDEN </button>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
   </div>
   <div class="container-perks">
     <div class="text-list-perks">
@@ -1117,7 +1125,7 @@ p{
   </div>
 </section>
 <div class="master-container-button-mobile">
-  <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
+  <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
 </div>
 
 <section class="master-section-container-accordion">
@@ -1174,6 +1182,11 @@ p{
     <button class="button-main button-mobile"> ABOS ERKUNDEN </button>
   </div>
 </section>
+
+<div class="cta-bottom-container-desktop">
+  <button class="button-main button-desktop">{{ section.settings.cta-main }}</button>
+</div>
+
 
 {% javascript %}
   document.addEventListener('DOMContentLoaded', function() {
