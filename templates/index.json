@@ -29,6 +29,7 @@
         },
         "slide_hq7aQC": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/daterratwinbox.jpg",
             "heading": "EARTH MONTH",
