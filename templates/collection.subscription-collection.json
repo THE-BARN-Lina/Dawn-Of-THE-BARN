@@ -63,9 +63,10 @@
     "e4099e65-993d-4695-a83c-ea76dc7804f4": {
       "type": "subscriptions-collection-filter",
       "settings": {
+        "title_subscription": "<h2>SUBSCRIPTIONS BY CATEGORY <\/h2>",
         "products_per_page": 16,
         "columns_desktop": 3,
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_tastenotes": false,
