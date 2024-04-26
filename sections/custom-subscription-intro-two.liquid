@@ -140,6 +140,9 @@ p{
   object-fit: cover; 
   z-index: 1; 
 }
+.button-hero{
+  margin-top:2rem;
+}
 
 {% comment %} ///////////////////SECOND SECTION///////////////////// {% endcomment %}
 .master-section-container{
@@ -790,8 +793,7 @@ p{
   <div class="content-overlay">
     <h1>{{ section.settings.text_title_primary }}</h1>
     <p>{{ section.settings.text_subtitle_primary }}</p>
-    <br>
-    <a href="{{ section.settings.cta_link }}" class="button-link">
+    <a href="{{ section.settings.cta_link }}" class="button-link button-hero">
       <button class="button-main">{{ section.settings.cta-main }}</button>
     </a>  
   </div>
