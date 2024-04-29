@@ -28,6 +28,32 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_Vg86yr": {
+      "type": "rich-text",
+      "blocks": {
+        "text_MBab7B": {
+          "type": "text",
+          "settings": {
+            "text": "<h6> {{ collection.title }}<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "text_MBab7B"
+      ],
+      "custom_css": [
+        ".rich-text {padding-top: 0; padding-left: 0;}",
+        ".rich-text__wrapper {padding-left: 0;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -138,6 +164,7 @@
   },
   "order": [
     "rich_text_dQKe7t",
+    "rich_text_Vg86yr",
     "banner",
     "espresso_beans_nBWzgE",
     "73703f50-8557-4a1a-a963-0d73cf690863",
