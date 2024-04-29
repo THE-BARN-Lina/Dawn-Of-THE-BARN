@@ -46,6 +46,7 @@
     },
     "featured_collection_Dzhrgt": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Filter Coffee Beans",
         "heading_size": "h1",
@@ -73,11 +74,32 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "filter_beans_Vgag8V": {
+      "type": "filter-beans",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_tastenotes": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "quick_add_button_color": "",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "16618500908bb9c917",
     "banner",
-    "featured_collection_Dzhrgt"
+    "featured_collection_Dzhrgt",
+    "filter_beans_Vgag8V"
   ]
 }
