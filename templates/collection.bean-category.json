@@ -1,6 +1,28 @@
 {
   "wrapper": "div#div_id.page-width",
   "sections": {
+    "rich_text_rHbLLY": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ya7VgN": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><a href=\"\/collections\/coffee-beans\" title=\"COFFEE BEANS\">Coffee Beans<\/a> - {{ collection.title }}<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ya7VgN"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "16618500908bb9c917": {
       "type": "rich-text",
       "blocks": {
@@ -17,7 +39,7 @@
       ],
       "custom_css": [
         ".rich-text__wrapper {padding-left: 0px; margin-left: 0px;}",
-        ".rich-text{padding-left: 0px; margin-left: 0px;}"
+        ".rich-text {padding-left: 0px; margin-left: 0px;}"
       ],
       "settings": {
         "desktop_content_position": "left",
@@ -59,6 +81,7 @@
     }
   },
   "order": [
+    "rich_text_rHbLLY",
     "16618500908bb9c917",
     "banner",
     "filter_beans_Vgag8V"
