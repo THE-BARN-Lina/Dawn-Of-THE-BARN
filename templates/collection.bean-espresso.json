@@ -16,7 +16,6 @@
       ],
       "custom_css": [
         ".rich-text {padding-top: 0; padding-left: 0;}",
-        ".rich-text h6 {font-weight: 100;}",
         ".rich-text__wrapper {padding-left: 0;}"
       ],
       "settings": {
@@ -24,7 +23,7 @@
         "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
@@ -34,7 +33,7 @@
         "text_MBab7B": {
           "type": "text",
           "settings": {
-            "text": "<h6> {{ collection.title }}<\/h6>"
+            "text": "<h2> {{ collection.title }}<\/h2>"
           }
         }
       },
@@ -50,7 +49,7 @@
         "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
