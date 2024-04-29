@@ -104,6 +104,7 @@
     },
     "custom_subscription_intro_two_MFwfhf": {
       "type": "custom-subscription-intro-two",
+      "disabled": true,
       "settings": {
         "text_title_primary": "<h1>OUR COFFEE SUBSCRIPTIONS<\/h1>",
         "text_subtitle_primary": "<p>Explore the best Single Origin flavour out there with our Seasonal Coffee Subscriptions.<\/p>",
