@@ -322,28 +322,6 @@
         "padding_top": 28,
         "padding_bottom": 32
       }
-    },
-    "rich_text_APabGx": {
-      "type": "rich-text",
-      "blocks": {
-        "text_narzqM": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"\/pages\/subscriptions-intro\" target=\"_blank\" title=\"The Barn Coffee Roasters - Subscriptions Intro\">.<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_narzqM"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -352,7 +330,6 @@
     "d95783bf-69f0-4b1e-a19b-30c0f10418d6",
     "20c0b28a-f333-4a9e-a0bb-11f832d4947f",
     "6b5aef89-dfb6-44a7-929d-8e65b13ec372",
-    "main",
-    "rich_text_APabGx"
+    "main"
   ]
 }
