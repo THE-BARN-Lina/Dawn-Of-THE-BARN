@@ -30,6 +30,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "custom_css": [
         ".collection-hero__inner {padding-left: 0px;}",
         "h1 {text-transform: uppercase; font-size: 24px;}"
