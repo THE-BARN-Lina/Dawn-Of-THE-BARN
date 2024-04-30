@@ -2,23 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "custom_css": [
-        "h1 {text-align: center;}"
-      ],
+      "disabled": true,
       "settings": {
-        "padding_top": 20,
+        "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "5c173c56-bcec-499e-ba96-cd616b55efc1": {
+    "fc57176b-49a8-4f76-aa91-60f137df4a12": {
       "type": "career_detail",
-      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "5c173c56-bcec-499e-ba96-cd616b55efc1"
+    "fc57176b-49a8-4f76-aa91-60f137df4a12"
   ]
 }

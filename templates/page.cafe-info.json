@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {text-align: center;}"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "627261d0-f622-4103-857b-5628ed0cb8c6": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "{{ page.metafields.locations.cafe_images_a.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "custom_liquid": ""
+          }
+        },
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "{{ page.metafields.locations.cafe_images_b.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "custom_liquid": ""
+          }
+        },
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "{{ page.metafields.locations.cafe_images_c.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "custom_liquid": ""
+          }
+        },
+        "3c80a0f3-9a36-4d8d-8c38-a008c209ed64": {
+          "type": "column",
+          "settings": {
+            "image": "{{ page.metafields.locations.cafe_images_d.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-1",
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-2",
+        "template--17999525183755__627261d0-f622-4103-857b-5628ed0cb8c6-column-3",
+        "3c80a0f3-9a36-4d8d-8c38-a008c209ed64"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "link_as_button": false,
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "280cf51b-46df-4c48-839d-ceb4131ba4e0": {
+      "type": "cafe-with-map",
+      "blocks": {
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.locations.cafe_info | metafield_tag }}<\/p>",
+            "text_style": "body"
+          }
+        },
+        "a8e5304b-e699-4c52-a3f7-9287be0aa13c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Opening Times",
+            "icon": "stopwatch",
+            "content": "{{ page.metafields.locations.cafe_opening_times | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "92b5c479-eb8a-48ff-8b0c-69bba503a7cf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Contact Us",
+            "icon": "chat_bubble",
+            "content": "<p>If you would like to contact us, <a href=\"\/pages\/contact\" target=\"_blank\" title=\"CONTACT\">please send us a message<\/a>.<br\/><\/p><p>{{ page.metafields.locations.cafe_contact | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "b7577657-f584-449a-88a7-0a8d3d4f5dbd": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Important Note",
+            "icon": "clipboard",
+            "content": "<p>{{ block.settings.page.metafields.advent_callender.recipe | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-heading-1",
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-text-1",
+        "a8e5304b-e699-4c52-a3f7-9287be0aa13c",
+        "92b5c479-eb8a-48ff-8b0c-69bba503a7cf",
+        "b7577657-f584-449a-88a7-0a8d3d4f5dbd",
+        "template--17999525183755__280cf51b-46df-4c48-839d-ceb4131ba4e0-button-1"
+      ],
+      "custom_css": [
+        ".image-with-text__heading,h1 {margin-bottom: 2rem;}"
+      ],
+      "settings": {
+        "map_embed": "{{ page.metafields.location.google_maps_link.value }}",
+        "heading_text": "",
+        "padding_top": 8,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "main",
+    "627261d0-f622-4103-857b-5628ed0cb8c6",
+    "280cf51b-46df-4c48-839d-ceb4131ba4e0"
+  ]
+}

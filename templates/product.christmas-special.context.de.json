@@ -1,0 +1,20 @@
+{
+  "parent": "product.christmas-special.json",
+  "context": {
+    "market": "de"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "2b551958-b58c-4efe-816d-5428e2a8e84b": {
+          "settings": {
+            "content": "<p>Calendars will ship in <strong>mid-November <\/strong>to ensure your coffee arrives perfectly fresh.<\/p><p>Do not wait to order, our Advent Calendar is only available in very limited quantities!<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

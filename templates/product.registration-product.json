@@ -9,23 +9,22 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>{{ product.vendor }}<\/p>",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
           }
         },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "REGISTRATION COSTS:",
+            "text_style": "uppercase"
+          }
+        },
         "774d434a-03b9-4a0f-865a-e14942643b32": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.taste_notes.value }}<\/p>",
+            "text": "{{ product.metafields.custom.taste_notes.value }}",
             "text_style": "Titlecase"
           }
         },
@@ -33,13 +32,14 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
+        "318faa39-01d5-4f5a-9bb6-dab46ab07cd4": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<div class=\"no-js-hidden\" id=\"price-{{ section.id }}\" {{ block.shopify_attributes }}>\n              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}\n            <\/div>"
           }
         },
         "91f9e491-1535-469c-ba91-3e4531606aed": {
@@ -72,6 +72,16 @@
           "settings": {
           }
         },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -82,28 +92,23 @@
             "page": ""
           }
         },
-        "c4426925-3b53-42b1-89ca-7b13ffb86d19": {
-          "type": "custom_liquid",
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
           "disabled": true,
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.video %}\n<div class=\"iframe-container\">\n  <iframe width=\"555\" height=\"620\" src=\"{{ product.metafields.custom.video }}\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>\n\n<style>\n.iframe-container{\n  position: relative;\n  width: 100%;\n  padding-bottom: 56.25%; \n  height: 400px;\n}\n.iframe-container iframe{\n  position: absolute;\n  top:0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n<\/style>\n\n{% endif %}"
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
-            "heading": "Stay in Control",
-            "icon": "stopwatch",
-            "content": "<p>{{ product.metafields.Subscription.Infomation | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping Information",
-            "icon": "truck",
-            "content": "<p>{{ product.metafields.Subscription.Shipping_Information | metafield_tag }}<\/p>",
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
             "page": ""
           }
         },
@@ -114,40 +119,30 @@
             "share_label": "Share"
           }
         },
-        "9b8f5bbf-0f5b-4ab9-8bdc-e4a03fe71793": {
-          "type": "custom_liquid",
+        "price": {
+          "type": "price",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<strong>In {{ \"now\" | date: \"%B\"| prepend: \" \" }} we are sending out :<\/strong>"
-          }
-        },
-        "ca1cede1-3c87-47fe-a667-0fd458f832c9": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.metafields.subscription.subscription_bean_description | metafield_tag }}",
-            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "vendor",
         "774d434a-03b9-4a0f-865a-e14942643b32",
         "caption",
-        "price",
+        "318faa39-01d5-4f5a-9bb6-dab46ab07cd4",
         "91f9e491-1535-469c-ba91-3e4531606aed",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
+        "collapsible-row-0",
         "collapsible-row-1",
-        "c4426925-3b53-42b1-89ca-7b13ffb86d19",
-        "collapsible-row-3",
         "collapsible-row-2",
+        "collapsible-row-3",
         "share",
-        "9b8f5bbf-0f5b-4ab9-8bdc-e4a03fe71793",
-        "ca1cede1-3c87-47fe-a667-0fd458f832c9"
+        "price"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -255,7 +250,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "padding_top": 60,
         "padding_bottom": 28
       }
