@@ -10,7 +10,8 @@
             "title": "Jasmine Flat White",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/jasmine-flat-white"
+            "link": "shopify:\/\/pages\/jasmine-flat-white",
+            "custom_liquid": ""
           }
         },
         "f1c5680b-c00c-429c-b608-6f68ebcd68e8": {
@@ -20,7 +21,8 @@
             "title": "Sakerato",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/sakerato"
+            "link": "shopify:\/\/pages\/sakerato",
+            "custom_liquid": ""
           }
         },
         "template--17938059854091__5a7d0b39-edcf-4004-b7a8-e06c98bf8264-168726508135c8b7d9-1": {
@@ -30,7 +32,8 @@
             "title": "Yuzu Shake Tonic",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/yuzu-shake-tonic"
+            "link": "shopify:\/\/pages\/yuzu-shake-tonic",
+            "custom_liquid": ""
           }
         },
         "e2267534-8e31-42e8-99ed-a84c455758f5": {
@@ -40,7 +43,8 @@
             "title": "Mococa Granada",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/mococa-granada"
+            "link": "shopify:\/\/pages\/mococa-granada",
+            "custom_liquid": ""
           }
         }
       },
@@ -63,6 +67,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "link_as_button": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -80,7 +85,8 @@
             "title": "Coffee Paloma",
             "text": "",
             "link_label": "Recipe",
-            "link": "https:\/\/thebarn.de\/pages\/coffee-paloma"
+            "link": "https:\/\/thebarn.de\/pages\/coffee-paloma",
+            "custom_liquid": ""
           }
         },
         "template--17938059854091__ac49f71f-b4a3-4874-bbe7-8ef354b8b0ce-168726508135c8b7d9-1": {
@@ -90,7 +96,8 @@
             "title": "Winter Flat White",
             "text": "",
             "link_label": "Recipe",
-            "link": "https:\/\/thebarn.de\/pages\/winter-signature-drinks"
+            "link": "https:\/\/thebarn.de\/pages\/winter-signature-drinks",
+            "custom_liquid": ""
           }
         },
         "template--17938059854091__ac49f71f-b4a3-4874-bbe7-8ef354b8b0ce-168726508135c8b7d9-2": {
@@ -100,7 +107,8 @@
             "title": "Freimeister Drinks",
             "text": "",
             "link_label": "Recipe",
-            "link": "https:\/\/thebarn.de\/pages\/freimeisteskollektiv-drinks"
+            "link": "https:\/\/thebarn.de\/pages\/freimeisteskollektiv-drinks",
+            "custom_liquid": ""
           }
         }
       },
@@ -119,6 +127,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "link_as_button": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -136,7 +145,8 @@
             "title": "Blood Orange Brew",
             "text": "",
             "link_label": "Recipe",
-            "link": "https:\/\/thebarn.de\/pages\/huye-mountain-bloodorange-brew"
+            "link": "https:\/\/thebarn.de\/pages\/huye-mountain-bloodorange-brew",
+            "custom_liquid": ""
           }
         },
         "33bf5b81-3d03-46dd-b927-18efb1df8d73": {
@@ -146,7 +156,8 @@
             "title": "Iced Shakerato",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/shakerato"
+            "link": "shopify:\/\/pages\/shakerato",
+            "custom_liquid": ""
           }
         },
         "ee5ae48b-c0af-4f1f-a60d-ecd962996657": {
@@ -156,7 +167,8 @@
             "title": "Aeropress Goji",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/aeropress-goji-infusion"
+            "link": "shopify:\/\/pages\/aeropress-goji-infusion",
+            "custom_liquid": ""
           }
         },
         "39187344-3eda-470e-aaa2-5663992f1103": {
@@ -166,7 +178,8 @@
             "title": "Sherbet",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/sherbet-mohammed-ali"
+            "link": "shopify:\/\/pages\/sherbet-mohammed-ali",
+            "custom_liquid": ""
           }
         }
       },
@@ -186,6 +199,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "link_as_button": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -203,7 +217,8 @@
             "title": "Espresso Lemonade",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/dambi-uddo-espresso-lemonade"
+            "link": "shopify:\/\/pages\/dambi-uddo-espresso-lemonade",
+            "custom_liquid": ""
           }
         },
         "1fca3ed7-5a07-4356-82f7-033dc040fb1b": {
@@ -213,7 +228,8 @@
             "title": "Rose Brew",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/rose-brew"
+            "link": "shopify:\/\/pages\/rose-brew",
+            "custom_liquid": ""
           }
         },
         "0da61da0-da92-4230-bbfa-2ba4a59fa18d": {
@@ -223,7 +239,8 @@
             "title": "Caffe Crudo",
             "text": "",
             "link_label": "Recipe",
-            "link": "https:\/\/thebarn.de\/pages\/agua-del-caffe-crudo"
+            "link": "https:\/\/thebarn.de\/pages\/agua-del-caffe-crudo",
+            "custom_liquid": ""
           }
         }
       },
@@ -242,6 +259,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "link_as_button": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -259,7 +277,8 @@
             "title": "Beetroot Flat White",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/signature-drink-april-beetroot-flatwhite"
+            "link": "shopify:\/\/pages\/signature-drink-april-beetroot-flatwhite",
+            "custom_liquid": ""
           }
         },
         "07a08e63-3b2c-48b4-8231-4ec52a4cd31f": {
@@ -269,7 +288,8 @@
             "title": "Rose Brew",
             "text": "",
             "link_label": "Recipe",
-            "link": "shopify:\/\/pages\/rose-brew"
+            "link": "shopify:\/\/pages\/rose-brew",
+            "custom_liquid": ""
           }
         }
       },
@@ -287,6 +307,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "link_as_button": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -301,6 +322,28 @@
         "padding_top": 28,
         "padding_bottom": 32
       }
+    },
+    "rich_text_APabGx": {
+      "type": "rich-text",
+      "blocks": {
+        "text_narzqM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/subscriptions-intro\" target=\"_blank\" title=\"The Barn Coffee Roasters - Subscriptions Intro\">.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_narzqM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -309,6 +352,7 @@
     "d95783bf-69f0-4b1e-a19b-30c0f10418d6",
     "20c0b28a-f333-4a9e-a0bb-11f832d4947f",
     "6b5aef89-dfb6-44a7-929d-8e65b13ec372",
-    "main"
+    "main",
+    "rich_text_APabGx"
   ]
 }
