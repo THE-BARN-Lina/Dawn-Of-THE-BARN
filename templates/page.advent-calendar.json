@@ -1,0 +1,588 @@
+{
+  "sections": {
+    "eaf404e1-47a8-497c-bf5c-cabab41acd73": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "YOUR ADVENT CALENDAR COFFEES 2023",
+            "heading_size": "h1"
+          }
+        },
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-heading-1",
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-text-1",
+        "template--18323748946187__eaf404e1-47a8-497c-bf5c-cabab41acd73-buttons-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Coffee_Advent_Calendar_image.png",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "transparent_block": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {text-align: center;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "5eec40be-3e2d-4a03-9599-fcf2e04bb33d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WELCOME TO YOUR ADVENT COFFEE JOURNEY<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-heading-1",
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-text-1",
+        "template--18323748946187__5eec40be-3e2d-4a03-9599-fcf2e04bb33d-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "7db7e20d-6005-4747-866d-a2d51d7ae481": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18323748946187__7db7e20d-6005-4747-866d-a2d51d7ae481-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Felipe_Arcila_Jardines_del_Eden_2_1.png",
+            "title": "DAY 1",
+            "text": "<h2><strong>Jardines del Eden. Colombia<\/strong><\/h2><p>Red Gesha. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/1st-december",
+            "custom_liquid": ""
+          }
+        },
+        "4e89d863-d649-46f2-abcd-510596893f2d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tony_La_COlina.jpg",
+            "title": "DAY 2",
+            "text": "<h2><strong>La Colina.<br\/>Guatemala<br\/><\/strong><\/h2><p>Caturra. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/2nd-december-la-colina-guatemala",
+            "custom_liquid": ""
+          }
+        },
+        "9c2e37d9-fea6-4e72-b918-40eb25415c0e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gesha_village_drying.jpg",
+            "title": "DAY 3",
+            "text": "<h2><strong>Los Pirineos. El Salvador<br\/><\/strong><\/h2><p>Pacamara. Black Honey<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/3rd-december-los-pirineos-el-salvador",
+            "custom_liquid": ""
+          }
+        },
+        "9e22f0ad-559b-494c-af57-4923cd9a0d64": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9738_e2839e0d-cb00-4a72-a413-b70d0092579b.jpg",
+            "title": "DAY 4",
+            "text": "<h2><strong>Volcan Azul. Costa Rica<br\/><\/strong><\/h2><p>Caturra. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/4th-december-volcan-azul-costa-rica",
+            "custom_liquid": ""
+          }
+        },
+        "0abe0804-6145-4e55-bfaf-ded4eb24208c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Los-Pirineos-sent-by-Diego-07-21-14-1024x768_605611f4-5fc3-4253-90b5-714f4bdd4ca1.jpg",
+            "title": "DAY 5",
+            "text": "<h2><strong>Gesha Village. Ethiopia<br\/><\/strong><\/h2><p>Gesha 1931. Natural.<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/5th-december-gesha-village-ethiopia",
+            "custom_liquid": ""
+          }
+        },
+        "bb71d6c5-62c6-4ea9-b4d6-9d64bc8821c8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Doi_saket_producers.jpg",
+            "title": "DAY 6",
+            "text": "<h2><strong>Doi Saket. Thailand<br\/><\/strong><\/h2><p>Catimor. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/6th-december-doi-saket-thailand",
+            "custom_liquid": ""
+          }
+        },
+        "4b6cc896-9739-4b59-a811-0fdcdf4f0d08": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mbokam_Josephine_6bd5ae12-f4e6-40e1-84ed-b40e8dc8c10e.jpg",
+            "title": "DAY 7",
+            "text": "<h2><strong>Mbokam AB. Kenya<br\/><\/strong><\/h2><p>SL28 & Ruiru 11. Washed<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/7th-december-mbokam-ab-kenya",
+            "custom_liquid": ""
+          }
+        },
+        "4fe192dc-3eb0-40bc-8e41-72d03bbe98d3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shantawene_drying.jpg",
+            "title": "DAY 8",
+            "text": "<h2><strong>Shantawene. Ethiopia<br\/><\/strong><\/h2><p>Mixed heirloom. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/8th-december-shantawene-ethiopia",
+            "custom_liquid": ""
+          }
+        },
+        "f4fbf0bb-85b2-4f9c-bd9c-20182caf7fb8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chaiprakarn_50ae8fa1-2f95-41b9-b929-f3621da69023.jpg",
+            "title": "DAY 9",
+            "text": "<h2><strong>Chaiprakarn. Thailand<br\/><\/strong><\/h2><p>Catimor. Washed<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/9th-december-chaiprakarn-thailand",
+            "custom_liquid": ""
+          }
+        },
+        "8c864a5e-0a32-409a-b77d-fc65c319be5f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mahembe_1_1f44ad39-02d9-4ddf-9bd0-1ea5250ae08c.jpg",
+            "title": "DAY 10",
+            "text": "<h2><strong>Mahembe. Rwanda<br\/><\/strong><\/h2><p>Red Bourbon. Washed<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/10th-december-mahembe-rwanda",
+            "custom_liquid": ""
+          }
+        },
+        "ee7fd798-d4a3-46cc-9a0e-bbddc6169977": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Myanmar_sorting.jpg",
+            "title": "DAY 11",
+            "text": "<h2><strong>Pa-O. Myanmar<br\/><\/strong><\/h2><p>Caturra & S795. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/11th-december-pa-o-myanmar",
+            "custom_liquid": ""
+          }
+        },
+        "9bbf07a0-aeb9-411b-a12e-f30dc52622fd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ralf_at_dambi_uddo.jpg",
+            "title": "DAY 12",
+            "text": "<h2><strong>Dambi Uddo. Ethiopia<br\/><\/strong><\/h2><p>Mixed heirloom. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/12th-december-dambi-uddo-ethiopia",
+            "custom_liquid": ""
+          }
+        },
+        "7aee4380-8e4d-4102-9baa-f187a0251563": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/visita_finca_sep_2022-12_1.jpg",
+            "title": "DAY 13",
+            "text": "<h2><strong>Finca Gascon. Guatemala<br\/><\/strong><\/h2><p>Catuai. Red Honey<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/13th-december-finca-gascon-guatemala",
+            "custom_liquid": ""
+          }
+        },
+        "67e38228-6b69-4dd2-9b7b-5475829a2164": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Himalaya_1.jpg",
+            "title": "DAY 14",
+            "text": "<h2><strong>Himalaya. El Salvador<br\/><\/strong><\/h2><p>Maracaturra. Honey<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/14th-december-himalaya-el-salvador",
+            "custom_liquid": ""
+          }
+        },
+        "75fd563d-bbb0-44ba-9eaf-4db5758d01ac": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9738_3ef78ef6-cc17-4c5a-b584-241dadcbd0e8.jpg",
+            "title": "DAY 15",
+            "text": "<h2><strong>Volcan Azul Geisha. Costa Rica<br\/><\/strong><\/h2><p>Geisha. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/15th-december-volcan-azul-geisha-costa-rica",
+            "custom_liquid": ""
+          }
+        },
+        "55529c27-3dae-4f40-96e7-bb9335415e73": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cordillera_processing.jpg",
+            "title": "DAY 16",
+            "text": "<h2><strong>Cordillera del Fuego. Costa Rica<br\/><\/strong><\/h2><p>Caturra. Honey Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/16th-december-cordillera-del-fuego-costa-rica",
+            "custom_liquid": ""
+          }
+        },
+        "3705401b-b922-4a53-b94b-fa15198a74d9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image28.09.23at11.24_53a2afea-54d1-4313-99a4-aa6fc9b11a52.jpg",
+            "title": "DAY 17",
+            "text": "<h2><strong>La Cumbre. Guatemala<br\/><\/strong><\/h2><p>Caturra & Bourbon. Washed<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/17th-december-la-cumbre-guatemala",
+            "custom_liquid": ""
+          }
+        },
+        "d0275c57-a97b-4f0a-8c6e-deab3c7cc0a4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/caballero_marysable_moises.jpg",
+            "title": "DAY 18",
+            "text": "<h2><strong>Caballero Amazonas. Honduras<br\/><\/strong><\/h2><p>Geisha. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/18th-december-caballero-amazonas-honduras",
+            "custom_liquid": ""
+          }
+        },
+        "12ce3bc3-4d15-4ea2-940b-804b4940ea55": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Buena_Vista_Fredy_Orantes.jpg",
+            "title": "DAY 19",
+            "text": "<h2><strong>Buena Vista. Guatemala<br\/><\/strong><\/h2><p>Pacamara. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/19th-december-buena-vista-guatemala",
+            "custom_liquid": ""
+          }
+        },
+        "86d8469b-8ae9-49b2-92d5-dd8b5917079a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bait_Alal1.jpg",
+            "title": "DAY 20",
+            "text": "<h2><strong>Bait Yasin. Yemen<br\/><\/strong><\/h2><p>Yemenia. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/20th-december-bait-yasin-yemen",
+            "custom_liquid": ""
+          }
+        },
+        "fc9acd2d-b7a1-4773-bfdf-e6578e591be3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Graciano_los_lajones.jpg",
+            "title": "DAY 21",
+            "text": "<h2><strong>Los Lajones. Panama<br\/><\/strong><\/h2><p>Geisha. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/21st-december-los-lajones-panama",
+            "custom_liquid": ""
+          }
+        },
+        "2fec2fa1-7d08-494f-b98e-3269e8fa8cfa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Los-Pirineos-sent-by-Diego-07-21-2.jpg",
+            "title": "DAY 22",
+            "text": "<h2><strong>Los Pirineos. El Salvador<br\/><\/strong><\/h2><p>Sudan Rume. Anaerobic<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/22nd-december-los-pirineos-el-salvador",
+            "custom_liquid": ""
+          }
+        },
+        "0d8acf08-f3cc-4f3f-a1f1-dc664a9bfc0f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jardines_del_eden_drying.jpg",
+            "title": "DAY 23",
+            "text": "<h2><strong>Jardines del Eden. Colombia<br\/><\/strong><\/h2><p>Sidra. Natural<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/23rd-december-jardines-del-eden-colombia",
+            "custom_liquid": ""
+          }
+        },
+        "56c846aa-f19c-4d76-b0d9-d242ff013185": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ralf_snow_edit_2.jpg",
+            "title": "DAY 24",
+            "text": "<h2><strong>Christmas Coffee. Honduras<br\/><\/strong><\/h2><p>Catuai. Washed<\/p>",
+            "link_label": "EXPLORE NOW",
+            "link": "shopify:\/\/pages\/24th-december-christmas-coffee-honduras",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__7db7e20d-6005-4747-866d-a2d51d7ae481-column-1",
+        "4e89d863-d649-46f2-abcd-510596893f2d",
+        "9c2e37d9-fea6-4e72-b918-40eb25415c0e",
+        "9e22f0ad-559b-494c-af57-4923cd9a0d64",
+        "0abe0804-6145-4e55-bfaf-ded4eb24208c",
+        "bb71d6c5-62c6-4ea9-b4d6-9d64bc8821c8",
+        "4b6cc896-9739-4b59-a811-0fdcdf4f0d08",
+        "4fe192dc-3eb0-40bc-8e41-72d03bbe98d3",
+        "f4fbf0bb-85b2-4f9c-bd9c-20182caf7fb8",
+        "8c864a5e-0a32-409a-b77d-fc65c319be5f",
+        "ee7fd798-d4a3-46cc-9a0e-bbddc6169977",
+        "9bbf07a0-aeb9-411b-a12e-f30dc52622fd",
+        "7aee4380-8e4d-4102-9baa-f187a0251563",
+        "67e38228-6b69-4dd2-9b7b-5475829a2164",
+        "75fd563d-bbb0-44ba-9eaf-4db5758d01ac",
+        "55529c27-3dae-4f40-96e7-bb9335415e73",
+        "3705401b-b922-4a53-b94b-fa15198a74d9",
+        "d0275c57-a97b-4f0a-8c6e-deab3c7cc0a4",
+        "12ce3bc3-4d15-4ea2-940b-804b4940ea55",
+        "86d8469b-8ae9-49b2-92d5-dd8b5917079a",
+        "fc9acd2d-b7a1-4773-bfdf-e6578e591be3",
+        "2fec2fa1-7d08-494f-b98e-3269e8fa8cfa",
+        "0d8acf08-f3cc-4f3f-a1f1-dc664a9bfc0f",
+        "56c846aa-f19c-4d76-b0d9-d242ff013185"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "link_as_button": true,
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6126b374-1ae0-4181-a953-b7c16684e7bd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>OUR FAVOURITE COFFEES FROM THE ADVENT CALENDER <\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "NOTIFY ME WHEN AVAILIABLE",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-heading-1",
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-text-1",
+        "template--18323748946187__6126b374-1ae0-4181-a953-b7c16684e7bd-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "5525969e-ded4-4daf-b929-47d1b75a0a0f": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-text-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-title-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-text-2",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-price-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-variant_picker-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-quantity_selector-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-buy_buttons-1",
+        "template--18323748946187__5525969e-ded4-4daf-b929-47d1b75a0a0f-share-1"
+      ],
+      "settings": {
+        "product": "variety-box",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "48a80fe8-b41d-439c-a7ed-633e6f327a61": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18323748946187__48a80fe8-b41d-439c-a7ed-633e6f327a61-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We cannot wait for you to join us on this journey through the world of Single Origin flavour.<br\/><br\/>In your calendar, we have packed 24 unique and exciting coffees that are just waiting to be discovered.<br\/><br\/>As December unfolds, you can check in and see which coffee you will be enjoying next: your most memorable Christmas countdown starts soon!<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18323748946187__48a80fe8-b41d-439c-a7ed-633e6f327a61-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18323748946187__48a80fe8-b41d-439c-a7ed-633e6f327a61-text-1",
+        "template--18323748946187__48a80fe8-b41d-439c-a7ed-633e6f327a61-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/34A2075.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "eaf404e1-47a8-497c-bf5c-cabab41acd73",
+    "main",
+    "5eec40be-3e2d-4a03-9599-fcf2e04bb33d",
+    "7db7e20d-6005-4747-866d-a2d51d7ae481",
+    "6126b374-1ae0-4181-a953-b7c16684e7bd",
+    "5525969e-ded4-4daf-b929-47d1b75a0a0f",
+    "48a80fe8-b41d-439c-a7ed-633e6f327a61"
+  ]
+}

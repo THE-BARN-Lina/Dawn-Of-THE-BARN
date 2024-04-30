@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "306310eb-8d97-459d-a88a-db9b532d8130": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18430183375115__306310eb-8d97-459d-a88a-db9b532d8130-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Your Coffee on <strong>{{ page.title }}<\/strong><\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18430183375115__306310eb-8d97-459d-a88a-db9b532d8130-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18430183375115__306310eb-8d97-459d-a88a-db9b532d8130-heading-1",
+        "template--18430183375115__306310eb-8d97-459d-a88a-db9b532d8130-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {text-align: center;}"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 28
+      }
+    },
+    "5c173c56-bcec-499e-ba96-cd616b55efc1": {
+      "type": "career_detail",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "c87954eb-6eb8-45e0-920d-a661096fe6dd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.advent_callender.recipe | metafield_tag }}<\/p>"
+          }
+        },
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-heading-1",
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-text-1",
+        "template--18430183375115__c87954eb-6eb8-45e0-920d-a661096fe6dd-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "172aab28-a2e5-41dc-bfe5-5d0df0659643": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.advent_callender.recipe | metafield_tag }}<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-heading-1",
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-text-1",
+        "template--18430183375115__172aab28-a2e5-41dc-bfe5-5d0df0659643-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3a4f6480-e3b8-469a-ad45-5f19414bfdae": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-text-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-title-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-text-2",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-price-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-variant_picker-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-quantity_selector-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-buy_buttons-1",
+        "template--18430183375115__3a4f6480-e3b8-469a-ad45-5f19414bfdae-share-1"
+      ],
+      "settings": {
+        "product": "variety-box",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "306310eb-8d97-459d-a88a-db9b532d8130",
+    "main",
+    "5c173c56-bcec-499e-ba96-cd616b55efc1",
+    "c87954eb-6eb8-45e0-920d-a661096fe6dd",
+    "172aab28-a2e5-41dc-bfe5-5d0df0659643",
+    "3a4f6480-e3b8-469a-ad45-5f19414bfdae"
+  ]
+}
