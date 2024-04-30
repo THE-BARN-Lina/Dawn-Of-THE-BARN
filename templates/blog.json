@@ -2,35 +2,32 @@
   "sections": {
     "main": {
       "type": "main-blog",
-      "custom_css": [
-        "h1 {display: flex; flex-direction: column; align-items: center; text-transform: capitalize; font-size: 24px;}"
-      ],
       "settings": {
         "layout": "grid",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
         "show_author": false,
-        "padding_top": 32,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "collection_list_Y9t4pa": {
+    "collection_list_3ymcDa": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_kFtYzx": {
+        "featured_collection_rWEyMh": {
           "type": "featured_collection",
           "settings": {
             "collection": "coffee-beans"
           }
         },
-        "featured_collection_BTMgka": {
+        "featured_collection_tWLmyA": {
           "type": "featured_collection",
           "settings": {
             "collection": "coffee-subscription"
           }
         },
-        "featured_collection_JXQGAy": {
+        "featured_collection_xDU4BC": {
           "type": "featured_collection",
           "settings": {
             "collection": "coffee-equipment"
@@ -38,26 +35,26 @@
         }
       },
       "block_order": [
-        "featured_collection_kFtYzx",
-        "featured_collection_BTMgka",
-        "featured_collection_JXQGAy"
+        "featured_collection_rWEyMh",
+        "featured_collection_tWLmyA",
+        "featured_collection_xDU4BC"
       ],
       "settings": {
         "title": "DISCOVER MORE",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 80
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "collection_list_Y9t4pa"
+    "collection_list_3ymcDa"
   ]
 }

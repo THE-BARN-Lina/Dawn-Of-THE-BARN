@@ -3,25 +3,13 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "custom_css": [
-        "h1 {text-align: center;}"
-      ],
       "settings": {
-        "padding_top": 20,
+        "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "5c173c56-bcec-499e-ba96-cd616b55efc1": {
-      "type": "career_detail",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "custom_subscription_intro_two_XPrEtB": {
-      "type": "custom-subscription-intro-two",
-      "custom_css": [
-        "a {text-decoration: none;}"
-      ],
+    "custom_subscription_intro_3BGcyW": {
+      "type": "custom-subscription-intro",
       "settings": {
         "text_title_primary": "<h1>OUR COFFEE SUBSCRIPTIONS<\/h1>",
         "text_subtitle_primary": "<p>Explore the best Single Origin flavour out there with our Seasonal Coffee Subscriptions.<\/p>",
@@ -37,18 +25,18 @@
         "text_title": "<h2>OUR COFFEE COMMUNITY<\/h2>",
         "text_subtitle": "<p>Every month, our Subscribers drink truly memorable coffee. Your Subscription is a journey and we want you to share it!  <\/p>",
         "text": "<h3><strong>My first great speciality coffee<\/strong><\/h3>",
-        "text_1": "<p>“Wow! Normally I don´t like sour coffees at all and prefer the darker espresso roasts (Italy style). But this was new.<\/p><p><br\/>The acidity is so well blended in the big amount of fresh aromas that it just feels right and perfect.<\/p>",
-        "text_2": "<h3><strong>Super satisfying<br\/><\/strong><\/h3>",
+        "text_1": "<p>“Wow! Normally I don´t like sour coffees at all and prefer the darker espresso roasts (Italy style). But this was new.<\/p><p>The acidity is so well blended in the big amount of fresh aromas that it just feels right and perfect.<\/p>",
+        "text_2": "<h3><strong>Super satisfying<\/strong><\/h3>",
         "text_3": "<p>“I had the trial subscription before and then I upgraded to the curated one. I like to try new beans monthly and I choose accordingly.”<\/p>",
         "text_4": "<h3><strong>Coffee that I can't get enough of<\/strong><\/h3>",
         "text_5": "<p>“Even the first cup put a smile on my face. It has everything I want from a coffee. Fruity and sweet. What stands out to me is the variety in flavor.“<\/p>",
         "text_6": "<h3><strong>I love it<\/strong><\/h3>",
         "text_7": "<p>A surprise every month that blew me away every time.<\/p>",
-        "text_8": "<h3><strong>Fresh beans always<\/strong><\/h3>",
-        "text_9": "<p>I had the subscription before and after a short break I resubscribed. I like to try new beans monthly and I choose accordingly.<\/p>",
+        "text_8": "<h3><strong>Super satisfying<\/strong><\/h3>",
+        "text_9": "<p>I had the subscription before and after a short brak I resubscribed. I like to try new beans monthly and I choose accordingly.<\/p>",
         "past_title": "<h2>HIGHLIGHTS FROM PAST MONTHS<\/h2>",
         "past_subtitle": "<p>From your new daily brew to the rarest beans out there, expect memorable flavour every month.<\/p>",
-        "past_coffee_1": "<p>Wow! Until now, I have not come across such good coffee at your place. A wonderful smell and taste.<\/p>",
+        "past_coffee_1": "<p>\"Wow! Until now, I have not come across such good coffee at your place. A wonderful smell and taste.\"<\/p>",
         "past_coffee_2": "<p>“The most delicious coffee we have ever had... Tarantino Like...”<\/p>",
         "past_coffee_3": "<p>“Cerro Azul Gesha from February was a mind blowing coffee, the best we have tasted so far.”<\/p>",
         "past_coffee_4": "<p>“One of the best nature coffee I’ve had. Amazing coffee overall!”<\/p>",
@@ -95,7 +83,7 @@
         "faq_question_8": "<p>How can I change my subscription?<\/p>",
         "faq_answer_8": "<p>If you are looking to make changes to your subscription that are not possible through your online portal, then please contact our team directly by email: subscriber@thebarn.de<\/p>",
         "faq_question_9": "<p>How does the 10% discount function?<\/p>",
-        "faq_answer_9": "<p>As a subscriber you enjoy a 10% discount on all our coffee beans (excluding rare coffee varieties). You can easily add on beans to your next delivery, if you want to top up and make use of your next box.<\/p>",
+        "faq_answer_9": "<p>How does the 10% discount function?<\/p>",
         "faq_question_10": "<p>How does the add-on function work?<\/p>",
         "faq_answer_10": "<p>You can add any product from our store and included in your subscription box.Go to your subscription dashboard, scroll all the way down and you will see 'You might also like' title, there you will find all the products of our store.<\/p>",
         "padding_top": 36,
@@ -105,7 +93,6 @@
   },
   "order": [
     "main",
-    "5c173c56-bcec-499e-ba96-cd616b55efc1",
-    "custom_subscription_intro_two_XPrEtB"
+    "custom_subscription_intro_3BGcyW"
   ]
 }

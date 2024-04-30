@@ -1,83 +1,51 @@
 {
-  "wrapper": "div#div_id.page-width",
   "sections": {
-    "rich_text_dQKe7t": {
+    "rich_text_kd8XCe": {
       "type": "rich-text",
       "blocks": {
-        "text_MaViXp": {
+        "text_gFy6XN": {
           "type": "text",
           "settings": {
-            "text": "<h6><a href=\"\/collections\/coffee-beans\" title=\"COFFEE BEANS\">Coffee Beans<\/a><a href=\"\/collections\/coffee-equipment\" title=\"EQUIPMENT\"> <\/a>&gt; {{ collection.title }}<\/h6>"
+            "text": "<h6><a href=\"\/collections\/coffee-beans\" title=\"COFFEE BEANS\">Coffee Beans<\/a> &gt; {{ collection.title }}<\/h6>"
           }
         }
       },
       "block_order": [
-        "text_MaViXp"
+        "text_gFy6XN"
       ],
       "custom_css": [
-        ".rich-text {padding-top: 0; padding-left: 0;}",
-        ".rich-text__wrapper {padding-left: 0;}"
+        ".rich-text__wrapper {margin: 0px;}"
       ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 16,
         "padding_bottom": 0
       }
     },
-    "rich_text_Vg86yr": {
-      "type": "rich-text",
-      "blocks": {
-        "text_MBab7B": {
-          "type": "text",
-          "settings": {
-            "text": "<h2> {{ collection.title }}<\/h2>"
-          }
-        }
-      },
-      "block_order": [
-        "text_MBab7B"
-      ],
-      "custom_css": [
-        ".rich-text {padding-top: 0; padding-left: 0;}",
-        ".rich-text__wrapper {padding-left: 0;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
-      "custom_css": [
-        ".collection-hero__inner {padding-left: 0px;}",
-        "h1 {text-transform: uppercase; font-size: 24px;}"
-      ],
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
-        "color_scheme": "background-1"
+        "color_scheme": "scheme-1"
       }
     },
-    "filter_beans_ALRYpK": {
-      "type": "filter-beans",
+    "product-grid": {
+      "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
+        "products_per_page": 8,
+        "columns_desktop": 3,
+        "color_scheme": "",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_tastenotes": false,
         "show_rating": false,
-        "enable_quick_add": false,
-        "quick_add_button_color": "",
+        "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
@@ -85,63 +53,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "094f8d39-c1ca-4446-b6c8-20efbda4341e": {
-      "type": "collection-list",
-      "blocks": {
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "instant-coffee"
-          }
-        },
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "coffee-capsules"
-          }
-        },
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "coffee-equipment"
-          }
-        },
-        "0ed72ccc-119a-46b1-a66f-0fb40180f02d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "merchandise"
-          }
-        }
-      },
-      "block_order": [
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-1",
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-2",
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-3",
-        "0ed72ccc-119a-46b1-a66f-0fb40180f02d"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "DISCOVER MORE",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 76,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "rich_text_dQKe7t",
-    "rich_text_Vg86yr",
+    "rich_text_kd8XCe",
     "banner",
-    "filter_beans_ALRYpK",
-    "094f8d39-c1ca-4446-b6c8-20efbda4341e"
+    "product-grid"
   ]
 }

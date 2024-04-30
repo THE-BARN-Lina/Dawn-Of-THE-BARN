@@ -1,123 +1,26 @@
 {
   "sections": {
-    "custom_slideshow_hero_a4ArM7": {
+    "custom_slideshow_hero_hgd3h3": {
       "type": "custom-slideshow-hero",
       "blocks": {
-        "slide_DHdCXn": {
+        "slide_aJLVWf": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/earth_coffee_landscape_2.jpg",
-            "heading": "EARTH MONTH 2024",
-            "heading_1": "",
-            "heading_2": "",
+            "heading": "Image slide",
+            "heading_1": "Image slide",
+            "heading_2": "Image slide",
             "heading_size": "h1",
-            "subheading": "Sustainability never tasted better",
-            "subheading_2": "Every Bag of Earth Coffee plants a tree",
-            "button_label": "FIND OUT MORE",
-            "link": "shopify:\/\/blogs\/the-barn-blog\/earth-month-2024",
+            "subheading": "Tell your brand's story through images",
+            "subheading_2": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "button_style_secondary": false,
-            "button_label_2": "ORDER HERE",
-            "link_2": "shopify:\/\/products\/earth-coffee-2024",
-            "button_style_secondary_2": true,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_gf4HqH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_3.jpg",
-            "heading": "OUR SUBSCRIPTIONS",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "A unique flavour experience, every month.",
-            "subheading_2": "",
-            "button_label": "EXPLORE SUBSCRIPTIONS",
-            "link": "shopify:\/\/pages\/subscriptions-intro",
-            "button_style_secondary": false,
-            "button_label_2": "",
+            "button_label_2": "Button label",
             "link_2": "",
             "button_style_secondary_2": false,
             "box_align": "middle-center",
             "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_hq7aQC": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Daterra_Twin_Box.png",
-            "heading": "EARTH MONTH TWIN BOX",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "Explore two exceptional coffees from sustainable producer Daterra",
-            "subheading_2": "Every Box of Earth Month plants a tree",
-            "button_label": "ORDER HERE!",
-            "link": "shopify:\/\/products\/earth-month-twin-box",
-            "button_style_secondary": false,
-            "button_label_2": "FIND OUT MORE",
-            "link_2": "shopify:\/\/blogs\/the-barn-blog\/earth-month-2024",
-            "button_style_secondary_2": true,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_EzzWQy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/brewing_jungle_volacano.jpg",
-            "heading": "VOLCAN AZUL",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "COSTA RICA",
-            "subheading_2": "Dried figs. Blueberry. Apricot",
-            "button_label": "ORDER HERE!",
-            "link": "shopify:\/\/products\/volcan-azul",
-            "button_style_secondary": false,
-            "button_label_2": "ALL BEANS",
-            "link_2": "shopify:\/\/collections\/coffee-beans",
-            "button_style_secondary_2": true,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_nk7yHf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/41429F1D-968D-4AB6-818F-CE015C3602BD-1799-000001B085362781.jpg",
-            "heading": "HIMALAYA ANNIVERSARY",
-            "heading_1": "",
-            "heading_2": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "subheading_2": "Super delicious Pacamara Coffee.",
-            "button_label": "ORDER NOW!",
-            "link": "shopify:\/\/products\/himalaya-anniversary",
-            "button_style_secondary": false,
-            "button_label_2": "ALL BEANS",
-            "link_2": "shopify:\/\/collections\/coffee-beans",
-            "button_style_secondary_2": true,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
@@ -125,390 +28,81 @@
         }
       },
       "block_order": [
-        "slide_DHdCXn",
-        "slide_gf4HqH",
-        "slide_hq7aQC",
-        "slide_EzzWQy",
-        "slide_nk7yHf"
-      ],
-      "custom_css": [
-        ".button--secondary {border: 2px solid white;}"
+        "slide_aJLVWf"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 9,
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "ee9cdb15-2020-44dc-8a5a-27e5e1f51744": {
-      "type": "feature-collection-custom",
+    "featured_collection_JydVqP": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "SUBSCRIPTION PLANS",
+        "heading_size": "h2",
+        "description": "<p>The worlds best coffees on repeat<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "main-coffee-subscriptions",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_Y8ga6P": {
+      "type": "featured-collection",
       "custom_css": [
-
+        ".quick-add__submit {color: white; background-color: #804d15;}"
       ],
       "settings": {
         "title": "LATEST RELEASES",
-        "heading_size": "h1",
-        "description_heading_2": "",
+        "heading_size": "h2",
         "description": "<p>Savor the new flavors: freshly roasted<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "new-releases",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "view_all_label": "View All",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_tastenotes": false,
         "show_rating": false,
-        "enable_quick_add": true,
+        "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "ede73460-01d6-4be0-bf2c-e2f489f5fb40": {
-      "type": "feature-collection-custom",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "SUBSCRIPTION PLANS",
-        "heading_size": "h1",
-        "description_heading_2": "",
-        "description": "<p>The worlds best coffees on repeat<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "coffee-subscription",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "view_all_label": "View All",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_tastenotes": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 16
-      }
-    },
-    "custom_hero_video_QEyzVe": {
-      "type": "custom-hero-video",
-      "custom_css": [
-        "p {font-size: 16px;}"
-      ],
-      "settings": {
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d1cc424ecc4141ee94b5f7ba85cf20de.mp4",
-        "height": "adapt",
-        "heading": "<strong>FROM THE ORIGIN<\/strong>",
-        "text_1": "",
-        "text": "<p>Explore the wonderful Flavours from our latest trip to Central America.<\/p>",
-        "button_label": "Learn More",
-        "button_link": "https:\/\/thebarn.de\/collections\/coffee-beans?filter.p.m.custom.region=El+Salvador&filter.p.m.custom.region=Guatemala&filter.p.m.custom.region=Costa+Rica&filter.p.m.custom.region=Honduras",
-        "button_label_2": "All Beans",
-        "button_link_2": "shopify:\/\/collections\/coffee-beans",
-        "layout": "text_first",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "padding_top": 16,
-        "padding_bottom": 36
-      }
-    },
-    "23138f82-deb5-4edd-bcdc-8062abfac1eb": {
-      "type": "custom-triple-image-with-text",
-      "settings": {
-        "title_aboutus": "NEWS & BREWS",
-        "linktoblog_aboutus": "<a href=\"\/blogs\/the-barn-blog\" title=\"THE BARN Specialty Coffee Blog\">Check Our Blog<\/a>",
-        "title_description_aboutus": "Our Latest Roasts and Reports",
-        "image1_aboutus": "shopify:\/\/shop_images\/image_1_9c8fb394-5305-4897-97ce-507839f25737.png",
-        "heading1_aboutus": "Approaching Sustainability",
-        "text1_aboutus": "",
-        "button_label1_aboutus": "",
-        "button_link1_aboutus": "https:\/\/the-barn-coffee-roasters.myshopify.com\/blogs\/coffee-wiki\/sustainability",
-        "button_style_secondary_aboutus": true,
-        "image5_aboutus": "shopify:\/\/shop_images\/F215_Checkpoint_Charlie_1_2e042be0-a44b-4f8d-a1d3-f62a2fe41a5a.jpg",
-        "heading5_aboutus": "New Location",
-        "text5_aboutus": "Checkpoint Charlie",
-        "button_label5_aboutus": "Button label",
-        "button_link5_aboutus": "shopify:\/\/metaobjects\/locations\/the-barn-checkpoint-charlie",
-        "button_style_secondary_aboutus5": false,
-        "image2_aboutus": "shopify:\/\/shop_images\/low_caf_sub.jpg",
-        "heading2_aboutus": "Low-Caf is Our Answer to Decaf",
-        "text2_aboutus": "",
-        "button_label2_aboutus": "",
-        "button_link2_aboutus": "shopify:\/\/blogs\/the-barn-blog\/low-caf",
-        "button_style_secondary_aboutus2": true,
-        "image3_aboutus": "shopify:\/\/shop_images\/Huye_mountain_natural_2_abf78f59-bfc7-4d63-afb7-636661a14cd1.jpg",
-        "heading3_aboutus": "Our latest release from Rwanda!",
-        "text3_aboutus": "Huye Mountain Natural",
-        "button_label3_aboutus": "",
-        "button_link3_aboutus": "shopify:\/\/products\/huye-mountain-natural",
-        "button_style_secondary_aboutus3": true,
-        "padding_top": 16,
-        "padding_bottom": 36
-      }
-    },
-    "ab5deab8-d68c-47d8-9ea8-9a8f781fe6db": {
-      "type": "xmas-section-filters",
-      "settings": {
-        "collection": "christmas-products",
-        "XMAS_TITLE": "OUR FAVOURITES",
-        "XMAS_BUNDLES": "",
-        "XMAS_ESSENTIALS": "ESSENTIALS‎",
-        "XMAS_BOOKS": "",
-        "XMAS_FELLOW": "FELLOW",
-        "XMAS_EQUIPMENT": "EQUIPMENT",
-        "XMAS_SUBSCRIPTIONS": "SUBSCRIPTIONS",
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_tastenotes": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "quick_add_button_color": "",
-        "swipe_on_mobile": true,
-        "columns_mobile": "1",
-        "padding_top": 16,
-        "padding_bottom": 36
-      }
-    },
-    "8c6b0def-3ad0-4049-ba71-a895f22aa6a2": {
-      "type": "collapsible-content",
-      "blocks": {
-        "44f43363-7757-49fc-a950-71f0029d8c41": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "POTSDAMER PLATZ",
-            "icon": "map_pin",
-            "row_content": "<p>Monday - Friday 08:30 – 19:00<br\/>Saturday 09:00 – 19:00<br\/>Sunday 09:00 – 18:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/iy47GVofLoViCeUa6\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/iy47GVofLoViCeUa6\">Alte Potsdamer Str. 5, 10785 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/the-barn-potsdamer-platz\" title=\"POTSDAMER PLATZ\">Explore Location<\/a><\/p>",
-            "page": "p5"
-          }
-        },
-        "2e44d085-a58b-4f9d-ac1c-ca13ba2aadbe": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "CAFÉ KRANZLER",
-            "icon": "map_pin",
-            "row_content": "<p>Monday - Friday 11:00 – 18:00<strong><br\/><\/strong>Saturday 11:00 - 19:00<br\/>Sunday: 11:00 - 18:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/9XTHjZNjazrAxwiNA\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/9XTHjZNjazrAxwiNA\">Kurfürstendamm 22<br\/>10719 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/cafe-kranzler\" title=\"CAFÉ KRANZLER\">Explore Location<\/a><\/p>",
-            "page": "k18"
-          }
-        },
-        "118f220b-c742-4e34-a94a-da6d7a562dfb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "HACKESCHER MARKT",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 10:00 – 18:00<br\/>Saturday-Sunday 11:00 – 18:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/sbcqQZ64gBfY7AfLA\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/sbcqQZ64gBfY7AfLA\">Neue Schönhauser Str. 12, 10178 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/the-barn-hackescher-markt\" title=\"HACKESCHER MARKT\">Explore Location<\/a><\/p>",
-            "page": "hackescher-markt"
-          }
-        },
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "NEUKÖLLN",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 10:00 – 18:00<br\/>Saturday-Sunday 11:00 – 18:00<strong><br\/><br\/><\/strong><a href=\"https:\/\/goo.gl\/maps\/d71AB8LfL9TQpKc86\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/d71AB8LfL9TQpKc86\">Friedelstraße 27, 12047 Berlin, Germany<\/a><strong><br\/><br\/><\/strong><a href=\"\/pages\/locations\/cafe-neukolln\" title=\"NEUKÖLLN\">Explore Location<\/a><\/p>",
-            "page": "neukolln"
-          }
-        },
-        "55555408-61be-4324-b240-07c475c6ca2d": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "NORDBAHNHOF",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 09:00 – 17:00<br\/>Saturday-Sunday 10:00 – 17:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/pJdsm1YhzUAQmnUy6\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/pJdsm1YhzUAQmnUy6\">Invalidenstraße 112, 10115 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/nordbahnhof\" title=\"NORDBAHNHOF\">Explore Location<\/a><\/p>",
-            "page": "cafe-nordbahnhof"
-          }
-        },
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ROSENTHALER PLATZ",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 08:00 – 18:00<br\/>Saturday-Sunday 10:00 – 18:00<strong><br\/><\/strong><br\/><a href=\"https:\/\/goo.gl\/maps\/JWbQeNypciH6u6yk7\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/JWbQeNypciH6u6yk7\">Weinbergsweg 1, 10119 Berlin, Germany<br\/><\/a><br\/><a href=\"\/pages\/locations\/rosenthaler-platz\" title=\"ROSENTHALER PLATZ\">Explore Location<\/a><\/p>",
-            "page": "rosenthaler-platz-cafe"
-          }
-        },
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "MITTE",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 08:00 – 18:00<br\/>Saturday 09:00 – 18:00<br\/>Sunday 10:00 – 18:00<strong><br\/><br\/><\/strong><a href=\"https:\/\/goo.gl\/maps\/ThnGDex4DxooZFdbA\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/ThnGDex4DxooZFdbA\">Auguststraße 58, 10119 Berlin<\/a><strong><br\/><br\/><\/strong><a href=\"\/pages\/locations\/mitte\" title=\"MITTE\">Explore Location<\/a><\/p>",
-            "page": "mitte"
-          }
-        },
-        "collapsible_row_TRTKqW": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "CHECKPOINT CHARLIE",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday: 08:00 - 18:00<br\/>Saturday-Sunday: 10:00 - 18:00<br\/><br\/><a href=\"https:\/\/maps.app.goo.gl\/Kq5KJ6vW2kDDf6NE7\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/Kq5KJ6vW2kDDf6NE7\">Friedrichstraße 215, 10969 Berlin<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-checkpoint-charlie\" title=\"CHECKPOINT CHARLIE\">Explore Location<\/a><\/p>",
-            "page": ""
-          }
-        },
-        "5903806a-eb63-4b0c-bd6f-27e5064c5b98": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "SONY CENTER",
-            "icon": "map_pin",
-            "row_content": "<p>Monday - Friday 10:00 – 18:00<br\/>Saturday - Sunday 11:00 – 18:00<br\/><br\/><a href=\"https:\/\/maps.app.goo.gl\/rXRG42iHGdbYmppm9\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/rXRG42iHGdbYmppm9\">Bellevuestraße 1, 10785 Berlin, Germany<\/a><br\/><br\/><a href=\"\/pages\/locations\/the-barn-sony-center\" title=\"SONY CENTER\">Explore Location<\/a><\/p>",
-            "page": "the-barn-sony-center"
-          }
-        },
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "SCHÖNHAUSER ALLEE | KIOSK",
-            "icon": "map_pin",
-            "row_content": "<p>Monday-Friday 10:00 – 14:00<br\/>Saturday-Sunday Closed<strong><br\/><\/strong><br\/><a href=\"https:\/\/maps.app.goo.gl\/wwP9V6ngBoQLkGZh8\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/wwP9V6ngBoQLkGZh8\">Schönhauser Allee 8, 10119 Berlin<strong><br\/><\/strong><\/a><br\/><a href=\"https:\/\/maps.app.goo.gl\/zfMPWGkVj3uN32qR6\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/zfMPWGkVj3uN32qR6\">Explore Location<\/a><\/p>",
-            "page": ""
-          }
-        },
-        "30b7b181-b377-49d2-96f2-c85f5ef67768": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ANNEX CAFÉ",
-            "icon": "map_pin",
-            "row_content": "<p>Monday - Friday 09:00–15:00<br\/>Saturday - Sunday Closed <\/p><p><a href=\"https:\/\/goo.gl\/maps\/pW4vMh6fPr5cEkAE9\" target=\"_blank\" title=\"https:\/\/goo.gl\/maps\/pW4vMh6fPr5cEkAE9\">Voltastraße 28, <br\/>13355 Berlin<\/a><strong><br\/><\/strong><a href=\"https:\/\/goo.gl\/maps\/pW4vMh6fPr5cEkAE9\" target=\"_blank\"><br\/><\/a><a href=\"\/pages\/locations\/annex-cafe\" title=\"ANNEX CAFÉ\">Explore Location<\/a><\/p>",
-            "page": ""
-          }
-        },
-        "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ROASTERY",
-            "icon": "map_pin",
-            "row_content": "<p><\/p><p><strong>Wattstraße 10-13<br\/>Berlin, Germany<\/strong><a href=\"https:\/\/goo.gl\/maps\/pW4vMh6fPr5cEkAE9\" target=\"_blank\"><br\/><br\/>View on Map<\/a><br\/>-<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_6zXjWa": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "PALMA DE MALLORCA",
-            "icon": "globe",
-            "row_content": "<p>Monday - Saturday: 10:00 - 16:00<br\/>Sunday: Closed<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/J3HbvXHXVA5jUuNf9\">Costa D´en Brossa 5 - Palma, Balears<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-palma-de-mallorca\" title=\"PALMA DE MALLORCA\">Explore Location<\/a><br\/><br\/><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_R4hezg": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "DUBAI",
-            "icon": "globe",
-            "row_content": "<p>Monday - Sunday 08:00 – 22:00<\/p><p><a href=\"https:\/\/www.google.com\/maps\/place\/THE+BARN+Coffee+Roasters+Dubai\/@25.1917359,55.2023754,13.1z\/data=!4m6!3m5!1s0x3e5f43cfe2fa60d7:0x7ed5818aff5d5249!8m2!3d25.2090679!4d55.2647334!16s%2Fg%2F11rd7xvg6q?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/THE+BARN+Coffee+Roasters+Dubai\/@25.1917359,55.2023754,13.1z\/data=!4m6!3m5!1s0x3e5f43cfe2fa60d7:0x7ed5818aff5d5249!8m2!3d25.2090679!4d55.2647334!16s%2Fg%2F11rd7xvg6q?entry=ttu\">Al Khazzan Park - Dubai, UAE<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-dubai\" title=\"DUBAI, Al Khazzan Park\">Explore Location<\/a><br\/><br\/><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_yrF9WB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "DAEGU",
-            "icon": "globe",
-            "row_content": "<p>Mon-Thu 10:30 ~ 20:00 \/ Fri-Sun 10:30 ~ 20:30<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/ezCXGzRk8kdFFU3X8\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/ezCXGzRk8kdFFU3X8\">B1F, Hyundai Department Store, 2077 Dalgubeol-daero, \u2028Jung-gu, Daegu<\/a><\/p><p><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_9p4qyg": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "BUSAN",
-            "icon": "globe",
-            "row_content": "<p>Daily 11:00 ~ 19:00<\/p><p><a href=\"https:\/\/maps.app.goo.gl\/ggjvszYHNjY5Ggdk7\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/ggjvszYHNjY5Ggdk7\">5th floor, 167, Dalmaji-gil 65beon-gil, Haeundae-gu, Busan<\/a><\/p><p><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_3hzcQw": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "SEONGSU, SEOUL",
-            "icon": "globe",
-            "row_content": "<p>Monday - Friday: 10:30 – 19:00<br\/>Saturday: 10:00 – 21:00<br\/>Sunday: 10:30 – 21:00<\/p><p><a href=\"https:\/\/www.google.com\/maps\/place\/The+Barn+Coffee+Roasters+Berlin\/@37.5407258,127.0601947,17z\/data=!3m1!4b1!4m6!3m5!1s0x357ca59fb383bbe3:0xe3a1ade86f6333e5!8m2!3d37.5407258!4d127.0601947!16s%2Fg%2F11tkbp8ls7?entry=ttu\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/The+Barn+Coffee+Roasters+Berlin\/@37.5407258,127.0601947,17z\/data=!3m1!4b1!4m6!3m5!1s0x357ca59fb383bbe3:0xe3a1ade86f6333e5!8m2!3d37.5407258!4d127.0601947!16s%2Fg%2F11tkbp8ls7?entry=ttu\">Seongdong-gu, Ttukseom-ro 17-gil, 31-22더반 베를린 코리아 성수점‎<\/a><\/p><p><a href=\"\/pages\/locations\/the-barn-seoul\" title=\"SEONGSU\">Explore Location<\/a><\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "44f43363-7757-49fc-a950-71f0029d8c41",
-        "2e44d085-a58b-4f9d-ac1c-ca13ba2aadbe",
-        "118f220b-c742-4e34-a94a-da6d7a562dfb",
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-3",
-        "55555408-61be-4324-b240-07c475c6ca2d",
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-2",
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-0",
-        "collapsible_row_TRTKqW",
-        "5903806a-eb63-4b0c-bd6f-27e5064c5b98",
-        "template--17938053923083__8c6b0def-3ad0-4049-ba71-a895f22aa6a2-168803031067651955-1",
-        "30b7b181-b377-49d2-96f2-c85f5ef67768",
-        "ebcf916f-48b7-4d4a-94fc-dc5e453dd19d",
-        "collapsible_row_6zXjWa",
-        "collapsible_row_R4hezg",
-        "collapsible_row_yrF9WB",
-        "collapsible_row_9p4qyg",
-        "collapsible_row_3hzcQw"
-      ],
-      "custom_css": [
-        "img {}",
-        "@media only screen and (min-width: 750px) {.collapsible-content {margin-top: 6rem; }}"
-      ],
-      "settings": {
-        "caption": "opening hours",
-        "heading": "THE BARN COFFEE SHOPS",
-        "heading_size": "h2",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image": "shopify:\/\/shop_images\/LOCATIONS_ROSENTHALERPLATZ_55.jpg",
-        "image_ratio": "large",
-        "desktop_layout": "image_second",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "1653387743507b82e2": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "custom_liquid": "{% render | \"awards-snippet\" %}\n\n<style>\n\n.quick-add__submit, #Subscribe { background-color: #804d15;\ncolor: white;\n--border-offset: #804d15;\n}\n<\/style>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 28
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
   "order": [
-    "custom_slideshow_hero_a4ArM7",
-    "ee9cdb15-2020-44dc-8a5a-27e5e1f51744",
-    "ede73460-01d6-4be0-bf2c-e2f489f5fb40",
-    "custom_hero_video_QEyzVe",
-    "23138f82-deb5-4edd-bcdc-8062abfac1eb",
-    "ab5deab8-d68c-47d8-9ea8-9a8f781fe6db",
-    "8c6b0def-3ad0-4049-ba71-a895f22aa6a2",
-    "1653387743507b82e2"
+    "custom_slideshow_hero_hgd3h3",
+    "featured_collection_JydVqP",
+    "featured_collection_Y8ga6P"
   ]
 }

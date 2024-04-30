@@ -1,13 +1,11 @@
 .rich-text {
   z-index: 1;
-  padding:1rem;
 }
 
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
   width: calc(100% - 4rem / var(--font-body-scale));
-  width: 100%;
 }
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {

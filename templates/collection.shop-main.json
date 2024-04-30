@@ -1,123 +1,141 @@
 {
-  "wrapper": "div#div_id.page-width",
   "sections": {
-    "rich_text_dQKe7t": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_tastenotes": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_kd8XCe": {
       "type": "rich-text",
       "blocks": {
-        "text_MaViXp": {
+        "text_gFy6XN": {
           "type": "text",
           "settings": {
-            "text": "<h6><a href=\"\/collections\/coffee-equipment\" title=\"EQUIPMENT\">Equipment  <\/a>&gt; {{ collection.title }}<\/h6>"
+            "text": "<h6><a href=\"\/\" title=\"\/\">Home<\/a> &gt; {{ collection.title }}<\/h6>"
           }
         }
       },
       "block_order": [
-        "text_MaViXp"
+        "text_gFy6XN"
       ],
       "custom_css": [
-        ".rich-text {padding-top: 0; padding-left: 0;}",
-        ".rich-text h6 {font-weight: 100;}",
-        ".rich-text__wrapper {padding-left: 0;}"
+        ".rich-text__wrapper {margin: 0px;}"
       ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
-    "banner": {
-      "type": "main-collection-banner",
-      "custom_css": [
-        ".collection-hero__inner {padding-left: 0px;}",
-        "h1 {text-transform: uppercase; font-size: 24px;}"
-      ],
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
-    "73703f50-8557-4a1a-a963-0d73cf690863": {
-      "type": "main-collection-product-grid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "products_per_page": 36,
-        "columns_desktop": 3,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_tastenotes": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "quick_add_button_color": "#804d15",
-        "enable_filtering": false,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "1",
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "094f8d39-c1ca-4446-b6c8-20efbda4341e": {
+    "collection_list_fHFfxQ": {
       "type": "collection-list",
       "blocks": {
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-1": {
+        "featured_collection_Rb3xDj": {
           "type": "featured_collection",
           "settings": {
-            "collection": "instant-coffee"
+            "collection": "coffee-beans"
           }
         },
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-2": {
+        "featured_collection_NcAhax": {
           "type": "featured_collection",
           "settings": {
-            "collection": "coffee-capsules"
+            "collection": "coffee-subscription"
           }
         },
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-3": {
+        "featured_collection_nrfW3M": {
           "type": "featured_collection",
           "settings": {
             "collection": "coffee-equipment"
           }
         },
-        "0ed72ccc-119a-46b1-a66f-0fb40180f02d": {
+        "featured_collection_Jthy3D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "instant-coffee"
+          }
+        },
+        "featured_collection_jmWatT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coffee-capsules"
+          }
+        },
+        "featured_collection_8CCGXR": {
           "type": "featured_collection",
           "settings": {
             "collection": "merchandise"
           }
+        },
+        "featured_collection_k9pjpJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coffee-books"
+          }
+        },
+        "featured_collection_BPkMfU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coffee-vouchers"
+          }
         }
       },
       "block_order": [
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-1",
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-2",
-        "template--17938055299339__094f8d39-c1ca-4446-b6c8-20efbda4341e-featured_collection-3",
-        "0ed72ccc-119a-46b1-a66f-0fb40180f02d"
-      ],
-      "custom_css": [
-
+        "featured_collection_Rb3xDj",
+        "featured_collection_NcAhax",
+        "featured_collection_nrfW3M",
+        "featured_collection_Jthy3D",
+        "featured_collection_jmWatT",
+        "featured_collection_8CCGXR",
+        "featured_collection_k9pjpJ",
+        "featured_collection_BPkMfU"
       ],
       "settings": {
-        "title": "DISCOVER MORE",
-        "heading_size": "h2",
+        "title": "SHOP BY CATEGORY",
+        "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "columns_desktop": 3,
+        "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 76,
-        "padding_bottom": 36
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     }
   },
   "order": [
-    "rich_text_dQKe7t",
     "banner",
-    "73703f50-8557-4a1a-a963-0d73cf690863",
-    "094f8d39-c1ca-4446-b6c8-20efbda4341e"
+    "product-grid",
+    "rich_text_kd8XCe",
+    "collection_list_fHFfxQ"
   ]
 }

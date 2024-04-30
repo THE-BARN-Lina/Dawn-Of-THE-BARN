@@ -8,50 +8,72 @@
         "padding_bottom": 28
       }
     },
-    "custom_liquid_iCyLrT": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n  video {\n    width: 100%;\n    height: auto;\n    display: block;\n    margin: 0 auto;\n  }\n<\/style>\n\n<video controls muted autoplay playsinline loop>\n  <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/257e62f96dd5423db8586c5569c42431.mp4\" type=\"video\/mp4\">\n  Your browser does not support the video tag.\n<\/video>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "1653508694fa6f7e80": {
+    "custom_liquid_ezUrUi": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render | \"awards-snippet\" %}",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "16535087560770a397": {
+    "custom_liquid_zxxpmV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  video {\n    width: 100%;\n    height: auto;\n    display: block;\n    margin: 0 auto;\n  }\n<\/style>\n\n<video controls muted autoplay playsinline loop>\n  <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/257e62f96dd5423db8586c5569c42431.mp4\" type=\"video\/mp4\">\n  Your browser does not support the video tag.\n<\/video>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_NahyMj": {
       "type": "rich-text",
       "blocks": {
-        "165350875611e9ca12-1": {
+        "text_fQcWQg": {
           "type": "text",
           "settings": {
-            "text": "<p>THE BARN is a leading coffee roaster in Europe and represents the Specialty Coffee Movement at the highest level since 2010. Our beans are served by many coffee shops and home brewers across the globe.<br\/><br\/>Our vision has been very clear from the start: We focus on making our coffees better and better. No compromise - just great coffee. We would never blend our coffees in order to showcase specific flavour profiles and to present each farm we work with. This makes our farmers proud and the product fully traceable.<\/p>"
+            "text": "<p>THE BARN is a leading coffee roaster in Europe and represents the Specialty Coffee Movement at the highest level since 2010. Our beans are served by many coffee shops and home brewers across the globe.<\/p>"
           }
         }
       },
       "block_order": [
-        "165350875611e9ca12-1"
+        "text_fQcWQg"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 52
       }
     },
-    "97d15337-f658-4382-95d4-4265f611b1e9": {
+    "rich_text_knXJF4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9Pi8Qq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our vision has been very clear from the start: We focus on making our coffees better and better. No compromise - just great coffee. We would never blend our coffees in order to showcase specific flavour profiles and to present each farm we work with. This makes our farmers proud and the product fully traceable.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9Pi8Qq"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "right",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "slideshow_yj6iCf": {
       "type": "slideshow",
       "blocks": {
-        "template--16216418058507__97d15337-f658-4382-95d4-4265f611b1e9-168260576387f065f6-1": {
+        "slide_FgNRPR": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Booklet_Page_0.png",
@@ -65,11 +87,11 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
-        "template--16216418058507__97d15337-f658-4382-95d4-4265f611b1e9-168260576387f065f6-0": {
+        "slide_iGPfRD": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Booklet_Page_1.png",
@@ -83,11 +105,11 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
-        "6533ae62-3b98-420f-92b9-d9bfa0e5605f": {
+        "slide_peUHjD": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Booklet_Page_2.png",
@@ -101,11 +123,11 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
-        "01d70a35-dcbc-4183-ad1a-4a15ffa84aa6": {
+        "slide_UX9WM6": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Booklet_Page_3.png",
@@ -119,11 +141,11 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
-        "d5e5e483-bfcf-47ce-b0af-3350ee7d0ce2": {
+        "slide_xepijj": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Booklet_Page_5.png",
@@ -137,17 +159,17 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "template--16216418058507__97d15337-f658-4382-95d4-4265f611b1e9-168260576387f065f6-1",
-        "template--16216418058507__97d15337-f658-4382-95d4-4265f611b1e9-168260576387f065f6-0",
-        "6533ae62-3b98-420f-92b9-d9bfa0e5605f",
-        "01d70a35-dcbc-4183-ad1a-4a15ffa84aa6",
-        "d5e5e483-bfcf-47ce-b0af-3350ee7d0ce2"
+        "slide_FgNRPR",
+        "slide_iGPfRD",
+        "slide_peUHjD",
+        "slide_UX9WM6",
+        "slide_xepijj"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -155,21 +177,22 @@
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "show_text_below": false,
+        "image_behavior": "none",
+        "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "165350883755001537": {
+    "image_with_text_WLf3Ft": {
       "type": "image-with-text",
       "blocks": {
-        "16535088379107698d-0": {
+        "heading_qAkcKF": {
           "type": "heading",
           "settings": {
             "heading": "Highlighting flavour",
             "heading_size": "h1"
           }
         },
-        "16535088379107698d-1": {
+        "text_FtD3zE": {
           "type": "text",
           "settings": {
             "text": "<p>We choose our beans for quality, cleanliness, sustainability and traceability. We only buy fresh, seasonal crop. It is one of our principles to treasure the value chain from crop to cup.<\/p>",
@@ -178,27 +201,36 @@
         }
       },
       "block_order": [
-        "16535088379107698d-0",
-        "16535088379107698d-1"
+        "heading_qAkcKF",
+        "text_FtD3zE"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/wheeeeel.bez_kola_czarnego.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 64,
         "padding_bottom": 36
       }
     },
-    "16535089403fff00a8": {
+    "rich_text_t4MBCD": {
       "type": "rich-text",
       "blocks": {
-        "16535089409b33198c-1": {
+        "heading_XzkNDV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Roast Style",
+            "heading_size": "h1"
+          }
+        },
+        "text_fqUGyj": {
           "type": "text",
           "settings": {
             "text": "<p>Our roast style is fully developed but light and clean. We bring out the full flavour potential of each coffee. Working with Single Origin Beans is a lot easier than using Blends - all beans are uniform and of highest grading.<\/p>"
@@ -206,12 +238,13 @@
         }
       },
       "block_order": [
-        "16535089409b33198c-1"
+        "heading_XzkNDV",
+        "text_fqUGyj"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -220,11 +253,12 @@
   },
   "order": [
     "main",
-    "custom_liquid_iCyLrT",
-    "1653508694fa6f7e80",
-    "16535087560770a397",
-    "97d15337-f658-4382-95d4-4265f611b1e9",
-    "165350883755001537",
-    "16535089403fff00a8"
+    "custom_liquid_ezUrUi",
+    "custom_liquid_zxxpmV",
+    "rich_text_NahyMj",
+    "rich_text_knXJF4",
+    "slideshow_yj6iCf",
+    "image_with_text_WLf3Ft",
+    "rich_text_t4MBCD"
   ]
 }

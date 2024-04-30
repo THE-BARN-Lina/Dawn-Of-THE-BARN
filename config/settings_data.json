@@ -1,31 +1,23 @@
 {
   "current": {
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#804d15",
-    "gradient_accent_1": "linear-gradient(190deg, rgba(37, 66, 12, 1), rgba(30, 80, 13, 1) 100%, rgba(30, 80, 13, 1) 100%)",
-    "colors_accent_2": "#804d15",
-    "gradient_accent_2": "",
-    "colors_text": "#ffffff",
-    "colors_outline_button_labels": "#ffffff",
-    "colors_background_1": "#141414",
-    "gradient_background_1": "",
-    "colors_background_2": "#1c1d1c",
-    "gradient_background_2": "",
-    "type_header_font": "archivo_narrow_n4",
+    "logo": "shopify:\/\/shop_images\/barn_logo_large_house_white.webp",
+    "logo_width": 50,
+    "favicon": "shopify:\/\/shop_images\/barn_logo_large_house_white.webp",
+    "type_header_font": "raleway_n4",
     "heading_scale": 100,
     "type_body_font": "raleway_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 16,
     "spacing_grid_vertical": 20,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
-    "buttons_radius": 2,
-    "buttons_shadow_opacity": 0,
+    "buttons_radius": 6,
+    "buttons_shadow_opacity": 60,
     "buttons_shadow_horizontal_offset": 0,
-    "buttons_shadow_vertical_offset": 4,
-    "buttons_shadow_blur": 5,
+    "buttons_shadow_vertical_offset": 0,
+    "buttons_shadow_blur": 0,
     "variant_pills_border_thickness": 2,
     "variant_pills_border_opacity": 50,
     "variant_pills_radius": 40,
@@ -43,14 +35,36 @@
     "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
-    "card_color_scheme": "background-2",
+    "card_color_scheme": "scheme-1",
     "card_border_thickness": 0,
-    "card_border_opacity": 10,
+    "card_border_opacity": 0,
     "card_corner_radius": 6,
     "card_shadow_opacity": 0,
     "card_shadow_horizontal_offset": 0,
-    "card_shadow_vertical_offset": 4,
-    "card_shadow_blur": 5,
+    "card_shadow_vertical_offset": 0,
+    "card_shadow_blur": 0,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "scheme-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 0,
+    "collection_card_corner_radius": 6,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 0,
+    "collection_card_shadow_blur": 0,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "scheme-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 0,
+    "blog_card_corner_radius": 6,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 0,
+    "blog_card_shadow_blur": 0,
     "text_boxes_border_thickness": 0,
     "text_boxes_border_opacity": 10,
     "text_boxes_radius": 0,
@@ -58,17 +72,17 @@
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
     "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 0,
+    "media_border_thickness": 1,
     "media_border_opacity": 5,
-    "media_radius": 0,
+    "media_radius": 6,
     "media_shadow_opacity": 0,
     "media_shadow_horizontal_offset": 0,
-    "media_shadow_vertical_offset": -12,
+    "media_shadow_vertical_offset": 4,
     "media_shadow_blur": 5,
     "popup_border_thickness": 1,
     "popup_border_opacity": 10,
-    "popup_corner_radius": 0,
-    "popup_shadow_opacity": 0,
+    "popup_corner_radius": 6,
+    "popup_shadow_opacity": 5,
     "popup_shadow_horizontal_offset": 0,
     "popup_shadow_vertical_offset": 4,
     "popup_shadow_blur": 5,
@@ -80,421 +94,42 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "inverse",
-    "accent_icons": "outline-button",
-    "social_twitter_link": "https:\/\/twitter.com\/THEBARNBERLIN",
-    "social_facebook_link": "https:\/\/www.facebook.com\/THEBARNBERLIN\/",
-    "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/thebarnberlin\/",
-    "social_tiktok_link": "",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
+    "sale_badge_color_scheme": "scheme-5",
+    "sold_out_badge_color_scheme": "scheme-3",
+    "brand_headline": "",
+    "brand_image": "shopify:\/\/shop_images\/LOGO-NAME.png",
+    "social_facebook_link": "",
+    "social_instagram_link": "",
     "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/barn_logo_large_house_1_3a2f7861-48aa-4c94-83da-49a2490f28d8.png",
     "currency_code_enabled": true,
-    "curated_filter_1": "Radiophare, Indonesia",
-    "curated_filter_2": "Tabe Burka, Ethiopia",
-    "curated_espresso_1": "Aromas Del Valle, Peru",
-    "curated_espresso_2": "Gedeb Chelchele Natural, Ethiopia",
-    "low_caf": "Daterra Reserve, Brazil",
-    "espresso_of_the_month": "Aromas Del Valle, Peru",
+    "cart_type": "drawer",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "new-releases",
     "color_profile_balanced": "#8e7149",
-    "color_profile_terrior": "#0f841e",
+    "color_profile_terroir": "#0f841e",
     "color_profile_exotic": "#b26119",
-    "checkout_logo_image": "shopify:\/\/shop_images\/barn_logo_large_house_white.webp",
-    "checkout_logo_position": "center",
-    "checkout_body_background_color": "#131313",
-    "checkout_input_background_color_mode": "transparent",
-    "checkout_sidebar_background_color": "#212121",
-    "checkout_accent_color": "#804d15",
-    "checkout_button_color": "#68431b",
-    "color_profile_terroir": "#13ab27",
+    "color_profile_terrior": "#0f841e",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "9b61c670-421e-411e-a354-e322ee6f62a5": {
-            "type": "announcement",
-            "settings": {
-              "text": "This is your time to have an impact: Check out our Earth Coffee 🌳",
-              "color_scheme": "accent-1",
-              "link": "https:\/\/thebarn.de\/products\/earth-coffee-2024"
-            }
-          }
-        },
-        "block_order": [
-          "9b61c670-421e-411e-a354-e322ee6f62a5"
-        ],
-        "custom_css": [
-          ".announcement-bar__link {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}"
-        ],
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header",
-        "custom_css": [
-
-        ],
-        "settings": {
-          "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/barn_logo_large_house_white.webp",
-          "logo_width": 50,
-          "logo_position": "top-center",
-          "menu": "navigation_v2",
-          "menu_type_desktop": "mega",
-          "show_line_separator": false,
-          "enable_sticky_header": false,
-          "margin_bottom": 0,
-          "christmas_image_1": "shopify:\/\/shop_images\/christmas_bag_with_origami.jpg",
-          "christmas_link_1": "shopify:\/\/products\/christmas-coffee",
-          "christmas_label_1": "CHRISTMAS COFFEE",
-          "christmas_image_2": "shopify:\/\/shop_images\/new_equipment_box_sets.png",
-          "christmas_link_2": "shopify:\/\/collections\/christmas-gift-specials",
-          "christmas_label_2": "CHRISTMAS SPECIALS",
-          "christmas_image_3": "shopify:\/\/shop_images\/34A1929.jpg",
-          "christmas_link_3": "shopify:\/\/products\/ode-brew-grinder-gen-2",
-          "christmas_label_3": "ODE GRINDER V2",
-          "subscription_image_1": "shopify:\/\/shop_images\/TRIAL_SUBSCRIPTION.webp",
-          "subscription_link_1": "shopify:\/\/products\/coffee-trial-subscription",
-          "subscription_label_1": "TRIAL SUBSCRIPTION",
-          "subscription_image_2": "shopify:\/\/shop_images\/CURATED.webp",
-          "subscription_link_2": "shopify:\/\/products\/curated-subscription-3-months-gift",
-          "subscription_label_2": "CURATED",
-          "subscription_image_3": "shopify:\/\/shop_images\/Masterpiece_1.jpg",
-          "subscription_link_3": "shopify:\/\/products\/coffee-masterpieces",
-          "subscription_label_3": "MASTERPIECES",
-          "shop_image_1": "shopify:\/\/shop_images\/WORLD_ATLAS_COFFEE.webp",
-          "shop_link_1": "shopify:\/\/products\/the-world-atlas-of-coffee-book",
-          "shop_label_1": "WORLD ATLAS OF COFFEE",
-          "shop_image_2": "shopify:\/\/shop_images\/BRASILIEN_DRIP_BAGS.webp",
-          "shop_link_2": "shopify:\/\/products\/drip-bag-brazil",
-          "shop_label_2": "BRAZIL DRIP BAG",
-          "shop_image_3": "shopify:\/\/shop_images\/IMG_0333.jpg",
-          "shop_link_3": "shopify:\/\/products\/hario-mobile-mill-stick",
-          "shop_label_3": "HARIO MOBILE MILK STICK",
-          "blog_image_1": "shopify:\/\/shop_images\/thebarn_neu_1200x1200_lowcaf_kanne_1024x1024_2xDaterraHoney_fa4ba135-77dd-44dd-8f9f-b1a7a8cff792.jpg",
-          "blog_link_1": "shopify:\/\/products\/low-caffeine-coffee",
-          "blog_label_1": "LOW CAF",
-          "blog_image_2": "shopify:\/\/shop_images\/GRINDING_COFFEE_AT_HOME.webp",
-          "blog_link_2": "shopify:\/\/blogs\/the-barn-blog\/grinding-coffee-for-home",
-          "blog_label_2": "GRINDING AT HOME",
-          "blog_image_3": "shopify:\/\/shop_images\/Junko_Tree_d5947977-a4db-4cb4-8ddf-b23a3f6f1dbc.jpg",
-          "blog_link_3": "shopify:\/\/blogs\/the-barn-blog\/the-barn-forest-1",
-          "blog_label_3": "THE BARN FOREST"
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "8df4c85d-d9a2-4f99-bf0e-74b5f9578dd9": {
-            "type": "text",
-            "settings": {
-              "heading": "SUBSCRIPTIONS",
-              "subtext": "<h4><a href=\"\/collections\/subscriptions\" title=\"SUBSCRIPTIONS\">All Subscriptions<br\/><\/a><a href=\"\/products\/coffee-masterpieces\" title=\"MASTERPIECE SUBSCRIPTION\">Masterpiece<br\/><\/a><a href=\"\/products\/coffee-subscription-curated\" title=\"CURATED\">Curated<br\/><\/a><a href=\"\/products\/coffee-espresso-of-the-month\" title=\"ESPRESSO OF THE MONTH\">Espresso Of The Month<br\/><\/a><a href=\"\/products\/low-caffeine-coffee\" title=\"LOW CAF\">Low Caf<br\/><\/a><a href=\"\/products\/house-coffee-subscription\" title=\"HOUSE\">House<br\/><\/a><a href=\"\/products\/coffee-trial-subscription\" title=\"TRIAL SUBSCRIPTION\">Trial Subscription<\/a><\/h4><h5><\/h5>"
-            }
-          },
-          "text_6R3yBY": {
-            "type": "text",
-            "settings": {
-              "heading": "COFFEE BEANS",
-              "subtext": "<h4><a href=\"\/collections\/espresso-coffee\" title=\"Espresso Coffee Beans | THE BARN Coffee Roasters\">Espresso<\/a><br\/><a href=\"\/collections\/filter-coffee\" title=\"Filter Coffee Beans | THE BARN Coffee Roasters\">Filter<\/a><br\/><a href=\"\/collections\/low-caf-coffee-beans\" title=\"Low Caf Coffee Beans\">Low Caf<\/a><br\/><a href=\"\/collections\/coffee-beans-specials\" title=\"Coffee Specials\">Specials<\/a><\/h4>"
-            }
-          },
-          "c75a1e9a-7872-4221-bedc-9fb59a8601e6": {
-            "type": "text",
-            "settings": {
-              "heading": "SHOP",
-              "subtext": "<h4><a href=\"\/collections\/instant-drip\" title=\"SPECIALTY INSTANT & DRIP BAGS\">Instant & Drip Bags<br\/><\/a><a href=\"\/products\/specialty-coffee-capsules\" title=\"COFFEE CAPSULES\">Capsules<\/a><br\/><a href=\"\/collections\/equipment\" title=\"EQUIPMENT\">Equipment\u2028<br\/><\/a><a href=\"\/collections\/merchandise\" title=\"MERCHANDISE\">Merchandise<\/a>\u2028<br\/><a href=\"\/collections\/vouchers\" title=\"VOUCHERS\">Vouchers<\/a><\/h4>"
-            }
-          },
-          "705afaa5-785a-40f3-9e83-5c853fe5b6aa": {
-            "type": "text",
-            "settings": {
-              "heading": "SUSTAINABILITY",
-              "subtext": "<h4><a href=\"\/products\/plant-a-tree\" title=\"DONATE A TREE\">Donate Trees<br\/><\/a><a href=\"\/blogs\/the-barn-blog\/sustainability\" title=\"Sustainability\">Climate Mission<\/a><a href=\"\/products\/plant-a-tree\" title=\"DONATE A TREE\"><br\/><\/a><a href=\"\/pages\/approaching-sustainability\" title=\"Approaching Sustainability\">Approaching Sustainability<\/a><\/h4>"
-            }
-          },
-          "text_mtMwE4": {
-            "type": "text",
-            "settings": {
-              "heading": "GIFTS",
-              "subtext": "<h4><a href=\"\/collections\/coffee-gifts\" title=\"Coffee Gifts\">Gift Shop<\/a><\/h4>"
-            }
-          },
-          "3b9c4772-8f19-4d4c-9fca-70c19c452223": {
-            "type": "text",
-            "settings": {
-              "heading": "BLOG",
-              "subtext": "<h4><a href=\"\/blogs\/the-barn-blog\" title=\"BLOG\">Articles & Education\u2028<\/a><\/h4>"
-            }
-          },
-          "text_L3YWUC": {
-            "type": "text",
-            "settings": {
-              "heading": "GUIDES",
-              "subtext": "<h4><a href=\"\/pages\/brew-guides\" title=\"Brew Guides\">Brew Guides<\/a><a href=\"\/pages\/signature-drinks\" title=\"SIGNATURE DRINKS\"><br\/>Signature Drinks<\/a><\/h4>"
-            }
-          },
-          "54146417-e198-4a25-a221-4be456299d47": {
-            "type": "text",
-            "settings": {
-              "heading": "WHOLESALE",
-              "subtext": "<h4><a href=\"\/pages\/wholesale\" title=\"Wholesale\">Contact Form<\/a><br\/><\/h4>"
-            }
-          },
-          "33c97cbe-0f9e-4981-998f-81e7ff9b9679": {
-            "type": "text",
-            "settings": {
-              "heading": "ABOUT",
-              "subtext": "<h4><a href=\"\/pages\/aboutus\" title=\"About Us\">About Us<br\/><\/a><a href=\"\/pages\/team\" title=\"Team\">Team\u2028<\/a><br\/><a href=\"\/pages\/locations\" title=\"Locations\">Locations<br\/><\/a><a href=\"\/pages\/careers\" title=\"Careers\">Careers<\/a><\/h4>"
-            }
-          },
-          "780a470e-2fa4-4e1a-9954-6422d2b44db5": {
-            "type": "text",
-            "settings": {
-              "heading": "QUICK LINKS",
-              "subtext": "<h4><a href=\"\/pages\/faq-the-barn-coffee-roasters\" title=\"Frequently Asked Questions | The Barn Coffee Roasters\">FAQ<\/a><br\/><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping<br\/><\/a><a href=\"\/pages\/contact\" title=\"CONTACT\">Contact<\/a><br\/><a href=\"\/pages\/press\" title=\"Press\">Press<br\/><\/a><\/h4>"
-            }
-          },
-          "ae726a0a-e0a3-4e61-a76e-66d8d817def1": {
-            "type": "text",
-            "settings": {
-              "heading": "LEGAL",
-              "subtext": "<h4><a href=\"\/policies\/legal-notice\" title=\"Legal Notice\">Imprint<\/a><br\/><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a><br\/><a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\">Terms & Conditions<\/a><br\/><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">Right of Revocation<\/a><\/h4>"
-            }
-          },
-          "image_mX943G": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/LOGO-NAME.png",
-              "image_width": 110,
-              "alignment": "center"
-            }
-          }
-        },
-        "block_order": [
-          "8df4c85d-d9a2-4f99-bf0e-74b5f9578dd9",
-          "text_6R3yBY",
-          "c75a1e9a-7872-4221-bedc-9fb59a8601e6",
-          "705afaa5-785a-40f3-9e83-5c853fe5b6aa",
-          "text_mtMwE4",
-          "3b9c4772-8f19-4d4c-9fca-70c19c452223",
-          "text_L3YWUC",
-          "54146417-e198-4a25-a221-4be456299d47",
-          "33c97cbe-0f9e-4981-998f-81e7ff9b9679",
-          "780a470e-2fa4-4e1a-9954-6422d2b44db5",
-          "ae726a0a-e0a3-4e61-a76e-66d8d817def1",
-          "image_mX943G"
-        ],
-        "custom_css": [
-          "a {text-decoration: none;}",
-          "h4 {text-decoration: none;}"
-        ],
-        "settings": {
-          "image_newsletter": "shopify:\/\/shop_images\/34A0659_1.jpg",
-          "heading_newsletter": "Join our Newsletter today and enjoy the perks",
-          "perks_newsletter": "<p>• 10% off your first coffee order<br\/>• Insights into sourcing, roasting & production<br\/>• Brew Guides, tips & tricks<br\/>•  Early access to limited coffee drops<br\/>• Monthly giveaway for subscribers only<\/p>",
-          "text_newsletter": "<p>I would like to receive the newsletter in:<\/p>",
-          "color_scheme": "background-2",
-          "newsletter_enable": false,
-          "newsletter_heading": "Stay connected through our newsletter",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": true,
-          "margin_top": 12,
-          "padding_top": 68,
-          "padding_bottom": 28
-        }
-      },
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo_max_width": 100,
-          "color_scheme": "background-1"
+          "color_scheme": "scheme-1"
         }
       },
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
-          "color_scheme": "background-1"
-        }
-      },
-      "ajax-drawer": {
-        "type": "ajax-drawer",
-        "settings": {
-          "collection_beans": "",
-          "collection_subs": "",
-          "show-banner": false,
-          "banner-product": "",
-          "banner-text": "Plant 1 tree in Brazil with us for €1.50",
-          "banner-color": "#067a46",
-          "banner-hover-color": "#064b2c"
-        }
-      },
-      "GDPR_LC_Manager": {
-        "type": "GDPR_LC_Manager",
-        "blocks": {
-          "overlay_Lc8Fa9": {
-            "type": "overlay",
-            "settings": {
-              "title": "Spotify",
-              "cookie": "Spotify_THE_BARN",
-              "thirdParty": false,
-              "addResizeEvent": true,
-              "parentSelector": "spotify",
-              "required_childs": ""
-            }
-          }
-        },
-        "block_order": [
-          "overlay_Lc8Fa9"
-        ],
-        "settings": {
-          "testMode": false,
-          "useOverlay": true,
-          "unit": "px",
-          "bannerMaxWidth": 480,
-          "bannerWidthMobile": 8,
-          "fontSize": 12,
-          "z_index": 20,
-          "buttonClass": "Button, Button--primary",
-          "eventType": "click",
-          "overlay_color": "#000000",
-          "overlay_opacity": 50,
-          "overlay_blur": 4,
-          "box_color": "#ffffff",
-          "text_color": "#000000",
-          "activate_shadow": false,
-          "shadow_color": "#000000",
-          "shadow_opacity": 50,
-          "shadow_x": 8,
-          "shadow_y": 8,
-          "shadow_blur_radius": 8,
-          "shadow_spread_radius": 8,
-          "wrapper_border_radius": 8
-        }
-      },
-      "subscription_new": {
-        "type": "subscription_new",
-        "settings": {
-          "sub_bg_overlay": false,
-          "image_overlay_opacity": 40,
-          "heading_subscribe": "",
-          "subhead_subscribe": "",
-          "btn_subscribe": "",
-          "btn_subscribe_link": "",
-          "btn_is_automated": false
-        }
-      },
-      "subflow_new": {
-        "type": "subflow_new",
-        "blocks": {
-          "icon_text_ePa9Pq": {
-            "type": "icon_text",
-            "settings": {
-              "select_img": "shopify:\/\/shop_images\/Curated_Easter_6Months.jpg",
-              "title": "<p>CURATED <br\/>FILTER OR ESPRESSO<\/p>",
-              "title_value": "CURATED",
-              "select_sub_hed": "<p>Two new coffee experiences per month. <\/p>",
-              "sec_subhed": "<p>Receive two new coffees every month. Chose your roast style. Always get the latest releases.<br\/><strong>In {{ \"now\" | date: \"%B\"| prepend: \" \" }} we are sending out :<\/strong><\/p><p><strong>FILTER<br\/><\/strong>{{settings.curated_filter_1}}<br\/>{{settings.curated_filter_2}}<br\/><strong><br\/>ESPRESSO <\/strong><br\/>{{settings.curated_espresso_1}}<br\/>{{settings.curated_espresso_2}}<\/p>",
-              "question_heading": "Select your roast",
-              "que1_type1": "FILTER",
-              "que1_type1_val": "FILTER",
-              "que1_type2": "ESPRESSO",
-              "que1_type2_val": "ESPRESSO",
-              "question2_heading": "How many 250 gram bags?",
-              "question2_heading_2": "1 bag = 15 brews",
-              "que2_type1": "2",
-              "que2_type2": "4",
-              "que2_type3": "6",
-              "question2_heading_1kg": "",
-              "question2_heading_2_1kg": "",
-              "que2_type1_1kg": "",
-              "que2_type2_1kg": "",
-              "que2_type3_1kg": "",
-              "question4_heading": "",
-              "que4_deafault_weight": "",
-              "que4_type1": "",
-              "que4_type1_val": "",
-              "que4_type2": "",
-              "que4_type2_val": "",
-              "que4_type3": "",
-              "que4_type3_val": "",
-              "que4_type4": "",
-              "que4_type4_val": "",
-              "question5_heading": "How do you want to pay?",
-              "que5_type1": "MONTHLY",
-              "que5_type2": "PREPAID"
-            }
-          }
-        },
-        "block_order": [
-          "icon_text_ePa9Pq"
-        ],
-        "settings": {
-          "subscription_heading": "",
-          "summery_style_img": "shopify:\/\/shop_images\/roast_0a00000c-c8e8-4725-a3cf-75a32221ac88.png",
-          "summery_weight_img": "shopify:\/\/shop_images\/CAREERS_PRODUCTION_ROASTER.jpg",
-          "summery_destination_img": "shopify:\/\/shop_images\/brewing_jungle_volacano.jpg",
-          "summery_info": "",
-          "drawer_button_text": "",
-          "drawer_inn_had": "",
-          "left_text": "",
-          "drawer_left_content_coffee": "",
-          "right_text": "",
-          "drawer_right_content_coffee": ""
-        }
-      },
-      "subscription_new_2": {
-        "type": "subscription_new_2",
-        "settings": {
-          "title": "SPECIAL OFFERS",
-          "sub_bg_overlay": false,
-          "heading_subscribe": "",
-          "subhead_subscribe": "",
-          "btn_subscribe": "",
-          "btn_subscribe_link": "",
-          "show_two": false,
-          "sub_bg_overlay_2": false,
-          "heading_subscribe_2": "",
-          "subhead_subscribe_2": "",
-          "btn_subscribe_2": "",
-          "btn_subscribe_link_2": ""
-        }
-      },
-      "custom_countdown_annoucment": {
-        "type": "custom_countdown_annoucment",
-        "blocks": {
-          "announcement_zap6Fr": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "🐇 EASTER SPECIALS: Only until April 1st 🐣",
-              "color_scheme": "accent-2",
-              "link": "shopify:\/\/collections\/coffee-gifts",
-              "show_countdown": false,
-              "detail_days": "Day",
-              "detail_hours": "Hours",
-              "detail_mins": "Minutes"
-            }
-          }
-        },
-        "block_order": [
-          "announcement_zap6Fr"
-        ],
-        "custom_css": [
-          ".announcement-bar {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}",
-          ".announcement-bar__link {margin-left: 138px;}",
-          "@media only screen and (max-width: 750px) {.announcement-bar__link {margin-left: 0px; }}"
-        ],
-        "settings": {
+          "color_scheme": "scheme-1"
         }
       }
     },
@@ -502,88 +137,131 @@
 
     ],
     "blocks": {
-      "17151115064775110295": {
-        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
-        "disabled": false,
-        "settings": {
-          "color_brand": "#804d15",
-          "contrast_color": "#ffffff",
-          "color_brand_secondary": "#8e7149",
-          "corners": "8px",
-          "app_background": "#ffffff",
-          "app_container": 1200,
-          "app_vertical_padding": 32,
-          "images_aspect_ratio": "1",
-          "cards_background": "#ffffff",
-          "cards_border_color": "#131313"
-        }
-      },
-      "16278478101612877664": {
-        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "14818028230436078177": {
-        "type": "shopify:\/\/apps\/langify\/blocks\/langify\/b50c2edb-8c63-4e36-9e7c-a7fdd62ddb8f",
-        "disabled": false,
-        "settings": {
-          "theme_id": "143118532875",
-          "block_flags_css": false,
-          "rtl_css": "body {\n  direction: rtl;\n}"
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
-      },
-      "7878088468538493966": {
-        "type": "shopify:\/\/apps\/wisepops-popup-notifications\/blocks\/app-embed\/e7d7a4f7-0df4-4073-9375-5f36db513952",
-        "disabled": false,
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
         "settings": {
+          "background": "#141414",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#804d15",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ffffff",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
-      "12526071353035850722": {
-        "type": "shopify:\/\/apps\/back-in-stock-customer-alerts\/blocks\/app-embed\/bfa6a8c4-24e2-411a-9396-e35031b33f34",
-        "disabled": false,
+      "scheme-2": {
         "settings": {
+          "background": "#f3f3f3",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
         }
       },
-      "1877152918344802950": {
-        "type": "shopify:\/\/apps\/intelligems-a-b-testing\/blocks\/intelligems-script\/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19",
-        "disabled": false,
+      "scheme-3": {
         "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#141414",
+          "button": "#804d15",
+          "button_label": "#804d15",
+          "secondary_button_label": "#804d15",
+          "shadow": "#121212"
         }
       },
-      "4015264832934714879": {
-        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
+      "scheme-4": {
         "settings": {
+          "background": "#25420c",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#1c1d1c",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#804d15",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#804d15"
         }
       }
     }
   },
   "presets": {
     "Default": {
-      "colors_solid_button_labels": "#ffffff",
-      "colors_accent_1": "#121212",
-      "gradient_accent_1": "",
-      "colors_accent_2": "#334fb4",
-      "gradient_accent_2": "",
-      "colors_text": "#121212",
-      "colors_outline_button_labels": "#121212",
-      "colors_background_1": "#ffffff",
-      "gradient_background_1": "",
-      "colors_background_2": "#f3f3f3",
-      "gradient_background_2": "",
+      "logo_width": 90,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-5": {
+          "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        }
+      },
       "type_header_font": "assistant_n4",
       "heading_scale": 100,
       "type_body_font": "assistant_n4",
@@ -616,7 +294,7 @@
       "card_style": "standard",
       "card_image_padding": 0,
       "card_text_alignment": "left",
-      "card_color_scheme": "background-2",
+      "card_color_scheme": "scheme-2",
       "card_border_thickness": 0,
       "card_border_opacity": 10,
       "card_corner_radius": 0,
@@ -624,6 +302,28 @@
       "card_shadow_horizontal_offset": 0,
       "card_shadow_vertical_offset": 4,
       "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "scheme-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "scheme-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
       "text_boxes_border_thickness": 0,
       "text_boxes_border_opacity": 10,
       "text_boxes_radius": 0,
@@ -641,7 +341,7 @@
       "popup_border_thickness": 1,
       "popup_border_opacity": 10,
       "popup_corner_radius": 0,
-      "popup_shadow_opacity": 0,
+      "popup_shadow_opacity": 5,
       "popup_shadow_horizontal_offset": 0,
       "popup_shadow_vertical_offset": 4,
       "popup_shadow_blur": 5,
@@ -653,9 +353,8 @@
       "drawer_shadow_blur": 5,
       "badge_position": "bottom left",
       "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "accent-2",
-      "sold_out_badge_color_scheme": "inverse",
-      "accent_icons": "text",
+      "sale_badge_color_scheme": "scheme-5",
+      "sold_out_badge_color_scheme": "scheme-3",
       "social_twitter_link": "",
       "social_facebook_link": "",
       "social_pinterest_link": "",
@@ -669,99 +368,24 @@
       "predictive_search_show_vendor": false,
       "predictive_search_show_price": false,
       "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
       "sections": {
-        "announcement-bar": {
-          "type": "announcement-bar",
-          "blocks": {
-            "announcement-bar-0": {
-              "type": "announcement",
-              "settings": {
-                "text": "Welcome to our store",
-                "color_scheme": "background-1",
-                "link": ""
-              }
-            }
-          },
-          "block_order": [
-            "announcement-bar-0"
-          ],
-          "settings": {
-          }
-        },
-        "header": {
-          "type": "header",
-          "settings": {
-            "color_scheme": "background-1",
-            "logo_width": 90,
-            "logo_position": "middle-left",
-            "menu": "main-menu",
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "margin_bottom": 0
-          }
-        },
-        "footer": {
-          "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Quick links",
-                "menu": "footer"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Info",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "text",
-              "settings": {
-                "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
-          "settings": {
-            "color_scheme": "background-1",
-            "newsletter_enable": true,
-            "newsletter_heading": "Subscribe to our emails",
-            "show_social": true,
-            "enable_country_selector": false,
-            "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
-        },
         "main-password-header": {
           "type": "main-password-header",
           "settings": {
-            "logo_max_width": 100,
-            "color_scheme": "background-1"
+            "color_scheme": "scheme-1"
           }
         },
         "main-password-footer": {
           "type": "main-password-footer",
           "settings": {
-            "color_scheme": "background-1"
+            "color_scheme": "scheme-1"
           }
         }
       }
     }
-  },
-  "platform_customizations": {
-    "custom_css": [
-      "#Subscribe {background-color: transparent;}"
-    ]
   }
 }
