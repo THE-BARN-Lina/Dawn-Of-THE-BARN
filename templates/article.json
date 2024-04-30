@@ -16,12 +16,12 @@
             "image_height": "medium"
           }
         },
-        "content": {
+        "37a1fa2a-1f24-450a-a9a1-cb4528b8519d": {
           "type": "content",
           "settings": {
           }
         },
-        "share": {
+        "09e3b91c-548d-4e0d-8407-66cce56af3e5": {
           "type": "share",
           "settings": {
             "share_label": "Share"
@@ -31,8 +31,11 @@
       "block_order": [
         "title",
         "featured_image",
-        "content",
-        "share"
+        "37a1fa2a-1f24-450a-a9a1-cb4528b8519d",
+        "09e3b91c-548d-4e0d-8407-66cce56af3e5"
+      ],
+      "custom_css": [
+        "h1 {font-family: \"Chalet Comprime\"; font-size: 52px;}"
       ],
       "settings": {
       }
