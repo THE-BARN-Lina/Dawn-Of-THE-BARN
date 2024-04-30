@@ -1,8 +1,0 @@
-{
-  "parent": "page.advent-calendar-days.json",
-  "context": {
-    "market": "de"
-  },
-  "sections": {
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "product.christmas-special.json",
-  "context": {
-    "market": "china-hong-kong"
-  },
-  "sections": {
-  }
-}

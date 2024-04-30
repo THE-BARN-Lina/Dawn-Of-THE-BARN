@@ -1,8 +1,0 @@
-{
-  "parent": "collection.espresso-beans.json",
-  "context": {
-    "market": "de"
-  },
-  "sections": {
-  }
-}
