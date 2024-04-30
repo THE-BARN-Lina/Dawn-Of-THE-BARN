@@ -1,0 +1,2033 @@
+
+{%- style -%}
+:root {
+  --brown: #804d15;
+  --white: #ffffff;
+  --black:#282828;
+  --padding-sections:#191919;
+  --golden-star:#ffe234;
+  --text-shadow:#bcbcbc;
+  --button-main:black;
+  --font-main: "Chalet Comprime";
+  --font-secondary:"Raleway";
+  --font-size-big-biggie:8vh;
+  --font-size-big:6vh;
+  --font-size-medium:4vh;
+  --font-size-medium-small:3.5vh;
+  --font-size-small:14px;
+}
+
+
+.content-overlay h1{
+  font-family: var(--font-main);
+  font-size: var(--font-size-big-biggie);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.works-without-number-container-right h1{
+  font-family: var(--font-main);
+  font-size: var(--font-size-big);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.works-without-number-container-left h1{
+  font-family: var(--font-main);
+  font-size: var(--font-size-big);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.master-title-subtitle-container  h2{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.text-content-container-past_noimage h2{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+h3{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium-small);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+
+}
+h4{
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+}
+p{
+  font-family:var(--font-secondary);
+  font-size:var(--font-size-small);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+}
+.button-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures text color inherits from parent elements */
+}
+
+.button-main {
+  background-color: var(--brown);
+  padding: 1.6rem;
+  border-radius: 5px;
+  color: var(--white);
+  min-width: 20rem; 
+  font-size: 16px;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+  cursor: pointer; /* Ensures the cursor changes to a pointer when hovered */
+}
+
+.button-main:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+
+{% comment %} ///////////////////HERO SECTION///////////////////// {% endcomment %}
+.master-section-container-hero {
+  position: relative; 
+  height: calc(100vh - 168.688px); 
+  width: 100vw; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  justify-content: center; 
+  overflow: hidden; 
+}
+.content-overlay p{
+
+  font-weight:bold;
+}
+.content-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 2; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+.background-video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1; 
+}
+.button-hero{
+  margin-top:2rem;
+}
+
+{% comment %} ///////////////////SECOND SECTION///////////////////// {% endcomment %}
+.master-section-container{
+  height:100vh;
+  width:100vw;
+  border:20px solid var(--padding-sections);
+}
+.master-title-subtitle-button-container{
+  height:20vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+
+}
+.master-title-subtitle-container{
+  width:50%;
+}
+.master-content-container{
+
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
+  scroll-snap-type: x mandatory; 
+
+
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+
+  background-color:var(--padding-sections);
+  width:100%;
+  height: calc(100vh - 20vh - 40px );
+}
+.content-box-triple{
+  max-width:33.33%;
+  min-width:400px;
+  border:2px solid var(--padding-sections);
+
+  padding:0px;
+
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  align-items:center;
+  scroll-snap-align: start; 
+}
+.master-image{
+  width:100%;
+  height:60%;
+  object-fit:cover;
+}
+.text-content-container{
+  height:200px;
+  background-color:black;
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  text-align:center;
+  align-items:center;
+}
+.arrow-right-container{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+
+  padding-right:1rem; 
+  padding-bottom:1rem;
+
+
+  
+}
+
+
+@media (max-width: 1100px) {
+  .master-content-container{
+    background-color:var(--padding-sections);
+    height: calc(100vh - 30vh - 40px );
+
+  }
+  .master-title-subtitle-button-container{
+    height:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:20shpx;
+    background-color:black;
+
+  }
+  .master-image{
+    height:50%; 
+  }
+  .text-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:start;
+    text-align:start;
+    height:40%;
+
+
+  }
+  .content-box-triple{
+    height:100%;
+    min-width:calc(100vw - 60px);
+    padding:0px;
+    justify-content:flex-start;
+
+  }
+  .button-desktop{
+    display:none;
+  }
+  .master-title-subtitle-container{
+    text-align:center;
+    width:100%;
+  }
+  .master-container-button-mobile{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    height:10%;
+
+    background-color:black;
+
+  }
+}
+@media (min-width: 1100px) {
+
+  .button-mobile{
+    display:none;
+  }
+  .arrow-right-container{
+    display:none;
+  }
+
+}
+{% comment %} ///////////////////REVIEWS SECTION///////////////////// {% endcomment %}
+.text-content-container-reviews h3{
+  color:black;
+}
+.text-content-container-reviews{
+  height:400px;
+  background-color:white;
+  padding:20px;
+  color:black;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  text-align:start;
+  align-items:start;
+  padding-top:20%;
+}
+.arrow-right-container-reviews h4{
+  color:black;
+
+}
+.arrow-right-container-reviews{
+  background-color:white;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+
+  padding-right:1rem; 
+  padding-bottom:1rem;
+  color:black;
+
+
+  
+}
+@media (max-width: 1100px) {
+
+  .text-content-container-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:start;
+    text-align:start;
+    height:73%;
+    width:100%;
+    margin-top:20%;
+
+
+  }
+  
+}
+{% comment %} ///////////////////PAST SECTION///////////////////// {% endcomment %}
+.img-past-coffees {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+.hover-image {
+  display: block;
+  opacity: 0;
+}
+.text-content-container-past h3{
+  color:white;
+}
+.text-content-container-past{
+  height:100%;
+  background-color:black;
+  padding:20px;
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+}
+.text-content-container-past_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.text-content-container-past_noimage{
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  text-align:center;
+  align-items:center;
+  min-height:180px;
+  max-height:180px;
+  width:100%;
+}
+.arrow-right-container-past h4{
+  color:white;
+
+}
+.arrow-right-container-past{
+  background-color:black;
+  width:100%;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+
+  padding-right:1rem; 
+  padding-bottom:1rem;
+  color:white;
+
+}
+.content-box-triple-past{
+  height:100%;
+  max-width:25%;
+  min-width:400px;
+  border-right:2px solid var(--padding-sections);
+  border-left:2px solid var(--padding-sections);
+
+  padding:0px;
+
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  align-items:center;
+  scroll-snap-align: start; 
+}
+@media (max-width: 1100px) {
+
+  .text-content-container-past{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    text-align:center;
+    height:100%;
+    width:100%;
+
+
+  }
+  .content-box-triple-past{
+    height:100%;
+    min-width:calc(100vw - 65px);
+    padding:0px;
+    justify-content:flex-start;
+
+  }
+}
+{% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
+  .master-section-container-works{
+    border:20px solid var(--padding-sections)
+  }
+  .master-content-container-works{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:var(--padding-sections);
+    width:100%;
+    height: calc(100vh - 20vh - 40px );
+  }
+  .number-how-it-works{
+    font-size:112px;
+  }
+  .text-content-container-works{
+
+    background-color:black;
+    padding:20px;
+    color:white;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+  }
+  .border-middle-works{
+    margin-left:4px;
+    margin-right:4px;
+  }
+  .hide-in-desktop-works{
+    display:none;
+  }
+  .hide-in-mobile-works{
+    display:block;
+  }
+  .number-how-it-works{
+    margin-bottom:5rem;
+  }
+  @media (min-width: 1100px) {
+    .works-without-number-container-right p{
+      margin-top:3rem;
+  }
+  .works-without-number-container-left p{
+  margin-top:3rem;
+  }
+
+  }
+@media (max-width: 1100px) {
+  .master-content-container-works{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:black;
+    width:100%;
+    height: calc(100vh - 30vh - 80px );
+  }
+  .text-content-container-works{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    text-align:center;
+    width:100%;
+    padding:0px;
+    height:33.33%;
+  }
+  .border-middle-works{
+    border-top:4px solid var(--padding-sections);
+    border-bottom:4px solid var(--padding-sections);
+  }
+  .content-box-triple-works{
+    height:0;
+    max-width:33.33%;
+    min-width:400px;
+
+
+    padding:0px;
+
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:center;
+    align-items:center;
+    scroll-snap-align: start; 
+    background-color:white;
+    height:50%;
+  }
+  .content-box-triple-works{
+    height:100px;
+    min-width:calc(100vw - 65px);
+    padding:0px;
+    justify-content:flex-start;
+
+  }
+  .works-without-number-container-right{
+    display: flex;
+    flex-direction:column;
+    text-align:right;
+    width:70%;
+  }
+  .works-without-number-container-left{
+    display: flex;
+    flex-direction:column;
+    text-align:left;
+    width:70%;
+  }
+  .hide-in-mobile-works{
+    display:none;
+  }
+  .hide-in-desktop-works{
+    display:block;
+  }
+  .number-how-it-works{
+    margin-bottom:0rem;
+  }
+  .works-without-number-container-right h1{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.works-without-number-container-left h1{
+  font-family: var(--font-main);
+  font-size: var(--font-size-medium);
+  margin:0px;
+  padding:0px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+ .master-title-subtitle-button-container-works{
+    height:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background-color:black;
+
+  }
+  .master-container-button-mobile-works{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    height:10%;
+    padding:20px;
+    background-color:black;
+    border:20px solid var(--padding-sections);
+    border-top:0px;
+  }
+}
+
+{% comment %} //////////////////PERKS SECTION///////////////////// {% endcomment %}
+.master-section-container-perks{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:100vh;
+    width:100vw;
+    border:20px solid var(--padding-sections);
+}
+.master-title-subtitle-button-container-perks{
+  height:20vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+
+
+}
+.container-perks {
+    display: flex;
+    flex-direction: row; /* Ensures side-by-side layout */
+    height: calc(100vh - 20vh - 40px);
+    width: 100%; /* Full viewport width */
+    justify-content: stretch; /* Ensures that each child expands as needed */
+    align-items: stretch; /* Aligns children to stretch to fill the container height */
+    background-color:black;
+
+}
+.text-list-perks {
+    height:100%;
+    width: 50%; /* Half of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content in this column */
+    align-items: flex-start; /* Align items to the start (left side) of the column */
+    border-right: 20px solid var(--padding-sections); /* Adds a border between the columns */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+
+}
+.icon-display-perks {
+    width: 50%; /* Half of the container */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-size: 48px;
+    visibility: visible; /* Always visible */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+    padding: 20px; /* Optional padding for aesthetics */
+
+}
+.text-item-perks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: calc(80vh / 8);
+    width: 100%;
+    padding-left:20px;
+    border-bottom:4px solid var(--padding-sections);
+    color:white;
+    font-size:16px;
+
+}
+
+
+.text-item-perks:hover {
+  background-color:var(--padding-sections); 
+}
+.icon-display-perks {
+    width: 50%;
+    display: flex;
+    flex-direction: column; // To stack icon and text vertically
+    align-items: center; // Center-align the content horizontally
+    justify-content: center; // Center-align the content vertically
+    visibility: hidden; // Initially hidden, shown on hover
+    transition: visibility 0.3s ease-in-out; // Smooth visibility transition
+}
+
+
+@media (max-width: 1100px) {
+    .master-title-subtitle-button-container-perks{
+        background-color:black;
+
+
+    }
+    .container-perks {
+        flex-direction: column; /* Stacks the containers vertically on smaller screens */
+    }
+    .text-list-perks, .icon-display-perks {
+        width: 100%; /* Full width of the container */
+        border-right: none; /* Removes the border-right in stacked layout */
+        border-bottom: 2px solid #000; /* Adds a border below the text list */
+    }
+    .icon-display-perks {
+        display: none; /* Optionally hide the icon display on smaller screens */
+    }
+}
+
+{% comment %} //////////////////ACCORDION FAQ SECTION///////////////////// {% endcomment %}
+
+  .master-section-container-accordion{
+    display: flex;
+    flex-direction: column;
+
+    min-height:100vh;
+    width:100vw;
+    border:20px solid var(--padding-sections);
+  }
+  .accordion-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px;
+      width: 100%;
+      height:calc(70vh / 9);
+      background-color: black;
+      font-size:20px !important;
+      color: white;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      cursor: pointer;
+      border-bottom: 2px solid var(--padding-sections);
+      text-align:left;
+  }
+  .button-text {
+      flex-grow: 1; /* Ensures text takes up available space, pushing the arrow to the right */
+  }
+  .arrow {
+      transition: transform 0.3s ease; /* Ensures smooth rotation */
+      display: inline-block; /* Helps manage transformations better */
+  }
+  .arrow.up {
+      transform: rotate(-180deg); /* Ensures the arrow points up */
+  }
+  .accordion-button:hover, .accordion-button:active {
+      background-color: var(--padding-sections);
+  }
+  .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      color:black;
+  }
+  .panel p {
+    padding:5rem;
+  }
+  @media (max-width: 1100px) {
+
+
+    .master-container-button-mobile-accordion{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        align-items:center;
+        height:10%;
+        border-top:20px solid var(--padding-sections);
+        border-bottom:20px solid var(--padding-sections);
+        padding:40px;
+        background-color:black;
+    
+      }
+  }
+
+  .cta-bottom-container-desktop{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:3rem;
+  }
+{%- endstyle -%}
+
+
+
+<section class="master-section-container-hero">
+  <div class="content-overlay">
+    <h1>{{ section.settings.text_title_primary }}</h1>
+    <p>{{ section.settings.text_subtitle_primary }}</p>
+    <a href="{{ section.settings.cta_link }}" class="button-link button-hero">
+      <button class="button-main">{{ section.settings.cta-main }}</button>
+    </a>  
+  </div>
+  <video class="background-video" muted autoplay playsinline loop>
+        <source src="https://cdn.shopify.com/videos/c/o/v/469f76316f62410eae5d0924e85a0a6e.mov" type="video/mp4">
+
+
+  </video>
+</section>
+
+<section class="master-section-container">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.text_title_secondary }}</h2>
+      <p>{{ section.settings.text_subtitle_secondary }}</p>
+    </div>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple"> 
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Ralf-coffee_1.jpg?v=1713252187" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>{{ section.settings.ROASTERY_HEADING_2 }}</h3>
+        <br>
+        <p>{{ section.settings.ROASTERY_OPENING_2 }}</p>
+      </div>
+      <div class="arrow-right-container" ><h4>1/3</h4></div>
+    </div>
+
+    <div class="content-box-triple">
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>{{ section.settings.ROASTERY_HEADING_1 }}</h3>
+        <br>
+        <p>{{ section.settings.ROASTERY_OPENING_1 }}</p>
+      </div>
+      <div class="arrow-right-container" ><h4>2/3</h4></div>    
+    </div>
+    
+    <div class="content-box-triple">
+      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
+      <div class="text-content-container">
+        <h3>{{ section.settings.TITLE_003 }}</h3>
+        <br>
+        <p>{{ section.settings.SUBTITLE_003 }}</p>
+      </div>
+      <div class="arrow-right-container" ><h4>3/3</h4></div>
+
+    </div>
+    
+  </div>
+
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> {{ section.settings.cta-main }}</button>
+  </div>
+  
+</section>
+
+<section class="master-section-container">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.text_title }}</h2>
+      <p>{{ section.settings.text_subtitle }}</p>
+    </div>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple"> 
+      <div class="text-content-container-reviews">
+        <h3>{{ section.settings.text }}</h3>
+        <br>
+        <p>{{ section.settings.text_1 }}</p>
+        <br>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Denis</p>
+      </div>
+      <div class="arrow-right-container-reviews" ><h4>1/5</h4></div>
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>{{ section.settings.text_2 }}</h3>
+        <br>
+        <p>{{ section.settings.text_3 }}</p>
+        <br>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Betis</p>
+      </div>
+      <div class="arrow-right-container-reviews" ><h4>2/5</h4></div>    
+    </div>
+    
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>{{ section.settings.text_4 }}</h3>
+        <br>
+        <p>{{ section.settings.text_5 }}</p>
+        <br>
+        <p style="color:var(--golden-star )"> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Daniel</p>
+      </div>
+      <div class="arrow-right-container-reviews" ><h4>3/5</h4></div>
+
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>{{ section.settings.text_6 }}</h3>
+        <br>
+        <p>{{ section.settings.text_7 }}</p>
+        <br>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Jan</p>
+      </div>
+      <div class="arrow-right-container-reviews" ><h4>4/5</h4></div>
+
+    </div>
+
+    <div class="content-box-triple">
+      <div class="text-content-container-reviews">
+        <h3>{{ section.settings.text_8 }}</h3>
+        <br>
+        <p>{{ section.settings.text_9 }}</p>
+        <br>
+        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
+        <br>
+        <p> -- Batin</p>
+      </div>
+      <div class="arrow-right-container-reviews" ><h4>5/5</h4></div>
+
+    </div>
+  </div>
+  
+  <div class="master-container-button-mobile">
+    <button class="button-main button-mobile"> {{ section.settings.cta-main }}</button>
+  </div>
+  
+</section>
+
+<section class="master-section-container">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.past_title }}</h2>
+      <p>{{ section.settings.past_subtitle }}</p>
+    </div>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
+  </div>
+
+  <div class="master-content-container">
+    <div class="content-box-triple-past"> 
+      <div class="text-content-container-past">
+        <div class="text-content-container-past_image">
+        
+          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
+          <img class="img-past-coffees default-image " src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
+
+        </div>
+        <br>
+        <div class="text-content-container-past_noimage">
+          <h2>VOLCAN AZUL CATURRA</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_1 }}</p>
+          <br>
+          <p> -- Silvio</p>
+          <div class="arrow-right-container-past" ><h4>1/4</h4></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <div class="text-content-container-past_image">
+
+          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
+          <img class="img-past-coffees  default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Bildschirmfoto2021-08-09um12.16.50_73771fc9-bce4-4dca-b7db-e66db8fc2e4c.png?v=1703750951" width="" height="">
+
+        </div>
+        <br>
+        <div class="text-content-container-past_noimage">
+          <h2>CABALLERO</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_2 }}</p>
+          <br>
+          <p> -- Carsten</p>
+          <div class="arrow-right-container-past" ><h4>2/4</h4></div>    
+        </div>
+      </div>
+    </div>
+    
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <div class="text-content-container-past_image" >
+          <img class="img-past-coffees default-image  " src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
+          <img class="img-past-coffees hover-image  " src="https://cdn.shopify.com/s/files/1/0831/4141/files/Image20.04.23at09.32.jpg?v=1708603380" width="" height="">
+        </div>
+        <br>
+        <div class="text-content-container-past_noimage">
+          <h2>CERRO AZUL GEISHA</h2>
+          <br>
+          <p>{{ section.settings.past_coffee_3 }}</p>
+          <br>
+          <p> -- Oleg</p>
+          <div class="arrow-right-container-past" ><h4>3/4</h4></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content-box-triple-past">
+      <div class="text-content-container-past">
+        <div class="text-content-container-past_image" >
+          <img class="img-past-coffees hover-image " src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
+          <img class="img-past-coffees default-image " src="https://cdn.shopify.com/s/files/1/0831/4141/products/IMG_9674_7454d410-e238-45b8-bfc3-dff0079dddfe.jpg?v=1674207882" width="" height="">
+        </div>
+        <br>
+        <div class="text-content-container-past_noimage">
+          <h2>VOLCAN AZUL GEISHA </h2>
+          <br>
+          <p>{{ section.settings.past_coffee_4 }}</p>
+          <br>
+          <p> -- Charlie</p>
+          <div class="arrow-right-container-past" ><h4>4/4</h4></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+
+</section>
+
+<section class="master-section-container-works">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.how_it_work_title}}</h2>
+      <p>{{ section.settings.how_it_work_subtitle}}</p>
+    </div>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
+  </div>
+
+  <div class="master-content-container-works">
+   
+      <div class="text-content-container-works">
+        <h3 class="number-how-it-works">1</h3>
+        <div class="works-without-number-container-right"> 
+          <h1>{{ section.settings.how_it_work_title_one}}</h1>
+          <p>{{ section.settings.how_it_work_subtitle_one}}</p>
+        </div>
+
+    </div>
+
+      <div class="text-content-container-works border-middle-works">
+        <h3 class="number-how-it-works hide-in-mobile-works">2</h3>
+        <div class="works-without-number-container-left">
+          <h1>{{ section.settings.how_it_work_title_two}}</h1>
+          <p>{{ section.settings.how_it_work_subtitle_two}}</p>
+        </div>
+        <h3 class="number-how-it-works hide-in-desktop-works">2</h3>
+    </div>
+    
+      <div class="text-content-container-works">
+        <h3 class="number-how-it-works">3</h3>
+        <div class="works-without-number-container-right">
+          <h1>{{ section.settings.how_it_work_title_three}}</h1>
+          <p>{{ section.settings.how_it_work_subtitle_three}}</p>
+        </div>
+    </div>
+    
+  </div>
+
+  
+  
+</section>
+
+<section class="master-section-container-perks">
+
+  <div class="master-title-subtitle-button-container-perks">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.what_do_i_get_title}}</h2>
+    </div>
+    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
+  </div>
+  <div class="container-perks">
+    <div class="text-list-perks">
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
+          data-text-perks="{{ section.settings.what_do_i_get_one_description}}">
+          {{ section.settings.what_do_i_get_one}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
+          data-text-perks="{{ section.settings.what_do_i_get_two_description}}">
+          {{ section.settings.what_do_i_get_two}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
+          data-text-perks="{{ section.settings.what_do_i_get_three_description}}">
+          {{ section.settings.what_do_i_get_three}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
+          data-text-perks="{{ section.settings.what_do_i_get_four_description}}">
+          {{ section.settings.what_do_i_get_four}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
+          data-text-perks="{{ section.settings.what_do_i_get_five_description}}">
+          {{ section.settings.what_do_i_get_five}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
+          data-text-perks="{{ section.settings.what_do_i_get_six_description}}">
+          {{ section.settings.what_do_i_get_six}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
+          data-text-perks="{{ section.settings.what_do_i_get_seven_description}}">
+          {{ section.settings.what_do_i_get_seven}} 
+        </div>
+        <div class="text-item-perks" 
+          data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
+          data-text-perks="{{ section.settings.what_do_i_get_eight_description}}">
+          {{ section.settings.what_do_i_get_eight}} 
+        </div>
+    </div>
+    <div class="icon-display-perks"></div>
+  </div>
+</section>
+<div class="master-container-button-mobile">
+  <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
+</div>
+
+<section class="master-section-container-accordion">
+  <div class="master-title-subtitle-button-container">
+    <div class="master-title-subtitle-container">
+      <h2>{{ section.settings.text_title_faq }}</h2>
+    </div>
+    <button class="button-main button-desktop">{{ section.settings.cta-main }} </button>
+  </div>
+  <div class="accordion">
+    <div class="accordion-button">{{ section.settings.faq_question_1}} <span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_1}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_2}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_2}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_3}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_3}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_4}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_4}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_5}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_5}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_6}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_6}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_7}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_7}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_8}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_8}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_9}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_9}}</p>
+    </div>
+    <div class="accordion-button">{{ section.settings.faq_question_10}}<span class="arrow">&#9660;</span></div>
+    <div class="panel">
+        <p>{{ section.settings.faq_answer_10}}</p>
+    </div>
+  </div>
+
+  <div class="master-container-button-mobile-accordion">
+    <button class="button-main button-mobile"> {{ section.settings.cta-main }}  </button>
+  </div>
+</section>
+
+<div class="cta-bottom-container-desktop">
+  <button class="button-main button-desktop">{{ section.settings.cta-main }}</button>
+</div>
+
+
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', function() {
+      // Function to strip HTML tags from strings
+      function stripHtml(html) {
+          var tempDiv = document.createElement("div");
+          tempDiv.innerHTML = html;
+          return tempDiv.textContent || tempDiv.innerText || "";
+      }
+
+      // Image hover functionality
+    const containers = document.querySelectorAll('.text-content-container-past_image');
+      
+      containers.forEach(container => {
+          const defaultImage = container.querySelector('.default-image');
+          const hoverImage = container.querySelector('.hover-image');
+
+          if (!defaultImage || !hoverImage) {
+              console.error('One or both images not found in a container');
+              return;
+          }
+
+          container.addEventListener('mouseenter', function() {
+              defaultImage.style.opacity = 0;
+              hoverImage.style.opacity = 1;
+          });
+
+          container.addEventListener('mouseleave', function() {
+              defaultImage.style.opacity = 1;
+              hoverImage.style.opacity = 0;
+          });
+      });
+
+      // Accordion functionality
+      var accButtons = document.querySelectorAll('.accordion-button');
+      accButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+              var panel = this.nextElementSibling;
+              var arrow = this.querySelector('.arrow');
+              if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                  arrow.innerHTML = '&#9660;';
+              } else {
+                  document.querySelectorAll('.panel').forEach(p => p.style.maxHeight = null);
+                  document.querySelectorAll('.accordion-button .arrow').forEach(a => a.innerHTML = '&#9660;');
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                  arrow.innerHTML = '&#9650;';
+              }
+          });
+      });
+
+      // Icon and text update functionality
+      const items = document.querySelectorAll('.text-item-perks');
+      const iconDisplay = document.querySelector('.icon-display-perks');
+      let lastHoveredItem = null;
+
+      function setIconAndText(item) {
+          iconDisplay.innerHTML = '';
+
+          const icon = document.createElement('lord-icon');
+          icon.setAttribute('src', item.getAttribute('data-icon-perks'));
+          icon.setAttribute('trigger', 'loop');
+          icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
+          icon.setAttribute('style', 'width:250px;height:250px');
+          icon.setAttribute('delay', '2000');
+
+          const text = document.createElement('div');
+          text.textContent = stripHtml(item.getAttribute('data-text-perks'));
+          text.style.color = '#fff';
+          text.style.fontSize = '20px';
+          text.style.textAlign = 'center';
+          text.style.marginTop = '20px';
+
+          iconDisplay.appendChild(icon);
+          iconDisplay.appendChild(text);
+          iconDisplay.style.visibility = 'visible';
+          
+          lastHoveredItem = item;
+      }
+
+      if (items.length > 0) {
+          setIconAndText(items[0]);
+          lastHoveredItem = items[0];
+      }
+
+      items.forEach(item => {
+          item.addEventListener('mouseenter', function() {
+              setIconAndText(this);
+          });
+          item.addEventListener('mouseleave', function() {
+              if (lastHoveredItem) {
+                  setIconAndText(lastHoveredItem);
+              }
+          });
+      });
+
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "custom abo section two ",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+
+    {
+      "type": "richtext",
+      "id": "text_title_primary",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Hero Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_subtitle_primary",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Hero Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "cta-main",
+      "default": "<p>EXPLORE SUBSCRIPTIONS</p>",
+      "label": "Call to Action"
+    },
+    {
+      "type": "richtext",
+      "id": "text_title_secondary",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Benefits Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_subtitle_secondary",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Benefits Subtitle 1"
+    },
+    {
+      "type": "text",
+      "id": "ROASTERY_HEADING_2",
+      "default": "Image with text",
+      "label": "Benefits Image Title 1"
+    },
+    {
+      "type": "richtext",
+      "id": "ROASTERY_OPENING_2",
+      "default": "<p>link your location</p>",
+      "label": "Benefits Image Subtitle 1"
+    },
+    {
+      "type": "text",
+      "id": "ROASTERY_HEADING_1",
+      "default": "Image with text",
+      "label": "Benefits Image Title 2"
+    },
+    {
+      "type": "richtext",
+      "id": "ROASTERY_OPENING_1",
+      "default": "<p>link your location</p>",
+      "label": "Benefits Image Subtitle 2"
+    },
+    {
+      "type": "text",
+      "id": "TITLE_003",
+      "default": "Image with text",
+      "label": "Benefits Image Title 3"
+    },
+    {
+      "type": "richtext",
+      "id": "SUBTITLE_003",
+      "default": "<p>link your location</p>",
+      "label": "Benefits Image Subtitle 3"
+    },
+    {
+      "type": "richtext",
+      "id": "text_title",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text_subtitle",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 1"
+    },
+    {
+      "type": "richtext",
+      "id": "text_1",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 2"
+    },
+    {
+      "type": "richtext",
+      "id": "text_2",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 3"
+    },
+    {
+      "type": "richtext",
+      "id": "text_3",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 4"
+    },
+    {
+      "type": "richtext",
+      "id": "text_4",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 5"
+    },
+    {
+      "type": "richtext",
+      "id": "text_5",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 6"
+    },
+    {
+      "type": "richtext",
+      "id": "text_6",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 7"
+    },
+    {
+      "type": "richtext",
+      "id": "text_7",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 8"
+    },
+    {
+      "type": "richtext",
+      "id": "text_8",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 9"
+    },
+    {
+      "type": "richtext",
+      "id": "text_9",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Review 10"
+    },
+    {
+      "type": "richtext",
+      "id": "past_title",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Title"
+    },
+    {
+      "type": "richtext",
+      "id": "past_subtitle",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_1",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 1"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_2",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 2"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_3",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 3"
+    },
+    {
+      "type": "richtext",
+      "id": "past_coffee_4",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Past Coffees 4"
+    },
+
+
+
+
+
+    {
+      "type": "richtext",
+      "id": "how_it_work_title",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Title"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Subtitle"
+    },
+
+    {
+      "type": "richtext",
+      "id": "how_it_work_title_one",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Title 1"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle_one",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Subtitle 1"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_title_two",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Title 2"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle_two",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Subtitle 2"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_title_three",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Title 3"
+    },
+    {
+      "type": "richtext",
+      "id": "how_it_work_subtitle_three",
+      "default": "<p>link your location</p>",
+      "label": "How It Work Subtitle 3"
+    },
+
+
+
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_title",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get Title"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_one",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 1?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_one_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 1 description"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_two",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 2?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_two_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 2 description"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_three",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 3?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_three_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 3 description"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_four",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 4?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_four_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 4 description"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_five",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 5?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_five_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 5 description"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_six",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 6?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_six_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 6 description"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_seven",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 7?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_seven_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 7 description"
+    },
+
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_eight",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 8?"
+    },
+    {
+      "type": "richtext",
+      "id": "what_do_i_get_eight_description",
+      "default": "<p>link your location</p>",
+      "label": "What Do I Get 8 description"
+    },
+
+
+
+    {
+        "type": "richtext",
+        "id": "text_title_faq",
+        "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "label": "FAQ Title"
+    },
+
+
+  {
+    "type": "richtext",
+    "id": "faq_question_1",
+    "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    "label": "FAQ question 1"
+},
+  {
+    "type": "richtext",
+    "id": "faq_answer_1",
+    "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    "label": "FAQ answer 1"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_2",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 2"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_2",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 2"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_3",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 3"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_3",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 3"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_4",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 4"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_4",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 4"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_5",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 5"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_5",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 5"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_6",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 6"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_6",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 6"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_7",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 7"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_7",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 7"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_8",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 8"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_8",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 8"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_9",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ question 9"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_9",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 9"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_question_10",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ Question 10"
+},
+
+{
+  "type": "richtext",
+  "id": "faq_answer_10",
+  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+  "label": "FAQ answer 10"
+},
+
+
+
+
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "collapsible_row",
+      "name": "t:sections.collapsible_content.blocks.collapsible_row.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible row",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
+          "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__1.label"
+            },
+            {
+              "value": "apple",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__2.label"
+            },
+            {
+              "value": "banana",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__3.label"
+            },
+            {
+              "value": "bottle",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__4.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__5.label"
+            },
+            {
+              "value": "carrot",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__6.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__7.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__8.label"
+            },
+            {
+              "value": "clipboard",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__9.label"
+            },
+            {
+              "value": "dairy",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__10.label"
+            },
+            {
+              "value": "dairy_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__11.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__12.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__13.label"
+            },
+            {
+              "value": "fire",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__14.label"
+            },
+            {
+              "value": "gluten_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__15.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__16.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__17.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__18.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__19.label"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__20.label"
+            },
+            {
+              "value": "lipstick",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__21.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__22.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__23.label"
+            },
+            {
+              "value": "nut_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__24.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__25.label"
+            },
+            {
+              "value": "paw_print",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__26.label"
+            },
+            {
+              "value": "pepper",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__27.label"
+            },
+            {
+              "value": "perfume",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__28.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__29.label"
+            },
+            {
+              "value": "plant",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__30.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__31.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__32.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__33.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__34.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__35.label"
+            },
+            {
+              "value": "serving_dish",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__36.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__37.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__38.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__39.label"
+            },
+            {
+              "value": "snowflake",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__40.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__41.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__42.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__43.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__44.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
+        },
+        {
+          "type": "richtext",
+          "id": "row_content",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
+        }
+      ]
+    }
+  ],
+  
+  "presets": [
+    {
+      "name": "custom abo section two"
+    }
+  ]
+}
+{% endschema %}

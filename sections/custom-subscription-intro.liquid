@@ -1,1298 +1,1448 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
 :root {
   --brown: #804d15;
   --white: #ffffff;
   --black:#282828;
-  --padding-sections:#191919;
-  --golden-star:#ffe234;
+  --padding-sections:#282828;
   --text-shadow:#bcbcbc;
   --button-main:black;
-  --font-main: "Chalet Comprime";
-  --font-secondary:"Raleway";
-  --font-size-big-biggie:8vh;
-  --font-size-big:6vh;
-  --font-size-medium:4vh;
-  --font-size-medium-small:3.5vh;
-  --font-size-small:14px;
-}
-
-
-.content-overlay h1{
-  font-family: var(--font-main);
-  font-size: var(--font-size-big-biggie);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.works-without-number-container-right h1{
-  font-family: var(--font-main);
-  font-size: var(--font-size-big);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.works-without-number-container-left h1{
-  font-family: var(--font-main);
-  font-size: var(--font-size-big);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.master-title-subtitle-container  h2{
-  font-family: var(--font-main);
-  font-size: var(--font-size-medium);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.text-content-container-past_noimage h2{
-  font-family: var(--font-main);
-  font-size: var(--font-size-medium);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-h3{
-  font-family: var(--font-main);
-  font-size: var(--font-size-medium-small);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
+  background: #804d15;
 
 }
-h4{
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-}
-p{
-  font-family:var(--font-secondary);
-  font-size:var(--font-size-small);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-}
-.button-link {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Ensures text color inherits from parent elements */
-}
 
-.button-main {
-  background-color: var(--brown);
-  padding: 1.6rem;
-  border-radius: 5px;
-  color: var(--white);
-  min-width: 20rem; 
-  font-size: 16px;
-  border: none;
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
-  cursor: pointer; /* Ensures the cursor changes to a pointer when hovered */
-}
-
-.button-main:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-  transform: scale(1.05); /* Slightly enlarges the button */
-}
-
-
-{% comment %} ///////////////////HERO SECTION///////////////////// {% endcomment %}
-.master-section-container-hero {
-  position: relative; 
-  height: calc(100vh - 168.688px); 
-  width: 100vw; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center;
-  justify-content: center; 
-  overflow: hidden; 
-}
-.content-overlay p{
-
-  font-weight:bold;
-}
-.content-overlay {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
-  z-index: 2; 
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; 
-}
-.background-video {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  z-index: 1; 
-}
-.button-hero{
-  margin-top:2rem;
-}
-
-{% comment %} ///////////////////SECOND SECTION///////////////////// {% endcomment %}
-.master-section-container{
-  height:100vh;
-  width:100vw;
-  border:20px solid var(--padding-sections);
-}
-.master-title-subtitle-button-container{
-  height:20vh;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-
-}
-.master-title-subtitle-container{
-  width:50%;
-}
-.master-content-container{
-
-
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
-  scroll-snap-type: x mandatory; 
-
-
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-
-  background-color:var(--padding-sections);
-  width:100%;
-  height: calc(100vh - 20vh - 40px );
-}
-.content-box-triple{
-  max-width:33.33%;
-  min-width:400px;
-  border:2px solid var(--padding-sections);
-
-  padding:0px;
-
-
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  text-align:center;
-  align-items:center;
-  scroll-snap-align: start; 
-}
-.master-image{
-  width:100%;
-  height:60%;
-  object-fit:cover;
-}
-.text-content-container{
-  height:200px;
-  background-color:black;
-  padding:20px;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:start;
-  text-align:center;
-  align-items:center;
-}
-.arrow-right-container{
-  background-color:black;
-  width:100%;
-
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-end;
-  align-items:center;
-
-  padding-right:1rem; 
-  padding-bottom:1rem;
-
-
-  
-}
-
-
-@media (max-width: 1100px) {
-  .master-content-container{
-    background-color:var(--padding-sections);
-    height: calc(100vh - 30vh - 40px );
-
-  }
-  .master-title-subtitle-button-container{
-    height:20vh;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    padding:20shpx;
-    background-color:black;
-
-  }
-  .master-image{
-    height:50%; 
-  }
-  .text-content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:start;
-    text-align:start;
-    height:40%;
-
-
-  }
-  .content-box-triple{
-    height:100%;
-    min-width:calc(100vw - 60px);
-    padding:0px;
-    justify-content:flex-start;
-
-  }
-  .button-desktop{
-    display:none;
-  }
-  .master-title-subtitle-container{
-    text-align:center;
-    width:100%;
-  }
-  .master-container-button-mobile{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    align-items:center;
-    height:10%;
-
-    background-color:black;
-
-  }
-}
-@media (min-width: 1100px) {
-
-  .button-mobile{
-    display:none;
-  }
-  .arrow-right-container{
-    display:none;
-  }
-
-}
-{% comment %} ///////////////////REVIEWS SECTION///////////////////// {% endcomment %}
-.text-content-container-reviews h3{
-  color:black;
-}
-.text-content-container-reviews{
-  height:400px;
-  background-color:white;
-  padding:20px;
-  color:black;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:start;
-  text-align:start;
-  align-items:start;
-  padding-top:20%;
-}
-.arrow-right-container-reviews h4{
-  color:black;
-
-}
-.arrow-right-container-reviews{
-  background-color:white;
-  width:100%;
-
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-end;
-  align-items:center;
-
-  padding-right:1rem; 
-  padding-bottom:1rem;
-  color:black;
-
-
-  
-}
-@media (max-width: 1100px) {
-
-  .text-content-container-reviews{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:start;
-    text-align:start;
-    height:73%;
-    width:100%;
-    margin-top:20%;
-
-
-  }
-  
-}
-{% comment %} ///////////////////PAST SECTION///////////////////// {% endcomment %}
-.img-past-coffees {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.5s ease-in-out;
-}
-.hover-image {
-  display: block;
-  opacity: 0;
-}
-.text-content-container-past h3{
-  color:white;
-}
-.text-content-container-past{
-  height:100%;
-  background-color:black;
-  padding:20px;
-  color:white;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  text-align:center;
-  align-items:center;
-}
-.text-content-container-past_image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.text-content-container-past_noimage{
-
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  text-align:center;
-  align-items:center;
-  min-height:180px;
-  max-height:180px;
-  width:100%;
-}
-.arrow-right-container-past h4{
-  color:white;
-
-}
-.arrow-right-container-past{
-  background-color:black;
-  width:100%;
-
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-end;
-  align-items:center;
-
-  padding-right:1rem; 
-  padding-bottom:1rem;
-  color:white;
-
-}
-.content-box-triple-past{
-  height:100%;
-  max-width:25%;
-  min-width:400px;
-  border-right:2px solid var(--padding-sections);
-  border-left:2px solid var(--padding-sections);
-
-  padding:0px;
-
-
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  text-align:center;
-  align-items:center;
-  scroll-snap-align: start; 
-}
-@media (max-width: 1100px) {
-
-  .text-content-container-past{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-end;
-    text-align:center;
-    height:100%;
-    width:100%;
-
-
-  }
-  .content-box-triple-past{
-    height:100%;
-    min-width:calc(100vw - 65px);
-    padding:0px;
-    justify-content:flex-start;
-
-  }
-}
-{% comment %} ///////////////////HOW IT WORKS SECTION///////////////////// {% endcomment %}
-  .master-section-container-works{
-    border:20px solid var(--padding-sections)
-  }
-  .master-content-container-works{
-
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-
-    background-color:var(--padding-sections);
-    width:100%;
-    height: calc(100vh - 20vh - 40px );
-  }
-  .number-how-it-works{
-    font-size:112px;
-  }
-  .text-content-container-works{
-
-    background-color:black;
-    padding:20px;
-    color:white;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    align-items:center;
-  }
-  .border-middle-works{
-    margin-left:4px;
-    margin-right:4px;
-  }
-  .hide-in-desktop-works{
-    display:none;
-  }
-  .hide-in-mobile-works{
-    display:block;
-  }
-  .number-how-it-works{
-    margin-bottom:5rem;
-  }
-  @media (min-width: 1100px) {
-    .works-without-number-container-right p{
-      margin-top:3rem;
-  }
-  .works-without-number-container-left p{
-  margin-top:3rem;
-  }
-
-  }
-@media (max-width: 1100px) {
-  .master-content-container-works{
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-
-    background-color:black;
-    width:100%;
-    height: calc(100vh - 30vh - 80px );
-  }
-  .text-content-container-works{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    text-align:center;
-    width:100%;
-    padding:0px;
-    height:33.33%;
-  }
-  .border-middle-works{
-    border-top:4px solid var(--padding-sections);
-    border-bottom:4px solid var(--padding-sections);
-  }
-  .content-box-triple-works{
-    height:0;
-    max-width:33.33%;
-    min-width:400px;
-
-
-    padding:0px;
-
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    text-align:center;
-    align-items:center;
-    scroll-snap-align: start; 
-    background-color:white;
-    height:50%;
-  }
-  .content-box-triple-works{
-    height:100px;
-    min-width:calc(100vw - 65px);
-    padding:0px;
-    justify-content:flex-start;
-
-  }
-  .works-without-number-container-right{
-    display: flex;
-    flex-direction:column;
-    text-align:right;
-    width:70%;
-  }
-  .works-without-number-container-left{
-    display: flex;
-    flex-direction:column;
-    text-align:left;
-    width:70%;
-  }
-  .hide-in-mobile-works{
-    display:none;
-  }
-  .hide-in-desktop-works{
-    display:block;
-  }
-  .number-how-it-works{
-    margin-bottom:0rem;
-  }
-  .works-without-number-container-right h1{
-  font-family: var(--font-main);
-  font-size: var(--font-size-medium);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-.works-without-number-container-left h1{
-  font-family: var(--font-main);
-  font-size: var(--font-size-medium);
-  margin:0px;
-  padding:0px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
- .master-title-subtitle-button-container-works{
-    height:20vh;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-    background-color:black;
-
-  }
-  .master-container-button-mobile-works{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    align-items:center;
-    height:10%;
-    padding:20px;
-    background-color:black;
-    border:20px solid var(--padding-sections);
-    border-top:0px;
-  }
-}
-
-{% comment %} //////////////////PERKS SECTION///////////////////// {% endcomment %}
-.master-section-container-perks{
-  display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height:100vh;
-    width:100vw;
-    border:20px solid var(--padding-sections);
-}
-.master-title-subtitle-button-container-perks{
-  height:20vh;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-
-
-}
-.container-perks {
-    display: flex;
-    flex-direction: row; /* Ensures side-by-side layout */
-    height: calc(100vh - 20vh - 40px);
-    width: 100%; /* Full viewport width */
-    justify-content: stretch; /* Ensures that each child expands as needed */
-    align-items: stretch; /* Aligns children to stretch to fill the container height */
-    background-color:black;
-
-}
-.text-list-perks {
-    height:100%;
-    width: 50%; /* Half of the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center content in this column */
-    align-items: flex-start; /* Align items to the start (left side) of the column */
-    border-right: 20px solid var(--padding-sections); /* Adds a border between the columns */
-    box-sizing: border-box; /* Includes padding and border in the element's width */
-
-}
-.icon-display-perks {
-    width: 50%; /* Half of the container */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    font-size: 48px;
-    visibility: visible; /* Always visible */
-    box-sizing: border-box; /* Includes padding and border in the element's width */
-    padding: 20px; /* Optional padding for aesthetics */
-
-}
-.text-item-perks{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: black;
-    height: calc(80vh / 8);
-    width: 100%;
-    padding-left:20px;
-    border-bottom:4px solid var(--padding-sections);
-    color:white;
-    font-size:16px;
-
-}
-
-
-.text-item-perks:hover {
-  background-color:var(--padding-sections); 
-}
-.icon-display-perks {
-    width: 50%;
-    display: flex;
-    flex-direction: column; // To stack icon and text vertically
-    align-items: center; // Center-align the content horizontally
-    justify-content: center; // Center-align the content vertically
-    visibility: hidden; // Initially hidden, shown on hover
-    transition: visibility 0.3s ease-in-out; // Smooth visibility transition
-}
-
-
-@media (max-width: 1100px) {
-    .master-title-subtitle-button-container-perks{
-        background-color:black;
-
-
-    }
-    .container-perks {
-        flex-direction: column; /* Stacks the containers vertically on smaller screens */
-    }
-    .text-list-perks, .icon-display-perks {
-        width: 100%; /* Full width of the container */
-        border-right: none; /* Removes the border-right in stacked layout */
-        border-bottom: 2px solid #000; /* Adds a border below the text list */
-    }
-    .icon-display-perks {
-        display: none; /* Optionally hide the icon display on smaller screens */
-    }
-}
-
-{% comment %} //////////////////ACCORDION FAQ SECTION///////////////////// {% endcomment %}
-
-  .master-section-container-accordion{
-    display: flex;
-    flex-direction: column;
-
-    min-height:100vh;
-    width:100vw;
-    border:20px solid var(--padding-sections);
-  }
-  .accordion-button {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px;
-      width: 100%;
-      height:calc(70vh / 9);
-      background-color: black;
-      font-size:20px !important;
-      color: white;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      cursor: pointer;
-      border-bottom: 2px solid var(--padding-sections);
-      text-align:left;
-  }
-  .button-text {
-      flex-grow: 1; /* Ensures text takes up available space, pushing the arrow to the right */
-  }
-  .arrow {
-      transition: transform 0.3s ease; /* Ensures smooth rotation */
-      display: inline-block; /* Helps manage transformations better */
-  }
-  .arrow.up {
-      transform: rotate(-180deg); /* Ensures the arrow points up */
-  }
-  .accordion-button:hover, .accordion-button:active {
-      background-color: var(--padding-sections);
-  }
-  .panel {
-      padding: 0 18px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      color:black;
-  }
-  .panel p {
-    padding:5rem;
-  }
-  @media (max-width: 1100px) {
-
-
-    .master-container-button-mobile-accordion{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        text-align:center;
-        align-items:center;
-        height:10%;
-        border-top:20px solid var(--padding-sections);
-        border-bottom:20px solid var(--padding-sections);
-        padding:40px;
-        background-color:black;
-    
-      }
-  }
-
-  .cta-bottom-container-desktop{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding-top:3rem;
-  }
 {%- endstyle -%}
 
 
+{%- style -%}
 
-<section class="master-section-container-hero">
-  <div class="content-overlay">
-    <h1>{{ section.settings.text_title_primary }}</h1>
-    <p>{{ section.settings.text_subtitle_primary }}</p>
-    <a href="{{ section.settings.cta_link }}" class="button-link button-hero">
-      <button class="button-main">{{ section.settings.cta-main }}</button>
-    </a>  
-  </div>
-  <video class="background-video" muted autoplay playsinline loop>
-        <source src="https://cdn.shopify.com/videos/c/o/v/469f76316f62410eae5d0924e85a0a6e.mov" type="video/mp4">
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
 
 
-  </video>
-</section>
-
-<section class="master-section-container">
-  <div class="master-title-subtitle-button-container">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.text_title_secondary }}</h2>
-      <p>{{ section.settings.text_subtitle_secondary }}</p>
-    </div>
-    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
-  </div>
-
-  <div class="master-content-container">
-    <div class="content-box-triple"> 
-      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Ralf-coffee_1.jpg?v=1713252187" class="master-image" width=""; height=""; alt="">
-      <div class="text-content-container">
-        <h3>{{ section.settings.ROASTERY_HEADING_2 }}</h3>
-        <br>
-        <p>{{ section.settings.ROASTERY_OPENING_2 }}</p>
-      </div>
-      <div class="arrow-right-container" ><h4>1/3</h4></div>
-    </div>
-
-    <div class="content-box-triple">
-      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/ralf_roastery_a8082eac-5c87-4689-8242-1ead45739a4a.jpg?v=1713252184" class="master-image" width=""; height=""; alt="">
-      <div class="text-content-container">
-        <h3>{{ section.settings.ROASTERY_HEADING_1 }}</h3>
-        <br>
-        <p>{{ section.settings.ROASTERY_OPENING_1 }}</p>
-      </div>
-      <div class="arrow-right-container" ><h4>2/3</h4></div>    
-    </div>
-    
-    <div class="content-box-triple">
-      <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Subscriptions_1.jpg?v=1713252186" class="master-image" width=""; height=""; alt="">
-      <div class="text-content-container">
-        <h3>{{ section.settings.TITLE_003 }}</h3>
-        <br>
-        <p>{{ section.settings.SUBTITLE_003 }}</p>
-      </div>
-      <div class="arrow-right-container" ><h4>3/3</h4></div>
-
-    </div>
-    
-  </div>
-
-  <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> {{ section.settings.cta-main }}</button>
-  </div>
+.slider-text-custom-container{
+ border:10px solid #121212;
+}
+.image-main-slider{
+  object-fit:cover;
   
-</section>
+}
+.text-container-main{
+  background-color:transparent ;
+}
+.text-buttom-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+}
+.text-buttom-container h2{
+  font-size:32px;
+  margin:0px;
+  font-family:'Chalet Comprime'
+}
+.text-buttom-container p{
+  font-size:16px;
+  margin:0px;
+}
 
-<section class="master-section-container">
-  <div class="master-title-subtitle-button-container">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.text_title }}</h2>
-      <p>{{ section.settings.text_subtitle }}</p>
-    </div>
-    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
-  </div>
+.image-container-main{
+  display:flex;
+  justify-content:center;
+}
+.slider-container img {
+  height:100%;
+  width:100%;
+  display: none;
+}
+.slider-container img.active {
+  display: block;
+}
 
-  <div class="master-content-container">
-    <div class="content-box-triple"> 
-      <div class="text-content-container-reviews">
-        <h3>{{ section.settings.text }}</h3>
-        <br>
-        <p>{{ section.settings.text_1 }}</p>
-        <br>
-        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
-        <br>
-        <p> -- Denis</p>
-      </div>
-      <div class="arrow-right-container-reviews" ><h4>1/5</h4></div>
-    </div>
+/* Mobile */
+@media screen and (max-width: 700px) {
 
-    <div class="content-box-triple">
-      <div class="text-content-container-reviews">
-        <h3>{{ section.settings.text_2 }}</h3>
-        <br>
-        <p>{{ section.settings.text_3 }}</p>
-        <br>
-        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
-        <br>
-        <p> -- Betis</p>
-      </div>
-      <div class="arrow-right-container-reviews" ><h4>2/5</h4></div>    
-    </div>
-    
-    <div class="content-box-triple">
-      <div class="text-content-container-reviews">
-        <h3>{{ section.settings.text_4 }}</h3>
-        <br>
-        <p>{{ section.settings.text_5 }}</p>
-        <br>
-        <p style="color:var(--golden-star )"> ★ ★ ★ ★ ★ </p>
-        <br>
-        <p> -- Daniel</p>
-      </div>
-      <div class="arrow-right-container-reviews" ><h4>3/5</h4></div>
+  .slider-text-custom-container{
+    padding:0rem;
 
-    </div>
-
-    <div class="content-box-triple">
-      <div class="text-content-container-reviews">
-        <h3>{{ section.settings.text_6 }}</h3>
-        <br>
-        <p>{{ section.settings.text_7 }}</p>
-        <br>
-        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
-        <br>
-        <p> -- Jan</p>
-      </div>
-      <div class="arrow-right-container-reviews" ><h4>4/5</h4></div>
-
-    </div>
-
-    <div class="content-box-triple">
-      <div class="text-content-container-reviews">
-        <h3>{{ section.settings.text_8 }}</h3>
-        <br>
-        <p>{{ section.settings.text_9 }}</p>
-        <br>
-        <p style="color:var(--golden-star)"> ★ ★ ★ ★ ★ </p>
-        <br>
-        <p> -- Batin</p>
-      </div>
-      <div class="arrow-right-container-reviews" ><h4>5/5</h4></div>
-
-    </div>
-  </div>
+  }
+  .image-with-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding:0rem;
+  } 
+  .slider-container img { 
+    width: 100%;
+    height:450px;
+    display: none;
+  }
+  .text-container{
+    margin:0px;
+    padding:0px;
+  }
+  .text-buttom-container h2{
+    margin-top:1.6rem;
+  }
+  .image-container-main{
+    height:400px;
+}
+}
   
-  <div class="master-container-button-mobile">
-    <button class="button-main button-mobile"> {{ section.settings.cta-main }}</button>
-  </div>
-  
-</section>
+{%- endstyle -%}
 
-<section class="master-section-container">
-  <div class="master-title-subtitle-button-container">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.past_title }}</h2>
-      <p>{{ section.settings.past_subtitle }}</p>
-    </div>
-    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
-  </div>
+{%- style -%}
 
-  <div class="master-content-container">
-    <div class="content-box-triple-past"> 
-      <div class="text-content-container-past">
-        <div class="text-content-container-past_image">
-        
-          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/VolcanAzulCaturra.png?v=1707315999" width="" height="">
-          <img class="img-past-coffees default-image " src="https://cdn.shopify.com/s/files/1/0831/4141/files/DSCF42004_a25b0f61-efb7-4a4e-95f6-6bb8f8e744aa.jpg?v=1713875284" width="" height="">
+  .title-subtitle-container-hero h1{
+    font-family:'Chalet Comprime';
+    font-size:64px;
+    margin:0px;
+    text-shadow: 2px 2px var(--text-shadow);
 
-        </div>
-        <br>
-        <div class="text-content-container-past_noimage">
-          <h2>VOLCAN AZUL CATURRA</h2>
-          <br>
-          <p>{{ section.settings.past_coffee_1 }}</p>
-          <br>
-          <p> -- Silvio</p>
-          <div class="arrow-right-container-past" ><h4>1/4</h4></div>
-        </div>
-      </div>
-    </div>
+  }
+  .title-subtitle-container h2{
+    font-family:'Chalet Comprime';
+    font-size:32px;
+    margin:0px;
+  }
+  .text-closer-container-sp{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    text-align: justify;
 
-    <div class="content-box-triple-past">
-      <div class="text-content-container-past">
-        <div class="text-content-container-past_image">
+    max-width:480px;
+ 
 
-          <img class="img-past-coffees hover-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Caballero2023.png?v=1690288668" width="" height="">
-          <img class="img-past-coffees  default-image" src="https://cdn.shopify.com/s/files/1/0831/4141/files/Bildschirmfoto2021-08-09um12.16.50_73771fc9-bce4-4dca-b7db-e66db8fc2e4c.png?v=1703750951" width="" height="">
-
-        </div>
-        <br>
-        <div class="text-content-container-past_noimage">
-          <h2>CABALLERO</h2>
-          <br>
-          <p>{{ section.settings.past_coffee_2 }}</p>
-          <br>
-          <p> -- Carsten</p>
-          <div class="arrow-right-container-past" ><h4>2/4</h4></div>    
-        </div>
-      </div>
-    </div>
-    
-    <div class="content-box-triple-past">
-      <div class="text-content-container-past">
-        <div class="text-content-container-past_image" >
-          <img class="img-past-coffees default-image  " src="https://cdn.shopify.com/s/files/1/0831/4141/files/napoleon-250-sticker.jpg?v=1614331047" width="" height="">
-          <img class="img-past-coffees hover-image  " src="https://cdn.shopify.com/s/files/1/0831/4141/files/Image20.04.23at09.32.jpg?v=1708603380" width="" height="">
-        </div>
-        <br>
-        <div class="text-content-container-past_noimage">
-          <h2>CERRO AZUL GEISHA</h2>
-          <br>
-          <p>{{ section.settings.past_coffee_3 }}</p>
-          <br>
-          <p> -- Oleg</p>
-          <div class="arrow-right-container-past" ><h4>3/4</h4></div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="content-box-triple-past">
-      <div class="text-content-container-past">
-        <div class="text-content-container-past_image" >
-          <img class="img-past-coffees hover-image " src="https://cdn.shopify.com/s/files/1/0831/4141/products/DBF086E9-0520-4E3C-B8BA-151E1261CE52.png?v=1674207883" width="" height="">
-          <img class="img-past-coffees default-image " src="https://cdn.shopify.com/s/files/1/0831/4141/products/IMG_9674_7454d410-e238-45b8-bfc3-dff0079dddfe.jpg?v=1674207882" width="" height="">
-        </div>
-        <br>
-        <div class="text-content-container-past_noimage">
-          <h2>VOLCAN AZUL GEISHA </h2>
-          <br>
-          <p>{{ section.settings.past_coffee_4 }}</p>
-          <br>
-          <p> -- Charlie</p>
-          <div class="arrow-right-container-past" ><h4>4/4</h4></div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
   
 
-</section>
-
-<section class="master-section-container-works">
-  <div class="master-title-subtitle-button-container">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.how_it_work_title}}</h2>
-      <p>{{ section.settings.how_it_work_subtitle}}</p>
-    </div>
-    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
-  </div>
-
-  <div class="master-content-container-works">
-   
-      <div class="text-content-container-works">
-        <h3 class="number-how-it-works">1</h3>
-        <div class="works-without-number-container-right"> 
-          <h1>{{ section.settings.how_it_work_title_one}}</h1>
-          <p>{{ section.settings.how_it_work_subtitle_one}}</p>
-        </div>
-
-    </div>
-
-      <div class="text-content-container-works border-middle-works">
-        <h3 class="number-how-it-works hide-in-mobile-works">2</h3>
-        <div class="works-without-number-container-left">
-          <h1>{{ section.settings.how_it_work_title_two}}</h1>
-          <p>{{ section.settings.how_it_work_subtitle_two}}</p>
-        </div>
-        <h3 class="number-how-it-works hide-in-desktop-works">2</h3>
-    </div>
     
-      <div class="text-content-container-works">
-        <h3 class="number-how-it-works">3</h3>
-        <div class="works-without-number-container-right">
-          <h1>{{ section.settings.how_it_work_title_three}}</h1>
-          <p>{{ section.settings.how_it_work_subtitle_three}}</p>
-        </div>
-    </div>
-    
-  </div>
-
-  
-  
-</section>
-
-<section class="master-section-container-perks">
-
-  <div class="master-title-subtitle-button-container-perks">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.what_do_i_get_title}}</h2>
-    </div>
-    <button class="button-main button-desktop"> {{ section.settings.cta-main }} </button>
-  </div>
-  <div class="container-perks">
-    <div class="text-list-perks">
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/hffrpcip.json"
-          data-text-perks="{{ section.settings.what_do_i_get_one_description}}">
-          {{ section.settings.what_do_i_get_one}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/uzfnnbnm.json"
-          data-text-perks="{{ section.settings.what_do_i_get_two_description}}">
-          {{ section.settings.what_do_i_get_two}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/pchraidq.json"
-          data-text-perks="{{ section.settings.what_do_i_get_three_description}}">
-          {{ section.settings.what_do_i_get_three}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/lfxfmfjq.json"
-          data-text-perks="{{ section.settings.what_do_i_get_four_description}}">
-          {{ section.settings.what_do_i_get_four}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/zzjjvkam.json"
-          data-text-perks="{{ section.settings.what_do_i_get_five_description}}">
-          {{ section.settings.what_do_i_get_five}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/ixsfhsol.json"
-          data-text-perks="{{ section.settings.what_do_i_get_six_description}}">
-          {{ section.settings.what_do_i_get_six}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/dndbceuc.json"
-          data-text-perks="{{ section.settings.what_do_i_get_seven_description}}">
-          {{ section.settings.what_do_i_get_seven}} 
-        </div>
-        <div class="text-item-perks" 
-          data-icon-perks="https://cdn.lordicon.com/gqjpawbc.json"
-          data-text-perks="{{ section.settings.what_do_i_get_eight_description}}">
-          {{ section.settings.what_do_i_get_eight}} 
-        </div>
-    </div>
-    <div class="icon-display-perks"></div>
-  </div>
-</section>
-<div class="master-container-button-mobile">
-  <button class="button-main button-mobile"> {{ section.settings.cta-main }} </button>
-</div>
-
-<section class="master-section-container-accordion">
-  <div class="master-title-subtitle-button-container">
-    <div class="master-title-subtitle-container">
-      <h2>{{ section.settings.text_title_faq }}</h2>
-    </div>
-    <button class="button-main button-desktop">{{ section.settings.cta-main }} </button>
-  </div>
-  <div class="accordion">
-    <div class="accordion-button">{{ section.settings.faq_question_1}} <span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_1}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_2}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_2}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_3}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_3}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_4}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_4}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_5}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_5}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_6}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_6}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_7}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_7}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_8}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_8}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_9}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_9}}</p>
-    </div>
-    <div class="accordion-button">{{ section.settings.faq_question_10}}<span class="arrow">&#9660;</span></div>
-    <div class="panel">
-        <p>{{ section.settings.faq_answer_10}}</p>
-    </div>
-  </div>
-
-  <div class="master-container-button-mobile-accordion">
-    <button class="button-main button-mobile"> {{ section.settings.cta-main }}  </button>
-  </div>
-</section>
-
-<div class="cta-bottom-container-desktop">
-  <button class="button-main button-desktop">{{ section.settings.cta-main }}</button>
-</div>
+  }
+  .featured-collection-container{
+    padding-bottom:24px;
+  }
 
 
-{% javascript %}
-  document.addEventListener('DOMContentLoaded', function() {
-      // Function to strip HTML tags from strings
-      function stripHtml(html) {
-          var tempDiv = document.createElement("div");
-          tempDiv.innerHTML = html;
-          return tempDiv.textContent || tempDiv.innerText || "";
-      }
+{%- endstyle -%}
 
-      // Image hover functionality
-    const containers = document.querySelectorAll('.text-content-container-past_image');
+{% comment %} ////////////////////// Icons Perks ////////////////// {% endcomment %}
+{% style %}
+
+  .how-it-work-logo-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+  }
+  .how-it-work-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height:100%;
+    width:300px;
+    text-align:center;
+  }
+  .small-icon-brew {
+      max-height: 230px;
+      min-width: 200px;
+      margin-bottom:-60px;
+      margin-top:-60px;
+      object-fit: cover;
+  }
+  .small-icon {
+      max-height: 230px;
+      min-width: 200px;
+      margin-bottom:-60px;
+      margin-top:-60px;
+      border:2px;
+      object-fit: contain;
+  }
+
+  @media screen and (max-width:900px){
+    .how-it-work-logo-container{
+      display:flex;
+      flex-direction:column;
+    }
+    .how-it-work-block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      height:300px;
+      width:100% ;
+      text-align:center;
+    }
+    .text-closer-container-sp {
+      max-width: 480px;
+      margin-top: 0px;
+      padding: 0rem;
+    }
+    .title-subtitle-container{
+      text-align:center;
+    }
+  }
+
+
+{% endstyle %}
+
+{% comment %} ////////////////////// Collapsible Content ////////////////// {% endcomment %}
+{% style %}
+  .accordion{
+    margin-top:0px;
+  }
+  .container{
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
+    scroll-snap-type: x mandatory; 
+    height:400px;
+  }
+  .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      flex: 0 0 80vw;
+      scroll-snap-align: start; 
+      height:100%;
+  }
+  .container .item:last-child {
+      margin-right: 0;
+  }
+
+
+
+/* Media query for desktop view */
+@media (min-width: 1000px) {
+    .container {
+        justify-content: center; 
+        overflow-x: visible; 
+    }
+    .item {
+        width: 33.333%;
+        flex: 0 0 auto; 
+    }
+    .cta-container{
+      display:none;
+    }
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:row;
+    }
+
+}
+/* Optional: cta styles mobile */
+
+@media (max-width: 1000px) {
+    .title-subtitle-sections{
+      width:100%;
+    }
+    .cta-container-desk{
       
-      containers.forEach(container => {
-          const defaultImage = container.querySelector('.default-image');
-          const hoverImage = container.querySelector('.hover-image');
+      display:none;
+    }
+    .cta-container-mobile{
+      display:block;
+    }
+}
 
-          if (!defaultImage || !hoverImage) {
-              console.error('One or both images not found in a container');
-              return;
-          }
+/* Optional: cta styles desktop */
 
-          container.addEventListener('mouseenter', function() {
-              defaultImage.style.opacity = 0;
-              hoverImage.style.opacity = 1;
-          });
+@media (min-width: 1000px) {
 
-          container.addEventListener('mouseleave', function() {
-              defaultImage.style.opacity = 1;
-              hoverImage.style.opacity = 0;
-          });
-      });
+  .title-subtitle-sections{
+    width:70%;
+    ;
+  }
+  .cta-container-mobile{
+    display:none;
+  
+  }
+  .cta-container-desk{
+    width:30%;
+  }
 
-      // Accordion functionality
-      var accButtons = document.querySelectorAll('.accordion-button');
-      accButtons.forEach(function(btn) {
-          btn.addEventListener('click', function() {
-              var panel = this.nextElementSibling;
-              var arrow = this.querySelector('.arrow');
-              if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                  arrow.innerHTML = '&#9660;';
-              } else {
-                  document.querySelectorAll('.panel').forEach(p => p.style.maxHeight = null);
-                  document.querySelectorAll('.accordion-button .arrow').forEach(a => a.innerHTML = '&#9660;');
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                  arrow.innerHTML = '&#9650;';
-              }
-          });
-      });
+}
 
-      // Icon and text update functionality
-      const items = document.querySelectorAll('.text-item-perks');
-      const iconDisplay = document.querySelector('.icon-display-perks');
-      let lastHoveredItem = null;
+/* Optional: Basic styles to make the demo look a bit nicer */
+.item {
+    box-sizing: border-box; 
+    border-left: 2px solid var(--padding-sections);
+    border-right: 2px solid var(--padding-sections);
 
-      function setIconAndText(item) {
-          iconDisplay.innerHTML = '';
+    text-align: center;
 
-          const icon = document.createElement('lord-icon');
-          icon.setAttribute('src', item.getAttribute('data-icon-perks'));
-          icon.setAttribute('trigger', 'loop');
-          icon.setAttribute('colors', 'primary:#FFFFFF,secondary:#FFFFFF');
-          icon.setAttribute('style', 'width:250px;height:250px');
-          icon.setAttribute('delay', '2000');
+}
 
-          const text = document.createElement('div');
-          text.textContent = stripHtml(item.getAttribute('data-text-perks'));
-          text.style.color = '#fff';
-          text.style.fontSize = '20px';
-          text.style.textAlign = 'center';
-          text.style.marginTop = '20px';
+@media (max-width: 1000px) {
 
-          iconDisplay.appendChild(icon);
-          iconDisplay.appendChild(text);
-          iconDisplay.style.visibility = 'visible';
+  .item {
+    padding:2rem;
+    } 
+  }
+{% endstyle %}
+
+{% style %}
+  .hero-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-width:375px;
+
+  }
+  
+  .button-main-v12{
+    height:50px;
+    width:200px;
+    background-color: var(--brown);
+    border-radius:6px;
+    border:none;
+  }
+  .button-main-v12:hover{
+  border:2px solid white;
+  }
+  .button-main-v12 a{
+ 
+    color:white;
+    text-decoration:none;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without losing aspect ratio */
+    margin: 0 auto;
+  }
+{% endstyle %}
+
+{% style %}
+
+/* new for desktop view */
+@media (min-width: 1000px) {
+
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:row;
+    }
+    .image-text-container-section-02-middle{
+      display:flex;
+      flex-direction: row-reverse;
+
+    }
+    
+    .image-container-section-02{
+      width:49%;
+    }
+    .text-buttom-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+      width:50%;
+      padding:3rem;
+    }
+    .text-buttom-container h2{
+      font-size:32px;
+      margin:0px;
+      font-family:'Chalet Comprime'
+    }
+    .text-buttom-container p{
+  font-size:16px;
+  margin:0px;
+    }
+    .what_do_i_get_container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+.what_do_i_get_container-labels p{
+  margin:0px;
+}
+
+  .what_do_i_get_container-labels{
+    background-color: var(--padding-sections);
+    width:fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    color:white !important;
+  }
+  .what_do_i_get_container-labels:hover{
+    box-shadow:0px 0px 0px 2px var(--brown) inset;
+  }
+  .stars-reviews{
+    color:var(--brown) !important;
+  }
+  .card__information .price{
+    display:none; 
+    
+  }
+}
+/* new styles mobile */
+
+@media (max-width: 1000px) {
+
+    .image-text-container-section-02{
+      display:flex;
+      flex-direction:column;
+
+    }
+    .image-container-section-02{
+      width:100%;
+    }
+    .text-buttom-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+      width:100%;
+    }
+    .text-buttom-container h2{
+      font-size:32px;
+      margin:0px;
+      font-family:'Chalet Comprime'
+    }
+    .text-buttom-container p{
+      font-size:16px;
+      margin:0px;
+    }
+    .what_do_i_get_container{
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .what_do_i_get_container-labels p{
+      margin:0px;
+    }
+    .what_do_i_get_container-labels{
+      background-color: var(--padding-sections);
+      width:100%;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 10px;
+      text-align:center;  
+      color:white !important;
+
+    }
+
+
+}
+
+.full-unstyled-link{
+    pointer-events:none;
+  }
+  .card__inner:hover{
+    border:2px solid var(--brown);
+  }
+  .card__information {
+  text-align:center;
+    
+  }
+  .card__information .price{
+    display:none; 
+    
+  }
+  .stars-reviews{
+    color:var(--brown) !important;
+  }
+{% endstyle %}
+
+
+
+  {% comment %} ///////////////////Past Coffees///////////////////// {% endcomment %}
+
+{% style %}
+
+  /* Media query for mobile view */
+
+  .container-past-coffees{
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling on iOS devices */
+    scroll-snap-type: x mandatory; 
+    height:500px;
+
+  }
+  .item-past-coffees {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:center;
+      width:165px;
+      flex: 0 0 80vw;
+      scroll-snap-align: start; 
+      height:500px;
+      border-right:2px solid var(--padding-sections);
+      border-left:2px solid var(--padding-sections);  
+  }
+  .container-past-coffees .item-past-coffees:last-child {
+      margin-right: 0;
+  }
+  .past-coffee-card-container{
+    display:flex; 
+    flex-direction:column; 
+    text-align:center; 
+    align-items:center;
+    width:330px;
+
+  }
+
+  /* Media query for desktop view */
+  @media (min-width: 1200px) {
+
+      .container-past-coffees {
+          justify-content: center; 
+          overflow-x: visible; 
+          height:600px;
+      }
+      .item-past-coffees {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items:center;
+
+          width: 25%;
+          height:550px;
+          flex: 0 0 auto; 
+  
+          border-right:2px solid var(--padding-sections);
+          border-left:2px solid var(--padding-sections);
+      }
+      .past-coffee-card-container{
+        display:flex; 
+        flex-direction:column; 
+        text-align:center; 
+        align-items:center;
+        justify-content:center;
+        width:250px;
+      }
+  }
+
+{% endstyle %}
+
+{%- liquid
+  if section.settings.color_scheme == section.settings.section_color_scheme and section.settings.content_layout == 'no-overlap'
+    assign remove_color_classes = true
+  endif
+  -%}
+
+
+  {% comment %} ///////////////////Video Hero///////////////////// {% endcomment %}
+  <section style="height: 72vh; position: relative;  position: relative; border-bottom:20px solid var( --padding-sections);">
+
+    <div class=" title-subtitle-container-hero " style=" height:100%; display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+      <div class="page-width">
+          <div class="hero-container">
+              {%- if section.settings.text_title_primary != blank -%}
+                      
+                      
+                  <div class="image-with-text__text rte {{ settings.text_style }} hero-title " >
+                      {{ section.settings.text_title_primary }}
+                  </div>
+     
+              {%- endif -%}
+              {%- if section.settings.text_subtitle_primary != blank -%}
+                      
+                      
+                  <div class="image-with-text__text rte {{ settings.text_style }} " style="font-weight: bold">
+                      {{ section.settings.text_subtitle_primary }}
+                  </div>
+
+              {%- endif -%}
+              <br>
+
           
-          lastHoveredItem = item;
-      }
 
-      if (items.length > 0) {
-          setIconAndText(items[0]);
-          lastHoveredItem = items[0];
-      }
+              {%- if section.settings.cta-main != blank -%}
+                             
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button> 
+                  
+              {%- endif -%}
+          
+          </div>
+      </div>
+    </div>
 
-      items.forEach(item => {
-          item.addEventListener('mouseenter', function() {
-              setIconAndText(this);
-          });
-          item.addEventListener('mouseleave', function() {
-              if (lastHoveredItem) {
-                  setIconAndText(lastHoveredItem);
-              }
-          });
-      });
+     
+     
+     <video muted autoplay playsinline loop>
+       <source src="https://cdn.shopify.com/videos/c/o/v/48cba9a971c14fbe91dc735c93e5e1aa.mov" type="video/mp4">
+     </video>
+     
 
-  });
-{% endjavascript %}
+
+    
+
+
+  
+  </section>
+  {% comment %} //////////////////////////////////////// {% endcomment %}
+  <section style=" border:20px solid var( --padding-sections);">
+
+    <div class=" title-subtitle-container " style="padding:3rem;">
+      <div class="page-width">
+          <div>
+              {%- if section.settings.text_title_secondary != blank -%}
+                              
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_title_secondary }}
+                  </div>
+
+              {%- endif -%}
+              {%- if section.settings.text_subtitle_secondary != blank -%}
+          
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_subtitle_secondary }}
+                  </div>
+
+              {%- endif -%}
+              {%- if section.settings.text_subtitle_secondary_2 != blank -%}
+          
+                <div class="image-with-text__text rte {{ settings.text_style }} ">
+                    {{ section.settings.text_subtitle_secondary_2 }}
+                </div>
+
+            {%- endif -%}
+          
+          </div>
+      </div>
+    </div>
+
+    <div class="" style="  width:100%">
+      <div class="page-width image-text-container-section-02" style="margin-top:2rem;">
+        
+          <div class="image-container-section-02">
+            {%- if section.settings.ROASTERY_IMAGE_6 != blank -%}
+              <img
+                srcset="
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 1070 }} 1070w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_6.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_6 | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {{ section.settings.ROASTERY_IMAGE_6 | image_url }} {{ section.settings.image.width }}
+                "
+                src="{{ section.settings.ROASTERY_IMAGE_6| image_url: width: 1500 }}"
+                alt="{{ section.settings.ROASTERY_IMAGE_6.alt | escape }}"
+                loading="lazy"
+                width="100%"
+                height="100%"
+            
+              >
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+      
+      
+   
+              <section class="text-buttom-container" style="border-right: 2px solid var(--padding-sections);">
+            
+                {%- if section.settings.ROASTERY_HEADING_2 != blank -%}
+                  <h2>
+                    {{ section.settings.ROASTERY_HEADING_2 | escape }}
+                  </h2>
+                {%- endif -%}
+                  
+                {%- if section.settings.ROASTERY_OPENING_2 != blank -%}
+                  <p class="rich-text__heading rte ">
+                    {{ section.settings.ROASTERY_OPENING_2 | replace: 'p>', 'span>' }}
+                  </p>
+                {%- endif -%}
+          
+          
+              </section>
+      
+
+    
+      
+      </div>
+  
+    </div>
+
+    <div class="" style="  width:100%">
+      <div class="page-width image-text-container-section-02-middle" style="margin-top:3rem; margin-bottom: 3rem;">
+        
+          <div class="image-container-section-02">
+            {%- if section.settings.ROASTERY_IMAGE_3 != blank -%}
+              <img
+                srcset="
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 165 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 360 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 535 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 750 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 1070 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 1070 }} 1070w,{%- endif -%}
+                  {%- if section.settings.ROASTERY_IMAGE_3.width >= 1500 -%}{{ section.settings.ROASTERY_IMAGE_3 | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {{ section.settings.ROASTERY_IMAGE_3 | image_url }} {{ section.settings.image.width }}
+                "
+                src="{{ section.settings.ROASTERY_IMAGE_3| image_url: width: 1500 }}"
+                alt="{{ section.settings.ROASTERY_IMAGE_3.alt | escape }}"
+                loading="lazy"
+                width="100%"
+                height="100%"
+            
+              >
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+      
+
+          <section class="text-buttom-container" style="border-left: 2px solid var(--padding-sections);">
+        
+            {%- if section.settings.ROASTERY_HEADING_1 != blank -%}
+              <h2>
+                {{ section.settings.ROASTERY_HEADING_1 | escape }}
+              </h2>
+            {%- endif -%}
+              
+            {%- if section.settings.ROASTERY_OPENING_1 != blank -%}
+              <p class="rich-text__heading rte ">
+                {{ section.settings.ROASTERY_OPENING_1 | replace: 'p>', 'span>' }}
+              </p>
+            {%- endif -%}
+      
+      
+          </section>
+      
+      </div>
+  
+    </div>
+
+    <div class="" style="  width:100%">
+      <div class="page-width image-text-container-section-02" style="margin-bottom:2rem; ">
+        
+          <div class="image-container-section-02">
+            {%- if section.settings.IMAGE_003 != blank -%}
+              <img
+                srcset="
+                  {%- if section.settings.IMAGE_003.width >= 165 -%}{{ section.settings.IMAGE_003 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.IMAGE_003.width >= 360 -%}{{ section.settings.IMAGE_003 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.IMAGE_003.width >= 535 -%}{{ section.settings.IMAGE_003 | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if section.settings.IMAGE_003.width >= 750 -%}{{ section.settings.IMAGE_003 | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if section.settings.IMAGE_003.width >= 1070 -%}{{ section.settings.IMAGE_003 | image_url: width: 1070 }} 1070w,{%- endif -%}
+                  {%- if section.settings.IMAGE_003.width >= 1500 -%}{{ section.settings.IMAGE_003 | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {{ section.settings.IMAGE_003 | image_url }} {{ section.settings.image.width }}
+                "
+                src="{{ section.settings.IMAGE_003| image_url: width: 1500 }}"
+                alt="{{ section.settings.IMAGE_003.alt | escape }}"
+                loading="lazy"
+                width="100%"
+                height="100%"
+            
+              >
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+      
+      
+   
+              <section class="text-buttom-container" style="border-right: 2px solid var(--padding-sections);">
+            
+                {%- if section.settings.TITLE_003 != blank -%}
+                  <h2>
+                    {{ section.settings.TITLE_003 | escape }}
+                  </h2>
+                {%- endif -%}
+                  
+                {%- if section.settings.SUBTITLE_003 != blank -%}
+                  <p class="rich-text__heading rte ">
+                    {{ section.settings.SUBTITLE_003 | replace: 'p>', 'span>' }}
+                  </p>
+                {%- endif -%}
+          
+          
+              </section>
+      
+
+    
+      
+      </div>
+  
+    </div>
+
+
+
+  </section> 
+  {% comment %} ///////////////////Reviews///////////////////// {% endcomment %}
+  <section  style=" border:20px solid var( --padding-sections); border-bottom:0px solid var( --padding-sections); padding-bottom:3rem;">
+
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container  "  style=" ">
+      <div class="page-width">
+
+        <div  style="display:flex; flex-direction:row; " >
+          <div class="title-subtitle-sections">
+              {%- if section.settings.text_title != blank -%}
+                      
+                      
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_title }}
+                  </div>
+              
+              
+              
+              {%- endif -%}
+              {%- if section.settings.text_subtitle != blank -%}
+                      
+                      
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_subtitle }}
+                  </div>
+              
+              
+              
+              {%- endif -%}
+          
+          </div>
+          <div class="cta-container-desk">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}
+            </section>
+        
+          </div> 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="color-{{ section.settings.section_color_scheme }}">
+      <div class="" style="font-size:14px;" >
+        <div class="page-width container">
+        
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item" >
+            <div class="page-width">
+  
+              {%- if section.settings.text != blank -%}
+          
+              <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                  {{ section.settings.text }}
+              </div>
+      
+              {%- endif -%}
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p class="stars-reviews"> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+              </div>
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Dennis</p>
+              </div>
+                
+                </div>
+        
+          </div>
+                
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item">
+            <div class="page-width">
+             
+              {%- if section.settings.text_1 != blank -%}
+          
+                  <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                      {{ section.settings.text_1 }}
+                  </div>
+              
+              {%- endif -%}
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p class="stars-reviews"> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+              </div>
+              <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Batin</p>
+              </div>
+
+           
+
+            </div>
+          </div>
+        
+          <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item">
+            <div class="page-width">
+              <div>
+                {%- if section.settings.text_2 != blank -%}
+              
+                    <div class="image-with-text__text rte {{ settings.text_style }} text-closer-container-sp">
+                        {{ section.settings.text_2 }}
+                    </div>
+                  
+                {%- endif -%}
+                <div style="display: flex; align-items: center;justify-content: start;">
+                  <p class="stars-reviews"> &#9733 &#9733 &#9733 &#9733 &#9733;</p>
+                </div>
+                <div style="display: flex; align-items: center;justify-content: start;">
+                  <p style="margin:0px; padding:0px; margin-top:-1.2rem;">Daniel</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+  </section>
+  {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
+  <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+      <div class="page-width"> 
+
+      {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}      </div>
+    </div>
+  </section>
+  {% comment %} /////////////////Past Months Abo Coffees/////////////////////// {% endcomment %}
+  <section style="height:100%; border:20px solid var( --padding-sections); border-top:40px solid var( --padding-sections);">
+
+    <div class=" section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" >
+      <div class="page-width">
+        <div class="title-subtitle-container "  >
+              {%- if section.settings.text_title_2 != blank -%}
+                             
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_title_2 }}
+                  </div>
+
+              {%- endif -%}
+
+          
+              {%- if section.settings.text_subtitle_2_1 != blank -%}
+                       
+                <div class="image-with-text__text rte {{ settings.text_style }} ">
+                    {{ section.settings.text_subtitle_2_1 }}
+                </div>
+             
+            {%- endif -%}
+     
+        
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-past-coffees page-width">
+        
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item-past-coffees" >
+        <div class="">
+          <div class="past-coffee-card-container">
+            <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/gandhakoji_b96011d8-16f8-470c-954d-e3f38a309598.png?v=1713285046" width="250"; height="250";>
+            <h3>Volcan Azul Caturra</h3>
+            <p>“Wow! I have not come across such good coffee. Wonderful smell and taste.”</p>
+            <p>—Silvio</p>
+          </div>
+      
+            
+        </div>
+    
+      </div>
+            
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item-past-coffees">
+        <div class="">
+         
+          <div class="past-coffee-card-container">
+            <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/gandhakoji_b96011d8-16f8-470c-954d-e3f38a309598.png?v=1713285046" width="250"; height="250";>
+            <h3>Caballero</h3>
+            <p>“The most delicious coffee we have ever had... Tarantino Like...”</p>
+            <p>—Carsten</p>
+          </div>
+
+       
+
+        </div>
+      </div>
+    
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item-past-coffees">
+        <div class="">
+  
+          <div class="past-coffee-card-container">
+            <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/gandhakoji_b96011d8-16f8-470c-954d-e3f38a309598.png?v=1713285046" width="250"; height="250";>
+            <h3>Cerro Azul Geisha</h3>
+            <p>“Cerro Azul Gesha was a mind blowing coffee, the best we have tasted so far.”</p>
+            <p>—Oleg</p>
+          </div>
+
+
+    
+        </div>
+      </div>
+
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} item-past-coffees">
+        <div class="">
+  
+     
+     
+
+          <div class="past-coffee-card-container">
+            <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/gandhakoji_b96011d8-16f8-470c-954d-e3f38a309598.png?v=1713285046" width="250"; height="250";>
+            <h3>Volcan Azul Geisha</h3>
+            <p>“One of the best nature coffee I’ve had. Amazing coffee overall!”</p>
+            <p>—Charlie</p>
+          </div>
+
+
+    
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+  {% comment %} //////////////////Icons////////////////////// {% endcomment %}
+  <section  style=" border:20px solid var( --padding-sections); border-bottom:0px solid var( --padding-sections);">
+
+
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
+        <div class="page-width">
+    
+
+       
+          <div  style="display:flex; flex-direction:row; " >
+            <div class="title-subtitle-sections">
+                {%- if section.settings.how_it_work_title != blank -%}
+                        
+                        
+                    <div class="image-with-text__text rte {{ settings.text_style }} ">
+                        {{ section.settings.how_it_work_title }}
+                    </div>
+                
+                
+                
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle != blank -%}
+                        
+                        
+                    <div class="image-with-text__text rte {{ settings.text_style }} ">
+                        {{ section.settings.how_it_work_subtitle}}
+                    </div>
+                
+                
+                
+                {%- endif -%}
+            
+            </div>
+            <div class="cta-container-desk">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
+              <div> 
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}              </div>
+            </section>
+        
+          </div> 
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
+        <div class="page-width">
+          <div class="title-subtitle-container ">
+
+            <section class="how-it-work-logo-container ">
+            
+              <section class="how-it-work-block">
+  
+                <div class="icons-subcontainer">
+                  <img class=" small-icon "src="https://cdn.shopify.com/s/files/1/0831/4141/files/Style_2_d5791f83-e531-4af3-8919-a7ca5442425c.gif?v=1667308038" alt="icon switching between aeropress and chemex coffee maker" height="" width="">
+                </div>
+                {%- if section.settings.how_it_work_title_one  != blank -%}       
+                  <div class="how_it_work_text ">
+                      {{ section.settings.how_it_work_title_one  }}
+                  </div>
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_one  != blank -%}       
+                  <div class="how_it_work_text ">
+                      {{ section.settings.how_it_work_subtitle_one  }}
+                  </div>
+                {%- endif -%}
+              
+              </section>
+  
+  
+              <section class="how-it-work-block ">
+              
+                <div class="icons-subcontainer">
+                  <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/Receive_Fresh_2.gif?v=1667214440" class="small-icon" alt="icon of delivery box THE BARN Specialty coffee roasters being opened" height="" width="">
+                </div>
+                {%- if section.settings.how_it_work_title_two != blank -%}
+                  
+                  <div class="how_it_work_text">
+                      {{ section.settings.how_it_work_title_two }}
+                  </div>
+    
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_two != blank -%}
+                  
+                  <div class="how_it_work_text">
+                      {{ section.settings.how_it_work_subtitle_two }}
+                  </div>
+    
+                {%- endif -%}
+  
+              </section>
+  
+  
+              <section class="how-it-work-block">
+  
+                <div class="icons-subcontainer">  
+                  <img src="https://cdn.shopify.com/s/files/1/0831/4141/files/bezbg.gif?v=1664532097" class="small-icon-brew" alt="icon of person brewing coffee in a chemex coffee maker" height="" width="">
+                </div> 
+                {%- if section.settings.how_it_work_title_three != blank -%}
+                     
+                    <div class="how_it_work_text ">
+                        {{ section.settings.how_it_work_title_three }}
+                    </div>
+               
+                {%- endif -%}
+                {%- if section.settings.how_it_work_subtitle_three != blank -%}
+                     
+                     <div class="how_it_work_text ">
+                         {{ section.settings.how_it_work_subtitle_three }}
+                     </div>
+                
+                 {%- endif -%}
+  
+              </section>
+            
+            </section>
+
+
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+  {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
+  <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+      <div class="page-width"> 
+      {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}      </div>
+    </div>
+  </section>
+  {% comment %} /////////////////////What Do I Get/////////////////// {% endcomment %}
+  <section style=" border:20px solid var( --padding-sections);  border-top:40px solid var( --padding-sections);"  >
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " style=" height:100%;">
+      <div class="page-width">
+        <div class="title-subtitle-container ">
+
+          {%- if section.settings.what_do_i_get_title != blank -%}
+                    
+                    
+            <div class="image-with-text__text rte {{ settings.text_style }} ">
+                {{ section.settings.what_do_i_get_title }}
+            </div>
+        
+        
+        
+          {%- endif -%}
+          
+        </div>
+      </div>
+    </div>
+
+    <div class=" color-{{ section.settings.section_color_scheme }}  ">
+      <div class="page-width">
+        <div class="what_do_i_get_container">
+     
+                        {%- if section.settings.what_do_i_get_one != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_one }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_two != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_two }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_three != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_three }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_four != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_four }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_five != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_five }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_six != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_six }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_seven != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_seven }}
+                            </div>
+                        
+                        {%- endif -%}
+                        {%- if section.settings.what_do_i_get_eight != blank -%}
+                            
+                            <div class="what_do_i_get_container-labels">
+                                {{ section.settings.what_do_i_get_eight }}
+                            </div>
+                        
+                        {%- endif -%}
+        
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  {% comment %} /////////////////////FAQ/////////////////// {% endcomment %}
+  <section style=" border:20px solid var( --padding-sections); border-bottom:0px solid var( --padding-sections);">
+
+
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} title-subtitle-container " >
+      <div class="page-width">
+       
+    
+        <div  style="display:flex; flex-direction:row; align-items:center; " >
+          <div class="title-subtitle-sections">
+              {%- if section.settings.text_title_6 != blank -%}
+                      
+                      
+                  <div class="image-with-text__text rte {{ settings.text_style }} ">
+                      {{ section.settings.text_title_6 }}
+                  </div>
+              
+              
+              
+              {%- endif -%}
+        
+          
+          </div>
+          <div class="cta-container-desk">
+            <section  style="height:100%; display: flex;flex-direction: column;align-items: flex-end;justify-content: center;">
+              <div> 
+              {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}              </div>
+            </section>
+        
+          </div> 
+        </div>
+        
+     
+      </div>
+    </div>
+
+
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} " style=" height:100%;">
+      <div class="page-width">
+
+                <div class="{% if section.settings.image_collapsible == blank %}{% else %}page-width{% endif %}">
+                  <div
+                    class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    style="text-align: {{ section.settings.heading_alignment }};"
+                  >
+                    {%- if section.settings.caption != blank -%}
+                      <p class="caption-with-letter-spacing">
+                        {{ section.settings.caption | escape }}
+                      </p>
+                    {% endif %}
+                    {%- if section.settings.heading != blank -%}
+                      <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+                        {{ section.settings.heading }}
+                      </h2>
+                    {%- else -%}
+                      <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+                    {% endif %}
+                  </div>
+                  <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                    {%- if section.settings.image_collapsible != blank -%}
+                      <div class="grid__item collapsible-content__grid-item">
+                        <div
+                          class="collapsible-content__media collapsible-content__media--{{ section.settings.image_ratio_collapsible }} media global-media-settings gradient"
+                          {% if section.settings.image_ratio_collapsible == 'adapt' %}
+                            style="padding-bottom: {{ 1 | divided_by: section.settings.image_collapsible.aspect_ratio | times: 100 }}%;"
+                          {% endif %}
+                        >
+                          {%- liquid
+                            assign padding_multiplier = 1
+                            if section.settings.layout_collapsible == 'section'
+                              assign padding_multiplier = 2
+                            endif
+                            assign desktop_tablet_padding = 100 | times: padding_multiplier | append: 'px'
+                            assign mobile_padding = 30 | times: padding_multiplier | append: 'px'
+                          -%}
+                          {%- capture sizes -%}
+                            (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ desktop_tablet_padding }}) / 2),
+                            (min-width: 750px) calc((100vw - {{ desktop_tablet_padding }}) / 2),
+                            calc(100vw - {{ mobile_padding }})
+                          {%- endcapture -%}
+                          {{
+                            section.settings.image_collapsible
+                            | image_url: width: 3200
+                            | image_tag:
+                              sizes: sizes,
+                              widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+                          }}
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="grid__item">
+                      {%- for block in section.blocks -%}
+                        <div
+                          class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                          {{ block.shopify_attributes }}
+                        >
+                          <details
+                            id="Details-{{ block.id }}-{{ section.id }}"
+                            {% if section.settings.open_first_collapsible_row and forloop.first %}
+                              open
+                            {% endif %}
+                          >
+                            <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                              {% render 'icon-accordion', icon: block.settings.icon %}
+                              <h3 class="accordion__title inline-richtext h4">
+                                {{ block.settings.heading | default: block.settings.page.title }}
+                              </h3>
+                              {% render 'icon-caret' %}
+                            </summary>
+                            <div
+                              class="accordion__content rte"
+                              id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                              role="region"
+                              aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                            >
+                              {{ block.settings.row_content }}
+                              {{ block.settings.page.content }}
+                            </div>
+                          </details>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %} ///////////////////Call to Action///////////////////// {% endcomment %}
+  <section  class="cta-container-mobile" style="height:100%; text-align:center; border:20px solid var( --padding-sections); border-top:0px solid var( --padding-sections);" >
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+      <div class="page-width"> 
+     
+
+          {%- if section.settings.cta-main != blank -%}
+                      
+                      
+                      <button color-{{ section.settings.section_color_scheme }} class="button-main-v12">
+                          {{ section.settings.cta-main }}
+                      </button>
+                  
+                  
+                  
+          {%- endif -%}
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 {% schema %}
 {
-  "name": "custom abo section ",
+  "name": "custom info abo section ",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -1330,6 +1480,17 @@ p{
       "label": "Benefits Subtitle 1"
     },
     {
+      "type": "richtext",
+      "id": "text_subtitle_secondary_2",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "Benefits Subtitle 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "ROASTERY_IMAGE_6",
+      "label": "Benefits Image 1"
+    },
+    {
       "type": "text",
       "id": "ROASTERY_HEADING_2",
       "default": "Image with text",
@@ -1342,6 +1503,11 @@ p{
       "label": "Benefits Image Subtitle 1"
     },
     {
+      "type": "image_picker",
+      "id": "ROASTERY_IMAGE_3",
+      "label": "Benefits Image 2"
+    },
+    {
       "type": "text",
       "id": "ROASTERY_HEADING_1",
       "default": "Image with text",
@@ -1352,6 +1518,11 @@ p{
       "id": "ROASTERY_OPENING_1",
       "default": "<p>link your location</p>",
       "label": "Benefits Image Subtitle 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "IMAGE_003",
+      "label": "Benefits Image 3"
     },
     {
       "type": "text",
@@ -1397,87 +1568,67 @@ p{
     },
     {
       "type": "richtext",
-      "id": "text_3",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 4"
-    },
-    {
-      "type": "richtext",
-      "id": "text_4",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 5"
-    },
-    {
-      "type": "richtext",
-      "id": "text_5",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 6"
-    },
-    {
-      "type": "richtext",
-      "id": "text_6",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 7"
-    },
-    {
-      "type": "richtext",
-      "id": "text_7",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 8"
-    },
-    {
-      "type": "richtext",
-      "id": "text_8",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 9"
-    },
-    {
-      "type": "richtext",
-      "id": "text_9",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Review 10"
-    },
-    {
-      "type": "richtext",
-      "id": "past_title",
+      "id": "text_title_2",
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Past Coffees Title"
     },
     {
       "type": "richtext",
-      "id": "past_subtitle",
+      "id": "text_subtitle_2_1",
       "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
       "label": "Past Coffees Subtitle"
     },
     {
-      "type": "richtext",
-      "id": "past_coffee_1",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Past Coffees 1"
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
     },
     {
-      "type": "richtext",
-      "id": "past_coffee_2",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Past Coffees 2"
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
     },
     {
-      "type": "richtext",
-      "id": "past_coffee_3",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Past Coffees 3"
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
     },
     {
-      "type": "richtext",
-      "id": "past_coffee_4",
-      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-      "label": "Past Coffees 4"
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.columns_desktop.label"
     },
-
-
-
-
-
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.featured-collection.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "default": "2",
+      "label": "t:sections.featured-collection.settings.columns_mobile.label",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.featured-collection.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.featured-collection.settings.columns_mobile.options__2.label"
+        }
+      ]
+    },
     {
       "type": "richtext",
       "id": "how_it_work_title",
@@ -1490,7 +1641,6 @@ p{
       "default": "<p>link your location</p>",
       "label": "How It Work Subtitle"
     },
-
     {
       "type": "richtext",
       "id": "how_it_work_title_one",
@@ -1527,10 +1677,6 @@ p{
       "default": "<p>link your location</p>",
       "label": "How It Work Subtitle 3"
     },
-
-
-
-
     {
       "type": "richtext",
       "id": "what_do_i_get_title",
@@ -1544,24 +1690,12 @@ p{
       "default": "<p>link your location</p>",
       "label": "What Do I Get 1?"
     },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_one_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 1 description"
-    },
 
     {
       "type": "richtext",
       "id": "what_do_i_get_two",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 2?"
-    },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_two_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 2 description"
     },
 
     {
@@ -1570,12 +1704,6 @@ p{
       "default": "<p>link your location</p>",
       "label": "What Do I Get 3?"
     },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_three_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 3 description"
-    },
 
     {
       "type": "richtext",
@@ -1583,35 +1711,19 @@ p{
       "default": "<p>link your location</p>",
       "label": "What Do I Get 4?"
     },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_four_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 4 description"
-    },
+
     {
       "type": "richtext",
       "id": "what_do_i_get_five",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 5?"
     },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_five_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 5 description"
-    },
+
     {
       "type": "richtext",
       "id": "what_do_i_get_six",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 6?"
-    },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_six_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 6 description"
     },
 
     {
@@ -1619,12 +1731,6 @@ p{
       "id": "what_do_i_get_seven",
       "default": "<p>link your location</p>",
       "label": "What Do I Get 7?"
-    },
-    {
-      "type": "richtext",
-      "id": "what_do_i_get_seven_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 7 description"
     },
 
     {
@@ -1634,164 +1740,11 @@ p{
       "label": "What Do I Get 8?"
     },
     {
-      "type": "richtext",
-      "id": "what_do_i_get_eight_description",
-      "default": "<p>link your location</p>",
-      "label": "What Do I Get 8 description"
-    },
-
-
-
-    {
         "type": "richtext",
-        "id": "text_title_faq",
+        "id": "text_title_6",
         "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "label": "FAQ Title"
     },
-
-
-  {
-    "type": "richtext",
-    "id": "faq_question_1",
-    "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-    "label": "FAQ question 1"
-},
-  {
-    "type": "richtext",
-    "id": "faq_answer_1",
-    "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-    "label": "FAQ answer 1"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_2",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 2"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_2",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 2"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_3",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 3"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_3",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 3"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_4",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 4"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_4",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 4"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_5",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 5"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_5",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 5"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_6",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 6"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_6",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 6"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_7",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 7"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_7",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 7"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_8",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 8"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_8",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 8"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_9",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ question 9"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_9",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 9"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_question_10",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ Question 10"
-},
-
-{
-  "type": "richtext",
-  "id": "faq_answer_10",
-  "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-  "label": "FAQ answer 10"
-},
-
-
-
-
     {
       "type": "range",
       "id": "padding_top",
@@ -2026,7 +1979,7 @@ p{
   
   "presets": [
     {
-      "name": "custom abo section"
+      "name": "custom info abo section"
     }
   ]
 }

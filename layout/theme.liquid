@@ -1,113 +1,70 @@
+
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
-  <head>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>{% render "load-metafields" %}
+  {% render "load-metafields" %}{% render 'pagefly-head' %}
+   
+    <meta name="google-site-verification" content="PtymcsezGnXCkhxl3VKxNDcr5dzxrMOmbrRI2mcxSlQ" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-
-    {%- if settings.favicon != blank -%}
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    
+ 
+  {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
-
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
-
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
-
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
-
     {% render 'meta-tags' %}
-
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    {%- if settings.animations_reveal_on_scroll -%}
-      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-
     {{ content_for_header }}
-
+    {% include 'fa_translate_custom' %}
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
-
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
-
-      {% for scheme in settings.color_schemes -%}
-        {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
-        {% if forloop.index == 1 -%}
-          :root,
-        {%- endif %}
-        .color-{{ scheme.id }} {
-          --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        {% if scheme.settings.background_gradient != empty %}
-          --gradient-background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          --gradient-background: {{ scheme.settings.background }};
-        {% endif %}
-
-        {% liquid
-          assign background_color = scheme.settings.background
-          assign background_color_brightness = background_color | color_brightness
-          if background_color_brightness <= 26
-            assign background_color_contrast = background_color | color_lighten: 50
-          elsif background_color_brightness <= 65
-            assign background_color_contrast = background_color | color_lighten: 5
-          else
-            assign background_color_contrast = background_color | color_darken: 25
-          endif
-        %}
-
-        --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
-        --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
-        --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
-        --color-button-text: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
-        --color-secondary-button: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        --color-secondary-button-text: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-        --color-link: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-        --color-badge-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --color-badge-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
-      }
-      {% endfor %}
-
-      {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
-        background-color: rgb(var(--color-background));
-      }
-
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
-
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
+        --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
+        --color-shadow: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
+        --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+        --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+        --color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
+        --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
+        --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
+        --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
+        --payment-terms-background-color: {{ settings.colors_background_1 }};
+        --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
+        --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
+        --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
+        --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
         --media-border-width: {{ settings.media_border_thickness }}px;
@@ -116,46 +73,18 @@
         --media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
         --media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
         --media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
-        --media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
-
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
         --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
-
-        --product-card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
-        --product-card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
-        --product-card-text-alignment: {{ settings.card_text_alignment }};
-        --product-card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
-        --product-card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
-        --product-card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
-        --product-card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --product-card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --collection-card-image-padding: {{ settings.collection_card_image_padding | divided_by: 10.0 }}rem;
-        --collection-card-corner-radius: {{ settings.collection_card_corner_radius | divided_by: 10.0 }}rem;
-        --collection-card-text-alignment: {{ settings.collection_card_text_alignment }};
-        --collection-card-border-width: {{ settings.collection_card_border_thickness | divided_by: 10.0 }}rem;
-        --collection-card-border-opacity: {{ settings.collection_card_border_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-opacity: {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-visible: {% if settings.collection_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --collection-card-shadow-horizontal-offset: {{ settings.collection_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-vertical-offset: {{ settings.collection_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-blur-radius: {{ settings.collection_card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --blog-card-image-padding: {{ settings.blog_card_image_padding | divided_by: 10.0 }}rem;
-        --blog-card-corner-radius: {{ settings.blog_card_corner_radius | divided_by: 10.0 }}rem;
-        --blog-card-text-alignment: {{ settings.blog_card_text_alignment }};
-        --blog-card-border-width: {{ settings.blog_card_border_thickness | divided_by: 10.0 }}rem;
-        --blog-card-border-opacity: {{ settings.blog_card_border_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-opacity: {{ settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-visible: {% if settings.blog_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --blog-card-shadow-horizontal-offset: {{ settings.blog_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-vertical-offset: {{ settings.blog_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
-
+        --card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
+        --card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
+        --card-text-alignment: {{ settings.card_text_alignment }};
+        --card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
+        --card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
+        --card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
+        --card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
+        --card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
+        --card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
         --badge-corner-radius: {{ settings.badge_corner_radius | divided_by: 10.0 }}rem;
-
         --popup-border-width: {{ settings.popup_border_thickness }}px;
         --popup-border-opacity: {{ settings.popup_border_opacity | divided_by: 100.0 }};
         --popup-corner-radius: {{ settings.popup_corner_radius }}px;
@@ -163,42 +92,34 @@
         --popup-shadow-horizontal-offset: {{ settings.popup_shadow_horizontal_offset }}px;
         --popup-shadow-vertical-offset: {{ settings.popup_shadow_vertical_offset }}px;
         --popup-shadow-blur-radius: {{ settings.popup_shadow_blur }}px;
-
         --drawer-border-width: {{ settings.drawer_border_thickness }}px;
         --drawer-border-opacity: {{ settings.drawer_border_opacity | divided_by: 100.0 }};
         --drawer-shadow-opacity: {{ settings.drawer_shadow_opacity | divided_by: 100.0 }};
         --drawer-shadow-horizontal-offset: {{ settings.drawer_shadow_horizontal_offset }}px;
         --drawer-shadow-vertical-offset: {{ settings.drawer_shadow_vertical_offset }}px;
         --drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
-
         --spacing-sections-desktop: {{ settings.spacing_sections }}px;
         --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
-
         --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
         --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
         --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
         --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
-
         --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
         --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
         --text-boxes-radius: {{ settings.text_boxes_radius }}px;
         --text-boxes-shadow-opacity: {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-        --text-boxes-shadow-visible: {% if settings.text_boxes_shadow_opacity > 0 %}1{% else %}0{% endif %};
         --text-boxes-shadow-horizontal-offset: {{ settings.text_boxes_shadow_horizontal_offset }}px;
         --text-boxes-shadow-vertical-offset: {{ settings.text_boxes_shadow_vertical_offset }}px;
         --text-boxes-shadow-blur-radius: {{ settings.text_boxes_shadow_blur }}px;
-
         --buttons-radius: {{ settings.buttons_radius }}px;
         --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
         --buttons-border-width: {% if settings.buttons_border_opacity > 0 %}{{ settings.buttons_border_thickness }}{% else %}0{% endif %}px;
         --buttons-border-opacity: {{ settings.buttons_border_opacity | divided_by: 100.0 }};
         --buttons-shadow-opacity: {{ settings.buttons_shadow_opacity | divided_by: 100.0 }};
-        --buttons-shadow-visible: {% if settings.buttons_shadow_opacity > 0 %}1{% else %}0{% endif %};
         --buttons-shadow-horizontal-offset: {{ settings.buttons_shadow_horizontal_offset }}px;
         --buttons-shadow-vertical-offset: {{ settings.buttons_shadow_vertical_offset }}px;
         --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
         --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
-
         --inputs-radius: {{ settings.inputs_radius }}px;
         --inputs-border-width: {{ settings.inputs_border_thickness }}px;
         --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
@@ -208,7 +129,6 @@
         --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
         --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
         --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-
         --variant-pills-radius: {{ settings.variant_pills_radius }}px;
         --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
         --variant-pills-border-opacity: {{ settings.variant_pills_border_opacity | divided_by: 100.0 }};
@@ -217,19 +137,16 @@
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
       }
-
       *,
       *::before,
       *::after {
         box-sizing: inherit;
       }
-
       html {
         box-sizing: border-box;
         font-size: calc(var(--font-body-scale) * 62.5%);
         height: 100%;
       }
-
       body {
         display: grid;
         grid-template-rows: auto auto 1fr auto;
@@ -243,117 +160,107 @@
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
       }
-
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
         }
       }
     {% endstyle %}
-
     {{ 'base.css' | asset_url | stylesheet_tag }}
-
     {%- unless settings.type_body_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
-
-    {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
-      <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-
     {%- if settings.predictive_search_enabled -%}
-      <link
-        rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
-        media="print"
-        onload="this.media='all'"
-      >
+      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
-
-    <script>
-      if (Shopify.designMode) {
-        document.documentElement.classList.add('shopify-design-mode');
-      }
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    if (Shopify.designMode) {
+      document.documentElement.classList.add('shopify-design-mode');
+    }
     </script>
-  </head>
+    
+    <script>
+    {% comment %}bee clever script for Klaviyo tracking{% endcomment %}
+  (() => {
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  const scriptSrc = "https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PBgMC8"; 
+
+  ((d, t, s, n) => {
+    ((n = d.createElement(t)).src = s).async = true;
+    d.head.appendChild(n);
+  })(document, "script", scriptSrc);
+  })();
+     </script>
+      
+    <!-- Hotjar Tracking Code for https://thebarn.de/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3613337,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script src="https://cdn.lordicon.com/lordicon.js" defer ></script>
+
+
+          
+</head>
+        
+  
+  {% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %} <body class="gradient" > {% include 'preloaderapp' %}
+   
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ 'accessibility.skip_to_text' | t }}
+      {{ "accessibility.skip_to_text" | t }}
     </a>
-
-    {%- if settings.cart_type == 'drawer' -%}
-      {%- render 'cart-drawer' -%}
-    {%- endif -%}
-
-    {% sections 'header-group' %}
-
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
+  
+    {% section 'announcement-bar' %}
+    {% section 'custom_countdown_annoucment'%}
+    {% section 'header' %}
+   <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+     {{ content_for_layout }}
     </main>
-
-    {% sections 'footer-group' %}
-
+    {% section 'footer' %}
+     
+    
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-      <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
-
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
         cart_update_url: '{{ routes.cart_update_url }}',
-        cart_url: '{{ routes.cart_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
       };
-
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
-      };
-
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+      }
       window.variantStrings = {
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
-        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
-      };
-
-      window.quickOrderListStrings = {
-        itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
-        itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
-        itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
-        itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
-        viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
-        each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
-        min_error: `{{- 'sections.quick_order_list.min_error' | t: min: '[min]' }}`,
-        max_error: `{{- 'sections.quick_order_list.max_error' | t: max: '[max]' }}`,
-        step_error: `{{- 'sections.quick_order_list.step_error' | t: step: '[step]' }}`,
-      };
-
+      }
       window.accessibilityStrings = {
         imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-        recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
-        recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
-        countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
-      };
+      }
     </script>
-
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+    
+
+  {% render "bc_banner" %}</body>{% comment %}ly_liquid_scripts_begin{% endcomment %}{% endcapture %}{%- comment -%}Version 1.0{%- endcomment -%}{%- if request.locale.primary == true -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '<ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '</ly' -%}{%- assign ly_string = each_string | split: '</ly' | first -%}{%- assign ly_tag = ly_string | split: '>' | first -%}{%- assign ly_open_tag = '<ly-' | append: ly_tag | append: '>' -%}{%- assign ly_close_tag = '</ly-' | append: ly_tag | append: '>' -%}{%- assign delim = ly_tag | append: '>' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endfor -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '&lt;ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '&lt;/ly' -%}{%- assign ly_string = each_string | split: '&lt;/ly' | first -%}{%- assign ly_tag = ly_string | split: '&gt;' | first -%}{%- assign ly_open_tag = '&lt;ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_close_tag = '&lt;/ly-' | append: ly_tag | append: '&gt;' -%}{%- assign delim = ly_tag | append: '&gt;' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endfor -%}{{- ly_liquid_content -}}{%- else -%}{%- assign current_language_num = 0 -%}{%- for language in shop.metafields.language_codes -%}{%- if language.last == request.locale.iso_code -%}{%- assign language_id_num = language.first | replace: "ly", "" | plus: 0 %}{%- if current_language_num < language_id_num -%}{%- assign current_language = language.first -%}{%- assign current_language_num = language_id_num -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign language = current_language -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '<ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '</ly' -%}{%- assign ly_string = each_string | split: '</ly' | first -%}{%- assign ly_tag = ly_string | split: '>' | first -%}{%- assign ly_open_tag = '<ly-' | append: ly_tag | append: '>' -%}{%- assign ly_close_tag = '</ly-' | append: ly_tag | append: '>' -%}{%- assign ly_complete_tag = ly_open_tag | append: ly_close_tag -%}{%- assign delim = ly_tag | append: '>' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign tag_parts = ly_tag | split: '-' -%}{%- assign type = tag_parts | first -%}{%- assign id = tag_parts | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign used_translation = nil -%}{%- assign namespace = language | append: 'as' -%}{%- assign key = 'tid' | append: theme.id -%}{%- if shop.metafields[namespace][key] -%}{%- assign data = shop.metafields[namespace][key] -%}{%- assign splitter = '[ly' | append: id | append: ']' -%}{%- if data contains splitter -%}{%- assign used_translation = data | split: splitter | last | split: '[ly]' | first -%}{%- endif -%}{%- endif -%}{%- if used_translation -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, used_translation -%}{%- else -%}{%- assign namespace = language | append: type -%}{%- assign key = 'id' | append: id -%}{%- if shop.metafields[namespace][key] -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, shop.metafields[namespace][key] -%}{%- else -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign strings = ly_liquid_content | strip_newlines | split: '&lt;ly-' -%}{%- for each_string in strings -%}{%- if each_string contains '&lt;/ly' -%}{%- assign ly_string = each_string | split: '&lt;/ly' | first -%}{%- assign ly_tag = ly_string | split: '&gt;' | first -%}{%- assign ly_open_tag = '&lt;ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_close_tag = '&lt;/ly-' | append: ly_tag | append: '&gt;' -%}{%- assign ly_complete_tag = ly_open_tag | append: ly_close_tag -%}{%- assign delim = ly_tag | append: '&gt;' -%}{%- assign ly_content = ly_string | split: delim | last -%}{%- assign tag_parts = ly_tag | split: '-' -%}{%- assign type = tag_parts | first -%}{%- assign id = tag_parts | last -%}{%- assign src = ly_open_tag | append: ly_content | append: ly_close_tag -%}{%- assign used_translation = nil -%}{%- assign namespace = language | append: 'as' -%}{%- assign key = 'tid' | append: theme.id -%}{%- if shop.metafields[namespace][key] -%}{%- assign data = shop.metafields[namespace][key] -%}{%- assign splitter = '[ly' | append: id | append: ']' -%}{%- if data contains splitter -%}{%- assign used_translation = data | split: splitter | last | split: '[ly]' | first -%}{%- endif -%}{%- endif -%}{%- if used_translation -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, used_translation -%}{%- else -%}{%- assign namespace = language | append: type -%}{%- assign key = 'id' | append: id -%}{%- if shop.metafields[namespace][key] -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, shop.metafields[namespace][key] -%}{%- else -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src, ly_content -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- capture customs -%}{%- for custom in shop.metafields.custom -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "cu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{{- src -}}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- for custom in shop.metafields.ly_global_cu -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- if global_strict_mode -%}{%- for custom in shop.metafields.ly_global_strict_mode_cu -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{{- src.value.text -}}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- endif -%}{%- case request.page_type -%}{%- when 'index' -%}{%- assign used_scope = 'ly_frontpage_cu' -%}{%- when 'product' -%}{%- assign used_scope = 'ly_products_cu' -%}{%- assign used_object = product -%}{%- when 'collection' -%}{%- assign used_scope = 'ly_collections_cu' -%}{%- assign used_object = collection -%}{%- when 'list-collections' -%}{% assign used_scope = 'ly_collections_cu' -%}{%- when 'blog' -%}{%- assign used_scope = 'ly_blogs_cu' -%}{%- assign used_object = blog -%}{%- when 'article' -%}{%- assign used_scope = 'ly_articles_cu' -%}{%- assign used_object = article -%}{%- when 'page' -%}{% assign used_scope = 'ly_pages_cu' -%}{%- assign used_object = page -%}{%- else -%}{%- assign used_scope = 'ly_system_cu' -%}{%- endcase -%}{%- for custom in shop.metafields[used_scope] -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "ncu" -%}{%- assign translation_key = "id" | append: key -%}{%- if shop.metafields[translation_namespace][translation_key] -%}{%- assign translation = shop.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- if used_object -%}{%- for custom in used_object.metafields.custom -%}{%- assign src = custom | last -%}{%- assign key = custom | first -%}{%- assign key = key | split: "ly" | last -%}{%- assign translation_namespace = language | append: "cu" -%}{%- assign translation_key = "id" | append: key -%}{%- if used_object.metafields[translation_namespace][translation_key] -%}{%- assign translation = used_object.metafields[translation_namespace][translation_key] -%} [ly_custom]{%- if src.type == 'json' -%}{{- src.value.text -}}{%- else -%}{{- src.text -}}{%- endif -%}[ly_custom_split]{{- translation -}}{%- endif-%}{%- endfor -%}{%- endif -%}{%- endcapture -%}{%- assign customs = customs | split : '[ly_custom]' -%}{%- for custom in customs -%}{%- assign used_custom = custom | split: '[ly_custom_split]' -%}{%- assign src = used_custom | first -%}{%- assign dst = used_custom | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: dst | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: dst | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: dst | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign tag_translation_namespace = "ta" | append: language -%}{%- for tag_translation in shop.metafields[tag_translation_namespace] -%}{%- assign src = tag_translation | first -%}{%- if src contains 'ly_tag_' -%}{%- assign tmp_tag_namespace = 'l_ta' | append: language -%}{%- if shop.metafields[tmp_tag_namespace][src] -%}{%- assign src = shop.metafields[tmp_tag_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = tag_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign translation_mode_key = 'ly' | append: theme.id -%}{%- if shop.metafields.translation_mode[translation_mode_key] == 'non-strict' -%}{%- assign vendor_translation_namespace = 've' | append: language -%}{%- for vendor_translation in shop.metafields[vendor_translation_namespace] -%}{%- assign src = vendor_translation | first -%}{%- if src contains 'ly_vendor_' -%}{%- assign tmp_vendor_namespace = 'l_ve' | append: language -%}{%- if shop.metafields[tmp_vendor_namespace][src] -%}{%- assign src = shop.metafields[tmp_vendor_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = vendor_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- assign type_translation_namespace = "ty" | append: language -%}{%- for type_translation in shop.metafields[type_translation_namespace] -%}{%- assign src = type_translation | first -%}{%- if src contains 'ly_type_' -%}{%- assign tmp_type_namespace = 'l_ty' | append: language -%}{%- if shop.metafields[tmp_type_namespace][src] -%}{%- assign src = shop.metafields[tmp_type_namespace][src] -%}{%- endif -%}{%- endif -%}{%- assign translation = type_translation | last -%}{%- assign src1 = '"' | append: src | append: '"' -%}{%- assign dst1 = '"' | append: translation | append: '"' -%}{%- assign src2 = "'" | append: src | append: "'" -%}{%- assign dst2 = "'" | append: translation | append: "'" -%}{%- assign src3 = ">" | append: src | append: "<" -%}{%- assign dst3 = ">" | append: translation | append: "<" -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src1, dst1 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src2, dst2 -%}{%- assign ly_liquid_content = ly_liquid_content | replace: src3, dst3 -%}{%- endfor -%}{%- endif -%}{%- assign ly_liquid_content = ly_liquid_content | replace: '#ly_cu', '' -%}{{- ly_liquid_content -}}{%- endif -%}{% comment %}ly_liquid_scripts_end{% endcomment %}
+  
 </html>

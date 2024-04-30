@@ -1,0 +1,225 @@
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.enable_quick_add -%}
+  <link
+    rel="stylesheet"
+    href="{{ 'quick-add.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  :root  {
+    --brown-clear: #8d7149;
+    --white: #ffffff;
+    --black: #000000;
+    --green: #15aa27;
+    --orange:#b26119;
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
+  }
+
+  .section-category-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    /* background-color: purple; */
+    margin-top: -10px;
+  }
+
+  .scroll-wrapper {
+    overflow: hidden; /* Hide any horizontal overflow */
+  }
+
+  .scroll-container {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding:4px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .filter-button {
+    /* Common button styles */
+    transition: background-color 0.3s;
+    font-size:16px;
+    min-width: 100px;
+    max-width: 127px;
+
+    background-color: var(--black);
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid;
+    margin-right:1.2rem;
+  }
+.filter-button[data-tag="All"] {
+    border-color: white;
+}
+
+.filter-button[data-tag="Balanced"] {
+    border-color: var(--brown-clear); 
+}
+
+.filter-button[data-tag="Terroir"] {
+    border-color: var(--green);
+}
+  
+.filter-button.active {
+    outline-offset: 3px;
+}
+p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin:0px;
+}
+
+  /* Additional styles for smaller screens */
+  @media screen and (min-width: 416px) {
+
+
+  .filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .filter-button{
+    margin-right:2rem;
+  }
+
+  }
+{%- endstyle -%}
+
+
+<div class="scroll-wrapper" style="">
+  <div class="scroll-container">
+    <div class="filter-buttons">
+      <button class="filter-button">
+        {{ section.settings.button_all_content }}
+      </button>
+    
+      <button class="filter-button">
+        {{ section.settings.button_grinder_content }}
+      </button>
+    
+      <button class="filter-button">
+        {{ section.settings.button_filters_content }}
+      </button>
+
+      <button class="filter-button">
+        {{ section.settings.button_scales_content }}
+      </button>
+
+      <button class="filter-button">
+        {{ section.settings.button_mugs_content }}
+      </button>
+
+      <button class="filter-button">
+        {{ section.settings.button_aeropress_content }}
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "Button Link Manager",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Button: All"
+        },
+        {
+          "type": "richtext",
+          "id": "button_all_content",
+          "label": "All Button Content",
+          "default": "<p>Your default rich text for 'All' button goes here...</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button: Grinder"
+        },
+        {
+          "type": "richtext",
+          "id": "button_grinder_content",
+          "label": "Grinder Button Content",
+          "default": "<p>Your default rich text for 'Grinder' button goes here...</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button: Filters"
+        },
+        {
+          "type": "richtext",
+          "id": "button_filters_content",
+          "label": "Filters Button Content",
+          "default": "<p>Your default rich text for 'Filters' button goes here...</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button: Scales"
+        },
+        {
+          "type": "richtext",
+          "id": "button_scales_content",
+          "label": "Scales Button Content",
+          "default": "<p>Your default rich text for 'Scales' button goes here...</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button: Mugs"
+        },
+        {
+          "type": "richtext",
+          "id": "button_mugs_content",
+          "label": "Mugs Button Content",
+          "default": "<p>Your default rich text for 'Mugs' button goes here...</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button: Aeropress"
+        },
+        {
+          "type": "richtext",
+          "id": "button_aeropress_content",
+          "label": "Aeropress Button Content",
+          "default": "<p>Your default rich text for 'Aeropress' button goes here...</p>"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Button Links",
+          "category": "Custom"
+        }
+      ]
+    }
+  {% endschema %}
+  

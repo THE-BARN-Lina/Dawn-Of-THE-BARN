@@ -1,19 +1,171 @@
 {%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+
+
+@media screen and (min-width: 750px) {
   .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+
+
+
+
+
+ @media only screen and (max-width: 600px) {
+iframe{
+height:30vh;
+}
+#text{
+display:none}
+}
+
+{
+  /*
+.container-careers{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding:2rem;
+}
+.card{
+  width:390px;
+  height: 590px;
+  padding: 1rem;
+  margin:2rem;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  text-align:center;
+
+  border: 2px solid black;
+  color:white;
+
+
+}
+.card h2{
+  color:white;
+}
+.card button {
+  height: 4rem;
+  width:150px;
+  color: white;
+  background-color: rgb(128, 77, 21);
+  border: none;
+  margin-top:1rem;
+}
+
+  
+  .image-container {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+.careers-title-description-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  width: 100%;
+ 
+}
+.careers-subcontainer{
+  max-width:700px;
+
+  
+}
+  */
   }
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
     {{ section.settings.custom_liquid }}
+
+    {% if page.handle == 'careers_v2' %}
+    <div style="display:flex;   align-items: center;
+  justify-content: center;"><iframe width="700" height="394" src="https://www.youtube-nocookie.com/embed/VnAQDO-fg6M?playlist=VnAQDO-fg6M&loop=1&controls=0&autoplay=1&mute=1&amp;start=5"title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media;mute=1; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+  <section class="careers-title-description-container">
+
+  <div class="careers-subcontainer">
+
+    <h1>COMMITTED TO TOTAL QUALITY & SUSTAINABILITY</h1>
+    <p>From the start we have seen our role as a quality leader and game changer in Specialty Coffee. With a full focus on product quality and sustainability, we work closely with our partner farms to make our coffees better and better. We are now hiring motivated people to join our mission and to make a change to the Value Chain of Coffee.
+  
+    Be part of our team! </p>
+  </div>
+
+  </section>
+      <section class="container-careers">
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'OPERATIONS_MANAGEMENT_LOGISTICS.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>OPERATIONS MANAGEMENT LOGISTICS (m|w|d)</h2>
+            <p>Part-timers: Here is a fantastic job with guaranteed weekly hours. Working around our roastery, packing delicious beans straight after roast.</p>
+            <a href="https://thebarn.de/pages/packer-m-w-d-11/" target="_blank">
+              <button>READ MORE</button>
+            </a>
+          </section>
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'BARISTA.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>BARISTA (m|w|d)</h2>
+            <p>As a barista you should not compromise on which coffees you are using. Join us on our journey to make a difference in coffee!</p>
+            <button>READ MORE</button>
+          </section>
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'SALES.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>SALES (m|w|d)</h2>
+            <p>When it comes to strong customer relationships, building the foundation and being a reliable partner is key in the premium sector.</p>
+            <button>READ MORE</button>
+          </section>
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'COSTUMER_SERVICE.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>COSTUMER SERVICE (m|w|d)</h2>
+            <p>We treat our online customers as if they stand in front of us: in our café. Your job is to be responsive and to find quick solutions.</p>
+            <button>READ MORE</button>
+          </section>
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'MARKETING.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>MARKETING (m|w|d)</h2>
+            <p>This is an exciting role covering many aspects of our business. We are looking for a motivated allrounder and team player.</p>
+            <button>READ MORE</button>
+          </section>
+          <section class="card">
+            <div class="image-container" >
+              <img src="{{ 'ACCOUNTING.webp' | asset_url }}" alt="career" loading="lazy" width="220" height="220"/>
+            </div>
+            <h2>ACCOUNTING (m|w|d)</h2>
+            <p>This is the ideal part-time job for an experienced person who enjoys working as part of a team to process our accounting.
+
+            </p>
+            <button>READ MORE</button>
+          </section>
+      </section>
+  {% endif %}
   </div>
 </div>
 
@@ -30,10 +182,32 @@
       "info": "t:sections.custom-liquid.settings.custom_liquid.info"
     },
     {
-      "type": "color_scheme",
+      "type": "select",
       "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
     },
     {
       "type": "header",
