@@ -122,6 +122,7 @@
             "type": "announcement",
             "settings": {
               "text": "This is your time to have an impact: Check out our Earth Coffee 🌳",
+              "color_scheme": "accent-1",
               "link": "https:\/\/thebarn.de\/products\/earth-coffee-2024"
             }
           }
@@ -141,11 +142,14 @@
 
         ],
         "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/barn_logo_large_house_white.webp",
+          "logo_width": 50,
           "logo_position": "top-center",
           "menu": "navigation_v2",
           "menu_type_desktop": "mega",
           "show_line_separator": false,
-          "color_scheme": "background-1",
+          "enable_sticky_header": false,
           "margin_bottom": 0,
           "christmas_image_1": "shopify:\/\/shop_images\/christmas_bag_with_origami.jpg",
           "christmas_link_1": "shopify:\/\/products\/christmas-coffee",
@@ -312,6 +316,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
+          "logo_max_width": 100,
           "color_scheme": "background-1"
         }
       },
@@ -319,6 +324,177 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
+        }
+      },
+      "ajax-drawer": {
+        "type": "ajax-drawer",
+        "settings": {
+          "collection_beans": "",
+          "collection_subs": "",
+          "show-banner": false,
+          "banner-product": "",
+          "banner-text": "Plant 1 tree in Brazil with us for €1.50",
+          "banner-color": "#067a46",
+          "banner-hover-color": "#064b2c"
+        }
+      },
+      "GDPR_LC_Manager": {
+        "type": "GDPR_LC_Manager",
+        "blocks": {
+          "overlay_Lc8Fa9": {
+            "type": "overlay",
+            "settings": {
+              "title": "Spotify",
+              "cookie": "Spotify_THE_BARN",
+              "thirdParty": false,
+              "addResizeEvent": true,
+              "parentSelector": "spotify",
+              "required_childs": ""
+            }
+          }
+        },
+        "block_order": [
+          "overlay_Lc8Fa9"
+        ],
+        "settings": {
+          "testMode": false,
+          "useOverlay": true,
+          "unit": "px",
+          "bannerMaxWidth": 480,
+          "bannerWidthMobile": 8,
+          "fontSize": 12,
+          "z_index": 20,
+          "buttonClass": "Button, Button--primary",
+          "eventType": "click",
+          "overlay_color": "#000000",
+          "overlay_opacity": 50,
+          "overlay_blur": 4,
+          "box_color": "#ffffff",
+          "text_color": "#000000",
+          "activate_shadow": false,
+          "shadow_color": "#000000",
+          "shadow_opacity": 50,
+          "shadow_x": 8,
+          "shadow_y": 8,
+          "shadow_blur_radius": 8,
+          "shadow_spread_radius": 8,
+          "wrapper_border_radius": 8
+        }
+      },
+      "subscription_new": {
+        "type": "subscription_new",
+        "settings": {
+          "sub_bg_overlay": false,
+          "image_overlay_opacity": 40,
+          "heading_subscribe": "",
+          "subhead_subscribe": "",
+          "btn_subscribe": "",
+          "btn_subscribe_link": "",
+          "btn_is_automated": false
+        }
+      },
+      "subflow_new": {
+        "type": "subflow_new",
+        "blocks": {
+          "icon_text_ePa9Pq": {
+            "type": "icon_text",
+            "settings": {
+              "select_img": "shopify:\/\/shop_images\/Curated_Easter_6Months.jpg",
+              "title": "<p>CURATED <br\/>FILTER OR ESPRESSO<\/p>",
+              "title_value": "CURATED",
+              "select_sub_hed": "<p>Two new coffee experiences per month. <\/p>",
+              "sec_subhed": "<p>Receive two new coffees every month. Chose your roast style. Always get the latest releases.<br\/><strong>In {{ \"now\" | date: \"%B\"| prepend: \" \" }} we are sending out :<\/strong><\/p><p><strong>FILTER<br\/><\/strong>{{settings.curated_filter_1}}<br\/>{{settings.curated_filter_2}}<br\/><strong><br\/>ESPRESSO <\/strong><br\/>{{settings.curated_espresso_1}}<br\/>{{settings.curated_espresso_2}}<\/p>",
+              "question_heading": "Select your roast",
+              "que1_type1": "FILTER",
+              "que1_type1_val": "FILTER",
+              "que1_type2": "ESPRESSO",
+              "que1_type2_val": "ESPRESSO",
+              "question2_heading": "How many 250 gram bags?",
+              "question2_heading_2": "1 bag = 15 brews",
+              "que2_type1": "2",
+              "que2_type2": "4",
+              "que2_type3": "6",
+              "question2_heading_1kg": "",
+              "question2_heading_2_1kg": "",
+              "que2_type1_1kg": "",
+              "que2_type2_1kg": "",
+              "que2_type3_1kg": "",
+              "question4_heading": "",
+              "que4_deafault_weight": "",
+              "que4_type1": "",
+              "que4_type1_val": "",
+              "que4_type2": "",
+              "que4_type2_val": "",
+              "que4_type3": "",
+              "que4_type3_val": "",
+              "que4_type4": "",
+              "que4_type4_val": "",
+              "question5_heading": "How do you want to pay?",
+              "que5_type1": "MONTHLY",
+              "que5_type2": "PREPAID"
+            }
+          }
+        },
+        "block_order": [
+          "icon_text_ePa9Pq"
+        ],
+        "settings": {
+          "subscription_heading": "",
+          "summery_style_img": "shopify:\/\/shop_images\/roast_0a00000c-c8e8-4725-a3cf-75a32221ac88.png",
+          "summery_weight_img": "shopify:\/\/shop_images\/CAREERS_PRODUCTION_ROASTER.jpg",
+          "summery_destination_img": "shopify:\/\/shop_images\/brewing_jungle_volacano.jpg",
+          "summery_info": "",
+          "drawer_button_text": "",
+          "drawer_inn_had": "",
+          "left_text": "",
+          "drawer_left_content_coffee": "",
+          "right_text": "",
+          "drawer_right_content_coffee": ""
+        }
+      },
+      "subscription_new_2": {
+        "type": "subscription_new_2",
+        "settings": {
+          "title": "SPECIAL OFFERS",
+          "sub_bg_overlay": false,
+          "heading_subscribe": "",
+          "subhead_subscribe": "",
+          "btn_subscribe": "",
+          "btn_subscribe_link": "",
+          "show_two": false,
+          "sub_bg_overlay_2": false,
+          "heading_subscribe_2": "",
+          "subhead_subscribe_2": "",
+          "btn_subscribe_2": "",
+          "btn_subscribe_link_2": ""
+        }
+      },
+      "custom_countdown_annoucment": {
+        "type": "custom_countdown_annoucment",
+        "blocks": {
+          "announcement_zap6Fr": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "🐇 EASTER SPECIALS: Only until April 1st 🐣",
+              "color_scheme": "accent-2",
+              "link": "shopify:\/\/collections\/coffee-gifts",
+              "show_countdown": false,
+              "detail_days": "Day",
+              "detail_hours": "Hours",
+              "detail_mins": "Minutes"
+            }
+          }
+        },
+        "block_order": [
+          "announcement_zap6Fr"
+        ],
+        "custom_css": [
+          ".announcement-bar {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}",
+          ".announcement-bar__link {margin-left: 138px;}",
+          "@media only screen and (max-width: 750px) {.announcement-bar__link {margin-left: 0px; }}"
+        ],
+        "settings": {
         }
       }
     },
@@ -383,12 +559,6 @@
       },
       "1877152918344802950": {
         "type": "shopify:\/\/apps\/intelligems-a-b-testing\/blocks\/intelligems-script\/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "4015264832934714879": {
-        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
         "settings": {
         }
@@ -501,6 +671,7 @@
               "type": "announcement",
               "settings": {
                 "text": "Welcome to our store",
+                "color_scheme": "background-1",
                 "link": ""
               }
             }
@@ -514,10 +685,12 @@
         "header": {
           "type": "header",
           "settings": {
+            "color_scheme": "background-1",
+            "logo_width": 90,
             "logo_position": "middle-left",
             "menu": "main-menu",
             "show_line_separator": true,
-            "color_scheme": "background-1",
+            "enable_sticky_header": true,
             "margin_bottom": 0
           }
         },
@@ -567,6 +740,7 @@
         "main-password-header": {
           "type": "main-password-header",
           "settings": {
+            "logo_max_width": 100,
             "color_scheme": "background-1"
           }
         },
