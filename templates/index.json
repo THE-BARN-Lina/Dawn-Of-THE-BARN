@@ -5,6 +5,7 @@
       "blocks": {
         "slide_DHdCXn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/earth_coffee_landscape_2.jpg",
             "heading": "EARTH MONTH 2024",
@@ -53,6 +54,7 @@
         },
         "slide_hq7aQC": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Daterra_Twin_Box.png",
             "heading": "EARTH MONTH TWIN BOX",
