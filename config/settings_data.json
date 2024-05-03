@@ -126,10 +126,19 @@
               "color_scheme": "accent-1",
               "link": "https:\/\/thebarn.de\/products\/earth-coffee-2024"
             }
+          },
+          "announcement_eKehjU": {
+            "type": "announcement",
+            "settings": {
+              "text": "JUST IN: Limited Central America Triple Box 🇬🇹 🇸🇻 🇨🇷",
+              "color_scheme": "accent-2",
+              "link": "shopify:\/\/products\/triple-box-central-america"
+            }
           }
         },
         "block_order": [
-          "9b61c670-421e-411e-a354-e322ee6f62a5"
+          "9b61c670-421e-411e-a354-e322ee6f62a5",
+          "announcement_eKehjU"
         ],
         "custom_css": [
           ".announcement-bar__link {display: flex; width: 100%; height: 30px; align-items: center; padding: 2rem 2rem; text-decoration: none; justify-content: space-around;}"
