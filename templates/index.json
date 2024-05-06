@@ -5,6 +5,7 @@
       "blocks": {
         "slide_nY99zG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_BARN_Central_America_Triple_Box.png",
             "heading": "CENTRAL AMERICA TRIPLE BOX",
@@ -78,6 +79,7 @@
         },
         "slide_EzzWQy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/brewing_jungle_volacano.jpg",
             "heading": "VOLCAN AZUL",
@@ -102,6 +104,7 @@
         },
         "slide_nk7yHf": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/41429F1D-968D-4AB6-818F-CE015C3602BD-1799-000001B085362781.jpg",
             "heading": "HIMALAYA ANNIVERSARY",
