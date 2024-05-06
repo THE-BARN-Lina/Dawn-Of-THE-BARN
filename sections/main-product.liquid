@@ -634,10 +634,10 @@
                         var selectedValue = selectedOption.value;
                         var cupIcon = renderCup();
                         if (selectedValue.includes('250g')) {
-                          variantInfo250g.innerHTML = '{% for variant in product.variants %}{% if variant.title == "250g" %}{{ 10 | times: variant.price | divided_by: 250 | money_with_currency }} ' + cupIcon + ' {{ "|" }} {{ 4 | times: variant.price | money_with_currency }} / 1 kg {% endif %}{% endfor %}';
+                          variantInfo250g.innerHTML = '{% for variant in product.variants %}{% if variant.title == "250g" %}{{ 10 | times: variant.price | divided_by: 250 | money_with_currency }} ' + cupIcon + ' {{ "|" }} {{ 4 | times: variant.price | money_with_currency }} / 1kg {% endif %}{% endfor %}';
                           variantInfo1000g.innerHTML = ''; // Clear the other info
                         } else if (selectedValue.includes('1000g')) {
-                          variantInfo1000g.innerHTML = '{% for variant in product.variants %}{% if variant.title == "1000g" %}{{ 10 | times: variant.price | divided_by: 1000 | money_with_currency }} ' + cupIcon + ' {{ "|" }} {{ variant.price | money_with_currency }} / 1 kg {% endif %}{% endfor %}';
+                          variantInfo1000g.innerHTML = '{% for variant in product.variants %}{% if variant.title == "1000g" %}{{ 10 | times: variant.price | divided_by: 1000 | money_with_currency }} ' + cupIcon + ' {{ "|" }} {{ variant.price | money_with_currency }} / 1kg {% endif %}{% endfor %}';
                           variantInfo250g.innerHTML = ''; // Clear the other info
                         }
                       }
