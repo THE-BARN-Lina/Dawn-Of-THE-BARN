@@ -7,7 +7,7 @@
         "text_MaViXp": {
           "type": "text",
           "settings": {
-            "text": "<h6><a href=\"\/collections\/coffee-equipment\" title=\"EQUIPMENT\">Equipment  <\/a>&gt; {{ collection.title }}<\/h6>"
+            "text": "<h6><a href=\"\/collections\/coffee-beans\" title=\"COFFEE BEANS\">Coffee Beans<\/a> &gt; {{ collection.title }}<\/h6>"
           }
         }
       },
