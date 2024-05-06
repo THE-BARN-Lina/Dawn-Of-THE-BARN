@@ -213,6 +213,7 @@
     },
     "custom_hero_video_QEyzVe": {
       "type": "custom-hero-video",
+      "disabled": true,
       "custom_css": [
         "p {font-size: 16px;}"
       ],
