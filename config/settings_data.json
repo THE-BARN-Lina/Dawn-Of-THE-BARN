@@ -129,6 +129,7 @@
           },
           "announcement_eKehjU": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "LIMITED DROP ONLY THIS WEEKEND: Cerro Azul Gesha Napoleon. Colombia extra-ordinary.",
               "color_scheme": "accent-2",
